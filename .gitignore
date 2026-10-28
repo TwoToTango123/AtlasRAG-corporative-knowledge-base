@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.atlas_index/
+.atlas_test_idx/
+.env
+.venv/
+venv/
+*.egg-info/
+.DS_Store
