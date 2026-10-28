@@ -111,6 +111,7 @@ class AtlasRAG:
             raise RuntimeError(
                 "База знаний пуста. Сначала вызовите ingest_path(...) или load(...)."
             )
+        self.settings.require_api_key()
         if self.settings.verbose:
             print(f"\n[AtlasRAG] Вопрос: {question}")
 

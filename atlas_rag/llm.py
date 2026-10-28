@@ -17,9 +17,15 @@ from .config import Settings
 class LLM:
     def __init__(self, settings: Settings):
         self.settings = settings
-        settings.require_api_key()
-        # The SDK reads ANTHROPIC_API_KEY from the environment.
-        self.client = anthropic.Anthropic()
+        self._client: anthropic.Anthropic | None = None
+
+    @property
+    def client(self) -> anthropic.Anthropic:
+        # created on first call so indexing and pure retrieval work without a key
+        if self._client is None:
+            self.settings.require_api_key()
+            self._client = anthropic.Anthropic()
+        return self._client
 
     # --- plain completion -------------------------------------------------
     def complete(
