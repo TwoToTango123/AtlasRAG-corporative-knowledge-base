@@ -1,3 +1,4 @@
+groq>=0.30
 anthropic>=0.49.0
 numpy>=1.26
 # default embedder intfloat/multilingual-e5-small; without this package AtlasRAG

@@ -28,7 +28,7 @@ from .embeddings import build_embedder
 from .evaluation import EvalReport, Evaluator
 from .generator import Generator
 from .ingest import Ingestor, load_documents
-from .llm import LLM
+from .llm import build_llm
 from .memory import Conversation
 from .models import AnswerResult, ScoredChunk
 from .query_planner import QueryPlanner
@@ -40,7 +40,7 @@ from .vector_store import VectorStore
 class AtlasRAG:
     def __init__(self, settings: Settings | None = None):
         self.settings = settings or Settings()
-        self.llm = LLM(self.settings)
+        self.llm = build_llm(self.settings)
         self.embedder = build_embedder(self.settings)
 
         self.store = VectorStore(dim=self.embedder.dim)

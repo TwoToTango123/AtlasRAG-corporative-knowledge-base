@@ -1,6 +1,6 @@
 """The retrieval agent — the heart of AtlasRAG.
 
-Instead of a fixed "embed → top-k → stuff into prompt" pipeline, Claude drives
+Instead of a fixed "embed → top-k → stuff into prompt" pipeline, the LLM drives
 its own retrieval trajectory through a tool-use loop:
 
 1. It decomposes the question and plans an initial set of searches.
@@ -59,7 +59,7 @@ _SEARCH_TOOL = {
         "релевантности от 0 до 10. Используй несколько вызовов, чтобы покрыть "
         "разные части вопроса или переформулировать запрос при слабых результатах."
     ),
-    "input_schema": {
+    "parameters": {
         "type": "object",
         "properties": {
             "query": {
@@ -135,7 +135,7 @@ class RetrievalAgent:
 
         step = 0
         while step < self.settings.max_agent_steps:
-            resp = self.llm.raw(
+            turn = self.llm.tool_turn(
                 system=_SYSTEM,
                 messages=messages,
                 tools=[_SEARCH_TOOL],
@@ -143,24 +143,20 @@ class RetrievalAgent:
                 max_tokens=4096,
                 thinking=True,
             )
-            messages.append({"role": "assistant", "content": resp.content})
+            messages.append(turn.message)
 
-            tool_uses = [b for b in resp.content if b.type == "tool_use"]
-            if resp.stop_reason != "tool_use" or not tool_uses:
+            if not turn.tool_calls:
                 # Agent decided it's done gathering.
-                final = "".join(
-                    b.text for b in resp.content if b.type == "text"
-                ).strip()
-                trace.notes = final
+                trace.notes = turn.text
                 trace.sufficient = True
-                if final:
-                    log(f"  - агент: {final}")
+                if turn.text:
+                    log(f"  - агент: {turn.text}")
                 break
 
-            tool_results = []
-            for tu in tool_uses:
-                query = str(tu.input.get("query", "")).strip()
-                rationale = str(tu.input.get("rationale", "")).strip()
+            results: list[tuple[str, str]] = []
+            for call in turn.tool_calls:
+                query = str(call.input.get("query", "")).strip()
+                rationale = str(call.input.get("rationale", "")).strip()
                 step += 1
                 log(f"  - поиск #{step}: {query!r}  ({rationale})")
                 hits = self.search_once(query) if query else []
@@ -169,17 +165,11 @@ class RetrievalAgent:
                         step=step, query=query, rationale=rationale, hits=hits
                     )
                 )
-                tool_results.append(
-                    {
-                        "type": "tool_result",
-                        "tool_use_id": tu.id,
-                        "content": self._format_results(hits),
-                    }
-                )
+                results.append((call.id, self._format_results(hits)))
                 if step >= self.settings.max_agent_steps:
                     break
 
-            messages.append({"role": "user", "content": tool_results})
+            messages.extend(self.llm.tool_results(results))
 
         if not trace.steps:
             # Агент ни разу не искал (редкость) — делаем один прямой поиск как страховку.

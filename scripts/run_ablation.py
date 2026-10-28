@@ -6,9 +6,11 @@
     python scripts/run_ablation.py --llm-embedder intfloat/multilingual-e5-small
 
 Configurations without an LLM (vector / BM25 / hybrid RRF) run on every
-embedder. Configurations that call Claude (HyDE, reranker, full agent) run on
-one embedder (``--llm-embedder``) and only if ANTHROPIC_API_KEY is set,
-otherwise they are written to the report as "not measured".
+embedder. Configurations that call an LLM (HyDE, reranker, full agent) run on
+one embedder (``--llm-embedder``) and only if the provider's API key is set,
+otherwise they are written to the report as "not measured". LLM responses are
+cached in ``results/raw/llm_cache.jsonl``, so a run interrupted by a rate limit
+can be restarted without paying again for finished calls.
 
 Writes ``results/ablation.json`` and ``results/ablation.md``.
 """
@@ -43,6 +45,7 @@ from atlas_rag.models import Chunk  # noqa: E402
 DOCS = os.path.join(ROOT, "examples", "sample_docs")
 CASES = os.path.join(ROOT, "examples", "eval_cases.json")
 OUT_DIR = os.path.join(ROOT, "results")
+LLM_CACHE = os.path.join(OUT_DIR, "raw", "llm_cache.jsonl")
 
 DEFAULT_EMBEDDERS = [
     "BAAI/bge-small-en-v1.5",
@@ -102,10 +105,11 @@ def bootstrap_ci(xs: list[float], n: int = 2000, seed: int = 0) -> tuple[float, 
 
 def build_app(embedder: str) -> AtlasRAG:
     if embedder == "hashing":
-        settings = Settings(embedding_backend="hashing", verbose=False)
+        settings = Settings(embedding_backend="hashing", verbose=False, llm_cache_path=LLM_CACHE)
     else:
         settings = Settings(
-            embedding_backend="sentence-transformers", embedding_model=embedder, verbose=False
+            embedding_backend="sentence-transformers", embedding_model=embedder,
+            verbose=False, llm_cache_path=LLM_CACHE,
         )
     app = AtlasRAG(settings)
     app.ingest_path(DOCS)
@@ -118,6 +122,8 @@ def apply(app: AtlasRAG, cfg: Config) -> None:
     app.settings.use_reranker = cfg.rerank
     app.planner.hyde_failures = 0
     app.reranker.failures = 0
+    app.llm.failures = 0
+    app.llm.tokens = 0
 
 
 def run_config(app: AtlasRAG, cfg: Config, embedder: str, cases: list[dict], k: int) -> Row:
@@ -169,7 +175,13 @@ def run_config(app: AtlasRAG, cfg: Config, embedder: str, cases: list[dict], k: 
     for t in sorted({c["type"] for c, _, _ in scores}):
         row.recall_by_type[t] = _mean([s.recall for c, s, _ in scores if c["type"] == t])
     if cfg.needs_llm:
-        row.fallbacks = {"hyde": app.planner.hyde_failures, "rerank": app.reranker.failures}
+        # tokens count only fresh API calls, cache hits are free
+        row.fallbacks = {
+            "llm_errors": app.llm.failures,
+            "hyde_fallbacks": app.planner.hyde_failures,
+            "rerank_fallbacks": app.reranker.failures,
+            "tokens_spent": app.llm.tokens,
+        }
 
     if cfg.agent:
         graded_rows = row.per_case
@@ -206,6 +218,9 @@ def write_markdown(meta: dict[str, Any], rows: list[Row], k: int, path: str) -> 
         f"Корпус: документов {meta['n_docs']}, чанков {meta['n_chunks']}. Вопросов: "
         f"{meta['n_cases']} (с ответом {meta['n_answerable']}, без ответа "
         f"{meta['n_cases'] - meta['n_answerable']}). Метрики поиска считаются по вопросам с ответом.",
+        f"LLM: провайдер `{meta['llm_provider']}`, основная модель `{meta['model']}`, быстрая "
+        f"`{meta['fast_model']}`, судья `{meta['judge_model']}`. LLM-конфигурации измерены "
+        f"на эмбеддере `{meta['llm_embedder']}`.",
         "",
         f"| Конфигурация | Эмбеддер | Recall@3 | Recall@{k} | MRR@{k} | nDCG@{k} [95% CI] | мс/запрос |",
         "|---|---|---|---|---|---|---|",
@@ -250,12 +265,15 @@ def write_markdown(meta: dict[str, Any], rows: list[Row], k: int, path: str) -> 
                 f"{a['false_refusal_rate']:.0%} | {a['mean_searches']:.1f} |"
             )
     else:
-        lines.append("Не измерено: для генерации и судьи нужен ANTHROPIC_API_KEY.")
+        lines.append("Не измерено: для генерации и судьи нужен API-ключ LLM-провайдера.")
 
-    fb = [r for r in measured if any(r.fallbacks.values())]
-    if fb:
-        lines += ["", "Сбои LLM-шагов (откат на поиск без HyDE/реранка):", ""]
-        lines += [f"- {r.title}: {r.fallbacks}" for r in fb]
+    broken = [r for r in measured if r.fallbacks.get("llm_errors")]
+    if broken:
+        lines += ["", "**Внимание:** часть вызовов LLM упала даже после повторов; "
+                  "в этих строках сработали запасные пути, и цифры занижены:", ""]
+        lines += [f"- {r.title}: {r.fallbacks}" for r in broken]
+    elif any(r.fallbacks for r in measured):
+        lines += ["", "Все вызовы LLM завершились успешно (сбоев после повторов: 0)."]
 
     with open(path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
@@ -266,12 +284,13 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--embedders", nargs="+", default=DEFAULT_EMBEDDERS)
     parser.add_argument("--llm-embedder", default=Settings().embedding_model)
     parser.add_argument("--k", type=int, default=5)
-    parser.add_argument("--skip-llm", action="store_true", help="не запускать конфигурации с Claude")
+    parser.add_argument("--skip-llm", action="store_true", help="не запускать конфигурации с LLM")
     args = parser.parse_args(argv)
 
     with open(CASES, encoding="utf-8") as fh:
         cases = json.load(fh)
-    has_key = bool(os.environ.get("ANTHROPIC_API_KEY"))
+    base = Settings()
+    has_key = base.has_api_key()
     embedders = list(dict.fromkeys(args.embedders + [args.llm_embedder]))
 
     rows: list[Row] = []
@@ -290,7 +309,7 @@ def main(argv: list[str] | None = None) -> None:
                 continue
             emb_label = "—" if cfg.name == "bm25" else emb
             if cfg.needs_llm and (args.skip_llm or not has_key):
-                reason = "пропущено флагом --skip-llm" if args.skip_llm else "нет ANTHROPIC_API_KEY"
+                reason = "пропущено флагом --skip-llm" if args.skip_llm else f"нет {base.api_key_env}"
                 rows.append(Row(cfg.name, cfg.title, emb_label, status=f"не измерено: {reason}"))
                 print(f"  - {cfg.title}: не измерено ({reason})")
                 continue
@@ -316,6 +335,10 @@ def main(argv: list[str] | None = None) -> None:
         "n_answerable": sum(1 for c in cases if c.get("answerable", True)),
         "llm_embedder": args.llm_embedder,
         "llm_measured": has_key and not args.skip_llm,
+        "llm_provider": base.llm_provider,
+        "model": base.model,
+        "fast_model": base.fast_model,
+        "judge_model": base.judge_model,
     }
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(os.path.join(OUT_DIR, "ablation.json"), "w", encoding="utf-8") as fh:

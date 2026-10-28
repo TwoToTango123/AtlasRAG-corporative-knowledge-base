@@ -201,7 +201,7 @@ class Evaluator:
                 system=_JUDGE_SYSTEM,
                 messages=[{"role": "user", "content": user}],
                 schema=_JUDGE_SCHEMA,
-                model=self.settings.model,
+                model=self.settings.judge_model,
                 max_tokens=512,
             )
         except Exception:

@@ -1,6 +1,6 @@
 """LLM reranking with built-in corrective-RAG (CRAG) grading.
 
-After hybrid retrieval over-fetches candidates, a single Claude call scores each
+After hybrid retrieval over-fetches candidates, a single LLM call scores each
 passage's relevance to the query on a 0-10 scale with a short rationale. This
 plays the role of a cross-encoder reranker *and* the CRAG relevance grader at
 once: passages that score low are demoted, and the caller can read the average
