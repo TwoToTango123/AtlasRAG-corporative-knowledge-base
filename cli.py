@@ -103,10 +103,14 @@ def cmd_eval(args) -> None:
     report = app.evaluate(cases)
     print("\n" + "=" * 70)
     for r in report.results:
-        print(
-            f"[{r.correctness:.2f}|{r.faithfulness:.2f}|{r.citation_quality:.2f}] "
-            f"{r.question}\n    -> {r.verdict}"
-        )
+        if r.answerable:
+            print(
+                f"[{r.correctness:.2f}|{r.faithfulness:.2f}|{r.citation_quality:.2f}] "
+                f"{r.question}\n    -> {r.verdict}"
+            )
+        else:
+            mark = "честный отказ" if r.refused else "ОТВЕТИЛ, ХОТЯ ОТВЕТА НЕТ"
+            print(f"[без ответа: {mark}] {r.question}")
     print("-" * 70)
     print(report.summary())
     print("=" * 70)

@@ -149,8 +149,8 @@ class AtlasRAG:
         return ChatSession(self)
 
     # --- evaluation -------------------------------------------------------
-    def evaluate(self, cases: list[dict[str, Any]]) -> EvalReport:
-        return self.evaluator.run(self.ask, cases)
+    def evaluate(self, cases: list[dict[str, Any]], k: int = 5) -> EvalReport:
+        return self.evaluator.run(self.ask, cases, corpus=self.store.chunks, k=k)
 
 
 class ChatSession:

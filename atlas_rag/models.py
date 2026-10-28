@@ -116,3 +116,8 @@ class AnswerResult:
     faithfulness: float | None = None  # 0-1 self-check score
     trace: RetrievalTrace | None = None
     warnings: list[str] = field(default_factory=list)
+
+    @property
+    def refused(self) -> bool:
+        """True if the system said the knowledge base has no answer."""
+        return "no_evidence" in self.warnings or "model_reports_answer_not_found" in self.warnings
