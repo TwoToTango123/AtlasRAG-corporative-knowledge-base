@@ -71,10 +71,14 @@ def main() -> None:
         cases = json.load(f)
     report = rag.evaluate(cases)
     for r in report.results:
-        print(
-            f"[коррект {r.correctness:.2f} | обоснов {r.faithfulness:.2f} | "
-            f"ссылки {r.citation_quality:.2f}] {r.question}"
-        )
+        if r.answerable:
+            print(
+                f"[коррект {r.correctness:.2f} | обоснов {r.faithfulness:.2f} | "
+                f"ссылки {r.citation_quality:.2f}] {r.question}"
+            )
+        else:
+            mark = "честный отказ" if r.refused else "ОТВЕТИЛ, ХОТЯ ОТВЕТА НЕТ"
+            print(f"[без ответа: {mark}] {r.question}")
     print("-" * 72)
     print(report.summary())
 

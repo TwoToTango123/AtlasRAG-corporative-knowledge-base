@@ -261,13 +261,13 @@ def write_markdown(meta: dict[str, Any], rows: list[Row], k: int, path: str) -> 
         fh.write("\n".join(lines) + "\n")
 
 
-def main() -> None:
+def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--embedders", nargs="+", default=DEFAULT_EMBEDDERS)
     parser.add_argument("--llm-embedder", default=Settings().embedding_model)
     parser.add_argument("--k", type=int, default=5)
     parser.add_argument("--skip-llm", action="store_true", help="не запускать конфигурации с Claude")
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     with open(CASES, encoding="utf-8") as fh:
         cases = json.load(fh)

@@ -6,6 +6,7 @@
     python cli.py ask "Какое у нас окно возврата?"    # одиночный вопрос
     python cli.py chat                               # интерактивный диалог
     python cli.py eval examples/eval_cases.json      # запустить оценку качества
+    python cli.py ablate --skip-llm                  # абляции поиска → results/
 """
 
 from __future__ import annotations
@@ -116,6 +117,12 @@ def cmd_eval(args) -> None:
     print("=" * 70)
 
 
+def cmd_ablate(args) -> None:
+    from scripts.run_ablation import main as run_ablation
+
+    run_ablation(args.extra)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="atlas-rag", description=__doc__)
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -139,7 +146,17 @@ def main() -> None:
     p_eval.add_argument("cases")
     p_eval.set_defaults(func=cmd_eval)
 
-    args = parser.parse_args()
+    p_ablate = sub.add_parser(
+        "ablate",
+        help="абляции на золотом наборе (флаги как у scripts/run_ablation.py)",
+    )
+    p_ablate.set_defaults(func=cmd_ablate)
+
+    # unknown flags are forwarded to the ablation script as is
+    args, extra = parser.parse_known_args()
+    if extra and args.cmd != "ablate":
+        parser.error(f"неизвестные аргументы: {' '.join(extra)}")
+    args.extra = extra
     args.func(args)
 
 

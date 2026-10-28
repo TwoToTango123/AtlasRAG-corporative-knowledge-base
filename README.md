@@ -170,7 +170,7 @@ python cli.py eval examples/eval_cases.json  # оценить на тестов�
 
 ```bash
 python scripts/run_ablation.py               # таблица конфигураций → results/
-python scripts/run_ablation.py --skip-llm    # только поиск, без вызовов Claude
+python cli.py ablate --skip-llm              # то же через CLI, только поиск без Claude
 pytest                                       # тесты метрик и золотой разметки
 ```
 

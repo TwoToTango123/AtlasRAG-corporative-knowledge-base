@@ -95,7 +95,11 @@ class SentenceTransformerEmbeddings:
         from sentence_transformers import SentenceTransformer  # lazy import
 
         self._model = SentenceTransformer(model_name)
-        self.dim = int(self._model.get_sentence_embedding_dimension())
+        # renamed in sentence-transformers 5.x; the old name still exists in 3.x/4.x
+        get_dim = getattr(self._model, "get_embedding_dimension", None) or getattr(
+            self._model, "get_sentence_embedding_dimension"
+        )
+        self.dim = int(get_dim())
         self.name = f"st:{model_name}"
         self.query_prefix, self.doc_prefix = _PREFIXES.get(model_name, ("", ""))
 
