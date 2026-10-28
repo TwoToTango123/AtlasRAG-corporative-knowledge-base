@@ -173,8 +173,7 @@ def run_config(app: AtlasRAG, cfg: Config, embedder: str, cases: list[dict], k: 
             # finished calls are cached and the next run continues from here
             raise SystemExit(
                 f"[ablation] {cfg.title}: вызов LLM упал после всех повторов (вопрос {case['id']}). "
-                f"Ошибка: {app.llm.last_error}
-Отчёт не записан; перезапустите позже, "
+                f"Ошибка: {app.llm.last_error}. Отчёт не записан; перезапустите позже, "
                 f"готовые ответы возьмутся из {os.path.relpath(LLM_CACHE, ROOT)}."
             )
 
