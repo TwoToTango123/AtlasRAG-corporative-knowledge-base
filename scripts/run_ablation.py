@@ -77,6 +77,10 @@ CONFIGS = [
     Config("hybrid_rerank", "гибрид + реранкер", "hybrid", rerank=True),
     Config("agent", "полный агент", "hybrid", hyde=True, rerank=True, agent=True),
 ]
+# the agent is the most valuable measurement, so it goes first in case the quota runs out
+RUN_ORDER = [c for c in CONFIGS if not c.needs_llm] + sorted(
+    (c for c in CONFIGS if c.needs_llm), key=lambda c: not c.agent
+)
 
 
 @dataclass
@@ -162,6 +166,16 @@ def run_config(app: AtlasRAG, cfg: Config, embedder: str, cases: list[dict], k: 
                 searches=len(result.trace.steps) if result.trace else 0,
             )
         row.per_case.append(entry)
+        if cfg.needs_llm:
+            print(f"    {case['id']} готов, токенов в конфигурации: {app.llm.tokens}", flush=True)
+        if app.llm.failures:
+            # a swallowed failure would silently turn into a lower score, so stop;
+            # finished calls are cached and the next run continues from here
+            raise SystemExit(
+                f"[ablation] {cfg.title}: вызов LLM упал после всех повторов (вопрос {case['id']}), "
+                f"скорее всего исчерпана квота. Отчёт не записан; перезапустите позже, "
+                f"готовые ответы возьмутся из {os.path.relpath(LLM_CACHE, ROOT)}."
+            )
 
     ndcgs = [s.ndcg for _, s, _ in scores]
     row.metrics = {
@@ -300,7 +314,7 @@ def main(argv: list[str] | None = None) -> None:
         print(f"[ablation] эмбеддер {emb}: строю индекс…")
         app = build_app(emb)
         n_chunks = len(app.store)
-        for cfg in CONFIGS:
+        for cfg in RUN_ORDER:
             if cfg.name == "bm25":
                 if bm25_done:
                     continue
@@ -340,6 +354,8 @@ def main(argv: list[str] | None = None) -> None:
         "fast_model": base.fast_model,
         "judge_model": base.judge_model,
     }
+    rows.sort(key=lambda r: (embedders.index(r.embedder) if r.embedder in embedders else -1,
+                             [c.name for c in CONFIGS].index(r.config)))
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(os.path.join(OUT_DIR, "ablation.json"), "w", encoding="utf-8") as fh:
         json.dump({"meta": meta, "rows": [asdict(r) for r in rows]}, fh, ensure_ascii=False, indent=2)

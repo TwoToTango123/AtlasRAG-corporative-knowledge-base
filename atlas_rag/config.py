@@ -87,7 +87,7 @@ class Settings:
     use_reranker: bool = True           # LLM cross-encoder-style rerank
 
     # --- Agent ------------------------------------------------------------
-    max_agent_steps: int = 6            # max search rounds the agent may take
+    max_agent_steps: int = 4            # max search rounds; caps cost per question
     min_relevance_to_answer: float = 5.0  # avg rerank score (0-10) gate
 
     # --- Persistence ------------------------------------------------------

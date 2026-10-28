@@ -99,7 +99,7 @@ class RetrievalAgent:
             return self.reranker.rerank(query, candidates)
         return candidates[: self.settings.rerank_top_k]
 
-    def _format_results(self, hits: list[ScoredChunk]) -> str:
+    def _format_results(self, hits: list[ScoredChunk], new: int) -> str:
         if not hits:
             return "Фрагменты не найдены. Попробуй другие формулировки."
         lines = []
@@ -112,7 +112,15 @@ class RetrievalAgent:
                 f"[relevance {rel:.1f}] (source: {sc.chunk.source})\n{snippet}"
             )
         avg = sum((h.relevance or 0.0) for h in hits) / len(hits)
-        header = f"Топ-{len(hits)} фрагментов (средняя релевантность {avg:.1f}):\n\n"
+        header = (
+            f"Топ-{len(hits)} фрагментов (средняя релевантность {avg:.1f}), "
+            f"новых по сравнению с прошлыми поисками: {new}.\n\n"
+        )
+        if new == 0:
+            header = (
+                "Новых фрагментов нет: всё это ты уже видел. Если данных не хватает, "
+                "скорее всего, в базе этого нет — заканчивай поиск.\n\n" + header
+            )
         return header + "\n\n".join(lines)
 
     # --- the agentic loop -------------------------------------------------
@@ -134,6 +142,8 @@ class RetrievalAgent:
         ]
 
         step = 0
+        seen_queries: set[str] = set()
+        seen_chunks: set[str] = set()
         while step < self.settings.max_agent_steps:
             turn = self.llm.tool_turn(
                 system=_SYSTEM,
@@ -159,13 +169,21 @@ class RetrievalAgent:
                 rationale = str(call.input.get("rationale", "")).strip()
                 step += 1
                 log(f"  - поиск #{step}: {query!r}  ({rationale})")
-                hits = self.search_once(query) if query else []
-                trace.steps.append(
-                    RetrievalStep(
-                        step=step, query=query, rationale=rationale, hits=hits
+                key = " ".join(query.lower().split())
+                if key in seen_queries:
+                    # a repeat would cost a HyDE + rerank call and return the same hits
+                    results.append((call.id, "Этот запрос уже выполнялся, его результаты выше."))
+                else:
+                    seen_queries.add(key)
+                    hits = self.search_once(query) if query else []
+                    new = sum(1 for h in hits if h.chunk_id not in seen_chunks)
+                    seen_chunks.update(h.chunk_id for h in hits)
+                    trace.steps.append(
+                        RetrievalStep(
+                            step=step, query=query, rationale=rationale, hits=hits
+                        )
                     )
-                )
-                results.append((call.id, self._format_results(hits)))
+                    results.append((call.id, self._format_results(hits, new)))
                 if step >= self.settings.max_agent_steps:
                     break
 
