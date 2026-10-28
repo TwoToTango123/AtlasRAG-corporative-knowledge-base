@@ -127,6 +127,7 @@ def apply(app: AtlasRAG, cfg: Config) -> None:
     app.planner.hyde_failures = 0
     app.reranker.failures = 0
     app.llm.failures = 0
+    app.llm.json_retries = 0
     app.llm.tokens = 0
 
 
@@ -192,6 +193,7 @@ def run_config(app: AtlasRAG, cfg: Config, embedder: str, cases: list[dict], k: 
         # tokens count only fresh API calls, cache hits are free
         row.fallbacks = {
             "llm_errors": app.llm.failures,
+            "json_retries": getattr(app.llm, "json_retries", 0),
             "hyde_fallbacks": app.planner.hyde_failures,
             "rerank_fallbacks": app.reranker.failures,
             "tokens_spent": app.llm.tokens,

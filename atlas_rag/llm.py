@@ -48,6 +48,7 @@ class LLM:
     def __init__(self, settings: Settings):
         self.settings = settings
         self.failures = 0
+        self.json_retries = 0
         self.last_error = ""
         self.tokens = 0
         self._cache: dict[str, Any] = {}
@@ -188,9 +189,20 @@ class GroqLLM(LLM):
         return (self._create(model, system, messages, max_tokens, thinking).message.content or "").strip()
 
     def _call_structured(self, *, system, messages, schema, model, max_tokens, thinking) -> str:
+        from groq import BadRequestError
+
         fmt = {"type": "json_schema", "json_schema": {"name": "output", "schema": schema, "strict": True}}
-        choice = self._create(model, system, messages, max_tokens, thinking, response_format=fmt)
-        return choice.message.content or ""
+        for attempt in range(3):
+            try:
+                choice = self._create(model, system, messages, max_tokens, thinking, response_format=fmt)
+                return choice.message.content or ""
+            except BadRequestError as e:
+                # gpt-oss sometimes emits broken JSON under a strict schema; Groq
+                # rejects it with 400 json_validate_failed, a fresh sample usually works
+                if "json_validate_failed" not in str(e) or attempt == 2:
+                    raise
+                self.json_retries += 1
+        raise AssertionError("unreachable")
 
     def _call_tool_turn(self, *, system, messages, tools, model, max_tokens, thinking) -> ToolTurn:
         specs = [{"type": "function", "function": t} for t in tools]
