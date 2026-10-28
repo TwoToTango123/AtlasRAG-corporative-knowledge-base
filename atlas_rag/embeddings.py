@@ -13,6 +13,7 @@ an embeddings endpoint, so embeddings are a separate, pluggable concern:
 
 from __future__ import annotations
 
+import hashlib
 import re
 from typing import Protocol
 
@@ -57,7 +58,11 @@ class HashingEmbeddings:
         out = np.zeros((len(texts), self.dim), dtype=np.float32)
         for i, text in enumerate(texts):
             for tok in self._tokens(text):
-                h = hash(tok)
+                # built-in hash() is salted per process, so a saved index would
+                # not match query vectors after restart; blake2b is stable
+                h = int.from_bytes(
+                    hashlib.blake2b(tok.encode("utf-8"), digest_size=8).digest(), "little"
+                )
                 idx = h % self.dim
                 sign = 1.0 if (h >> 32) & 1 == 0 else -1.0
                 out[i, idx] += sign
