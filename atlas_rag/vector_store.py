@@ -61,14 +61,19 @@ class VectorStore:
         return [(self.chunks[i].chunk_id, float(sims[i])) for i in idx]
 
     # --- persistence ------------------------------------------------------
-    def save(self, directory: str) -> None:
+    def save(self, directory: str, embedder: str = "") -> None:
         os.makedirs(directory, exist_ok=True)
         np.save(os.path.join(directory, "vectors.npy"), self._matrix)
         with open(os.path.join(directory, "chunks.jsonl"), "w", encoding="utf-8") as f:
             for ch in self.chunks:
                 f.write(json.dumps(ch.to_dict(), ensure_ascii=False) + "\n")
         with open(os.path.join(directory, "meta.json"), "w", encoding="utf-8") as f:
-            json.dump({"dim": self.dim}, f)
+            json.dump({"dim": self.dim, "embedder": embedder}, f)
+
+    @staticmethod
+    def saved_embedder(directory: str) -> str:
+        with open(os.path.join(directory, "meta.json"), encoding="utf-8") as f:
+            return str(json.load(f).get("embedder", ""))
 
     @classmethod
     def load(cls, directory: str) -> "VectorStore":

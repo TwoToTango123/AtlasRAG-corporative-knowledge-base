@@ -80,12 +80,20 @@ class AtlasRAG:
 
     def save(self, directory: str | None = None) -> None:
         directory = directory or self.settings.index_dir
-        self.store.save(directory)
+        self.store.save(directory, embedder=self.embedder.name)
         if self.settings.verbose:
             print(f"[AtlasRAG] Индекс сохранён в {directory}/")
 
     def load(self, directory: str | None = None) -> None:
         directory = directory or self.settings.index_dir
+        saved = VectorStore.saved_embedder(directory)
+        # same dim does not mean same vector space (bge-small and e5-small are both 384)
+        if saved and saved != self.embedder.name:
+            raise RuntimeError(
+                f"Индекс построен эмбеддером {saved}, а сейчас выбран "
+                f"{self.embedder.name}. Переиндексируйте данные (`cli.py ingest`) "
+                f"или верните прежний ATLAS_EMBEDDING_MODEL."
+            )
         self.store = VectorStore.load(directory)
         if self.store.dim != self.embedder.dim:
             raise RuntimeError(

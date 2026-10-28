@@ -40,7 +40,7 @@ class Settings:
         default_factory=lambda: _env("ATLAS_EMBEDDING_BACKEND", "auto")
     )
     embedding_model: str = field(
-        default_factory=lambda: _env("ATLAS_EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")
+        default_factory=lambda: _env("ATLAS_EMBEDDING_MODEL", "intfloat/multilingual-e5-small")
     )
     hashing_dim: int = 768  # dimension of the local fallback embedder
 
