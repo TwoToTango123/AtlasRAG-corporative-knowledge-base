@@ -1,7 +1,7 @@
 {
   "meta": {
-    "date": "2026-10-28 18:55 UTC",
-    "commit": "ecbb42f",
+    "date": "2026-10-28 19:06 UTC",
+    "commit": "98369a9",
     "python": "3.13.7",
     "sentence_transformers": "5.6.0",
     "k": 5,
@@ -9,7 +9,7 @@
     "n_chunks": 21,
     "n_cases": 39,
     "n_answerable": 33,
-    "llm_embedder": "BAAI/bge-small-en-v1.5",
+    "llm_embedder": "intfloat/multilingual-e5-small",
     "llm_measured": false
   },
   "rows": [
@@ -23,7 +23,7 @@
         "recall@5": 0.46464646464646464,
         "mrr@5": 0.29444444444444445,
         "ndcg@5": 0.3123112909523249,
-        "latency_ms": 27.399563632736154
+        "latency_ms": 30.830845459025692
       },
       "ndcg_ci": [
         0.19174413006298266,
@@ -315,7 +315,7 @@
         "recall@5": 0.8787878787878788,
         "mrr@5": 0.8242424242424242,
         "ndcg@5": 0.8250603571176134,
-        "latency_ms": 0.06334848744286732
+        "latency_ms": 0.06315756631507115
       },
       "ndcg_ci": [
         0.7171461239032677,
@@ -607,7 +607,7 @@
         "recall@5": 0.8131313131313131,
         "mrr@5": 0.5853535353535353,
         "ndcg@5": 0.6096931217824408,
-        "latency_ms": 36.14609394659937
+        "latency_ms": 27.023493940236442
       },
       "ndcg_ci": [
         0.5018288574691389,
@@ -890,42 +890,6 @@
       ]
     },
     {
-      "config": "hybrid_hyde",
-      "title": "гибрид + HyDE",
-      "embedder": "BAAI/bge-small-en-v1.5",
-      "status": "не измерено: нет ANTHROPIC_API_KEY",
-      "metrics": {},
-      "ndcg_ci": null,
-      "recall_by_type": {},
-      "answer": null,
-      "fallbacks": {},
-      "per_case": []
-    },
-    {
-      "config": "hybrid_rerank",
-      "title": "гибрид + реранкер",
-      "embedder": "BAAI/bge-small-en-v1.5",
-      "status": "не измерено: нет ANTHROPIC_API_KEY",
-      "metrics": {},
-      "ndcg_ci": null,
-      "recall_by_type": {},
-      "answer": null,
-      "fallbacks": {},
-      "per_case": []
-    },
-    {
-      "config": "agent",
-      "title": "полный агент",
-      "embedder": "BAAI/bge-small-en-v1.5",
-      "status": "не измерено: нет ANTHROPIC_API_KEY",
-      "metrics": {},
-      "ndcg_ci": null,
-      "recall_by_type": {},
-      "answer": null,
-      "fallbacks": {},
-      "per_case": []
-    },
-    {
       "config": "dense",
       "title": "только вектор",
       "embedder": "intfloat/multilingual-e5-small",
@@ -935,7 +899,7 @@
         "recall@5": 0.9747474747474747,
         "mrr@5": 0.8217171717171717,
         "ndcg@5": 0.8503863369958468,
-        "latency_ms": 30.995506070074484
+        "latency_ms": 20.992187881898698
       },
       "ndcg_ci": [
         0.7815781781088847,
@@ -1227,7 +1191,7 @@
         "recall@5": 0.9545454545454546,
         "mrr@5": 0.8737373737373737,
         "ndcg@5": 0.8830519697551236,
-        "latency_ms": 24.99808788398337
+        "latency_ms": 21.599281808558963
       },
       "ndcg_ci": [
         0.8035067182371955,
@@ -1510,6 +1474,42 @@
       ]
     },
     {
+      "config": "hybrid_hyde",
+      "title": "гибрид + HyDE",
+      "embedder": "intfloat/multilingual-e5-small",
+      "status": "не измерено: нет ANTHROPIC_API_KEY",
+      "metrics": {},
+      "ndcg_ci": null,
+      "recall_by_type": {},
+      "answer": null,
+      "fallbacks": {},
+      "per_case": []
+    },
+    {
+      "config": "hybrid_rerank",
+      "title": "гибрид + реранкер",
+      "embedder": "intfloat/multilingual-e5-small",
+      "status": "не измерено: нет ANTHROPIC_API_KEY",
+      "metrics": {},
+      "ndcg_ci": null,
+      "recall_by_type": {},
+      "answer": null,
+      "fallbacks": {},
+      "per_case": []
+    },
+    {
+      "config": "agent",
+      "title": "полный агент",
+      "embedder": "intfloat/multilingual-e5-small",
+      "status": "не измерено: нет ANTHROPIC_API_KEY",
+      "metrics": {},
+      "ndcg_ci": null,
+      "recall_by_type": {},
+      "answer": null,
+      "fallbacks": {},
+      "per_case": []
+    },
+    {
       "config": "dense",
       "title": "только вектор",
       "embedder": "ai-forever/ru-en-RoSBERTa",
@@ -1519,7 +1519,7 @@
         "recall@5": 0.9393939393939394,
         "mrr@5": 0.8595959595959596,
         "ndcg@5": 0.8724282955565388,
-        "latency_ms": 216.78504546412802
+        "latency_ms": 114.8176121342024
       },
       "ndcg_ci": [
         0.7814781615592871,
@@ -1811,7 +1811,7 @@
         "recall@5": 0.9242424242424242,
         "mrr@5": 0.8888888888888888,
         "ndcg@5": 0.8869529649751853,
-        "latency_ms": 218.52609092214456
+        "latency_ms": 123.69186061109896
       },
       "ndcg_ci": [
         0.8015463072870369,
@@ -2103,7 +2103,7 @@
         "recall@5": 0.8484848484848485,
         "mrr@5": 0.803030303030303,
         "ndcg@5": 0.7979753613887665,
-        "latency_ms": 0.46584242249302793
+        "latency_ms": 0.16822121952745048
       },
       "ndcg_ci": [
         0.6873311302275992,
@@ -2395,7 +2395,7 @@
         "recall@5": 0.8787878787878788,
         "mrr@5": 0.8207070707070707,
         "ndcg@5": 0.8256511463397183,
-        "latency_ms": 0.715203011747111
+        "latency_ms": 0.23671211392590494
       },
       "ndcg_ci": [
         0.7137291341088919,
