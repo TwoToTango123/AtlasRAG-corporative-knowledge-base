@@ -1,0 +1,2681 @@
+{
+  "meta": {
+    "date": "2026-10-28 18:52 UTC",
+    "commit": "bf17d92",
+    "python": "3.13.7",
+    "sentence_transformers": "5.6.0",
+    "k": 5,
+    "n_docs": 12,
+    "n_chunks": 21,
+    "n_cases": 39,
+    "n_answerable": 33,
+    "llm_embedder": "BAAI/bge-small-en-v1.5",
+    "llm_measured": false
+  },
+  "rows": [
+    {
+      "config": "dense",
+      "title": "только вектор",
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.2727272727272727,
+        "recall@5": 0.46464646464646464,
+        "mrr@5": 0.29444444444444445,
+        "ndcg@5": 0.3123112909523249,
+        "latency_ms": 33.284009088564545
+      },
+      "ndcg_ci": [
+        0.19174413006298266,
+        0.43502020529124025
+      ],
+      "recall_by_type": {
+        "comparison": 0.4,
+        "exact_token": 0.5714285714285714,
+        "fact": 0.2857142857142857,
+        "multi_hop": 0.4166666666666667,
+        "paraphrase": 0.6666666666666666
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.43067655807339306,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 0.3333333333333333,
+          "mrr": 0.2,
+          "ndcg": 0.18154179253735267,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.3065735963827292,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.43067655807339306,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.43067655807339306,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        }
+      ]
+    },
+    {
+      "config": "bm25",
+      "title": "только BM25",
+      "embedder": "—",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.8484848484848485,
+        "recall@5": 0.8787878787878788,
+        "mrr@5": 0.8242424242424242,
+        "ndcg@5": 0.8250603571176134,
+        "latency_ms": 0.06783636865403617
+      },
+      "ndcg_ci": [
+        0.7171461239032677,
+        0.9233445858141767
+      ],
+      "recall_by_type": {
+        "comparison": 1.0,
+        "exact_token": 1.0,
+        "fact": 1.0,
+        "multi_hop": 0.875,
+        "paraphrase": 0.5
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8529278650606567,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.2,
+          "ndcg": 0.23719771276929622,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "ndcg": 0.6131471927654584,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        }
+      ]
+    },
+    {
+      "config": "hybrid",
+      "title": "гибрид RRF",
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.6616161616161615,
+        "recall@5": 0.8131313131313131,
+        "mrr@5": 0.5853535353535353,
+        "ndcg@5": 0.6096931217824408,
+        "latency_ms": 36.8735697014596
+      },
+      "ndcg_ci": [
+        0.5018288574691389,
+        0.7221490331664581
+      ],
+      "recall_by_type": {
+        "comparison": 0.7,
+        "exact_token": 1.0,
+        "fact": 0.8571428571428571,
+        "multi_hop": 0.6666666666666666,
+        "paraphrase": 0.8333333333333334
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.43067655807339306,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 0.3333333333333333,
+          "mrr": 1.0,
+          "ndcg": 0.46927872602275644,
+          "recall_at_3": 0.3333333333333333
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9469024295259745,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8503449055347546,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.3065735963827292,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.43067655807339306,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 0.5,
+          "mrr": 0.25,
+          "ndcg": 0.2640681225725909,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        }
+      ]
+    },
+    {
+      "config": "hybrid_hyde",
+      "title": "гибрид + HyDE",
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "status": "не измерено: нет ANTHROPIC_API_KEY",
+      "metrics": {},
+      "ndcg_ci": null,
+      "recall_by_type": {},
+      "answer": null,
+      "fallbacks": {},
+      "per_case": []
+    },
+    {
+      "config": "hybrid_rerank",
+      "title": "гибрид + реранкер",
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "status": "не измерено: нет ANTHROPIC_API_KEY",
+      "metrics": {},
+      "ndcg_ci": null,
+      "recall_by_type": {},
+      "answer": null,
+      "fallbacks": {},
+      "per_case": []
+    },
+    {
+      "config": "agent",
+      "title": "полный агент",
+      "embedder": "BAAI/bge-small-en-v1.5",
+      "status": "не измерено: нет ANTHROPIC_API_KEY",
+      "metrics": {},
+      "ndcg_ci": null,
+      "recall_by_type": {},
+      "answer": null,
+      "fallbacks": {},
+      "per_case": []
+    },
+    {
+      "config": "dense",
+      "title": "только вектор",
+      "embedder": "intfloat/multilingual-e5-small",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.898989898989899,
+        "recall@5": 0.9747474747474747,
+        "mrr@5": 0.8217171717171717,
+        "ndcg@5": 0.8503863369958468,
+        "latency_ms": 29.00197878338848
+      },
+      "ndcg_ci": [
+        0.7815781781088847,
+        0.9160221123989406
+      ],
+      "recall_by_type": {
+        "comparison": 1.0,
+        "exact_token": 1.0,
+        "fact": 1.0,
+        "multi_hop": 0.8958333333333334,
+        "paraphrase": 1.0
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "ndcg": 0.7039180890341347,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 0.6666666666666666,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "recall_at_3": 0.6666666666666666
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5706417189553201,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.43067655807339306,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        }
+      ]
+    },
+    {
+      "config": "hybrid",
+      "title": "гибрид RRF",
+      "embedder": "intfloat/multilingual-e5-small",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.9242424242424242,
+        "recall@5": 0.9545454545454546,
+        "mrr@5": 0.8737373737373737,
+        "ndcg@5": 0.8830519697551236,
+        "latency_ms": 24.613718163560737
+      },
+      "ndcg_ci": [
+        0.8035067182371955,
+        0.95459515695267
+      ],
+      "recall_by_type": {
+        "comparison": 1.0,
+        "exact_token": 1.0,
+        "fact": 1.0,
+        "multi_hop": 0.9375,
+        "paraphrase": 0.8333333333333334
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8529278650606567,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.5,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8772153153380493,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        }
+      ]
+    },
+    {
+      "config": "dense",
+      "title": "только вектор",
+      "embedder": "ai-forever/ru-en-RoSBERTa",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.9090909090909091,
+        "recall@5": 0.9393939393939394,
+        "mrr@5": 0.8595959595959596,
+        "ndcg@5": 0.8724282955565388,
+        "latency_ms": 128.9196606111628
+      },
+      "ndcg_ci": [
+        0.7814781615592871,
+        0.9486840483752342
+      ],
+      "recall_by_type": {
+        "comparison": 0.8,
+        "exact_token": 1.0,
+        "fact": 1.0,
+        "multi_hop": 0.875,
+        "paraphrase": 1.0
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 0.2,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "ndcg": 0.7039180890341347,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.3065735963827292,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        }
+      ]
+    },
+    {
+      "config": "hybrid",
+      "title": "гибрид RRF",
+      "embedder": "ai-forever/ru-en-RoSBERTa",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.9242424242424242,
+        "recall@5": 0.9242424242424242,
+        "mrr@5": 0.8888888888888888,
+        "ndcg@5": 0.8869529649751853,
+        "latency_ms": 109.42338181617247
+      },
+      "ndcg_ci": [
+        0.8015463072870369,
+        0.9609457261946446
+      ],
+      "recall_by_type": {
+        "comparison": 1.0,
+        "exact_token": 1.0,
+        "fact": 1.0,
+        "multi_hop": 0.8125,
+        "paraphrase": 0.8333333333333334
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "ndcg": 0.6713860725233041,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.5,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.5,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.5,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6934264036172708,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        }
+      ]
+    },
+    {
+      "config": "dense",
+      "title": "только вектор",
+      "embedder": "hashing",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.8232323232323233,
+        "recall@5": 0.8484848484848485,
+        "mrr@5": 0.803030303030303,
+        "ndcg@5": 0.7979753613887665,
+        "latency_ms": 0.1523848446650487
+      },
+      "ndcg_ci": [
+        0.6873311302275992,
+        0.903344343694732
+      ],
+      "recall_by_type": {
+        "comparison": 1.0,
+        "exact_token": 1.0,
+        "fact": 1.0,
+        "multi_hop": 0.875,
+        "paraphrase": 0.3333333333333333
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 1.0,
+          "ndcg": 0.7653606369886217,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9674679834891693,
+          "recall_at_3": 0.6666666666666666
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.5,
+          "ndcg": 0.38685280723454163,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8503449055347546,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        }
+      ]
+    },
+    {
+      "config": "hybrid",
+      "title": "гибрид RRF",
+      "embedder": "hashing",
+      "status": "ok",
+      "metrics": {
+        "recall@3": 0.8333333333333334,
+        "recall@5": 0.8787878787878788,
+        "mrr@5": 0.8207070707070707,
+        "ndcg@5": 0.8256511463397183,
+        "latency_ms": 0.19606666385450144
+      },
+      "ndcg_ci": [
+        0.7137291341088919,
+        0.9264960872381158
+      ],
+      "recall_by_type": {
+        "comparison": 1.0,
+        "exact_token": 1.0,
+        "fact": 1.0,
+        "multi_hop": 0.875,
+        "paraphrase": 0.5
+      },
+      "answer": null,
+      "fallbacks": {},
+      "per_case": [
+        {
+          "id": "q01",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q02",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q03",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q04",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q05",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q06",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 0.5,
+          "ndcg": 0.6309297535714575,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q07",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q08",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q09",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q10",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q11",
+          "type": "fact",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q12",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q13",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q14",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q15",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q16",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q17",
+          "type": "exact_token",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q18",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.5,
+          "ndcg": 0.5307212739772434,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q19",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q20",
+          "type": "multi_hop",
+          "recall": 0.5,
+          "mrr": 0.3333333333333333,
+          "ndcg": 0.3065735963827292,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q21",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q22",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q23",
+          "type": "multi_hop",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.8772153153380493,
+          "recall_at_3": 0.5
+        },
+        {
+          "id": "q24",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q25",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q26",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q27",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q28",
+          "type": "paraphrase",
+          "recall": 1.0,
+          "mrr": 0.25,
+          "ndcg": 0.43067655807339306,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q29",
+          "type": "paraphrase",
+          "recall": 0.0,
+          "mrr": 0.0,
+          "ndcg": 0.0,
+          "recall_at_3": 0.0
+        },
+        {
+          "id": "q30",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 0.9197207891481876,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q31",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q32",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        },
+        {
+          "id": "q33",
+          "type": "comparison",
+          "recall": 1.0,
+          "mrr": 1.0,
+          "ndcg": 1.0,
+          "recall_at_3": 1.0
+        }
+      ]
+    }
+  ]
+}
