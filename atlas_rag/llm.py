@@ -48,6 +48,7 @@ class LLM:
     def __init__(self, settings: Settings):
         self.settings = settings
         self.failures = 0
+        self.last_error = ""
         self.tokens = 0
         self._cache: dict[str, Any] = {}
         if settings.llm_cache_path and os.path.exists(settings.llm_cache_path):
@@ -64,8 +65,9 @@ class LLM:
             return self._cache[key]
         try:
             value = call()
-        except Exception:
+        except Exception as e:
             self.failures += 1
+            self.last_error = f"{type(e).__name__}: {e}"[:500]
             raise
         if self.settings.llm_cache_path:
             self._cache[key] = value

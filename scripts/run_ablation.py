@@ -172,8 +172,9 @@ def run_config(app: AtlasRAG, cfg: Config, embedder: str, cases: list[dict], k: 
             # a swallowed failure would silently turn into a lower score, so stop;
             # finished calls are cached and the next run continues from here
             raise SystemExit(
-                f"[ablation] {cfg.title}: вызов LLM упал после всех повторов (вопрос {case['id']}), "
-                f"скорее всего исчерпана квота. Отчёт не записан; перезапустите позже, "
+                f"[ablation] {cfg.title}: вызов LLM упал после всех повторов (вопрос {case['id']}). "
+                f"Ошибка: {app.llm.last_error}
+Отчёт не записан; перезапустите позже, "
                 f"готовые ответы возьмутся из {os.path.relpath(LLM_CACHE, ROOT)}."
             )
 
