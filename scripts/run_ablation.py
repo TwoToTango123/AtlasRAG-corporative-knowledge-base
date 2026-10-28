@@ -189,7 +189,7 @@ def run_config(app: AtlasRAG, cfg: Config, embedder: str, cases: list[dict], k: 
 def git_commit() -> str:
     try:
         return subprocess.check_output(
-            ["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, text=True
+            ["git", "describe", "--always", "--dirty"], cwd=ROOT, text=True
         ).strip()
     except (OSError, subprocess.CalledProcessError):
         return "unknown"
