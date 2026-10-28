@@ -50,6 +50,7 @@ class Settings:
     chars_per_token: float = 4.0        # rough heuristic for the splitter
 
     # --- Retrieval --------------------------------------------------------
+    retrieval_mode: str = "hybrid"      # hybrid | dense | sparse
     dense_top_k: int = 12               # candidates from vector search
     sparse_top_k: int = 12              # candidates from BM25
     rrf_k: int = 60                     # Reciprocal Rank Fusion constant

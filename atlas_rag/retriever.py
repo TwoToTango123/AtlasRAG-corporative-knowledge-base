@@ -31,11 +31,11 @@ class HybridRetriever:
         self.bm25 = bm25
         self.embedder = embedder
 
-    def _dense(self, query: str) -> list[tuple[str, float]]:
-        vec = self.embedder.embed([query])[0]
-        return self.store.search(vec, self.settings.dense_top_k)
-
-    def _dense_from_vec(self, vec: np.ndarray) -> list[tuple[str, float]]:
+    def _dense(self, query: str, hyde_text: str | None) -> list[tuple[str, float]]:
+        vec: np.ndarray = self.embedder.embed_queries([query])[0]
+        if hyde_text:
+            # the hypothetical answer is a document, so it gets the document prefix
+            vec = vec + self.embedder.embed_documents([hyde_text])[0]
         return self.store.search(vec, self.settings.dense_top_k)
 
     def retrieve(
@@ -43,24 +43,23 @@ class HybridRetriever:
     ) -> list[ScoredChunk]:
         """Return fused candidates for ``query``.
 
-        If ``hyde_text`` is provided, its embedding is averaged with the query
-        embedding for the dense leg (Hypothetical Document Embeddings) — a
-        hypothetical answer often lands closer to real answer passages than the
-        bare question does.
+        ``settings.retrieval_mode`` picks the legs: ``hybrid`` (dense + BM25
+        fused with RRF), ``dense`` or ``sparse``. If ``hyde_text`` is provided,
+        its embedding is added to the query embedding for the dense leg
+        (Hypothetical Document Embeddings) — a hypothetical answer often lands
+        closer to real answer passages than the bare question does.
         """
-        # Dense leg (optionally HyDE-blended)
-        if hyde_text:
-            q_vec = self.embedder.embed([query])[0]
-            h_vec = self.embedder.embed([hyde_text])[0]
-            blended = q_vec + h_vec
-            dense = self._dense_from_vec(blended)
-        else:
-            dense = self._dense(query)
+        mode = self.settings.retrieval_mode
+        if mode not in ("hybrid", "dense", "sparse"):
+            raise ValueError(f"unknown retrieval_mode: {mode!r}")
 
-        # Sparse leg
-        sparse = self.bm25.search(query, self.settings.sparse_top_k)
+        rankings: dict[str, list[tuple[str, float]]] = {}
+        if mode in ("hybrid", "dense"):
+            rankings["dense"] = self._dense(query, hyde_text)
+        if mode in ("hybrid", "sparse"):
+            rankings["sparse"] = self.bm25.search(query, self.settings.sparse_top_k)
 
-        fused = self._rrf({"dense": dense, "sparse": sparse})
+        fused = self._rrf(rankings)
         results: list[ScoredChunk] = []
         for chunk_id, score, per_source in fused[: self.settings.fused_top_k]:
             ch = self.store.get(chunk_id)

@@ -92,7 +92,7 @@ class RetrievalAgent:
         self.planner = planner
 
     # --- one search round (the tool implementation) -----------------------
-    def _do_search(self, query: str) -> list[ScoredChunk]:
+    def search_once(self, query: str) -> list[ScoredChunk]:
         hyde_text = self.planner.hyde(query) if self.settings.use_hyde else None
         candidates = self.retriever.retrieve(query, hyde_text=hyde_text)
         if self.settings.use_reranker:
@@ -163,7 +163,7 @@ class RetrievalAgent:
                 rationale = str(tu.input.get("rationale", "")).strip()
                 step += 1
                 log(f"  - поиск #{step}: {query!r}  ({rationale})")
-                hits = self._do_search(query) if query else []
+                hits = self.search_once(query) if query else []
                 trace.steps.append(
                     RetrievalStep(
                         step=step, query=query, rationale=rationale, hits=hits
@@ -184,7 +184,7 @@ class RetrievalAgent:
         if not trace.steps:
             # Агент ни разу не искал (редкость) — делаем один прямой поиск как страховку.
             log("  - запасной вариант: прямой поиск")
-            hits = self._do_search(question)
+            hits = self.search_once(question)
             trace.steps.append(
                 RetrievalStep(step=1, query=question, rationale="fallback", hits=hits)
             )

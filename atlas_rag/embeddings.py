@@ -26,11 +26,24 @@ from .config import Settings
 _WORD = re.compile(r"\w+")
 
 
+# Asymmetric retrieval models are trained with role prefixes (see model cards);
+# without them quality drops noticeably, so the comparison would be unfair.
+_PREFIXES: dict[str, tuple[str, str]] = {
+    "intfloat/multilingual-e5-small": ("query: ", "passage: "),
+    "intfloat/multilingual-e5-base": ("query: ", "passage: "),
+    "ai-forever/ru-en-RoSBERTa": ("search_query: ", "search_document: "),
+}
+
+
 class EmbeddingProvider(Protocol):
     dim: int
     name: str
 
     def embed(self, texts: list[str]) -> np.ndarray: ...
+
+    def embed_queries(self, texts: list[str]) -> np.ndarray: ...
+
+    def embed_documents(self, texts: list[str]) -> np.ndarray: ...
 
 
 def _l2_normalize(mat: np.ndarray) -> np.ndarray:
@@ -68,6 +81,12 @@ class HashingEmbeddings:
                 out[i, idx] += sign
         return _l2_normalize(out)
 
+    def embed_queries(self, texts: list[str]) -> np.ndarray:
+        return self.embed(texts)
+
+    def embed_documents(self, texts: list[str]) -> np.ndarray:
+        return self.embed(texts)
+
 
 class SentenceTransformerEmbeddings:
     """Wrapper around a sentence-transformers model."""
@@ -78,12 +97,19 @@ class SentenceTransformerEmbeddings:
         self._model = SentenceTransformer(model_name)
         self.dim = int(self._model.get_sentence_embedding_dimension())
         self.name = f"st:{model_name}"
+        self.query_prefix, self.doc_prefix = _PREFIXES.get(model_name, ("", ""))
 
     def embed(self, texts: list[str]) -> np.ndarray:
         vecs = self._model.encode(
             texts, convert_to_numpy=True, normalize_embeddings=True
         )
         return vecs.astype(np.float32)
+
+    def embed_queries(self, texts: list[str]) -> np.ndarray:
+        return self.embed([self.query_prefix + t for t in texts])
+
+    def embed_documents(self, texts: list[str]) -> np.ndarray:
+        return self.embed([self.doc_prefix + t for t in texts])
 
 
 def build_embedder(settings: Settings) -> EmbeddingProvider:

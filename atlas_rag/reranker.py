@@ -54,6 +54,7 @@ class Reranker:
     def __init__(self, settings: Settings, llm: LLM):
         self.settings = settings
         self.llm = llm
+        self.failures = 0
 
     def rerank(self, query: str, candidates: list[ScoredChunk]) -> list[ScoredChunk]:
         if not candidates:
@@ -81,6 +82,7 @@ class Reranker:
             )
         except Exception:
             # Grading is best-effort; fall back to fusion order on any failure.
+            self.failures += 1
             return candidates[: self.settings.rerank_top_k]
 
         by_id = {int(g["id"]): g for g in data.get("grades", [])}

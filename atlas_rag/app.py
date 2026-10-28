@@ -30,7 +30,7 @@ from .generator import Generator
 from .ingest import Ingestor, load_documents
 from .llm import LLM
 from .memory import Conversation
-from .models import AnswerResult
+from .models import AnswerResult, ScoredChunk
 from .query_planner import QueryPlanner
 from .reranker import Reranker
 from .retriever import HybridRetriever
@@ -106,6 +106,12 @@ class AtlasRAG:
         return VectorStore.exists(directory)
 
     # --- question answering ----------------------------------------------
+    def search(self, query: str) -> list[ScoredChunk]:
+        """One non-agentic retrieval round (HyDE / rerank per settings)."""
+        if self.settings.use_hyde or self.settings.use_reranker:
+            self.settings.require_api_key()
+        return self.agent.search_once(query)
+
     def ask(self, question: str) -> AnswerResult:
         if len(self.store) == 0:
             raise RuntimeError(

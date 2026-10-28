@@ -50,6 +50,7 @@ class QueryPlanner:
     def __init__(self, settings: Settings, llm: LLM):
         self.settings = settings
         self.llm = llm
+        self.hyde_failures = 0
 
     def hyde(self, question: str) -> str:
         try:
@@ -60,6 +61,7 @@ class QueryPlanner:
                 max_tokens=300,
             )
         except Exception:
+            self.hyde_failures += 1
             return ""
 
     def decompose(self, question: str) -> list[str]:

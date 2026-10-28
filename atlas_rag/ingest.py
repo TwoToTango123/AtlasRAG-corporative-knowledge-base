@@ -61,8 +61,7 @@ class Ingestor:
         if not all_chunks:
             return 0
 
-        # Embed in batches to keep memory bounded on large corpora.
-        vectors = self.embedder.embed([c.text for c in all_chunks])
+        vectors = self.embedder.embed_documents([c.text for c in all_chunks])
         self.store.add(all_chunks, vectors)
 
         # Rebuild BM25 over the full corpus (cheap; pure-Python).
