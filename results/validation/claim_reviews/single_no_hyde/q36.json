@@ -1,0 +1,99 @@
+{
+  "status": "ok",
+  "id": "q36",
+  "answerable": false,
+  "claims": [
+    "В предоставленной документации отсутствуют сведения о манипуляторе NW-300.",
+    "В спецификациях документации описаны только модели NW-100 и NW-200.",
+    "На основании предоставленной документации невозможно указать грузоподъёмность манипулятора NW-300."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Документы содержат разделы только NW-100 и NW-200, упоминаний NW-300 нет.",
+      "unit_ids": [
+        "s0l2",
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l2",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 103,
+          "end": 144,
+          "text": "## Манипулятор NW-100 (начальный уровень)"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 387,
+          "end": 431,
+          "text": "## Манипулятор NW-200 (промышленный уровень)"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Спецификации разделены на два подраздела для NW-100 и NW-200, других моделей нет.",
+      "unit_ids": [
+        "s0l2",
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l2",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 103,
+          "end": 144,
+          "text": "## Манипулятор NW-100 (начальный уровень)"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 387,
+          "end": 431,
+          "text": "## Манипулятор NW-200 (промышленный уровень)"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Параметры грузоподъёмности даны для NW-100 и NW-200, для NW-300 сведений нет.",
+      "unit_ids": [
+        "s0l3",
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 146,
+          "end": 174,
+          "text": "- Грузоподъёмность: **5 кг**"
+        },
+        {
+          "id": "s0l12",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 433,
+          "end": 462,
+          "text": "- Грузоподъёмность: **18 кг**"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "3acb2e6da85c01ca3d816b198179ca64248c04e106304dc3eea3b5054d483254",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

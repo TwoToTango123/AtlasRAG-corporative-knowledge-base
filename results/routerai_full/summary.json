@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-03T07:16:10.270726+00:00",
+  "runs": [
+    {
+      "model": "openai/gpt-oss-120b",
+      "completed": 39,
+      "expected": 39,
+      "metrics": {
+        "correctness": 0.8484848484848485,
+        "citation_quality": 0.7363636363636363,
+        "faithfulness": 0.8787878787878788,
+        "recall": 0.9696969696969697,
+        "mrr": 0.9393939393939394,
+        "ndcg": 0.9448963726148819,
+        "refusal_rate": 1.0,
+        "false_refusal_rate": 0.030303030303030304,
+        "latency_s": 44.84924101794455,
+        "searches": 3.2564102564102564,
+        "verbatim_quote_rate": 0.6060606060606061
+      }
+    },
+    {
+      "model": "deepseek/deepseek-v4.1-flash-1017",
+      "completed": 39,
+      "expected": 39,
+      "metrics": {
+        "correctness": 0.9121212121212121,
+        "citation_quality": 0.7424242424242424,
+        "faithfulness": 0.8787878787878788,
+        "recall": 1.0,
+        "mrr": 0.9848484848484849,
+        "ndcg": 0.9863833497793831,
+        "refusal_rate": 1.0,
+        "false_refusal_rate": 0.030303030303030304,
+        "latency_s": 37.76588260769122,
+        "searches": 3.4615384615384617,
+        "verbatim_quote_rate": 1.0
+      }
+    }
+  ],
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "max_agent_steps": 4,
+  "environment": {
+    "groq": "1.7.0",
+    "httpx": "0.28.1",
+    "sentence-transformers": "6.2.0"
+  },
+  "fast_model": "openai/gpt-oss-20b",
+  "judge_model": "qwen/qwen3.8-27b",
+  "providers": {
+    "openai/gpt-oss-120b": "near-ai",
+    "deepseek/deepseek-v4.1-flash-1017": "morph",
+    "openai/gpt-oss-20b": "primeintellect",
+    "qwen/qwen3.8-27b": "primeintellect"
+  },
+  "budget_rub": 90.0,
+  "budget_used_rub": 23.44036586224227,
+  "balance_rub": 94.96867570529069,
+  "usage_by_model": {
+    "openai/gpt-oss-120b": {
+      "prompt_tokens": 345890,
+      "completion_tokens": 28377,
+      "cost_rub": 1.268045009656433,
+      "calls": 187
+    },
+    "qwen/qwen3.8-27b": {
+      "prompt_tokens": 15027,
+      "completion_tokens": 4256,
+      "cost_rub": 0.11568684569954271,
+      "calls": 68
+    },
+    "openai/gpt-oss-20b": {
+      "prompt_tokens": 939786,
+      "completion_tokens": 163794,
+      "cost_rub": 1.354734377420966,
+      "calls": 650
+    },
+    "deepseek/deepseek-v4.1-flash-1017": {
+      "prompt_tokens": 256564,
+      "completion_tokens": 27460,
+      "cost_rub": 2.2483342630337964,
+      "calls": 121
+    }
+  },
+  "api_error_events": {
+    "reconciled_error": 10,
+    "api_error": 10,
+    "reserved": 3
+  },
+  "limits": [
+    "One run per model on 39 demo cases; no repeated seeds.",
+    "Case latency is measured on successful attempts; resumed cases can include cached steps.",
+    "Judge sees expected answer, generated answer and citation count, not source texts.",
+    "Verbatim citation matches are checked separately against the actual chunks."
+  ],
+  "actual_account_spend_rub": 5.031324294709307,
+  "cost_note": "Actual account spend is the initial 100 RUB minus live balance; budget_used_rub includes unresolved conservative reservations, not just debits."
+}

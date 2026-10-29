@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "id": "q15",
+  "answerable": true,
+  "claims": [
+    "NW-TCH-01 является пультом обучения (teach pendant).",
+    "NW-TCH-01 совместим с манипуляторами NW-100.",
+    "NW-TCH-01 совместим с манипуляторами NW-200.",
+    "Цена NW-TCH-01 составляет 210 000 ₽."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник прямо указывает описание товара.",
+      "unit_ids": [
+        "s0l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l8",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 426,
+          "end": 501,
+          "text": "| NW-TCH-01 | Пульт обучения (teach pendant) | NW-100, NW-200 | 210 000 ₽ |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Совместимость с NW-100 указана в таблице каталога.",
+      "unit_ids": [
+        "s0l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l8",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 426,
+          "end": 501,
+          "text": "| NW-TCH-01 | Пульт обучения (teach pendant) | NW-100, NW-200 | 210 000 ₽ |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Совместимость с NW-200 указана в таблице каталога.",
+      "unit_ids": [
+        "s0l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l8",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 426,
+          "end": 501,
+          "text": "| NW-TCH-01 | Пульт обучения (teach pendant) | NW-100, NW-200 | 210 000 ₽ |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Цена товара точно указана в таблице.",
+      "unit_ids": [
+        "s0l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l8",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 426,
+          "end": 501,
+          "text": "| NW-TCH-01 | Пульт обучения (teach pendant) | NW-100, NW-200 | 210 000 ₽ |"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "6390590301d1d42a2cb7afa5f46a677560ab18cbf77edc13cc6ab543b60cfd14",
+  "source_entry_sha256": "8ee35db3fce56fb2708f6cd90289b32e0f8560b542a875e1bd2de3b820a90d78",
+  "verifier": "v2-scenario-aware"
+}

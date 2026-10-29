@@ -1,0 +1,96 @@
+{
+  "status": "ok",
+  "id": "q33",
+  "answerable": true,
+  "claims": [
+    "Доставка комплектующих по Москве и области занимает 2 рабочих дня",
+    "Доставка комплектующих в другие регионы России занимает 5–7 рабочих дней",
+    "По Москве доступна экспресс-доставка на следующий день",
+    "Стоимость экспресс-доставки по Москве составляет 3 500 ₽"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник s0l12 прямо указывает срок 2 рабочих дня для Москвы и области.",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 626,
+          "end": 664,
+          "text": "- Москва и область: **2 рабочих дня**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник s0l13 подтверждает срок 5–7 рабочих дней для других регионов России.",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 665,
+          "end": 711,
+          "text": "- Другие регионы России: **5–7 рабочих дней**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Источник s0l14 подтверждает доступность экспресс-доставки на следующий день по Москве.",
+      "unit_ids": [
+        "s0l14"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l14",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 712,
+          "end": 770,
+          "text": "- Экспресс-доставка по Москве на следующий день — 3 500 ₽."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Источник s0l14 указывает стоимость экспресс-доставки по Москве в 3 500 ₽.",
+      "unit_ids": [
+        "s0l14"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l14",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 712,
+          "end": 770,
+          "text": "- Экспресс-доставка по Москве на следующий день — 3 500 ₽."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true,
+    true
+  ],
+  "answer_sha256": "8bb3b9f6f0f776a43fdee6100832ef865a9d4eb1af36466d47d59f6ee5fa1688",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

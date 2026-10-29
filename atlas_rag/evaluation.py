@@ -202,7 +202,7 @@ class Evaluator:
                 messages=[{"role": "user", "content": user}],
                 schema=_JUDGE_SCHEMA,
                 model=self.settings.judge_model,
-                max_tokens=512,
+                max_tokens=self.settings.judge_max_tokens,
             )
         except Exception:
             return {"correctness": 0.0, "citation_quality": 0.0, "verdict": "ошибка оценщика"}

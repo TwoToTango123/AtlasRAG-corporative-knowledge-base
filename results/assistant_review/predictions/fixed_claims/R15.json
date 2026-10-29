@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "review_id": "R15",
+  "claims": [
+    "Тариф AtlasControl Enterprise поддерживает неограниченное число манипуляторов.",
+    "Лимит API тарифа AtlasControl Enterprise составляет 6000 запросов в минуту."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник указывает, что тариф Enterprise не имеет ограничений на манипуляторы.",
+      "unit_ids": [
+        "s0l23",
+        "s0l24"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l23",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 885,
+          "end": 958,
+          "text": "поддерживает до **10 подключённых манипуляторов**; тариф Enterprise — без"
+        },
+        {
+          "id": "s0l24",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 959,
+          "end": 1029,
+          "text": "ограничений. Лимит API составляет **600 запросов в минуту** на рабочее"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "В источнике прямо указан лимит API в 6 000 запросов в минуту для Enterprise.",
+      "unit_ids": [
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    }
+  ],
+  "purpose": "Verifier agreement on fixed assistant segmentation, labels withheld."
+}

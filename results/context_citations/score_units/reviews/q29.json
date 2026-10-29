@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q29",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 0.8,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ частично оправдан, так как источники не упоминают ChatGPT, но игнорирует прямой запрет на неодобренные ИИ-инструменты, который является основанием для отрицательного ответа. Отсутствие цитат снижает оценку за качество цитирования.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "d6b74bcfda41f23eb2a8d327e4a0d30b9b5ff9de92b2c31567ed51c964678ed8"
+}

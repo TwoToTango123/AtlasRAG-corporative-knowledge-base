@@ -1,0 +1,28 @@
+{
+  "id": "q15",
+  "answerable": true,
+  "payload_sha256": "76ea01fa0bd8da26fa774a24591702ce03ed2545c14da0d48471429c24583802",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует вопросу и эталону. Все факты подтверждены цитатой из источника.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Что такое NW-TCH-01 и сколько он стоит?",
+    "answer": "NW-TCH-01 — это пульт обучения (teach pendant), совместимый с манипуляторами NW-100 и NW-200. Его цена — 210 000 ₽.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "travel_expenses_3",
+  "split": "calibration",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l3"
+    ],
+    "rationale": "Тариф Комфорт разрешён только после 22:00, не в любое время.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l3",
+        "chunk_id": "travel_expenses.md",
+        "start": 176,
+        "end": 246,
+        "text": "оплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+      }
+    ]
+  }
+}

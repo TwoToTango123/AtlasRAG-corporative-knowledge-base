@@ -1,0 +1,28 @@
+{
+  "id": "q11",
+  "answerable": true,
+  "payload_sha256": "6f590f551f621ffbb85dad104cb9a6d6ada2e43fd95080e5603dc6c337923c5c",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 0.7,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ частично верен (срок указан), но опущены важные детали из эталона: способ подачи (Workday) и необходимость одобрения. Цитата корректна и подтверждает часть ответа.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "За какой срок нужно подавать заявку на отпуск?",
+    "answer": "Заявку на отпуск нужно подавать не менее чем за 2 недели до планового отпуска.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

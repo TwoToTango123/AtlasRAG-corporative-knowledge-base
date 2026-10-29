@@ -1,0 +1,456 @@
+{
+  "status": "ok",
+  "id": "hop10",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Риф?",
+    "answer": "Не могу определить лимит для проекта «Риф»: в доступных сведениях нет указания, какому пакету (K-14, K-11 или K-09) соответствует этот проект. Поэтому назвать действующий на 02.11.2026 лимит нельзя.",
+    "citations": [
+      {
+        "chunk_id": "806d8e48c9f5ef18",
+        "source": "policy_K14_current.md",
+        "quote": "Пакету K-14 соответствует лимит компенсации 739 рублей за один отчёт."
+      },
+      {
+        "chunk_id": "8f5c6a36f3e0974c",
+        "source": "policy_K11_current.md",
+        "quote": "Пакету K-11 соответствует лимит компенсации 610 рублей за один отчёт."
+      },
+      {
+        "chunk_id": "ad71ea3972d3fd8a",
+        "source": "policy_K09_current.md",
+        "quote": "Пакету K-09 соответствует лимит компенсации 524 рублей за один отчёт."
+      }
+    ],
+    "confidence": 0.1,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Риф?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "лимит компенсации за один отчёт проект Риф",
+          "rationale": "Найти базовый лимит компенсации для проекта Риф",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "ad71ea3972d3fd8a",
+                "doc_id": "cfbc9e182d3d11dd",
+                "source": "policy_K09_current.md",
+                "text": "# Норматив пакета K-09\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-09 соответствует лимит компенсации 524 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.000769230769231,
+              "relevance": 10.0,
+              "reason": "exactly the current limit for K‑09, which applies to project Rif.",
+              "sources": {
+                "dense": 5.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "7b71e2e17ca73e5a",
+                "doc_id": "761cfebb949f652b",
+                "source": "policy_K09_archive.md",
+                "text": "# Норматив пакета K-09\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-09 соответствует лимит компенсации 1301 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 6.000806451612903,
+              "relevance": 6.0,
+              "reason": "provides historical limit for K‑09, which was the package for project Rif, but the question likely seeks the current limit. Still useful but not definitive.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ee1dcec71efd9efe",
+                "doc_id": "f72f7d33b945ff1e",
+                "source": "project_09.md",
+                "text": "# Проект Риф\nКарточка проекта Риф: для расходов проекта назначен пакет K-14.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 3.001639344262295,
+              "relevance": 3.0,
+              "reason": "mentions project Rif but only that compensation follows current normative; no specific limit provided. Neutral relevance.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "196bf7d5229d4960",
+                "doc_id": "bc0ea025e11ed367",
+                "source": "project_00.md",
+                "text": "# Проект Лира\nКарточка проекта Лира: для расходов проекта назначен пакет K-17.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0015877016129033,
+              "relevance": 1.0,
+              "reason": "mentions another project; irrelevant to project Rif.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "d90179ad39d006ad",
+                "doc_id": "dc7404cd341bada0",
+                "source": "policy_K01_archive.md",
+                "text": "# Норматив пакета K-01\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-01 соответствует лимит компенсации 957 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0007936507936508,
+              "relevance": 1.0,
+              "reason": "irrelevant package K‑01.",
+              "sources": {
+                "dense": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "query": "действующий лимит компенсации на 02.11.2026 Риф отчёт",
+          "rationale": "Проверить, какой лимит действует на указанную дату",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "8f5c6a36f3e0974c",
+                "doc_id": "0446bca69cc5d4cc",
+                "source": "policy_K11_current.md",
+                "text": "# Норматив пакета K-11\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-11 соответствует лимит компенсации 610 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001505887681159,
+              "relevance": 10.0,
+              "reason": "directly provides current compensation limit for package K‑11, which is the relevant K‑package for RIF reports as of 02.11.2026",
+              "sources": {
+                "dense": 9.0,
+                "sparse": 4.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ad71ea3972d3fd8a",
+                "doc_id": "cfbc9e182d3d11dd",
+                "source": "policy_K09_current.md",
+                "text": "# Норматив пакета K-09\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-09 соответствует лимит компенсации 524 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 5.000819672131148,
+              "relevance": 5.0,
+              "reason": "offers current limit for K‑09, a different K‑package; may be indirectly useful if RIF uses K‑09, but not assumed",
+              "sources": {
+                "dense": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "a224b5f70bcb323d",
+                "doc_id": "488e06efa1db67f8",
+                "source": "policy_K02_current.md",
+                "text": "# Норматив пакета K-02\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-02 соответствует лимит компенсации 223 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 5.000806451612903,
+              "relevance": 5.0,
+              "reason": "current limit for K‑02; useful if RIF uses K‑02, but not explicit",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "1aad246d2726e134",
+                "doc_id": "494db5ce23bc8fcc",
+                "source": "policy_K06_current.md",
+                "text": "# Норматив пакета K-06\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-06 соответствует лимит компенсации 395 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 5.00078125,
+              "relevance": 5.0,
+              "reason": "current limit for K‑06; possibly relevant if RIF uses K‑06, but not certain",
+              "sources": {
+                "dense": 4.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ee1dcec71efd9efe",
+                "doc_id": "f72f7d33b945ff1e",
+                "source": "project_09.md",
+                "text": "# Проект Риф\nКарточка проекта Риф: для расходов проекта назначен пакет K-14.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 3.0008196721311475,
+              "relevance": 3.0,
+              "reason": "mentions only that RIF uses package K‑14 and compensation is determined by its current normative; does not state the limit itself",
+              "sources": {
+                "sparse": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "query": "параметры расчёта лимита компенсации тип отчёта проект",
+          "rationale": "Выяснить, какие параметры влияют на расчёт лимита",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "7b71e2e17ca73e5a",
+                "doc_id": "761cfebb949f652b",
+                "source": "policy_K09_archive.md",
+                "text": "# Норматив пакета K-09\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-09 соответствует лимит компенсации 1301 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.000793650793652,
+              "relevance": 10.0,
+              "reason": "Fragment explicitly provides the compensation limit (1301 rubles) for package K-09 for one report, which directly addresses the query about limit parameters for report type.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "196bf7d5229d4960",
+                "doc_id": "bc0ea025e11ed367",
+                "source": "project_00.md",
+                "text": "# Проект Лира\nКарточка проекта Лира: для расходов проекта назначен пакет K-17.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0016009221311475412,
+              "relevance": 0.0,
+              "reason": "Fragment only states that compensation is set by the current norm of the assigned package; it does not provide specific limit parameters for report type.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e81495bd16ea0a46",
+                "doc_id": "4b47f226479713b1",
+                "source": "project_03.md",
+                "text": "# Проект Ирис\nКарточка проекта Ирис: для расходов проекта назначен пакет K-11.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.001587701612903226,
+              "relevance": 0.0,
+              "reason": "Same as fragment 0 – no concrete limit information.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 4.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8759493a44a19ec6",
+                "doc_id": "6d3880a6db899e61",
+                "source": "project_02.md",
+                "text": "# Проект Вега\nКарточка проекта Вега: для расходов проекта назначен пакет K-29.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0015628815628815629,
+              "relevance": 0.0,
+              "reason": "Same as fragment 0 – no concrete limit information.",
+              "sources": {
+                "dense": 5.0,
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ee1dcec71efd9efe",
+                "doc_id": "f72f7d33b945ff1e",
+                "source": "project_09.md",
+                "text": "# Проект Риф\nКарточка проекта Риф: для расходов проекта назначен пакет K-14.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0015339578454332554,
+              "relevance": 0.0,
+              "reason": "Same as fragment 0 – no concrete limit information.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 10.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "query": "норматив пакета K-14 действует лимит компенсации за один отчёт",
+          "rationale": "Найти действующий норматив для пакета K-14, назначенного проекту Риф",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "806d8e48c9f5ef18",
+                "doc_id": "f1aab1c689a167c1",
+                "source": "policy_K14_current.md",
+                "text": "# Норматив пакета K-14\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-14 соответствует лимит компенсации 739 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001626123744051,
+              "relevance": 10.0,
+              "reason": "Пакет K-14 упоминается и содержит действующий лимит компенсации 739 руб. за один отчёт, что полностью отвечает запросу. Считаем 10.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "dfedd17ccadcc329",
+                "doc_id": "d76bf0470aa138c4",
+                "source": "policy_K14_archive.md",
+                "text": "# Норматив пакета K-14\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-14 соответствует лимит компенсации 1516 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 5.0016261237440505,
+              "relevance": 5.0,
+              "reason": "Пакет K-14 упоминается, но это архивная редакция с устаревшим лимитом; запрос о действующем лимите, поэтому соответствует 3–6. Считаем 5.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ee1dcec71efd9efe",
+                "doc_id": "f72f7d33b945ff1e",
+                "source": "project_09.md",
+                "text": "# Проект Риф\nКарточка проекта Риф: для расходов проекта назначен пакет K-14.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 4.000793650793651,
+              "relevance": 4.0,
+              "reason": "Пакет K‑14 упоминается, но текст не содержит конкретного лимита компенсации за отчёт; только говорит, что определяется действующим нормативом. Небольшая релевантность, 4.",
+              "sources": {
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "05bb6a70eac63ac5",
+                "doc_id": "82942c6a5485685e",
+                "source": "policy_K13_archive.md",
+                "text": "# Норматив пакета K-13\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-13 соответствует лимит компенсации 1473 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0007936507936508,
+              "relevance": 1.0,
+              "reason": "Упоминается другой пакет (K‑13), не соответствует запросу. Считаем 1.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "0726ca893cf108a7",
+                "doc_id": "d2e44da960ddb2e8",
+                "source": "policy_K04_archive.md",
+                "text": "# Норматив пакета K-04\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-04 соответствует лимит компенсации 1086 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.00078125,
+              "relevance": 1.0,
+              "reason": "Упоминается пакет K‑04, не релевантен. Считаем 1.",
+              "sources": {
+                "dense": 4.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": [
+      "model_reports_answer_not_found"
+    ]
+  },
+  "latency_s": 0.6142631999682635,
+  "graded": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Риф?",
+    "answer": "Не могу определить лимит для проекта «Риф»: в доступных сведениях нет указания, какому пакету (K-14, K-11 или K-09) соответствует этот проект. Поэтому назвать действующий на 02.11.2026 лимит нельзя.",
+    "answerable": true,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.6131471927654584
+    }
+  },
+  "first_search_metrics": {
+    "recall": 0.5,
+    "mrr": 0.3333333333333333,
+    "ndcg": 0.3065735963827292
+  },
+  "first_search_has_both_hops": false,
+  "final_has_both_hops": false,
+  "amount_present": false,
+  "obsolete_amount_present": false,
+  "trajectory_audit": {
+    "rounds": [
+      {
+        "query": "лимит компенсации за один отчёт проект Риф",
+        "new_chunks": 5,
+        "new_gold_chunks": 1,
+        "gold_chunks": 1
+      },
+      {
+        "query": "действующий лимит компенсации на 02.11.2026 Риф отчёт",
+        "new_chunks": 3,
+        "new_gold_chunks": 0,
+        "gold_chunks": 1
+      },
+      {
+        "query": "параметры расчёта лимита компенсации тип отчёта проект",
+        "new_chunks": 2,
+        "new_gold_chunks": 0,
+        "gold_chunks": 1
+      },
+      {
+        "query": "норматив пакета K-14 действует лимит компенсации за один отчёт",
+        "new_chunks": 4,
+        "new_gold_chunks": 1,
+        "gold_chunks": 2
+      }
+    ],
+    "gold_total": 2,
+    "gold_covered": 2,
+    "zero_new_gold_rounds_after_first": 2,
+    "zero_new_chunk_rounds_after_first": 0
+  },
+  "verbatim_matches": [
+    true,
+    true,
+    true
+  ]
+}

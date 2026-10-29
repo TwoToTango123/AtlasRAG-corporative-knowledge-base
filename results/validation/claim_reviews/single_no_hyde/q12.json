@@ -1,0 +1,102 @@
+{
+  "status": "ok",
+  "id": "q12",
+  "answerable": true,
+  "claims": [
+    "Ошибка ERR-VPN-720 означает, что истёк сертификат устройства",
+    "Для устранения ошибки ERR-VPN-720 необходимо переустановить профиль VPN",
+    "Профиль VPN следует переустановить через Портал самообслуживания",
+    "Для устранения ошибки ERR-VPN-720 необходимо перезагрузить ноутбук"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники прямо связывают код ошибки с истечением сертификата.",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 121,
+          "end": 199,
+          "text": "- `ERR-VPN-720`: истёк сертификат устройства. Переустановите профиль VPN через"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Среди мер устранения прямо указано переустановить профиль VPN.",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 121,
+          "end": 199,
+          "text": "- `ERR-VPN-720`: истёк сертификат устройства. Переустановите профиль VPN через"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Источник указывает использование Портала самообслуживания для переустановки.",
+      "unit_ids": [
+        "s0l3",
+        "s0l4"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 121,
+          "end": 199,
+          "text": "- `ERR-VPN-720`: истёк сертификат устройства. Переустановите профиль VPN через"
+        },
+        {
+          "id": "s0l4",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 200,
+          "end": 250,
+          "text": "  Портал самообслуживания и перезагрузите ноутбук."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Источник предписывает перезагрузить ноутбук после переустановки профиля.",
+      "unit_ids": [
+        "s0l4"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l4",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 200,
+          "end": 250,
+          "text": "  Портал самообслуживания и перезагрузите ноутбук."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "62717b02c70a9cdc582957fb0230c8a7fea5db88b1d888db27d965b83fd8b360",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

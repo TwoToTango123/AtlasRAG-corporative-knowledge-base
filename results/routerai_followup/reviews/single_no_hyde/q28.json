@@ -1,0 +1,28 @@
+{
+  "id": "q28",
+  "answerable": true,
+  "payload_sha256": "7d742115571d96b11af701c786b4861aa6f37280762ae5c9388006750ab33779",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам, цитата точная и подтверждает факт.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+    "answer": "За каждую командировку по России выплачивают 1 500 ₽ в день (суточные).",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

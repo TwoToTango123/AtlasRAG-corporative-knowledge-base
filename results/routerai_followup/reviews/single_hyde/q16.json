@@ -1,0 +1,28 @@
+{
+  "id": "q16",
+  "answerable": true,
+  "payload_sha256": "ffeff4793d542439aec02a7bf30de769d5b490665f110d8c9ecdb3dec89d8a4a",
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует вопросу и эталону. Цитата дословно подтверждена в указанном чанке и поддерживает утверждение. Ошибок не обнаружено.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+    "answer": "Чтобы запросить эскалацию, клиенту нужно ответить в тикете словом «ESCALATE».",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

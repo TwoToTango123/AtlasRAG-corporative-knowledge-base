@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "hr_timeoff_2",
+  "split": "calibration",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l1",
+      "s0l2"
+    ],
+    "rationale": "Стаж один год относится к диапазону 0–2 года, где положено 18 дней.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "hr_timeoff.md",
+        "start": 30,
+        "end": 104,
+        "text": "Штатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:"
+      },
+      {
+        "id": "s0l2",
+        "chunk_id": "hr_timeoff.md",
+        "start": 106,
+        "end": 135,
+        "text": "- 0–2 года: **18 дней** в год"
+      }
+    ]
+  }
+}

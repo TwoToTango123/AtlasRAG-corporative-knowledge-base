@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "security_policy_2",
+  "split": "heldout",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "rationale": "Источник указывает ротацию каждые 90 дней, а не 180.",
+    "unit_ids": [
+      "s0l7"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l7",
+        "chunk_id": "security_policy.md",
+        "start": 424,
+        "end": 477,
+        "text": "  хранилище секретов и ротируются каждые **90 дней**."
+      }
+    ]
+  }
+}

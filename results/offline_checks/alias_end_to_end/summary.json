@@ -1,0 +1,115 @@
+{
+  "complete": true,
+  "views": 6,
+  "distinct_case_queries": 4,
+  "fresh_paid_calls_recorded": 12,
+  "fresh_recorded_tokens": 26810,
+  "stage_cost_rub": 0.10369156784376798,
+  "balance_rub": 67.73655480898472,
+  "original_account_spend_rub": 32.26344519101528,
+  "budget_used_rub": 71.50523810724205,
+  "human_packet_unchanged": true,
+  "results": [
+    {
+      "id": "q06",
+      "variant": "compact",
+      "retrieval": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "quote_matches": [
+        true,
+        true
+      ],
+      "warnings": []
+    },
+    {
+      "id": "q06",
+      "variant": "original",
+      "retrieval": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "quote_matches": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "warnings": [
+        "split_long_citation:dc62c66b4de8f67f:5"
+      ]
+    },
+    {
+      "id": "q06",
+      "variant": "restored",
+      "retrieval": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "quote_matches": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "warnings": [
+        "split_long_citation:dc62c66b4de8f67f:5"
+      ]
+    },
+    {
+      "id": "q22",
+      "variant": "compact",
+      "retrieval": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "quote_matches": [
+        true,
+        true
+      ],
+      "warnings": []
+    },
+    {
+      "id": "q22",
+      "variant": "original",
+      "retrieval": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "quote_matches": [
+        true,
+        true
+      ],
+      "warnings": []
+    },
+    {
+      "id": "q22",
+      "variant": "restored",
+      "retrieval": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "quote_matches": [
+        true,
+        true
+      ],
+      "warnings": []
+    }
+  ],
+  "limits": [
+    "Two known failures only. No generalization claim.",
+    "Original/restored identical queries are reused, not independent runs.",
+    "No automatic correctness truth assigned; answers reviewed against actual source documents."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "security_policy_0",
+  "split": "heldout",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l6",
+      "s0l7"
+    ],
+    "rationale": "Источники прямо указывают на ротацию привилегированных данных каждые 90 дней.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l6",
+        "chunk_id": "security_policy.md",
+        "start": 345,
+        "end": 423,
+        "text": "- Привилегированные (административные) учётные данные хранятся в корпоративном"
+      },
+      {
+        "id": "s0l7",
+        "chunk_id": "security_policy.md",
+        "start": 424,
+        "end": 477,
+        "text": "  хранилище секретов и ротируются каждые **90 дней**."
+      }
+    ]
+  }
+}

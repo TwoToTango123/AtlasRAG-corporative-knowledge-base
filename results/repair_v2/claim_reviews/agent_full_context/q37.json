@@ -1,0 +1,224 @@
+{
+  "status": "ok",
+  "id": "q37",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации нет сведений о том, как рассчитывается годовая премия сотрудников.",
+    "Документ \"политика отпусков\" не описывает порядок расчёта или начисления годовой премии.",
+    "Документ \"положение о командировках\" не описывает порядок расчёта или начисления годовой премии.",
+    "Документ \"SLA поддержки\" не описывает порядок расчёта или начисления годовой премии.",
+    "Документ \"онбординг\" не описывает порядок расчёта или начисления годовой премии."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "None of the provided sources mention the calculation or accrual of annual employee bonuses.",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Положение о командировках и расходах"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 0,
+          "end": 38,
+          "text": "# Northwind Robotics — Поддержка и SLA"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "The document covers PTO, sick leave, and contractor rules, but contains no information on bonuses.",
+      "unit_ids": [
+        "s0l0",
+        "s0l2",
+        "s0l11",
+        "s0l15"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s0l2",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 136,
+          "end": 164,
+          "text": "## Оплачиваемый отпуск (PTO)"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 574,
+          "end": 587,
+          "text": "## Подрядчики"
+        },
+        {
+          "id": "s0l15",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 802,
+          "end": 815,
+          "text": "## Больничные"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "This policy details business travel expenses and per diems, but does not mention employee annual bonuses.",
+      "unit_ids": [
+        "s1l0",
+        "s1l2",
+        "s1l6",
+        "s1l21"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l0",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Положение о командировках и расходах"
+        },
+        {
+          "id": "s1l2",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 126,
+          "end": 154,
+          "text": "## Согласование командировки"
+        },
+        {
+          "id": "s1l6",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 372,
+          "end": 383,
+          "text": "## Суточные"
+        },
+        {
+          "id": "s1l21",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 1112,
+          "end": 1140,
+          "text": "## Представительские расходы"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "The SLA document focuses on support levels, response times, and service credits for clients, not employee bonuses.",
+      "unit_ids": [
+        "s3l0",
+        "s3l2",
+        "s3l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s3l0",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 0,
+          "end": 38,
+          "text": "# Northwind Robotics — Поддержка и SLA"
+        },
+        {
+          "id": "s3l2",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 109,
+          "end": 128,
+          "text": "## Уровни поддержки"
+        },
+        {
+          "id": "s3l10",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 579,
+          "end": 616,
+          "text": "## SLA по времени ответа (Enterprise)"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "The onboarding guide covers probation, day one activities, and training, with no mention of annual bonuses.",
+      "unit_ids": [
+        "s4l0",
+        "s4l2",
+        "s4l6",
+        "s4l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s4l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        },
+        {
+          "id": "s4l2",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 151,
+          "end": 172,
+          "text": "## Испытательный срок"
+        },
+        {
+          "id": "s4l6",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 377,
+          "end": 391,
+          "text": "## Первый день"
+        },
+        {
+          "id": "s4l11",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 640,
+          "end": 664,
+          "text": "## Обязательное обучение"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "2cb0d5fff41b75e32677ec97416f45bff70485754106fc322a6b14ee57dd4b77",
+  "source_entry_sha256": "4c349d1b6545062b04a055d0575c90bf2092b99b4abd00b93df15be9d2cf2c64",
+  "verifier": "v2-scenario-aware"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q33",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует вопросу и эталону, а также включает верную дополнительную информацию из источника. Все цитаты точны.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "d6ecb7468d81bb5de353a163975de613a075062e03fdce25dfd16eb6f44784e2"
+}

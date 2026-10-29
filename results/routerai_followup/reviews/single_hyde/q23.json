@@ -1,0 +1,28 @@
+{
+  "id": "q23",
+  "answerable": true,
+  "payload_sha256": "5c8c1d4e2bfec0b8a6536c5ab92d8ab4c86b2c71a26e5900911e33cf65e01342",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты точны и подтверждают утверждения о сроках испытательного периода и условиях перехода на удалёнку.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+    "answer": "Нет, сразу после выхода на работу перейти на полностью удалённый формат нельзя: это возможно только после успешного прохождения испытательного срока. Для большинства сотрудников испытательный срок составляет 3 месяца, для руководителей и главных инженеров — 6 месяцев.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

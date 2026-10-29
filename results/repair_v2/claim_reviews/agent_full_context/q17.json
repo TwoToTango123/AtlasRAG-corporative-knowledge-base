@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "id": "q17",
+  "answerable": true,
+  "claims": [
+    "Ошибка ERR-VPN-431 означает, что превышено число одновременных подключений.",
+    "Одна учётная запись может быть подключена к VPN не более чем с 2 устройств."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Ошибка описана как превышение числа одновременных подключений.",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 251,
+          "end": 330,
+          "text": "- `ERR-VPN-431`: превышено число одновременных подключений. Одна учётная запись"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Лимит в 2 устройства подтвержден текстом источника.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 331,
+          "end": 403,
+          "text": "  может быть подключена не более чем с **2 устройств**; отключите VPN на"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "f89054976fc34a55d995174f67328ae763f6d603787d6fa91c9fa509b0d3505a",
+  "source_entry_sha256": "19aef7abaab1104f4fa622c557418fd09da702b7576a499211dc54992af4260b",
+  "verifier": "v2-scenario-aware"
+}

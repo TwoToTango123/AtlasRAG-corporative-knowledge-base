@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\huggingface_hub\file_download.py:149: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\1\.cache\huggingface\hub\models--MoritzLaurer--mDeBERTa-v3-base-mnli-xnli. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\torch\jit\_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Error while downloading from https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-mnli-xnli/resolve/8adb042d524ecd5c26d3e3ba0e3fbcf7e2d0864c/model.safetensors: The read operation timed out
+Trying to resume download...
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  10%|▉         | 20/202 [00:00<00:01, 179.23it/s]Loading weights:  19%|█▉        | 38/202 [00:00<00:01, 157.67it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 814.50it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\scripts\run_local_nli.py", line 71, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\scripts\run_local_nli.py", line 59, in main
+    "revision": model.config._commit_hash, "label_order": order, "threshold": threshold,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\transformers\configuration_utils.py", line 658, in __getattribute__
+    return super().__getattribute__(key)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\transformers\integrations\heterogeneity\configuration_utils.py", line 312, in __getattribute__
+    return super().__getattribute__(key)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+AttributeError: 'DebertaV2Config' object has no attribute '_commit_hash'

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "id": "q25",
+  "answerable": true,
+  "claims": [
+    "При стаже работы семь лет работнику положено 28 дней оплачиваемого отпуска в год."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source s0l6 specifies 28 days for 6+ years.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 300,
+          "end": 327,
+          "text": "- 6+ лет: **28 дней** в год"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "f0285f456403987a26ad1e709fb109734afe7e3a5805edc597fc26208cf5589a",
+  "source_entry_sha256": "dd7c2784517d24c3acd7f84786ba5579bdf4f733da6ba9e93d93d68c85d57c6c",
+  "verifier": "v2-scenario-aware"
+}

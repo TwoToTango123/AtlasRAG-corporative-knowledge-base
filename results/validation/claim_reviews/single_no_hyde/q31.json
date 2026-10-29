@@ -1,0 +1,82 @@
+{
+  "status": "ok",
+  "id": "q31",
+  "answerable": true,
+  "claims": [
+    "На тарифе Team лимит API составляет 600 запросов в минуту на рабочее пространство",
+    "На тарифе Enterprise лимит API составляет 6 000 запросов в минуту",
+    "Лимит API на тарифе Enterprise в 10 раз больше, чем на тарифе Team"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник s0l24 подтверждает лимит 600 запросов в минуту для тарифа Team.",
+      "unit_ids": [
+        "s0l24"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l24",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 959,
+          "end": 1029,
+          "text": "ограничений. Лимит API составляет **600 запросов в минуту** на рабочее"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник s0l25 подтверждает лимит 6000 запросов в минуту для тарифа Enterprise.",
+      "unit_ids": [
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Лимит Enterprise (6000) в 10 раз превышает лимит Team (600).",
+      "unit_ids": [
+        "s0l24",
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l24",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 959,
+          "end": 1029,
+          "text": "ограничений. Лимит API составляет **600 запросов в минуту** на рабочее"
+        },
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "640215238e58d4f79e2205b536155bda9b144841e4182af70c8a412073a1189d",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

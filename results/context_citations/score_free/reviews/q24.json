@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q24",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и источникам, однако все три цитаты не совпадают дословно с текстом чанка, что приводит к нулю по критерию качества цитирования.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "92dcee3e3d86f3b8c3717edca96f7655f8c7ed978beeaa72e073b862c86fff87"
+}

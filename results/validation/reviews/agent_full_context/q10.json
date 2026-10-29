@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "id": "q10",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 0.5,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Не указан конкретный chunk_id d8c66edab230f32b. Ответ неполный: отсутствует упоминание якорных дней (вторник и четверг), что снижает соответствие эталону, хотя и подтверждено основное требование.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "09ee927645ebd7b191bce1fd1630761b97827feaf23bfc1d506193bfe981067d"
+}

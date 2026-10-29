@@ -1,0 +1,199 @@
+{
+  "status": "ok",
+  "group": "single_no_hyde",
+  "id": "q29",
+  "claims": [
+    "В тексте отсутствует прямое указание про ChatGPT и рабочие таблицы.",
+    "Использование неодобренных ИИ-инструментов с корпоративными данными запрещено.",
+    "Вставлять рабочие таблицы в ChatGPT можно только в случае, если он официально одобрен для таких данных.",
+    "Если ChatGPT не официально одобрен для корпоративных данных, вставлять в него рабочие таблицы нельзя."
+  ],
+  "old_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "Источники не содержат упоминаний ChatGPT или рабочих таблиц.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник прямо запрещает использование неодобренных ИИ-инструментов с корпоративными данными.",
+      "unit_ids": [
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l10",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 641,
+          "end": 718,
+          "text": "ИИ-инструментов или браузерных расширений с корпоративными данными запрещено."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "contradicted",
+      "rationale": "Источники запрещают неодобренные ИИ, но не устанавливают ChatGPT как одобренный.",
+      "unit_ids": [
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "contradicted",
+      "spans": [
+        {
+          "id": "s2l10",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 641,
+          "end": 718,
+          "text": "ИИ-инструментов или браузерных расширений с корпоративными данными запрещено."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "contradicted",
+      "rationale": "Источники запрещают неодобренные ИИ, но не упоминают ChatGPT конкретно.",
+      "unit_ids": [
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "contradicted",
+      "spans": [
+        {
+          "id": "s2l10",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 641,
+          "end": 718,
+          "text": "ИИ-инструментов или браузерных расширений с корпоративными данными запрещено."
+        }
+      ]
+    }
+  ],
+  "v2_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники не содержат упоминаний ChatGPT или рабочих таблиц.",
+      "unit_ids": [
+        "s0l0",
+        "s2l7",
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 0,
+          "end": 60,
+          "text": "# Northwind Robotics — Политика удалённой и гибридной работы"
+        },
+        {
+          "id": "s2l7",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 456,
+          "end": 483,
+          "text": "## Допустимое использование"
+        },
+        {
+          "id": "s2l10",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 641,
+          "end": 718,
+          "text": "ИИ-инструментов или браузерных расширений с корпоративными данными запрещено."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Запрет прямо указан в политике допустимого использования.",
+      "unit_ids": [
+        "s2l9",
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l9",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 567,
+          "end": 640,
+          "text": "них нельзя локально хранить данные Restricted. Использование неодобренных"
+        },
+        {
+          "id": "s2l10",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 641,
+          "end": 718,
+          "text": "ИИ-инструментов или браузерных расширений с корпоративными данными запрещено."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "insufficient",
+      "rationale": "Документ запрещает неодобренные инструменты, но не формулирует условие «можно только если одобрен».",
+      "unit_ids": [
+        "s2l9",
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s2l9",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 567,
+          "end": 640,
+          "text": "них нельзя локально хранить данные Restricted. Использование неодобренных"
+        },
+        {
+          "id": "s2l10",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 641,
+          "end": 718,
+          "text": "ИИ-инструментов или браузерных расширений с корпоративными данными запрещено."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Следует из запрета использования неодобренных ИИ-инструментов с корпоративными данными.",
+      "unit_ids": [
+        "s2l9",
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l9",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 567,
+          "end": 640,
+          "text": "них нельзя локально хранить данные Restricted. Использование неодобренных"
+        },
+        {
+          "id": "s2l10",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 641,
+          "end": 718,
+          "text": "ИИ-инструментов или браузерных расширений с корпоративными данными запрещено."
+        }
+      ]
+    }
+  ],
+  "note": "Fixed old claims: isolates verifier changes from claim extraction changes."
+}

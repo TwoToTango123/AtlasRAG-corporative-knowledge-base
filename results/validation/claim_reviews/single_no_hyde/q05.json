@@ -1,0 +1,168 @@
+{
+  "status": "ok",
+  "id": "q05",
+  "answerable": true,
+  "claims": [
+    "При нарушении SLA по времени ответа на Enterprise-инцидент Sev 1 он автоматически эскалируется директору поддержки",
+    "При нарушении SLA по времени ответа на Enterprise-инцидент Sev 1 он автоматически эскалируется TAM аккаунта",
+    "Клиент может запросить эскалацию, ответив «ESCALATE» в тикете",
+    "Компенсация составляет 5% от месячной платы за каждый пропущенный инцидент",
+    "Компенсация не может превышать 25% от месячной платы в расчётном месяце",
+    "Запрос на компенсацию нужно подавать в течение 30 дней"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники подтверждают автоматическую эскалацию директору поддержки при нарушении SLA.",
+      "unit_ids": [
+        "s0l1",
+        "s0l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 14,
+          "end": 93,
+          "text": "Если Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически"
+        },
+        {
+          "id": "s0l2",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 94,
+          "end": 172,
+          "text": "эскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источники подтверждают автоматическую эскалацию TAM аккаунта при нарушении SLA.",
+      "unit_ids": [
+        "s0l1",
+        "s0l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 14,
+          "end": 93,
+          "text": "Если Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически"
+        },
+        {
+          "id": "s0l2",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 94,
+          "end": 172,
+          "text": "эскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Источники подтверждают запрос эскалации через ответ «ESCALATE» в тикете.",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 173,
+          "end": 227,
+          "text": "эскалацию в любой момент, ответив «ESCALATE» в тикете."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Источники подтверждают компенсацию 5% за каждый пропущенный инцидент.",
+      "unit_ids": [
+        "s0l5",
+        "s0l6",
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 265,
+          "end": 342,
+          "text": "Если Northwind нарушает SLA по времени ответа на Sev 1, клиент имеет право на"
+        },
+        {
+          "id": "s0l6",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 343,
+          "end": 409,
+          "text": "сервисную компенсацию в размере **5% от месячной платы** за каждый"
+        },
+        {
+          "id": "s0l7",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 410,
+          "end": 483,
+          "text": "пропущенный инцидент, но не более 25% от месячной платы в любом расчётном"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Источники подтверждают ограничение компенсации 25% от месячной платы.",
+      "unit_ids": [
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l7",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 410,
+          "end": 483,
+          "text": "пропущенный инцидент, но не более 25% от месячной платы в любом расчётном"
+        }
+      ]
+    },
+    {
+      "claim_id": "c5",
+      "label": "supported",
+      "rationale": "Источники подтверждают срок подачи запроса на компенсацию 30 дней.",
+      "unit_ids": [
+        "s0l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l8",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 484,
+          "end": 538,
+          "text": "месяце. Компенсацию нужно запросить в течение 30 дней."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true,
+    true
+  ],
+  "answer_sha256": "f2f9b6b70172946d03e79487d2f58a1834866b2f6f6b3880efa8020b19c18717",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

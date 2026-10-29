@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_tender_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Утверждение не привязано к сумме; источник связывает требование с суммой свыше 1 млн руб.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

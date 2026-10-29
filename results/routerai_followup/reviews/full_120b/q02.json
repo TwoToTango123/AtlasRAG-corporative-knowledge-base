@@ -1,0 +1,28 @@
+{
+  "id": "q02",
+  "answerable": true,
+  "payload_sha256": "e94fd41f7af6bcf4d8777fe4b9114ca5f08e5e90b07a7dbf91f14f2d39e4952e",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует источнику и эталону, цитата точна.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+    "answer": "Нет, подрядчики не накапливают оплачиваемый отпуск.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 0.5,
+    "faithfulness": 0.0,
+    "verdict": "Правильно",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

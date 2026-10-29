@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "id": "hop03",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+    "answer": "Действующий на 02.11.2026 лимит компенсации за один отчёт для проекта «Вега» по предоставленным сведениям определить нельзя: проекту назначен пакет K-29, но известен только архивный норматив этого пакета, утративший силу 01.01.2026. Он составлял 2161 рубль за один отчёт и на указанную дату не действует.",
+    "citations": [
+      {
+        "chunk_id": "8759493a44a19ec6",
+        "source": "project_02.md",
+        "quote": "Карточка проекта Вега: для расходов проекта назначен пакет K-29."
+      },
+      {
+        "chunk_id": "bfd7e521e6ca606c",
+        "source": "policy_K29_archive.md",
+        "quote": "Архивная редакция 2024 года. Утратила силу 01.01.2026."
+      },
+      {
+        "chunk_id": "bfd7e521e6ca606c",
+        "source": "policy_K29_archive.md",
+        "quote": "Пакету K-29 соответствует лимит компенсации 2161 рублей за один отчёт."
+      }
+    ],
+    "confidence": 0.2,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "8759493a44a19ec6",
+                "doc_id": "6d3880a6db899e61",
+                "source": "project_02.md",
+                "text": "# Проект Вега\nКарточка проекта Вега: для расходов проекта назначен пакет K-29.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.001639344262295,
+              "relevance": 2.0,
+              "reason": "Contains only general statement about Vega and mentions package K-29, but does not provide the compensation limit or its validity date.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "bfd7e521e6ca606c",
+                "doc_id": "af7c15de3e39ad14",
+                "source": "policy_K29_archive.md",
+                "text": "# Норматив пакета K-29\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-29 соответствует лимит компенсации 2161 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0007575757575757,
+              "relevance": 1.0,
+              "reason": "Provides limit for package K‑29 but states it lost force on 01.01.2026, so it is not the current effective limit on 02.11.2026.",
+              "sources": {
+                "dense": 6.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "321b0a0818f07f5a",
+                "doc_id": "c8de54bbb3b66349",
+                "source": "policy_K21_archive.md",
+                "text": "# Норматив пакета K-21\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-21 соответствует лимит компенсации 1817 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Gives limit for package K‑21, not relevant to Vega.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e81495bd16ea0a46",
+                "doc_id": "4b47f226479713b1",
+                "source": "project_03.md",
+                "text": "# Проект Ирис\nКарточка проекта Ирис: для расходов проекта назначен пакет K-11.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Describes another project; no compensation info for Vega.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "16a58c50625da0a0",
+                "doc_id": "15d1a14a55aa1b76",
+                "source": "policy_K26_archive.md",
+                "text": "# Норматив пакета K-26\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-26 соответствует лимит компенсации 2032 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Limit for package K‑26; irrelevant.",
+              "sources": {
+                "dense": 3.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": [
+      "model_reports_answer_not_found"
+    ]
+  },
+  "latency_s": 12.927987799979746,
+  "graded": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+    "answer": "Действующий на 02.11.2026 лимит компенсации за один отчёт для проекта «Вега» по предоставленным сведениям определить нельзя: проекту назначен пакет K-29, но известен только архивный норматив этого пакета, утративший силу 01.01.2026. Он составлял 2161 рубль за один отчёт и на указанную дату не действует.",
+    "answerable": true,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.6131471927654584
+    }
+  },
+  "first_search_metrics": {
+    "recall": 0.5,
+    "mrr": 1.0,
+    "ndcg": 0.6131471927654584
+  },
+  "first_search_has_both_hops": false,
+  "final_has_both_hops": false,
+  "amount_present": false,
+  "obsolete_amount_present": true,
+  "trajectory_audit": {
+    "rounds": [
+      {
+        "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+        "new_chunks": 5,
+        "new_gold_chunks": 1,
+        "gold_chunks": 1
+      }
+    ],
+    "gold_total": 2,
+    "gold_covered": 1,
+    "zero_new_gold_rounds_after_first": 0,
+    "zero_new_chunk_rounds_after_first": 0
+  },
+  "verbatim_matches": [
+    true,
+    true,
+    true
+  ]
+}

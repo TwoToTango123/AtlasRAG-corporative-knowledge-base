@@ -1,0 +1,124 @@
+{
+  "status": "ok",
+  "id": "q33",
+  "answerable": true,
+  "claims": [
+    "Комплектующие доставляются по Москве и области за 2 рабочих дня.",
+    "Комплектующие доставляются в другие регионы России за 5–7 рабочих дней.",
+    "Доставка в регионы занимает примерно на 3–5 рабочих дней дольше, чем по Москве и области.",
+    "По Москве доступна экспресс-доставка на следующий день.",
+    "Стоимость экспресс-доставки по Москве составляет 3 500 ₽."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source explicitly states 2 business days for Moscow and region.",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 626,
+          "end": 664,
+          "text": "- Москва и область: **2 рабочих дня**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source explicitly states 5-7 business days for other regions.",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 665,
+          "end": 711,
+          "text": "- Другие регионы России: **5–7 рабочих дней**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Difference between 5-7 days and 2 days is 3-5 days.",
+      "unit_ids": [
+        "s0l12",
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 626,
+          "end": 664,
+          "text": "- Москва и область: **2 рабочих дня**."
+        },
+        {
+          "id": "s0l13",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 665,
+          "end": 711,
+          "text": "- Другие регионы России: **5–7 рабочих дней**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source mentions next-day express delivery availability for Moscow.",
+      "unit_ids": [
+        "s0l14"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l14",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 712,
+          "end": 770,
+          "text": "- Экспресс-доставка по Москве на следующий день — 3 500 ₽."
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Source lists 3 500 rubles as the cost for express delivery.",
+      "unit_ids": [
+        "s0l14"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l14",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 712,
+          "end": 770,
+          "text": "- Экспресс-доставка по Москве на следующий день — 3 500 ₽."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true,
+    true
+  ],
+  "answer_sha256": "7511def89826a5170909a97bb2e62a87871dbc0490b5e8e773caa59c7a663754",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

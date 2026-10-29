@@ -1,0 +1,28 @@
+{
+  "id": "q27",
+  "answerable": true,
+  "payload_sha256": "8f3d958e7272c1342dcfa74401ca2041a027074855cc17fb0a4de798ba2f77eb",
+  "review": {
+    "citation_quality": 0,
+    "correctness": 0.9,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Цитата искажена: в источнике нет слова «требуют» и нет скобок с «USB-накопители» в данном контексте фразы, текст не дословный.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Что будет, если вставить флешку в рабочий компьютер?",
+    "answer": "При вставке флеш‑накопителя в рабочий компьютер он будет заблокирован – использовать такие носители можно только после одобрения службы безопасности.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 0.5,
+    "faithfulness": 1.0,
+    "verdict": "PASS",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

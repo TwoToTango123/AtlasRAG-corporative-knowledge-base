@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q35",
+  "suite": "ordinary",
+  "answerable": false,
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": true,
+    "rationale": "Ответ корректно отказывается, так как данные о цене отсутствуют. Факты про лимиты подтверждены цитатами. Цитаты точные и верные.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "2899f92ee3464f183b34417ba7117059bf44339c57f3a5a9b1d484ef5a6d79ad",
+  "provenance": "changed citations, same answer; new judge"
+}

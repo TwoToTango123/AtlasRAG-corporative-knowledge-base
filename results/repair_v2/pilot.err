@@ -1,0 +1,80 @@
+Traceback (most recent call last):
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpcore\_sync\http_proxy.py", line 316, in handle_request
+    stream = stream.start_tls(**kwargs)
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 376, in start_tls
+    return self._stream.start_tls(ssl_context, server_hostname, timeout)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpcore\_backends\sync.py", line 154, in start_tls
+    with map_exceptions(exc_map):
+         ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\1\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:1015: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\scripts\run_repair_eval.py", line 290, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\scripts\run_repair_eval.py", line 276, in main
+    initialize(llm,cases)
+    ~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\scripts\run_repair_eval.py", line 68, in initialize
+    save(path, {"started_utc": datetime.now(timezone.utc).isoformat(), "balance_before_rub": llm.balance(),
+                                                                                             ~~~~~~~~~~~^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\atlas_rag\routerai.py", line 40, in balance
+    response = self.http.get(self.base_url + "/credits", headers=self._headers())
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_client.py", line 1053, in get
+    return self.request(
+           ~~~~~~~~~~~~^
+        "GET",
+        ^^^^^^
+    ...<7 lines>...
+        extensions=extensions,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\1\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\1\OneDrive\Desktop\AI_projects\RAG_for_business\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:1015: The handshake operation timed out

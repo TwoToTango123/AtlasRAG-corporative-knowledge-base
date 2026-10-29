@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop07",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты точны и подтверждают ключевые факты (назначение пакета K-24 и лимит 1169 руб.).",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "f2e567a83803b70d46ff94b1a121c48d1271ce511d2226886d8f5190c7f4b3a5"
+}

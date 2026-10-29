@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q06",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует вопросу и эталону. Все фактические утверждения, включая информацию о фланце и исключениях, подтверждены предоставленными цитатами из источников.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "690047e2f38f1598d0b434f89ff8f3ee86fff7e731d3ba58d1ac25a0e75ea290"
+}

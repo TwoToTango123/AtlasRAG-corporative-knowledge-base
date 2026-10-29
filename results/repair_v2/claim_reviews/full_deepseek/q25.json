@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "id": "q25",
+  "answerable": true,
+  "claims": [
+    "При стаже семь лет положено 28 дней оплачиваемого отпуска в год.",
+    "Категория «6+ лет» включает стаж в семь лет.",
+    "Предусмотрено 10 оплачиваемых больничных дней в год.",
+    "Оплачиваемые больничные дни предоставляются отдельно от отпуска."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Стаж 7 лет попадает в категорию 6+ лет (s0l6), что соответствует 28 дням.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 300,
+          "end": 327,
+          "text": "- 6+ лет: **28 дней** в год"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Категория «6+ лет» (s0l6) включает стаж в 7 лет.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 300,
+          "end": 327,
+          "text": "- 6+ лет: **28 дней** в год"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Все сотрудники получают 10 оплачиваемых больничных дней в год (s0l16).",
+      "unit_ids": [
+        "s0l16"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l16",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 817,
+          "end": 895,
+          "text": "Все сотрудники получают **10 оплачиваемых больничных дней** в год, отдельно от"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Больничные предоставляются отдельно от отпуска, согласно пункту s0l16-17.",
+      "unit_ids": [
+        "s0l16",
+        "s0l17"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l16",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 817,
+          "end": 895,
+          "text": "Все сотрудники получают **10 оплачиваемых больничных дней** в год, отдельно от"
+        },
+        {
+          "id": "s0l17",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 896,
+          "end": 970,
+          "text": "отпуска. Больничные не переносятся на следующий год и не выплачиваются при"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "a99431ce5d279b7f3f24dabc8d34c4562d47ecd9d0fb0f861b6123da7cc38a0c",
+  "source_entry_sha256": "63860d7c1844e82338b6fbadd7db8a8addef9a5f4014cf934ae490eae10ded52",
+  "verifier": "v2-scenario-aware"
+}

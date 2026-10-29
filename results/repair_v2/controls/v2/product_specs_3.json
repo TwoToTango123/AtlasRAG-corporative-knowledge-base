@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "product_specs_3",
+  "split": "heldout",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "rationale": "Источник указывает гарантию 2 года, а не 3.",
+    "unit_ids": [
+      "s0l7"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l7",
+        "chunk_id": "product_specs.md",
+        "start": 233,
+        "end": 255,
+        "text": "- Гарантия: **2 года**"
+      }
+    ]
+  }
+}

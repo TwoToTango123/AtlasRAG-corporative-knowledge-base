@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "id": "q04",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ корректен и полностью соответствует источникам. Однако citation_quality равен 0, так как указанные chunk_id отсутствуют в предоставленных данных (предполагается вымышленный идентификатор).",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "ac9550fb33144491fca46e77f41f2491d844eceabda5a147a1b380d8e89de894"
+}

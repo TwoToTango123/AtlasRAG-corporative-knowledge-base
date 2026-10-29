@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "hop09",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и подтвержден источниками. Цитаты верны и подтверждают утверждения. Логика верна: пакет K-31, действующая редакция с 01.01.2026, лимит 1470 рублей.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "37f737aafe072e866ad38e13bc04c0dc150c0a92f0996b51ce5b9638e880f84b",
+  "provenance": "identical judge payload; reused frozen rating"
+}

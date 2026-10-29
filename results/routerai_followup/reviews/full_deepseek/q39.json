@@ -1,0 +1,24 @@
+{
+  "id": "q39",
+  "answerable": false,
+  "payload_sha256": "0d1a7aa537fd4496e534cab9ffc0d6a72fa08640b80e6d5a0fba857b5f443907",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно сообщает об отсутствии данных для тарифа Team, подтверждая это источниками, которые указывают SLA только для Enterprise.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое SLA по времени первого ответа на Sev 1 для клиентов тарифа Team?",
+    "answer": "В доступных материалах нет SLA по времени первого ответа на инциденты Sev 1 для тарифа Team. Раздел SLA с указанием сроков реакции относится только к Enterprise: для Sev 1 там предусмотрен первый ответ в течение 1 часа, 24/7. Для тарифа Team указаны лишь каналы (Email, чат) и рабочие часы, но не сроки реакции по уровням серьёзности.",
+    "answerable": false,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 0.0,
+    "verdict": "вопрос без ответа в базе",
+    "retrieval": null
+  }
+}

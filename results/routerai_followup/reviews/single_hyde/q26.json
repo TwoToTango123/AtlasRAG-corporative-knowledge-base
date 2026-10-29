@@ -1,0 +1,28 @@
+{
+  "id": "q26",
+  "answerable": true,
+  "payload_sha256": "425fa13b5c846a6ef297691c2b2ad8887bfaea9eb294e614435dd14ca68c071f",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и полностью подтверждается предоставленными источниками. Цитаты дословно совпадают с текстом чанков.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+    "answer": "После одобрения возврат приходит на исходный способ оплаты (включая карту) в течение 5–10 рабочих дней. Если возврат идёт банковским переводом, срок может составить до 21 рабочего дня.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

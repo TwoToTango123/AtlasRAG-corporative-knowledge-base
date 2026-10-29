@@ -1,0 +1,28 @@
+{
+  "id": "q27",
+  "answerable": true,
+  "payload_sha256": "8da8c70c4a59b52b3eae40f7ea8ab02f81b511ab4e04b2ea92c01764cbbb4688",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитата верна и подтверждает утверждения. Ошибок нет.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Что будет, если вставить флешку в рабочий компьютер?",
+    "answer": "Флешка (USB-накопитель) будет заблокирована по умолчанию. Для её использования требуется одобрение службы безопасности.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

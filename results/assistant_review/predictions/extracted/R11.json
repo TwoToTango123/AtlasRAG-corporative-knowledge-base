@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "review_id": "R11",
+  "claims": [
+    "Действующий на 02.11.2026 лимит компенсации за один отчёт для проекта «Альтаир» составляет 223 рубля."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Project A uses package K-02, which has a 223 RUB limit effective 01.01.2026.",
+      "unit_ids": [
+        "s0l1",
+        "s1l1",
+        "s1l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "8daa48076b0a72b4",
+          "start": 17,
+          "end": 84,
+          "text": "Карточка проекта Альтаир: для расходов проекта назначен пакет K-02."
+        },
+        {
+          "id": "s1l1",
+          "chunk_id": "a224b5f70bcb323d",
+          "start": 23,
+          "end": 77,
+          "text": "Действует с 01.01.2026. Заменяет все прежние редакции."
+        },
+        {
+          "id": "s1l2",
+          "chunk_id": "a224b5f70bcb323d",
+          "start": 78,
+          "end": 147,
+          "text": "Пакету K-02 соответствует лимит компенсации 223 рублей за один отчёт."
+        }
+      ]
+    }
+  ],
+  "purpose": "Original answer extraction; no assistant facts or reference labels in extraction prompt."
+}

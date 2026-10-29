@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "remote_work_3",
+  "split": "calibration",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l3"
+    ],
+    "rationale": "Источник прямо утверждает запрет, что противоречит утверждению о разрешении.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l3",
+        "chunk_id": "remote_work.md",
+        "start": 176,
+        "end": 213,
+        "text": "санкционными ограничениями запрещена."
+      }
+    ]
+  }
+}

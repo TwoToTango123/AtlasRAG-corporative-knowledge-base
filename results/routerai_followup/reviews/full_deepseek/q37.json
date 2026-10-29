@@ -1,0 +1,24 @@
+{
+  "id": "q37",
+  "answerable": false,
+  "payload_sha256": "fd384cb2c68a3fab4b6f7ced0dda22edce15d2a2ef57c014c8981f310006747b",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ является корректным отказом, так как в предоставленных источниках действительно нет информации о премии, что соответствует эталону.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Как рассчитывается годовая премия сотрудников?",
+    "answer": "В предоставленных материалах нет сведений о том, как рассчитывается годовая премия сотрудников. Ни один из доступных документов не описывает порядок расчёта премии.",
+    "answerable": false,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "вопрос без ответа в базе",
+    "retrieval": null
+  }
+}

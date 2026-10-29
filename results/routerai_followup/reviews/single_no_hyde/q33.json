@@ -1,0 +1,28 @@
+{
+  "id": "q33",
+  "answerable": true,
+  "payload_sha256": "519c2c7fe532e31b80ea3c2dcdc50c239a0f66c1cb47ed627061be9d2064d4b9",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону, полностью подтвержден источниками, все цитаты верны. Отсутствуют ошибки.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+    "answer": "По Москве и области доставка занимает 2 рабочих дня, а в другие регионы России — 5–7 рабочих дней. По Москве также доступна экспресс-доставка на следующий день за 3 500 ₽.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

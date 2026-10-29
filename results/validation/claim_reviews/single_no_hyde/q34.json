@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "id": "q34",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации нет сведений о страховой сумме по ДМС для сотрудников",
+    "Тема добровольного медицинского страхования в доступных материалах не освещается"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "Отсутствие факта в источниках не доказывает утверждение об отсутствии сведений.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "insufficient",
+      "rationale": "Отсутствие упоминания темы в предоставленных источниках не подтверждает утверждение о полном отсутствии освещения.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    }
+  ],
+  "verbatim_matches": [],
+  "answer_sha256": "68ccf48d73cbd6d865a2f61309e9d8eab87b4021075636bd96718bb8ff75bca9",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

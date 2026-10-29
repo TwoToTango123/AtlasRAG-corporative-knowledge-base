@@ -1,0 +1,28 @@
+{
+  "id": "q29",
+  "answerable": true,
+  "payload_sha256": "00de63cac8cded962525247b45a7f67bfb015cf7bd8ef7a1dac178635c28d6f2",
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 0.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ представляет собой отказ, тогда как вопрос ответим на основании документов (политика безопасности/запрет ИИ). Цитаты вымышлены и не относятся к теме. Правильный отказ при answerable=false получил бы балл, но здесь answerable=true.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+    "answer": "В предоставленных материалах нет сведения о том, разрешено ли вставлять рабочие таблицы в ChatGPT.",
+    "answerable": true,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.5,
+    "faithfulness": 1.0,
+    "verdict": "incorrect",
+    "retrieval": {
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0
+    }
+  }
+}

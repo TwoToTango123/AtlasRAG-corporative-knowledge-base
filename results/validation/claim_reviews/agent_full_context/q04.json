@@ -1,0 +1,153 @@
+{
+  "status": "ok",
+  "id": "q04",
+  "answerable": true,
+  "claims": [
+    "NW-200 превосходит NW-100 по грузоподъёмности",
+    "Грузоподъёмность NW-200 составляет 18 кг",
+    "Грузоподъёмность NW-100 составляет 5 кг",
+    "Гарантия NW-200 больше, чем у NW-100",
+    "Гарантия NW-200 составляет 3 года",
+    "Гарантия NW-100 составляет 2 года"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l3",
+        "s0l12"
+      ],
+      "rationale": "NW-200 (18 кг) превышает NW-100 (5 кг) по грузоподъёмности.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 146,
+          "end": 174,
+          "text": "- Грузоподъёмность: **5 кг**"
+        },
+        {
+          "id": "s0l12",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 433,
+          "end": 462,
+          "text": "- Грузоподъёмность: **18 кг**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "rationale": "Источник прямо указывает грузоподъёмность NW-200 как 18 кг.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 433,
+          "end": 462,
+          "text": "- Грузоподъёмность: **18 кг**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "rationale": "Источник прямо указывает грузоподъёмность NW-100 как 5 кг.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 146,
+          "end": 174,
+          "text": "- Грузоподъёмность: **5 кг**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "unit_ids": [
+        "s0l9",
+        "s0l19"
+      ],
+      "rationale": "Гарантия NW-200 (3 года) больше, чем у NW-100 (2 года).",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l9",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 336,
+          "end": 358,
+          "text": "- Гарантия: **2 года**"
+        },
+        {
+          "id": "s0l19",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 709,
+          "end": 731,
+          "text": "- Гарантия: **3 года**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "unit_ids": [
+        "s0l19"
+      ],
+      "rationale": "Источник прямо указывает гарантию NW-200 как 3 года.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l19",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 709,
+          "end": 731,
+          "text": "- Гарантия: **3 года**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c5",
+      "label": "supported",
+      "unit_ids": [
+        "s0l9"
+      ],
+      "rationale": "Источник прямо указывает гарантию NW-100 как 2 года.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l9",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 336,
+          "end": 358,
+          "text": "- Гарантия: **2 года**"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "answer_sha256": "0ac5602e26aba1b7b97b7f32e3d5e2a92bac59529ec33967df975336817b59f4",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "ok",
+  "review_id": "R05",
+  "claims": [
+    "Испытательный срок для руководителей составляет 6 месяцев."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник s0l4 прямо указывает на 6 месяцев для руководителей.",
+      "unit_ids": [
+        "s0l4"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l4",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 241,
+          "end": 318,
+          "text": "руководителей и главных инженеров — **6 месяцев**. В конце срока руководитель"
+        }
+      ]
+    }
+  ],
+  "purpose": "Original answer extraction; no assistant facts or reference labels in extraction prompt."
+}

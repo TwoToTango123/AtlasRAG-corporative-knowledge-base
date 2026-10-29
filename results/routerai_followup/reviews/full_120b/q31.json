@@ -1,0 +1,31 @@
+{
+  "id": "q31",
+  "answerable": true,
+  "payload_sha256": "8515933be54d06b93b91677d362353ce217564f803adec2822b9088de2089dc7",
+  "review": {
+    "citation_quality": 0,
+    "correctness": 1,
+    "faithfulness": 0,
+    "is_refusal": false,
+    "rationale": "Ответ верен по смыслу, но citation_quality = 0, так как цитата в массиве цитат выдумана (текст не дословно из чанка), и faithfulness = 0, так как предоставленные источники не содержат данных о лимитах API.",
+    "unsupported_claims": [
+      "Лимит API составляет 600 запросов в минуту на тарифе Team",
+      "Лимит API составляет 6 000 запросов в минуту на тарифе Enterprise"
+    ]
+  },
+  "original_graded": {
+    "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+    "answer": "Тариф Team: 600 запросов в минуту; Тариф Enterprise: 6 000 запросов в минуту (в 10 раз больше).",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "Правильно",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

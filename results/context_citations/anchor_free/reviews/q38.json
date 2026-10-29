@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q38",
+  "suite": "ordinary",
+  "answerable": false,
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно отказывает, ссылаясь на отсутствие данных в источниках. Все цитаты верны и подтверждают отсутствие правил о животных.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "6f08f17ff83b19dfd0adb1f63c8a268b42214638d36604f713b263d2784a988f"
+}

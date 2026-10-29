@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "security_policy_3",
+  "split": "heldout",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l5"
+    ],
+    "rationale": "Источники запрещают исключения для руководителей, MFA обязательна.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l5",
+        "chunk_id": "security_policy.md",
+        "start": 268,
+        "end": 344,
+        "text": "  каждой системе, которая её поддерживает, без исключений для руководителей."
+      }
+    ]
+  }
+}

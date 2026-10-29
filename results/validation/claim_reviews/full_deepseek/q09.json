@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "q09",
+  "answerable": true,
+  "claims": [
+    "Лимит стоимости гостиницы за одну ночь в Москве составляет 9 000 рублей."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "rationale": "Источник прямо указывает лимит в 9 000 ₽ для Москвы.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 644,
+          "end": 685,
+          "text": "- Москва и Санкт-Петербург — **9 000 ₽**;"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "c630ae7aa137a149fdf2a176781e271ff77afab08ebac7124db744ce6c9afb3b",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

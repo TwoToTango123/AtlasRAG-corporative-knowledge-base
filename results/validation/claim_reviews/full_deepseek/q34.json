@@ -1,0 +1,144 @@
+{
+  "status": "ok",
+  "id": "q34",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации нет сведений о страховании ДМС для сотрудников.",
+    "В предоставленной информации нет сведений о страховой сумме для сотрудников.",
+    "Ответить на вопрос невозможно."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники не содержат упоминаний о ДМС.",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "e706a9391ce46228",
+          "start": 0,
+          "end": 52,
+          "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "d5f2e9d8442d16bf",
+          "start": 0,
+          "end": 28,
+          "text": "## Представительские расходы"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "В текстах отсутствуют сведения о страховой сумме.",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "e706a9391ce46228",
+          "start": 0,
+          "end": 52,
+          "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "d5f2e9d8442d16bf",
+          "start": 0,
+          "end": 28,
+          "text": "## Представительские расходы"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "contradicted",
+      "rationale": "Вопросы о наличии данных можно ответить, их нет.",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "contradicted",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "e706a9391ce46228",
+          "start": 0,
+          "end": 52,
+          "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "d5f2e9d8442d16bf",
+          "start": 0,
+          "end": 28,
+          "text": "## Представительские расходы"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [],
+  "answer_sha256": "5de9d456edf3fe7036a5e04a86b86bfe4a71798111fd40eb1a33c2efa33605dc",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

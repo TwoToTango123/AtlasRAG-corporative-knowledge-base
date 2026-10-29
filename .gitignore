@@ -16,7 +16,14 @@ env/
 *.egg-info/
 
 results/raw/
+results/**/qa/
+**/qa/
+results/rerankers/llm_cache.jsonl
 *.log
+
+# Local document exports, personal resume artifacts and temporary renderings.
+/output/
+/tmp/
 
 .idea/
 .vscode/

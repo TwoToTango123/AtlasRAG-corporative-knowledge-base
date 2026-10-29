@@ -11,6 +11,8 @@ from __future__ import annotations
 from .config import Settings
 from .llm import LLM
 from .models import AnswerResult, Citation, ScoredChunk
+from .citations import citation_units, resolve_citation, resolve_citation_parts
+from copy import deepcopy
 
 _GEN_SYSTEM = """Ты — AtlasRAG, корпоративный ассистент по базе знаний. Отвечай \
 на вопрос пользователя, опираясь ТОЛЬКО на пронумерованные фрагменты \
@@ -50,6 +52,26 @@ _GEN_SCHEMA = {
     "required": ["answer", "citations", "answer_found", "confidence"],
     "additionalProperties": False,
 }
+
+_UNIT_SYSTEM = _GEN_SYSTEM.replace(
+    "содержать chunk_id фрагмента и короткую дословную цитату (не более 25 слов), скопированную ровно из этого фрагмента.",
+    "содержать chunk_id, start_unit и end_unit — целые номера единиц U из одного "
+    "фрагмента. Укажи диапазон не более 25 слов; программа сама скопирует исходный "
+    "текст. Не возвращай текст цитаты и не выбирай номера из другого фрагмента.")
+_UNIT_SCHEMA = deepcopy(_GEN_SCHEMA)
+_UNIT_SCHEMA["properties"]["citations"]["items"] = {
+    "type":"object","properties":{"chunk_id":{"type":"string"},
+    "start_unit":{"type":"integer","minimum":1},"end_unit":{"type":"integer","minimum":1}},
+    "required":["chunk_id","start_unit","end_unit"],"additionalProperties":False}
+
+
+def _unit_evidence_block(evidence):
+    blocks=[]
+    for hit in evidence:
+        units=citation_units(hit.chunk.text)
+        body="\n".join(f"U{u['id']}: {u['text']}" for u in units)
+        blocks.append(f"chunk_id: {hit.chunk_id}\nsource: {hit.chunk.source}\n{body}")
+    return "\n\n---\n\n".join(blocks)
 
 _FAITH_SYSTEM = (
     "Ты — строгий аудитор фактической точности. На основе фрагментов-данных и "
@@ -96,14 +118,18 @@ class Generator:
                 warnings=["no_evidence"],
             )
 
+        mode=self.settings.citation_mode
+        if mode not in {"free","units","unit_parts"}:
+            raise ValueError(f"Unknown citation mode: {mode}")
+        unit_mode=mode in {"units","unit_parts"}
         user = (
             f"Question: {question}\n\nEvidence passages:\n\n"
-            + _evidence_block(evidence)
+            + (_unit_evidence_block(evidence) if unit_mode else _evidence_block(evidence))
         )
         data = self.llm.structured(
-            system=_GEN_SYSTEM,
+            system=_UNIT_SYSTEM if unit_mode else _GEN_SYSTEM,
             messages=[{"role": "user", "content": user}],
-            schema=_GEN_SCHEMA,
+            schema=_UNIT_SCHEMA if unit_mode else _GEN_SCHEMA,
             model=self.settings.model,
             max_tokens=4096,
             thinking=True,
@@ -116,6 +142,22 @@ class Generator:
         for c in data.get("citations", []):
             cid = str(c.get("chunk_id", ""))
             if cid in valid_ids:
+                if unit_mode:
+                    if mode=='unit_parts':
+                        parts=resolve_citation_parts(by_id[cid].chunk.text,c.get('start_unit'),c.get('end_unit'))
+                        if parts is None:
+                            warnings.append(f'dropped_invalid_citation_span:{cid}')
+                            continue
+                        if len(parts)>1:
+                            warnings.append(f'split_long_citation:{cid}:{len(parts)}')
+                        citations.extend(Citation(chunk_id=cid,source=by_id[cid].chunk.source,**p) for p in parts)
+                        continue
+                    span=resolve_citation(by_id[cid].chunk.text,c.get("start_unit"),c.get("end_unit"))
+                    if span is None:
+                        warnings.append(f"dropped_invalid_citation_span:{cid}")
+                        continue
+                    citations.append(Citation(chunk_id=cid,source=by_id[cid].chunk.source,**span))
+                    continue
                 citations.append(
                     Citation(
                         chunk_id=cid,
@@ -127,6 +169,9 @@ class Generator:
                 warnings.append(f"dropped_invalid_citation:{cid}")
 
         confidence = float(data.get("confidence", 0.0))
+        if unit_mode and data.get("answer_found",True) and not citations:
+            warnings.append("no_valid_citations")
+            confidence=min(confidence,0.3)
         if not data.get("answer_found", True):
             warnings.append("model_reports_answer_not_found")
             confidence = min(confidence, 0.3)

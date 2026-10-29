@@ -1,0 +1,28 @@
+{
+  "id": "q02",
+  "answerable": true,
+  "payload_sha256": "73c65e368b1e6ab2cf813f01a442aa9e028929b275d425123b1a0749169f75f0",
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "unsupported_claims": [],
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и подтверждается цитатой из предоставленных источников. Цитата точная, chunk_id верный."
+  },
+  "original_graded": {
+    "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+    "answer": "Нет. Подрядчики и временный персонал не накапливают оплачиваемый отпуск; их отгулы неоплачиваемые и согласуются напрямую с нанимающим руководителем.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

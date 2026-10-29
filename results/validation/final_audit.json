@@ -1,0 +1,67 @@
+{
+  "verified_utc": "2026-11-03T16:15:36.164824+00:00",
+  "completed_counts": {
+    "semantic_controls": 40,
+    "agent_full_context/cases": 39,
+    "reviews/agent_full_context": 39,
+    "claim_reviews/full_deepseek": 39,
+    "claim_reviews/single_no_hyde": 39,
+    "claim_reviews/agent_full_context": 39,
+    "sequential/single": 12,
+    "sequential/agent_500": 12,
+    "sequential/agent_full": 12,
+    "dialogues": 6
+  },
+  "all_case_id_sets_valid": true,
+  "checked_exact_source_spans": 860,
+  "invalid_source_spans": 0,
+  "changed_answer_hashes": 0,
+  "tests_passed": 73,
+  "independently_human_reviewed": false,
+  "semantic_known_failures": {
+    "missed_direct_evidence": [
+      "full_deepseek/q16"
+    ],
+    "negation_misread": [
+      "full_deepseek/q21",
+      "agent_full_context/q21"
+    ],
+    "scenario_context_loss": [
+      "q19"
+    ],
+    "positive_without_evidence_rejected": [
+      "single_no_hyde/q29"
+    ]
+  },
+  "sequential_audit": {
+    "agent_gathered_both_gold_documents": 12,
+    "agent_final_context_both": 10,
+    "bridge_lost_cases": [
+      "hop02",
+      "hop10"
+    ],
+    "current_amount_answers_confirmed_by_assistant": 10,
+    "archive_amount_misused_as_current_in_reviewed_answers": 0,
+    "agent_500_and_full_share_cached_trajectories": true
+  },
+  "dialogue_audit": {
+    "raw_fact_proxy_per_mode": 5,
+    "assistant_review_correct_per_mode": 6,
+    "paraphrase_proxy_miss": "chat04: неограниченное количество vs без ограничений"
+  },
+  "verbatim_audit": {
+    "agent_full_context_mismatches": [
+      "q29: typo",
+      "q36: joined heading and bullet",
+      "q36: joined heading and bullet"
+    ]
+  },
+  "balance_endpoint_verified_rub": 79.86304511331784,
+  "findings_file": "findings.md",
+  "conclusions": [
+    "Full observations reduce recorded searches by 20.7 percent; no clear correctness improvement on 33 demo questions.",
+    "Sequential synthetic tasks: agent 10/12 correct current amounts, single 0/12; two bridges found then discarded from final top5.",
+    "Simple semantic controls pass but real-answer audit finds errors; support averages are not a trustworthy ranking.",
+    "NLI argmax 18/20, one false-supported; strict calibrated grid rejects all support."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "review_id": "R24",
+  "claims": [
+    "В описанной ситуации я обязан использовать MFA."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "MFA mandatory for all employees on systems supporting it, no manager exceptions.",
+      "unit_ids": [
+        "s0l4",
+        "s0l5"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l4",
+          "chunk_id": "S1",
+          "start": 190,
+          "end": 267,
+          "text": "- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на"
+        },
+        {
+          "id": "s0l5",
+          "chunk_id": "S1",
+          "start": 268,
+          "end": 344,
+          "text": "  каждой системе, которая её поддерживает, без исключений для руководителей."
+        }
+      ]
+    }
+  ]
+}

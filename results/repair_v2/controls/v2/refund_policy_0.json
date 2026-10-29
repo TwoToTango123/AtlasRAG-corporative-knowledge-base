@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "refund_policy_0",
+  "split": "calibration",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "rationale": "Строка s0l1 явно связывает тариф Starter с полным возвратом в 14 дней без объяснения.",
+    "unit_ids": [
+      "s0l1"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "refund_policy.md",
+        "start": 30,
+        "end": 107,
+        "text": "- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный"
+      }
+    ]
+  }
+}

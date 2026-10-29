@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "remote_work_4",
+  "split": "calibration",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "unit_ids": [],
+    "rationale": "Источники упоминают работу из-за рубежа, но не содержат информации о компенсации визовых расходов.",
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

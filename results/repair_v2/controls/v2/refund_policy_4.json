@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "refund_policy_4",
+  "split": "calibration",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Цена в источниках отсутствует",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

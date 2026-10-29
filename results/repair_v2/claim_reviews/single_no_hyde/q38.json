@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "id": "q38",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации нет ответа на вопрос о возможности приходить в офис с собакой",
+    "Правила о домашних животных и посещении офиса с собакой не описаны в предоставленной информации"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники не содержат информации о правилах с животными.",
+      "unit_ids": [
+        "s1l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l0",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 0,
+          "end": 60,
+          "text": "# Northwind Robotics — Политика удалённой и гибридной работы"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Документы не описывают правила посещения офиса с собакой.",
+      "unit_ids": [
+        "s1l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l0",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 0,
+          "end": 60,
+          "text": "# Northwind Robotics — Политика удалённой и гибридной работы"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "c26b0394448ed01ae9774b38841db04535e01e8f86eb883aa86f18b8b1f7a540",
+  "source_entry_sha256": "ab2513107312d3a7ca267bf605de067cb98f2561d3a05a7bc1103b11ecb50239",
+  "verifier": "v2-scenario-aware"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "id": "q11",
+  "answerable": true,
+  "claims": [
+    "Заявку на отпуск нужно подавать не менее чем за 2 недели до планового отпуска."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник s0l6 прямо указывает требование подачи заявки не менее чем за 2 недели.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "a7220d6fd11280e1",
+          "start": 336,
+          "end": 413,
+          "text": "Подавайте запрос в Workday не менее чем за **2 недели** до планового отпуска."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "636782a3ed168a2d00326b169cbe364ddc4b0f76089f1d171b088710b179ae35",
+  "source_entry_sha256": "9575efb0cee587ea341d9e461b86b4480561fa1011e5404b3742fcd0bee01493",
+  "verifier": "v2-scenario-aware"
+}

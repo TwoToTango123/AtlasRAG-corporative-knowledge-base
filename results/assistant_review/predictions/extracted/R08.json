@@ -1,0 +1,53 @@
+{
+  "status": "ok",
+  "review_id": "R08",
+  "claims": [
+    "Действующий на 02.11.2026 лимит компенсации за один отчёт для проекта «Вега» составляет 1384 рубля."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Project Vega uses K-29, valid from 2026, limit 1384 rubles.",
+      "unit_ids": [
+        "s1l1",
+        "s1l2",
+        "s2l1",
+        "s2l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l1",
+          "chunk_id": "1d3fe9bfbaf8ee18",
+          "start": 23,
+          "end": 77,
+          "text": "Действует с 01.01.2026. Заменяет все прежние редакции."
+        },
+        {
+          "id": "s1l2",
+          "chunk_id": "1d3fe9bfbaf8ee18",
+          "start": 78,
+          "end": 148,
+          "text": "Пакету K-29 соответствует лимит компенсации 1384 рублей за один отчёт."
+        },
+        {
+          "id": "s2l1",
+          "chunk_id": "8759493a44a19ec6",
+          "start": 14,
+          "end": 78,
+          "text": "Карточка проекта Вега: для расходов проекта назначен пакет K-29."
+        },
+        {
+          "id": "s2l2",
+          "chunk_id": "8759493a44a19ec6",
+          "start": 79,
+          "end": 154,
+          "text": "Размер компенсации определяется действующим нормативом назначенного пакета."
+        }
+      ]
+    }
+  ],
+  "purpose": "Original answer extraction; no assistant facts or reference labels in extraction prompt."
+}

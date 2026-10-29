@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "scenario_escalate_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "rationale": "Источник подтверждает требование ответить словом ESCALATE в тикете.",
+    "unit_ids": [
+      "s0l22"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l22",
+        "chunk_id": "support_sla.md",
+        "start": 1333,
+        "end": 1387,
+        "text": "эскалацию в любой момент, ответив «ESCALATE» в тикете."
+      }
+    ]
+  }
+}

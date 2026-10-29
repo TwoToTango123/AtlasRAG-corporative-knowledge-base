@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q24",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам, но не содержит цитат, что снижает цитатное качество до нуля.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "740508d9d543b317734caefb412b0b6229b8b4d8eefda133ef0f05696991fdb6"
+}

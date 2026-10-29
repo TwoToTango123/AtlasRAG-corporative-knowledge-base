@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q31",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты точны и подтверждают утверждения о лимитах API.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "b19f03a59251fd2c639e7d5d64d21fcd96a2e08b1a0dcc597b272e6d6f46ce18",
+  "provenance": "changed citations, same answer; new judge"
+}

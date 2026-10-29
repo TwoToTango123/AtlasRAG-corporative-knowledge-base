@@ -1,0 +1,24 @@
+{
+  "id": "q35",
+  "answerable": false,
+  "payload_sha256": "6ec7896cf5a868df04c7d10fec534e1d86a60c2bec5b3404ffcd2a4a9f619528",
+  "review": {
+    "citation_quality": 0.5,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ верно указывает на отсутствие цены. Цитата верна, но не подтверждает утверждение об отсутствии данных о цене, а лишь описывает тариф.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько стоит подписка AtlasControl на тарифе Enterprise в месяц?",
+    "answer": "В предоставленных фрагментах нет информации о стоимости подписки AtlasControl на тарифе Enterprise в месяц.",
+    "answerable": false,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "вопрос без ответа в базе",
+    "retrieval": null
+  }
+}

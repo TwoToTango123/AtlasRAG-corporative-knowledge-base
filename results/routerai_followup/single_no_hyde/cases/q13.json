@@ -1,0 +1,142 @@
+{
+  "status": "ok",
+  "id": "q13",
+  "type": "exact_token",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "graded": {
+    "question": "Что означает код E-401?",
+    "answer": "Код E-401 означает, что манипулятор не откалиброван: не выполнена процедура homing. Перед движением необходимо выполнить homing.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  },
+  "result": {
+    "question": "Что означает код E-401?",
+    "answer": "Код E-401 означает, что манипулятор не откалиброван: не выполнена процедура homing. Перед движением необходимо выполнить homing.",
+    "citations": [
+      {
+        "chunk_id": "395619ca8cdf56c2",
+        "source": "product_specs.md",
+        "quote": "E-401: манипулятор не откалиброван (не выполнен homing) — выполните процедуру homing перед движением."
+      }
+    ],
+    "confidence": 1.0,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Что означает код E-401?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Что означает код E-401?",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "395619ca8cdf56c2",
+                "doc_id": "c2d555db89b245a6",
+                "source": "product_specs.md",
+                "text": "### Коды ошибок\n\n- `E-401`: манипулятор не откалиброван (не выполнен homing) — выполните процедуру\n  homing перед движением.\n- `E-409`: полезная нагрузка превышает заданный лимит для выбранного манипулятора.\n- `E-503`: AtlasControl не может связаться с контроллером манипулятора —\n  проверьте сеть.\n\n## Совместимость\n\nNW-100 и NW-200 имеют одинаковый монтажный фланец (ISO 9409-1-50-4-M6), поэтому\nрабочие насадки (захваты) взаимозаменяемы между обеими моделями.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\product_specs.md"
+                }
+              },
+              "score": 10.001639344262296,
+              "relevance": 10.0,
+              "reason": "Fragment 0 contains the exact definition of error code E‑401 – it says the manipulator is not calibrated (homing not performed). This directly answers the user’s question, so it earns the highest relevance score of 10.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "f40e9392459ebebc",
+                "doc_id": "1ca34f5441da64cd",
+                "source": "security_policy.md",
+                "text": "# Northwind Robotics — Политика информационной безопасности\n\n_Последнее обновление: 20.02.2026. Владелец: Безопасность и комплаенс. Гриф: Для внутреннего пользования._\n\n## Классификация данных\n\nВсе данные классифицируются как **Публичные**, **Внутренние**,\n**Конфиденциальные** или **С ограниченным доступом** (Restricted). Персональные\nданные клиентов и платёжная информация всегда относятся к категории\n**Restricted**. Данные Restricted должны шифроваться при хранении (AES-256) и при\nпередаче (TLS 1.2+).\n\n## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\security_policy.md"
+                }
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment 1 talks about security policy, no mention of error codes or robotics. It is unrelated to the question, so it receives a score of 0.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "9ba36918055c244b",
+                "doc_id": "b1e4a8a33e197cb3",
+                "source": "refund_policy.md",
+                "text": "## Возврат оборудования\n\nФизические устройства (роботизированные манипуляторы NW-100 и NW-200) можно\nвернуть в течение **30 дней** с даты доставки с полным возвратом средств при\nусловии, что устройство в пригодном для перепродажи состоянии. Обратную доставку\nбракованных устройств оплачивает Northwind; обратную доставку при возврате «по\nпередумали» оплачивает клиент. К вскрытому исправному оборудованию применяется\nсбор за повторное складирование в размере **15%**.\n\n## Как выплачиваются возвраты\n\nВозврат выплачивается на исходный способ оплаты в течение **5–10 рабочих дней**\nпосле одобрения. Возврат банковским переводом может занять до 21 рабочего дня.\n\n## Исключения\n\nИсключения из указанных выше сроков (включая возврат Enterprise после 30-го дня)\nтребуют письменного одобрения вице-президента по доходам. Запросы на исключение\nподаются через сервис-деск финансового отдела с указанием ID заказа и\nобоснования.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\refund_policy.md"
+                }
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment 2 discusses refund policy for equipment; it does not address error codes. Score 0.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "4df4ff41c9dead17",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "# Northwind Robotics — Поддержка и SLA\n\n_Последнее обновление: 30.01.2026. Владелец: Клиентская поддержка._\n\n## Уровни поддержки\n\n| Тариф      | Каналы                  | Часы работы        |\n|------------|-------------------------|--------------------|\n| Starter    | Email, документация     | Рабочие часы       |\n| Team       | Email, чат              | Рабочие часы       |\n| Enterprise | Email, чат, телефон, TAM | 24/7              |\n\n«Рабочие часы» — это 9:00–18:00 в основном часовом поясе клиента, с понедельника\nпо пятницу, исключая местные государственные праздники.\n\n## SLA по времени ответа (Enterprise)\n\nУровень серьёзности (severity) устанавливает поддержка Northwind на основе\nзаявленного клиентом влияния:\n\n- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.\n- **Sev 2 (серьёзная деградация):** первый ответ в течение **4 рабочих часов**.\n- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**.\n\nНад инцидентами Sev 1 работают непрерывно, пока не будет найдено обходное решение\nили устранена проблема. Каждому аккаунту Enterprise назначается выделенный\nтехнический менеджер аккаунта (TAM).",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Fragment 3 explains support SLAs, not error codes. Score 0.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "4162924aefa84fb9",
+                "doc_id": "2de8eae6ceff3db9",
+                "source": "onboarding.md",
+                "text": "## Доступы\n\nБазовые доступы (почта, мессенджер, Workday, вики) выдаются автоматически.\nДоступ к продакшен-системам новичкам выдаётся **не ранее окончания\nиспытательного срока** и оформляется по общей процедуре политики безопасности.\n\n## Встречи с руководителем\n\nПервые 3 месяца руководитель проводит с новичком встречу один на один\n**каждую неделю**, затем — раз в две недели.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\onboarding.md"
+                }
+              },
+              "score": 0.00078125,
+              "relevance": 0.0,
+              "reason": "Fragment 4 is about onboarding access procedures, unrelated. Score 0.",
+              "sources": {
+                "dense": 4.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": []
+  },
+  "latency_s": 9.78115270001581,
+  "fresh_tokens": 6668
+}

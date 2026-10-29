@@ -1,0 +1,1122 @@
+{
+  "started_utc": "2026-11-03T21:34:09.209550+00:00",
+  "balance_before_rub": 71.44535530526176,
+  "protocol_sha256": "a792fe8f000b00bed6bae9150bf2ea4ced6f3f01755816c4184593539a3ae486",
+  "protocol": {
+    "cases": [
+      {
+        "id": "q01",
+        "type": "fact",
+        "question": "Какое окно возврата средств для корпоративных клиентов?",
+        "expected": "30 календарных дней с даты начала контракта.",
+        "relevant_sources": [
+          {
+            "source": "refund_policy.md",
+            "quote": "окно возврата составляет 30 календарных дней с даты начала контракта"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q02",
+        "type": "fact",
+        "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+        "expected": "Нет. Подрядчики не накапливают оплачиваемый отпуск; их отгулы неоплачиваемые и согласуются с нанимающим руководителем.",
+        "relevant_sources": [
+          {
+            "source": "hr_timeoff.md",
+            "quote": "Подрядчики и временный персонал не накапливают оплачиваемый отпуск"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q03",
+        "type": "multi_hop",
+        "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+        "expected": "Сообщить в течение 1 часа с момента обнаружения; уведомление регулятора об утечке — в течение 72 часов по GDPR.",
+        "relevant_sources": [
+          {
+            "source": "security_policy.md",
+            "quote": "в течение 1 часа с момента обнаружения"
+          },
+          {
+            "source": "security_policy.md",
+            "quote": "уведомление регулятора в течение 72 часов"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q04",
+        "type": "comparison",
+        "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+        "expected": "NW-100: грузоподъёмность 5 кг, гарантия 2 года. NW-200: грузоподъёмность 18 кг, гарантия 3 года.",
+        "relevant_sources": [
+          {
+            "source": "product_specs.md",
+            "quote": "Грузоподъёмность: 5 кг"
+          },
+          {
+            "source": "product_specs.md",
+            "quote": "Гарантия: 2 года"
+          },
+          {
+            "source": "product_specs.md",
+            "quote": "Грузоподъёмность: 18 кг"
+          },
+          {
+            "source": "product_specs.md",
+            "quote": "Гарантия: 3 года"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q05",
+        "type": "multi_hop",
+        "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+        "expected": "Он автоматически эскалируется директору поддержки и TAM; клиент имеет право на сервисную компенсацию 5% от месячной платы за каждый пропущенный инцидент, но не более 25%.",
+        "relevant_sources": [
+          {
+            "source": "support_sla.md",
+            "quote": "автоматически эскалируется директору поддержки и TAM аккаунта"
+          },
+          {
+            "source": "support_sla.md",
+            "quote": "5% от месячной платы"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q06",
+        "type": "exact_token",
+        "question": "Можно ли использовать захват от NW-100 на NW-200?",
+        "expected": "Да; обе модели имеют одинаковый монтажный фланец ISO 9409-1-50-4-M6, поэтому захваты взаимозаменяемы.",
+        "relevant_sources": [
+          {
+            "source": "product_specs.md",
+            "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q07",
+        "type": "fact",
+        "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+        "expected": "10 оплачиваемых больничных дней в год, отдельно от отпуска; они не переносятся и не выплачиваются при увольнении.",
+        "relevant_sources": [
+          {
+            "source": "hr_timeoff.md",
+            "quote": "10 оплачиваемых больничных дней"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q08",
+        "type": "fact",
+        "question": "Какой испытательный срок у руководителей?",
+        "expected": "6 месяцев (у большинства остальных сотрудников — 3 месяца).",
+        "relevant_sources": [
+          {
+            "source": "onboarding.md",
+            "quote": "Для руководителей и главных инженеров — 6 месяцев"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q09",
+        "type": "fact",
+        "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+        "expected": "9 000 ₽ за ночь (Москва и Санкт-Петербург).",
+        "relevant_sources": [
+          {
+            "source": "travel_expenses.md",
+            "quote": "Москва и Санкт-Петербург — 9 000 ₽"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q10",
+        "type": "fact",
+        "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+        "expected": "Не менее 2 дней в неделю; якорные дни — вторник и четверг.",
+        "relevant_sources": [
+          {
+            "source": "remote_work.md",
+            "quote": "не менее 2 дней в неделю в офисе"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q11",
+        "type": "fact",
+        "question": "За какой срок нужно подавать заявку на отпуск?",
+        "expected": "Не менее чем за 2 недели до планового отпуска, через Workday, с одобрения руководителя.",
+        "relevant_sources": [
+          {
+            "source": "hr_timeoff.md",
+            "quote": "не менее чем за 2 недели до планового отпуска"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q12",
+        "type": "exact_token",
+        "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+        "expected": "Истёк сертификат устройства: переустановить профиль VPN через Портал самообслуживания и перезагрузить ноутбук.",
+        "relevant_sources": [
+          {
+            "source": "it_helpdesk_faq.md",
+            "quote": "ERR-VPN-720: истёк сертификат устройства"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q13",
+        "type": "exact_token",
+        "question": "Что означает код E-401?",
+        "expected": "Манипулятор не откалиброван (не выполнен homing); нужно выполнить процедуру homing перед движением.",
+        "relevant_sources": [
+          {
+            "source": "product_specs.md",
+            "quote": "E-401: манипулятор не откалиброван"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q14",
+        "type": "exact_token",
+        "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+        "expected": "Только с NW-200: вакуумный захват требует сжатого воздуха и поддерживается только контроллером NW-200.",
+        "relevant_sources": [
+          {
+            "source": "parts_and_shipping.md",
+            "quote": "NW-VAC-05 | Вакуумный захват с пятью присосками | только NW-200"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q15",
+        "type": "exact_token",
+        "question": "Что такое NW-TCH-01 и сколько он стоит?",
+        "expected": "Пульт обучения (teach pendant) для NW-100 и NW-200, цена 210 000 ₽.",
+        "relevant_sources": [
+          {
+            "source": "parts_and_shipping.md",
+            "quote": "NW-TCH-01 | Пульт обучения (teach pendant) | NW-100, NW-200 | 210 000 ₽"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q16",
+        "type": "exact_token",
+        "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+        "expected": "Ответить в тикете словом «ESCALATE».",
+        "relevant_sources": [
+          {
+            "source": "support_sla.md",
+            "quote": "ответив «ESCALATE» в тикете"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q17",
+        "type": "exact_token",
+        "question": "Что значит ошибка ERR-VPN-431?",
+        "expected": "Превышено число одновременных подключений: учётная запись может быть подключена не более чем с 2 устройств, нужно отключить VPN на остальных.",
+        "relevant_sources": [
+          {
+            "source": "it_helpdesk_faq.md",
+            "quote": "ERR-VPN-431: превышено число одновременных подключений"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q18",
+        "type": "multi_hop",
+        "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+        "expected": "Нет: доступ к продакшену новичкам выдаётся не ранее окончания испытательного срока; заявку одобряет владелец системы, доступ пересматривается ежеквартально.",
+        "relevant_sources": [
+          {
+            "source": "onboarding.md",
+            "quote": "Доступ к продакшен-системам новичкам выдаётся не ранее окончания испытательного срока"
+          },
+          {
+            "source": "security_policy.md",
+            "quote": "требует заявки, одобренной владельцем системы"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q19",
+        "type": "multi_hop",
+        "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+        "expected": "Сумма выше 1 000 000 ₽, поэтому нужен тендер минимум с 3 коммерческими предложениями и решение закупочного комитета; персональные данные клиентов относятся к Restricted, поэтому поставщик должен пройти проверку безопасности и подписать DPA до начала работы, а затем проходить ежегодную переоценку.",
+        "relevant_sources": [
+          {
+            "source": "procurement.md",
+            "quote": "свыше 1 000 000 ₽ — проводится тендер: нужно собрать не менее 3 коммерческих предложений"
+          },
+          {
+            "source": "security_policy.md",
+            "quote": "Персональные данные клиентов и платёжная информация всегда относятся к категории Restricted"
+          },
+          {
+            "source": "security_policy.md",
+            "quote": "должны пройти проверку безопасности и подписать Соглашение об обработке данных (DPA)"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q20",
+        "type": "multi_hop",
+        "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+        "expected": "NW-100 работает только на канале stable, а stable обновляется раз в квартал.",
+        "relevant_sources": [
+          {
+            "source": "product_specs.md",
+            "quote": "Гарантия: 2 года - Канал прошивки: stable"
+          },
+          {
+            "source": "release_process.md",
+            "quote": "Канал stable получает обновления раз в квартал"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q21",
+        "type": "multi_hop",
+        "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+        "expected": "Ошибка означает, что превышено число одновременных подключений (не более 2 устройств), нужно отключить VPN на других устройствах. Без VPN работать через публичный Wi-Fi нельзя: публичные сети допускаются только при включённом VPN.",
+        "relevant_sources": [
+          {
+            "source": "it_helpdesk_faq.md",
+            "quote": "ERR-VPN-431: превышено число одновременных подключений"
+          },
+          {
+            "source": "remote_work.md",
+            "quote": "Публичные сети Wi-Fi (кафе, аэропорты, отели) допускаются исключительно при включённом VPN"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q22",
+        "type": "multi_hop",
+        "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+        "expected": "Да: NW-GRP-02 совместим с NW-100 и NW-200, потому что у моделей одинаковый монтажный фланец ISO 9409-1-50-4-M6.",
+        "relevant_sources": [
+          {
+            "source": "parts_and_shipping.md",
+            "quote": "NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200"
+          },
+          {
+            "source": "product_specs.md",
+            "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q23",
+        "type": "multi_hop",
+        "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+        "expected": "Нет: полностью удалённый формат возможен только после успешного прохождения испытательного срока, а он обычно длится 3 месяца (у руководителей 6 месяцев).",
+        "relevant_sources": [
+          {
+            "source": "remote_work.md",
+            "quote": "только после успешного прохождения испытательного срока"
+          },
+          {
+            "source": "onboarding.md",
+            "quote": "Испытательный срок для большинства сотрудников — 3 месяца"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q24",
+        "type": "paraphrase",
+        "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+        "expected": "30 дней с даты доставки, если устройство в пригодном для перепродажи состоянии; для вскрытого исправного оборудования действует сбор 15%.",
+        "relevant_sources": [
+          {
+            "source": "refund_policy.md",
+            "quote": "вернуть в течение 30 дней с даты доставки"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q25",
+        "type": "paraphrase",
+        "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+        "expected": "28 дней оплачиваемого отпуска в год (стаж 6+ лет).",
+        "relevant_sources": [
+          {
+            "source": "hr_timeoff.md",
+            "quote": "6+ лет: 28 дней в год"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q26",
+        "type": "paraphrase",
+        "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+        "expected": "В течение 5–10 рабочих дней после одобрения на исходный способ оплаты; банковский перевод — до 21 рабочего дня.",
+        "relevant_sources": [
+          {
+            "source": "refund_policy.md",
+            "quote": "в течение 5–10 рабочих дней после одобрения"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q27",
+        "type": "paraphrase",
+        "question": "Что будет, если вставить флешку в рабочий компьютер?",
+        "expected": "Съёмные носители заблокированы по умолчанию; для использования нужно одобрение службы безопасности.",
+        "relevant_sources": [
+          {
+            "source": "security_policy.md",
+            "quote": "Съёмные носители (USB-накопители) заблокированы по умолчанию"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q28",
+        "type": "paraphrase",
+        "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+        "expected": "Суточные по России — 1 500 ₽ за каждый день в пути.",
+        "relevant_sources": [
+          {
+            "source": "travel_expenses.md",
+            "quote": "Командировки по России: 1 500 ₽ за каждый день в пути"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q29",
+        "type": "paraphrase",
+        "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+        "expected": "Нет: использовать неодобренные ИИ-инструменты с корпоративными данными запрещено.",
+        "relevant_sources": [
+          {
+            "source": "security_policy.md",
+            "quote": "Использование неодобренных ИИ-инструментов или браузерных расширений с корпоративными данными запрещено"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q30",
+        "type": "comparison",
+        "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+        "expected": "Обычный пароль — каждые 180 дней; привилегированные (административные) учётные данные — каждые 90 дней.",
+        "relevant_sources": [
+          {
+            "source": "it_helpdesk_faq.md",
+            "quote": "Обычный пароль сотрудника нужно менять каждые 180 дней"
+          },
+          {
+            "source": "security_policy.md",
+            "quote": "ротируются каждые 90 дней"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q31",
+        "type": "comparison",
+        "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+        "expected": "Team — 600 запросов в минуту на рабочее пространство, Enterprise — 6 000 запросов в минуту.",
+        "relevant_sources": [
+          {
+            "source": "product_specs.md",
+            "quote": "600 запросов в минуту на рабочее пространство на тарифе Team и 6 000 запросов в минуту на тарифе Enterprise"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q32",
+        "type": "comparison",
+        "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+        "expected": "Sev 1 — в течение 1 часа, 24/7; Sev 3 — в течение 1 рабочего дня.",
+        "relevant_sources": [
+          {
+            "source": "support_sla.md",
+            "quote": "Sev 1 (продакшен не работает): первый ответ в течение 1 часа"
+          },
+          {
+            "source": "support_sla.md",
+            "quote": "Sev 3 (незначительное / вопрос): первый ответ в течение 1 рабочего дня"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q33",
+        "type": "comparison",
+        "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+        "expected": "Москва и область — 2 рабочих дня, другие регионы России — 5–7 рабочих дней.",
+        "relevant_sources": [
+          {
+            "source": "parts_and_shipping.md",
+            "quote": "Москва и область: 2 рабочих дня"
+          },
+          {
+            "source": "parts_and_shipping.md",
+            "quote": "Другие регионы России: 5–7 рабочих дней"
+          }
+        ],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q34",
+        "type": "unanswerable",
+        "answerable": false,
+        "question": "Какая страховая сумма по ДМС у сотрудников?",
+        "expected": "В базе знаний нет информации о ДМС.",
+        "relevant_sources": [],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q35",
+        "type": "unanswerable",
+        "answerable": false,
+        "question": "Сколько стоит подписка AtlasControl на тарифе Enterprise в месяц?",
+        "expected": "В базе знаний нет цены подписки AtlasControl.",
+        "relevant_sources": [],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q36",
+        "type": "unanswerable",
+        "answerable": false,
+        "question": "Какая грузоподъёмность у манипулятора NW-300?",
+        "expected": "Модели NW-300 в базе знаний нет.",
+        "relevant_sources": [],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q37",
+        "type": "unanswerable",
+        "answerable": false,
+        "question": "Как рассчитывается годовая премия сотрудников?",
+        "expected": "В базе знаний нет информации о годовой премии.",
+        "relevant_sources": [],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q38",
+        "type": "unanswerable",
+        "answerable": false,
+        "question": "Можно ли приходить в офис с собакой?",
+        "expected": "В базе знаний нет правил о животных в офисе.",
+        "relevant_sources": [],
+        "suite": "ordinary"
+      },
+      {
+        "id": "q39",
+        "type": "unanswerable",
+        "answerable": false,
+        "question": "Какое SLA по времени первого ответа на Sev 1 для клиентов тарифа Team?",
+        "expected": "SLA по времени ответа описан только для Enterprise; для Team в базе его нет.",
+        "relevant_sources": [],
+        "suite": "ordinary"
+      },
+      {
+        "id": "hop01",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Лира?",
+        "expected": "868 рублей за один отчёт; пакет K-17.",
+        "answerable": true,
+        "expected_amount": 868,
+        "expected_code": "K-17",
+        "relevant_sources": [
+          {
+            "source": "project_00.md",
+            "quote": "Карточка проекта Лира: для расходов проекта назначен пакет K-17."
+          },
+          {
+            "source": "policy_K17_current.md",
+            "quote": "Пакету K-17 соответствует лимит компенсации 868 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop02",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Кедр?",
+        "expected": "309 рублей за один отчёт; пакет K-04.",
+        "answerable": true,
+        "expected_amount": 309,
+        "expected_code": "K-04",
+        "relevant_sources": [
+          {
+            "source": "project_01.md",
+            "quote": "Карточка проекта Кедр: для расходов проекта назначен пакет K-04."
+          },
+          {
+            "source": "policy_K04_current.md",
+            "quote": "Пакету K-04 соответствует лимит компенсации 309 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop03",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+        "expected": "1384 рублей за один отчёт; пакет K-29.",
+        "answerable": true,
+        "expected_amount": 1384,
+        "expected_code": "K-29",
+        "relevant_sources": [
+          {
+            "source": "project_02.md",
+            "quote": "Карточка проекта Вега: для расходов проекта назначен пакет K-29."
+          },
+          {
+            "source": "policy_K29_current.md",
+            "quote": "Пакету K-29 соответствует лимит компенсации 1384 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop04",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Ирис?",
+        "expected": "610 рублей за один отчёт; пакет K-11.",
+        "answerable": true,
+        "expected_amount": 610,
+        "expected_code": "K-11",
+        "relevant_sources": [
+          {
+            "source": "project_03.md",
+            "quote": "Карточка проекта Ирис: для расходов проекта назначен пакет K-11."
+          },
+          {
+            "source": "policy_K11_current.md",
+            "quote": "Пакету K-11 соответствует лимит компенсации 610 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop05",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Борей?",
+        "expected": "1556 рублей за один отчёт; пакет K-33.",
+        "answerable": true,
+        "expected_amount": 1556,
+        "expected_code": "K-33",
+        "relevant_sources": [
+          {
+            "source": "project_04.md",
+            "quote": "Карточка проекта Борей: для расходов проекта назначен пакет K-33."
+          },
+          {
+            "source": "policy_K33_current.md",
+            "quote": "Пакету K-33 соответствует лимит компенсации 1556 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop06",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сапфир?",
+        "expected": "438 рублей за один отчёт; пакет K-07.",
+        "answerable": true,
+        "expected_amount": 438,
+        "expected_code": "K-07",
+        "relevant_sources": [
+          {
+            "source": "project_05.md",
+            "quote": "Карточка проекта Сапфир: для расходов проекта назначен пакет K-07."
+          },
+          {
+            "source": "policy_K07_current.md",
+            "quote": "Пакету K-07 соответствует лимит компенсации 438 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop07",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+        "expected": "1169 рублей за один отчёт; пакет K-24.",
+        "answerable": true,
+        "expected_amount": 1169,
+        "expected_code": "K-24",
+        "relevant_sources": [
+          {
+            "source": "project_06.md",
+            "quote": "Карточка проекта Тайга: для расходов проекта назначен пакет K-24."
+          },
+          {
+            "source": "policy_K24_current.md",
+            "quote": "Пакету K-24 соответствует лимит компенсации 1169 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop08",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Альтаир?",
+        "expected": "223 рублей за один отчёт; пакет K-02.",
+        "answerable": true,
+        "expected_amount": 223,
+        "expected_code": "K-02",
+        "relevant_sources": [
+          {
+            "source": "project_07.md",
+            "quote": "Карточка проекта Альтаир: для расходов проекта назначен пакет K-02."
+          },
+          {
+            "source": "policy_K02_current.md",
+            "quote": "Пакету K-02 соответствует лимит компенсации 223 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop09",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Лотос?",
+        "expected": "1470 рублей за один отчёт; пакет K-31.",
+        "answerable": true,
+        "expected_amount": 1470,
+        "expected_code": "K-31",
+        "relevant_sources": [
+          {
+            "source": "project_08.md",
+            "quote": "Карточка проекта Лотос: для расходов проекта назначен пакет K-31."
+          },
+          {
+            "source": "policy_K31_current.md",
+            "quote": "Пакету K-31 соответствует лимит компенсации 1470 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop10",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Риф?",
+        "expected": "739 рублей за один отчёт; пакет K-14.",
+        "answerable": true,
+        "expected_amount": 739,
+        "expected_code": "K-14",
+        "relevant_sources": [
+          {
+            "source": "project_09.md",
+            "quote": "Карточка проекта Риф: для расходов проекта назначен пакет K-14."
+          },
+          {
+            "source": "policy_K14_current.md",
+            "quote": "Пакету K-14 соответствует лимит компенсации 739 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop11",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Оникс?",
+        "expected": "1040 рублей за один отчёт; пакет K-21.",
+        "answerable": true,
+        "expected_amount": 1040,
+        "expected_code": "K-21",
+        "relevant_sources": [
+          {
+            "source": "project_10.md",
+            "quote": "Карточка проекта Оникс: для расходов проекта назначен пакет K-21."
+          },
+          {
+            "source": "policy_K21_current.md",
+            "quote": "Пакету K-21 соответствует лимит компенсации 1040 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      },
+      {
+        "id": "hop12",
+        "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сокол?",
+        "expected": "524 рублей за один отчёт; пакет K-09.",
+        "answerable": true,
+        "expected_amount": 524,
+        "expected_code": "K-09",
+        "relevant_sources": [
+          {
+            "source": "project_11.md",
+            "quote": "Карточка проекта Сокол: для расходов проекта назначен пакет K-09."
+          },
+          {
+            "source": "policy_K09_current.md",
+            "quote": "Пакету K-09 соответствует лимит компенсации 524 рублей за один отчёт."
+          }
+        ],
+        "suite": "sequential"
+      }
+    ],
+    "arms": {
+      "anchor_free": [
+        "anchored",
+        "free"
+      ],
+      "score_free": [
+        "anchored_score",
+        "free"
+      ],
+      "score_units": [
+        "anchored_score",
+        "units"
+      ]
+    },
+    "sources": {
+      "results\\validation\\agent_full_context\\cases\\q01.json": "29c0543e04b9b2af5c234a87dc38dc7dd58c59ebf93b9429d151a1a60177820d",
+      "results\\validation\\agent_full_context\\cases\\q02.json": "3a3558968a529e9cd4f0d2fd3377304c8f4b4744f0c66d5628a3d567b98514ed",
+      "results\\validation\\agent_full_context\\cases\\q03.json": "ae9396c0d559a246d17edc7ed378bd662b52082362e12204ecb5584a7eee95a6",
+      "results\\validation\\agent_full_context\\cases\\q04.json": "cc69d9a5c9466dceb83fcd3f7316f2c8c644e8e37d6a55b103e4e932dbfd2beb",
+      "results\\validation\\agent_full_context\\cases\\q05.json": "a551c549637c17e43aee91be88995916146e3078912ed94b1233b2714cc19c06",
+      "results\\validation\\agent_full_context\\cases\\q06.json": "f29fb5156508a3935280a1a2090ea166fc11f7ec6afd372ce94e15fb350ea337",
+      "results\\validation\\agent_full_context\\cases\\q07.json": "c4fb0b7707aacc35a15b1f007d03aeadf91e29adc103541495fe3ff86ed3531b",
+      "results\\validation\\agent_full_context\\cases\\q08.json": "9d7bf2b7b4e910650ed591ee8a6242f0d70bc95d3ee6e9334eeb51cfb5f23d7e",
+      "results\\validation\\agent_full_context\\cases\\q09.json": "00a3987aefc8e79cc45432d421b45111d67fec546190a08ad2b57f4483e66ead",
+      "results\\validation\\agent_full_context\\cases\\q10.json": "4d476a20822ca0281c89c58095699606e32ba65b78ef7bfbbc1310cbad6c78b4",
+      "results\\validation\\agent_full_context\\cases\\q11.json": "9fafd437e8d9b838e2dbf8bb673f39cf869a153af6a630f83412dffb6ac960d9",
+      "results\\validation\\agent_full_context\\cases\\q12.json": "c6507b1e9d5519e657a041aa1518fff6326b6d927f89c674fb06500154099c68",
+      "results\\validation\\agent_full_context\\cases\\q13.json": "cfe89092d205f7cbfc4bfa69eb01ccca59e05da8932fd02906ffadd210b2e0e7",
+      "results\\validation\\agent_full_context\\cases\\q14.json": "bd208740b1ddf59079c56cdbcf333984c24deb85f4cc695cc945e1ec675b7c91",
+      "results\\validation\\agent_full_context\\cases\\q15.json": "76c952801a4d5c6480346dd7d3e808ac9a256e33b29d9196421ae7a052fdd178",
+      "results\\validation\\agent_full_context\\cases\\q16.json": "0a17d7e74fd6039ba88819c43292852dc0a82e1b086d50f073d24926ff8dfb2d",
+      "results\\validation\\agent_full_context\\cases\\q17.json": "19aef7abaab1104f4fa622c557418fd09da702b7576a499211dc54992af4260b",
+      "results\\validation\\agent_full_context\\cases\\q18.json": "b099aba03aee4e23afd85342e0b5d415d0783d6ac98d2327af9dbf282d938799",
+      "results\\validation\\agent_full_context\\cases\\q19.json": "004c82a73ddad1973fe51ac3c02d1d924fc97ae1cdb805600ef1fec1923baaa3",
+      "results\\validation\\agent_full_context\\cases\\q20.json": "f730f095e49d3e64b2a8030acf3970056fd453155a4b370f4f3ca96eab0df936",
+      "results\\validation\\agent_full_context\\cases\\q21.json": "5b4b483173f181698cad9b9f04eeb4f3c59f6f89be1526e908e29848afd7a08a",
+      "results\\validation\\agent_full_context\\cases\\q22.json": "ed0c85558b156907add91802bca54039b74e0782505fd7015d79359d1d931aef",
+      "results\\validation\\agent_full_context\\cases\\q23.json": "ac8073957a2522e073b106c181e0e30a7b378d8002ecdadb4381d93ccb35eac3",
+      "results\\validation\\agent_full_context\\cases\\q24.json": "b645e30eed9e5daa28fb692a835e4455ef62d67ddf85050503ad1a1fa7dbe19c",
+      "results\\validation\\agent_full_context\\cases\\q25.json": "1464464f7a1f673edddb5545da503193ff541a7cc327fb28adc7e20e435895e9",
+      "results\\validation\\agent_full_context\\cases\\q26.json": "547fa75456611cc7dbdb368bf543b3624f91cbe53808ccbf5fa74b791b06853a",
+      "results\\validation\\agent_full_context\\cases\\q27.json": "8f2b133736314a509a88e4b2e7a8b909f423bf2a0d12adbc20d5c5718f6dbcf1",
+      "results\\validation\\agent_full_context\\cases\\q28.json": "26865da6ef1db9010fe11f4898dc8ac58fef3e2b8a678c4231ef1c794b0baa9a",
+      "results\\validation\\agent_full_context\\cases\\q29.json": "ea8a87170ba0dde4a7fb3967052219a55dde545bd3c89559532fbba0715c7d2a",
+      "results\\validation\\agent_full_context\\cases\\q30.json": "bf377ee54bb3d44c76f0f5a56b654794ace41baf46b70e22667b5a928e8c823f",
+      "results\\validation\\agent_full_context\\cases\\q31.json": "73569dc89ae3ebb4c19da8bcbf93b4354bdcd25b62ba3542dc048e2279fb8a80",
+      "results\\validation\\agent_full_context\\cases\\q32.json": "c941ba1cf3edb3df6a15548ad97ae179e79790aee1d67815d8f82afc0dd0d6b2",
+      "results\\validation\\agent_full_context\\cases\\q33.json": "9190cd1bb11063a4fc76e2ce6ec50911539ef800d473991e109fa186772f86db",
+      "results\\validation\\agent_full_context\\cases\\q34.json": "95865b5b2062df22edad06ac2adccd83ff8eaccc15b0a76ec807723cc3a1ce70",
+      "results\\validation\\agent_full_context\\cases\\q35.json": "a3d3564f6f8048995f666acd46b010e881978c247faaa90b643ee886d06223af",
+      "results\\validation\\agent_full_context\\cases\\q36.json": "4dfe5bd0b1fb694c02d8ec4eaf9221e7ebac5c6fe3f93f2af526b859511bf5dc",
+      "results\\validation\\agent_full_context\\cases\\q37.json": "4c349d1b6545062b04a055d0575c90bf2092b99b4abd00b93df15be9d2cf2c64",
+      "results\\validation\\agent_full_context\\cases\\q38.json": "1d49b0618dc328f5ea1ef1b8c9ce2c31efbc0cfe976fc44a382f8b528660151a",
+      "results\\validation\\agent_full_context\\cases\\q39.json": "de4d52998f7c4e8219cb703b55f1ff56b4f76006c8a86521d5956369404fdc78",
+      "results\\validation\\sequential\\agent_full\\hop01.json": "bb82c42b42cfea477ee6a726b584db7175049ad53c1cb565b8eabc28fb72d935",
+      "results\\validation\\sequential\\agent_full\\hop02.json": "8d3928e41172663c354c86c9573a1089fbb4bb307bfc2fcb1e66b3cc4508d6e3",
+      "results\\validation\\sequential\\agent_full\\hop03.json": "387d468ab36cdd4a72bec8fcdf98946cd0f3f77f769b6ce5737f79ea4e73f1a2",
+      "results\\validation\\sequential\\agent_full\\hop04.json": "c38df64a055f3079e31389b396a79dc02768eef4ac4d723a12f1f13d4eaf406f",
+      "results\\validation\\sequential\\agent_full\\hop05.json": "567e557d2857cad9fd1f3d356fc2baae0b6b5c9a80a315a10b32696303646997",
+      "results\\validation\\sequential\\agent_full\\hop06.json": "9ad1080556e99674edc0fd4bec886424cb2fcc5f5832c02bb07231e2a37f0c8e",
+      "results\\validation\\sequential\\agent_full\\hop07.json": "9b37d7869f543709cacdc47f4593ad4d854e1f93d1352b5b86fe4980ad4ac6de",
+      "results\\validation\\sequential\\agent_full\\hop08.json": "585d1a0e9737c5ffc0bcfccd274fa021c3d44df647f3500eb128ec408c7c744f",
+      "results\\validation\\sequential\\agent_full\\hop09.json": "78d529d88cb792d8e922843ddca1f1d70570fa982d1daa2c9bc05ce5cd0fbd55",
+      "results\\validation\\sequential\\agent_full\\hop10.json": "86e0608a941a0923374ee51ede725828f7d34179ed40ccb3fef5fb4af7e59e59",
+      "results\\validation\\sequential\\agent_full\\hop11.json": "11520a9569cbc339e76dc7e87b3cb7fcc2485ed1c8e74c94798095068d717e8c",
+      "results\\validation\\sequential\\agent_full\\hop12.json": "17dea297b21f681c28340fa90ebdff786f543e6ba2893a56e6cf42258f2ac342"
+    },
+    "review_plan": [
+      {
+        "review_id": "R01",
+        "private_id": "flight_0",
+        "kind": "claim",
+        "question": "Мой перелёт длится ровно 6 часов. Директор согласен на бизнес-класс.",
+        "claim": "При этих условиях бизнес-класс допускается по указанному правилу.",
+        "sources": [
+          {
+            "source": "travel_expenses.md",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ]
+      },
+      {
+        "review_id": "R02",
+        "private_id": "trial_1",
+        "kind": "claim",
+        "question": "Я главный инженер и ещё не завершил испытательный срок.",
+        "claim": "После окончания испытательного срока продакшен-доступ выдаётся автоматически без общей процедуры.",
+        "sources": [
+          {
+            "source": "onboarding.md",
+            "text": "## Доступы\n\nБазовые доступы (почта, мессенджер, Workday, вики) выдаются автоматически.\nДоступ к продакшен-системам новичкам выдаётся **не ранее окончания\nиспытательного срока** и оформляется по общей процедуре политики безопасности."
+          }
+        ]
+      },
+      {
+        "review_id": "R03",
+        "private_id": "refund_1",
+        "kind": "claim",
+        "question": "Исправный NW-100 вскрыт, клиент передумал и возвращает его через 12 дней после доставки.",
+        "claim": "Сбор за повторное складирование здесь равен 5 процентам.",
+        "sources": [
+          {
+            "source": "refund_policy.md",
+            "text": "## Возврат оборудования\n\nФизические устройства (роботизированные манипуляторы NW-100 и NW-200) можно\nвернуть в течение **30 дней** с даты доставки с полным возвратом средств при\nусловии, что устройство в пригодном для перепродажи состоянии. Обратную доставку\nбракованных устройств оплачивает Northwind; обратную доставку при возврате «по\nпередумали» оплачивает клиент. К вскрытому исправному оборудованию применяется\nсбор за повторное складирование в размере **15%**."
+          }
+        ]
+      },
+      {
+        "review_id": "R04",
+        "private_id": "purchase_1",
+        "kind": "claim",
+        "question": "Нужно внести предоплату 70 процентов новому поставщику.",
+        "claim": "Если финансовый директор согласен, предоплата больше 50 процентов сама по себе не нарушает это правило.",
+        "sources": [
+          {
+            "source": "procurement.md",
+            "text": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора."
+          }
+        ]
+      },
+      {
+        "review_id": "R05",
+        "private_id": "q08",
+        "kind": "answer",
+        "case_id": "q08",
+        "arm": "anchor_free"
+      },
+      {
+        "review_id": "R06",
+        "private_id": "pto_1",
+        "kind": "claim",
+        "question": "Я штатный сотрудник со стажем 4 года. Сколько дней отпуска начисляется?",
+        "claim": "Остаток отпуска сверх 40 дней можно сохранить, если согласен руководитель.",
+        "sources": [
+          {
+            "source": "hr_timeoff.md",
+            "text": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника."
+          }
+        ]
+      },
+      {
+        "review_id": "R07",
+        "private_id": "flight_1",
+        "kind": "claim",
+        "question": "Мой перелёт длится ровно 6 часов. Директор согласен на бизнес-класс.",
+        "claim": "Если перелёт длится 7 часов, одобрение директора для бизнес-класса не нужно.",
+        "sources": [
+          {
+            "source": "travel_expenses.md",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ]
+      },
+      {
+        "review_id": "R08",
+        "private_id": "hop03",
+        "kind": "answer",
+        "case_id": "hop03",
+        "arm": "score_free"
+      },
+      {
+        "review_id": "R09",
+        "private_id": "purchase_0",
+        "kind": "claim",
+        "question": "Нужно внести предоплату 70 процентов новому поставщику.",
+        "claim": "Для этой предоплаты требуется согласие финансового директора.",
+        "sources": [
+          {
+            "source": "procurement.md",
+            "text": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора."
+          }
+        ]
+      },
+      {
+        "review_id": "R10",
+        "private_id": "q38",
+        "kind": "answer",
+        "case_id": "q38",
+        "arm": "score_units"
+      },
+      {
+        "review_id": "R11",
+        "private_id": "hop08",
+        "kind": "answer",
+        "case_id": "hop08",
+        "arm": "anchor_free"
+      },
+      {
+        "review_id": "R12",
+        "private_id": "robot_0",
+        "kind": "claim",
+        "question": "Нужно проверить характеристики NW-200 для нового проекта.",
+        "claim": "Грузоподъёмность этой модели составляет 18 кг, гарантия — 3 года.",
+        "sources": [
+          {
+            "source": "product_specs.md",
+            "text": "## Манипулятор NW-200 (промышленный уровень)\n\n- Грузоподъёмность: **18 кг**\n- Радиус действия: 1300 мм\n- Повторяемость: ±0,02 мм\n- Степеней свободы: 6\n- Питание: 200–240 В переменного тока, 900 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP, PROFINET\n- Безопасность: соответствие ISO 10218-1, двухканальный аварийный останов\n- Гарантия: **3 года**\n- Канал прошивки: `stable` или `edge`"
+          }
+        ]
+      },
+      {
+        "review_id": "R13",
+        "private_id": "q04",
+        "kind": "answer",
+        "case_id": "q04",
+        "arm": "score_free"
+      },
+      {
+        "review_id": "R14",
+        "private_id": "remote_0",
+        "kind": "claim",
+        "question": "Я полностью удалённый сотрудник. Хочу получить компенсацию интернета и оборудование.",
+        "claim": "При таком формате работы интернет компенсируется в размере 3000 рублей в месяц.",
+        "sources": [
+          {
+            "source": "remote_work.md",
+            "text": "## Компенсации\n\nСотрудникам в полностью удалённом формате компенсируется интернет —\n**3 000 ₽ в месяц**. Офисное кресло и монитор выдаются со склада один раз по\nзаявке в сервис-деск."
+          }
+        ]
+      },
+      {
+        "review_id": "R15",
+        "private_id": "q35",
+        "kind": "answer",
+        "case_id": "q35",
+        "arm": "anchor_free"
+      },
+      {
+        "review_id": "R16",
+        "private_id": "refund_0",
+        "kind": "claim",
+        "question": "Исправный NW-100 вскрыт, клиент передумал и возвращает его через 12 дней после доставки.",
+        "claim": "При этом возврате обратную доставку оплачивает клиент.",
+        "sources": [
+          {
+            "source": "refund_policy.md",
+            "text": "## Возврат оборудования\n\nФизические устройства (роботизированные манипуляторы NW-100 и NW-200) можно\nвернуть в течение **30 дней** с даты доставки с полным возвратом средств при\nусловии, что устройство в пригодном для перепродажи состоянии. Обратную доставку\nбракованных устройств оплачивает Northwind; обратную доставку при возврате «по\nпередумали» оплачивает клиент. К вскрытому исправному оборудованию применяется\nсбор за повторное складирование в размере **15%**."
+          }
+        ]
+      },
+      {
+        "review_id": "R17",
+        "private_id": "q23",
+        "kind": "answer",
+        "case_id": "q23",
+        "arm": "score_free"
+      },
+      {
+        "review_id": "R18",
+        "private_id": "trial_0",
+        "kind": "claim",
+        "question": "Я главный инженер и ещё не завершил испытательный срок.",
+        "claim": "При этих условиях доступ к продакшен-системам ещё не должен быть выдан.",
+        "sources": [
+          {
+            "source": "onboarding.md",
+            "text": "## Доступы\n\nБазовые доступы (почта, мессенджер, Workday, вики) выдаются автоматически.\nДоступ к продакшен-системам новичкам выдаётся **не ранее окончания\nиспытательного срока** и оформляется по общей процедуре политики безопасности."
+          }
+        ]
+      },
+      {
+        "review_id": "R19",
+        "private_id": "remote_1",
+        "kind": "claim",
+        "question": "Я полностью удалённый сотрудник. Хочу получить компенсацию интернета и оборудование.",
+        "claim": "Монитор можно заменить на новый каждые два года.",
+        "sources": [
+          {
+            "source": "remote_work.md",
+            "text": "## Компенсации\n\nСотрудникам в полностью удалённом формате компенсируется интернет —\n**3 000 ₽ в месяц**. Офисное кресло и монитор выдаются со склада один раз по\nзаявке в сервис-деск."
+          }
+        ]
+      },
+      {
+        "review_id": "R20",
+        "private_id": "pto_0",
+        "kind": "claim",
+        "question": "Я штатный сотрудник со стажем 4 года. Сколько дней отпуска начисляется?",
+        "claim": "При таком стаже начисляется 23 дня оплачиваемого отпуска в год.",
+        "sources": [
+          {
+            "source": "hr_timeoff.md",
+            "text": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника."
+          }
+        ]
+      },
+      {
+        "review_id": "R21",
+        "private_id": "q13",
+        "kind": "answer",
+        "case_id": "q13",
+        "arm": "score_units"
+      },
+      {
+        "review_id": "R22",
+        "private_id": "robot_1",
+        "kind": "claim",
+        "question": "Нужно проверить характеристики NW-200 для нового проекта.",
+        "claim": "NW-200 можно эксплуатировать при температуре минус 40 градусов.",
+        "sources": [
+          {
+            "source": "product_specs.md",
+            "text": "## Манипулятор NW-200 (промышленный уровень)\n\n- Грузоподъёмность: **18 кг**\n- Радиус действия: 1300 мм\n- Повторяемость: ±0,02 мм\n- Степеней свободы: 6\n- Питание: 200–240 В переменного тока, 900 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP, PROFINET\n- Безопасность: соответствие ISO 10218-1, двухканальный аварийный останов\n- Гарантия: **3 года**\n- Канал прошивки: `stable` или `edge`"
+          }
+        ]
+      },
+      {
+        "review_id": "R23",
+        "private_id": "access_1",
+        "kind": "claim",
+        "question": "Я руководитель. Пользуюсь системой, которая поддерживает MFA.",
+        "claim": "Для доступа к продакшену достаточно согласия владельца системы на словах, заявку можно не оформлять.",
+        "sources": [
+          {
+            "source": "security_policy.md",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ]
+      },
+      {
+        "review_id": "R24",
+        "private_id": "access_0",
+        "kind": "claim",
+        "question": "Я руководитель. Пользуюсь системой, которая поддерживает MFA.",
+        "claim": "В описанной ситуации я обязан использовать MFA.",
+        "sources": [
+          {
+            "source": "security_policy.md",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ]
+      }
+    ],
+    "free_prompt": "ca25f9f83ebb6ffc043da7dd4d5093a6a31451c774919b1ee9b22e5bc98fa017",
+    "unit_prompt": "d0613aef3287ce0efb484857b2517fcb616a6be23f92ce5d1015b369874897ea",
+    "code": {
+      "atlas_rag/context.py": "8cc3bbc85e8ddbdad28a468df8480f6833c719213f436c33bc5f12b74df318c8",
+      "atlas_rag/citations.py": "17988062e3e110c7e4d7edaa2db0e68c6c04acd70b5bc260cd6b0686fa3a755a",
+      "atlas_rag/generator.py": "49a145e19f063d1c8140f66f0a4dec28cefe1bb9c566f549cf4c39c72ca25a58"
+    }
+  },
+  "original_budget_rub": 100,
+  "note": "Human claim tasks have no model/gold labels and are excluded from model evaluations."
+}

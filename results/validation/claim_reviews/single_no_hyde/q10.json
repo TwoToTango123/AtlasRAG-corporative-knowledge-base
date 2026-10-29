@@ -1,0 +1,90 @@
+{
+  "status": "ok",
+  "id": "q10",
+  "answerable": true,
+  "claims": [
+    "При гибридном формате работа из офиса требуется не менее 2 дней в неделю.",
+    "Вторник является «якорным днем», когда команда собирается вместе.",
+    "Четверг является «якорным днем», когда команда собирается вместе."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l4"
+      ],
+      "rationale": "Источник прямо указывает требование не менее 2 дней в офисе для гибридного формата.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l4",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 206,
+          "end": 281,
+          "text": "- **Гибридный** — не менее **2 дней в неделю** в офисе. Вторник и четверг —"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "unit_ids": [
+        "s0l4",
+        "s0l5"
+      ],
+      "rationale": "Вторник назван якорным днем, когда команда собирается вместе, согласно тексту политики.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l4",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 206,
+          "end": 281,
+          "text": "- **Гибридный** — не менее **2 дней в неделю** в офисе. Вторник и четверг —"
+        },
+        {
+          "id": "s0l5",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 282,
+          "end": 335,
+          "text": "  «якорные дни», в которые команда собирается вместе."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "unit_ids": [
+        "s0l4",
+        "s0l5"
+      ],
+      "rationale": "Четверг назван якорным днем, когда команда собирается вместе, согласно тексту политики.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l4",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 206,
+          "end": 281,
+          "text": "- **Гибридный** — не менее **2 дней в неделю** в офисе. Вторник и четверг —"
+        },
+        {
+          "id": "s0l5",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 282,
+          "end": 335,
+          "text": "  «якорные дни», в которые команда собирается вместе."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "2d51d80c53dd0bc30604c409d8f3fd8b4be3a582f7dd5b09a371a6540b0b9104",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

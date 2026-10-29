@@ -1,0 +1,113 @@
+{
+  "status": "ok",
+  "id": "q36",
+  "answerable": false,
+  "claims": [
+    "В предоставленных материалах нет сведений о манипуляторе NW-300",
+    "В предоставленных материалах описаны только модели NW-100 и NW-200",
+    "Указать грузоподъёмность манипулятора NW-300 невозможно"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "NW-300 не упоминается в перечне моделей в источниках.",
+      "unit_ids": [
+        "s0l2",
+        "s0l11",
+        "s1l5",
+        "s4l1"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l2",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 103,
+          "end": 144,
+          "text": "## Манипулятор NW-100 (начальный уровень)"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 387,
+          "end": 431,
+          "text": "## Манипулятор NW-200 (промышленный уровень)"
+        },
+        {
+          "id": "s1l5",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 208,
+          "end": 272,
+          "text": "| NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200 | 84 000 ₽ |"
+        },
+        {
+          "id": "s4l1",
+          "chunk_id": "9ba36918055c244b",
+          "start": 25,
+          "end": 100,
+          "text": "Физические устройства (роботизированные манипуляторы NW-100 и NW-200) можно"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "В каталоге описаны только спецификации NW-100 и NW-200.",
+      "unit_ids": [
+        "s0l2",
+        "s0l11",
+        "s1l5",
+        "s4l1"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l2",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 103,
+          "end": 144,
+          "text": "## Манипулятор NW-100 (начальный уровень)"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 387,
+          "end": 431,
+          "text": "## Манипулятор NW-200 (промышленный уровень)"
+        },
+        {
+          "id": "s1l5",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 208,
+          "end": 272,
+          "text": "| NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200 | 84 000 ₽ |"
+        },
+        {
+          "id": "s4l1",
+          "chunk_id": "9ba36918055c244b",
+          "start": 25,
+          "end": 100,
+          "text": "Физические устройства (роботизированные манипуляторы NW-100 и NW-200) можно"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "insufficient",
+      "rationale": "Отсутствие данных о NW-300 в источниках делает утверждение непроверяемым.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    }
+  ],
+  "verbatim_matches": [
+    false,
+    false
+  ],
+  "answer_sha256": "af25240ebc3f35325bb5120517d81387a413321893646ff646583a554be15950",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

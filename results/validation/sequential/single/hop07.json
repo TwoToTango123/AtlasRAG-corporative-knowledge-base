@@ -1,0 +1,157 @@
+{
+  "status": "ok",
+  "id": "hop07",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+    "answer": "Для проекта «Тайга» назначен пакет K-24, но действующий норматив именно для этого пакета в предоставленных сведениях отсутствует. Поэтому лимит компенсации за один отчёт на 02.11.2026 определить нельзя.",
+    "citations": [
+      {
+        "chunk_id": "0d2e944093d0e093",
+        "source": "project_06.md",
+        "quote": "для расходов проекта назначен пакет K-24"
+      }
+    ],
+    "confidence": 0.2,
+    "faithfulness": 0.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "0d2e944093d0e093",
+                "doc_id": "0a970ad401079a32",
+                "source": "project_06.md",
+                "text": "# Проект Тайга\nКарточка проекта Тайга: для расходов проекта назначен пакет K-24.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0016393442622950822,
+              "relevance": 0.0,
+              "reason": "Fragment describes project Тайга and its package K-24, but does not provide the compensation limit. Therefore it is not directly useful.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "1aad246d2726e134",
+                "doc_id": "494db5ce23bc8fcc",
+                "source": "policy_K06_current.md",
+                "text": "# Норматив пакета K-06\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-06 соответствует лимит компенсации 395 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Mentions a compensation limit, but for package K-06, not for Тайга. Does not answer the question.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e81495bd16ea0a46",
+                "doc_id": "4b47f226479713b1",
+                "source": "project_03.md",
+                "text": "# Проект Ирис\nКарточка проекта Ирис: для расходов проекта назначен пакет K-11.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Relates to another project (Ирис); no relevance to Тайга.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ad71ea3972d3fd8a",
+                "doc_id": "cfbc9e182d3d11dd",
+                "source": "policy_K09_current.md",
+                "text": "# Норматив пакета K-09\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-09 соответствует лимит компенсации 524 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Mentions a limit for K-09, unrelated to Тайга.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8daa48076b0a72b4",
+                "doc_id": "247127f85d1c12a7",
+                "source": "project_07.md",
+                "text": "# Проект Альтаир\nКарточка проекта Альтаир: для расходов проекта назначен пакет K-02.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "About Альтаир, not Тайга.",
+              "sources": {
+                "sparse": 3.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": [
+      "model_reports_answer_not_found"
+    ]
+  },
+  "latency_s": 21.18808509997325,
+  "graded": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+    "answer": "Для проекта «Тайга» назначен пакет K-24, но действующий норматив именно для этого пакета в предоставленных сведениях отсутствует. Поэтому лимит компенсации за один отчёт на 02.11.2026 определить нельзя.",
+    "answerable": true,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 0.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.6131471927654584
+    }
+  },
+  "first_search_metrics": {
+    "recall": 0.5,
+    "mrr": 1.0,
+    "ndcg": 0.6131471927654584
+  },
+  "first_search_has_both_hops": false,
+  "final_has_both_hops": false,
+  "amount_present": false,
+  "obsolete_amount_present": false,
+  "trajectory_audit": {
+    "rounds": [
+      {
+        "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+        "new_chunks": 5,
+        "new_gold_chunks": 1,
+        "gold_chunks": 1
+      }
+    ],
+    "gold_total": 2,
+    "gold_covered": 1,
+    "zero_new_gold_rounds_after_first": 0,
+    "zero_new_chunk_rounds_after_first": 0
+  },
+  "verbatim_matches": [
+    true
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "review_id": "R17",
+  "missing_exception": "Сотрудники производственного участка и склада работают только в офисном\nформате.",
+  "source_id": "S1",
+  "start": 477,
+  "end": 557,
+  "interpretation": "Existing necessary conditions are supported. Under strict completeness the role exclusion should be stated; no explicit false eligibility promise."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "q25",
+  "answerable": true,
+  "payload_sha256": "6476bc2d05ef7a7f23afe809782422d037a0b7af2f071c0c21f63bfc15379a27",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ корректен и полностью подтверждается источником. Цитата точна и ссылается на правильный чанк. Отсутствуют неподтвержденные утверждения.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+    "answer": "При стаже семь лет вам положено 28 дней оплачиваемого отпуска в год.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

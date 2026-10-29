@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_escalate_1",
+  "split": "scenario_regression",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источники не содержат информации о гарантированном ответе через пять минут после ESCALATE.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

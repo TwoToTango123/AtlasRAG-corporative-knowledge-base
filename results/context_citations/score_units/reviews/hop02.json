@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop02",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону. Цитаты точно подтверждают фактические утверждения: проект Кедр связан с пакетом K-04, а лимит для K-04 составляет 309 рублей с даты 01.01.2026.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "8cab3a4ae8ae0c49300023037bf7029dd40997cfda8882806859b2776325fc13"
+}

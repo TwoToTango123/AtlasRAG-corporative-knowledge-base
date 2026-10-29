@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q11",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 0,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ корректен, но отсутствует обязательный компонент эталона (одобрение руководителя). В цитате сохранено Markdown-выделение (жирный шрифт), что запрещено правилами проверки цитат.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "ff0c6b94a6aadb31238396d7b1ca6cfb89dc1fbaac1421828e774ccd632f81bd",
+  "provenance": "identical judge payload; reused frozen rating"
+}

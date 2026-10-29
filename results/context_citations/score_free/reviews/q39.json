@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q39",
+  "suite": "ordinary",
+  "answerable": false,
+  "review": {
+    "correctness": 0,
+    "faithfulness": 1,
+    "citation_quality": 0,
+    "is_refusal": false,
+    "rationale": "Ответ фактически верен, но is_refusal=false. Citation quality=0 из-за искажений в цитатах (Markdown/разметка), хотя chunk_id верно.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "302f3b6ffd81a8272dede9925fb62b4253208ddac100fcd391d0a90284b5e0d7"
+}

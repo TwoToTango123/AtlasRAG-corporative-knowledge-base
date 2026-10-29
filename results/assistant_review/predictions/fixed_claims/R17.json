@@ -1,0 +1,133 @@
+{
+  "status": "ok",
+  "review_id": "R17",
+  "claims": [
+    "Новичку сразу после выхода на работу нельзя перейти на полностью удалённый формат.",
+    "Полностью удалённый формат возможен только после успешного прохождения испытательного срока.",
+    "Испытательный срок большинства сотрудников длится 3 месяца.",
+    "Испытательный срок руководителей и главных инженеров длится 6 месяцев.",
+    "Для полностью удалённого формата требуется согласование с руководителем и отделом персонала."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Full remote work is allowed only after successful probation.",
+      "unit_ids": [
+        "s0l6",
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 336,
+          "end": 405,
+          "text": "- **Полностью удалённый** — по согласованию с руководителем и отделом"
+        },
+        {
+          "id": "s0l7",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 406,
+          "end": 475,
+          "text": "  персонала, только после успешного прохождения испытательного срока."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Policy explicitly states full remote work requires successful probation completion.",
+      "unit_ids": [
+        "s0l6",
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 336,
+          "end": 405,
+          "text": "- **Полностью удалённый** — по согласованию с руководителем и отделом"
+        },
+        {
+          "id": "s0l7",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 406,
+          "end": 475,
+          "text": "  персонала, только после успешного прохождения испытательного срока."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Onboarding instructions state probation for most employees is 3 months.",
+      "unit_ids": [
+        "s2l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l3",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 174,
+          "end": 240,
+          "text": "Испытательный срок для большинства сотрудников — **3 месяца**. Для"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Onboarding instructions state probation for managers and chief engineers is 6 months.",
+      "unit_ids": [
+        "s2l4"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l4",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 241,
+          "end": 318,
+          "text": "руководителей и главных инженеров — **6 месяцев**. В конце срока руководитель"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Full remote work requires agreement with manager and HR department.",
+      "unit_ids": [
+        "s0l6",
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 336,
+          "end": 405,
+          "text": "- **Полностью удалённый** — по согласованию с руководителем и отделом"
+        },
+        {
+          "id": "s0l7",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 406,
+          "end": 475,
+          "text": "  персонала, только после успешного прохождения испытательного срока."
+        }
+      ]
+    }
+  ],
+  "purpose": "Verifier agreement on fixed assistant segmentation, labels withheld."
+}

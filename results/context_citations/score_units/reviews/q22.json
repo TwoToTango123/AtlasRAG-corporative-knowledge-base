@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q22",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.9,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верный, логика сохранена. Потеря балла в correctness только из-за отсутствия точного обозначения фланца (ISO 9409-1-50-4-M6), которое есть в эталоне.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "3ce526ff814fa9ac28f1a6b5f09db63a67060badb44fefb62da02ed6333c6b8d"
+}

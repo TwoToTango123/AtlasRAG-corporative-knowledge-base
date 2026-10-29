@@ -1,0 +1,24 @@
+{
+  "id": "q35",
+  "answerable": false,
+  "payload_sha256": "5ac0ebff087a639711db34fdc4185bcb8a7e3bad9542c11c2f18f06c1337b44d",
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ является корректным отказом, поскольку источники не содержат данных о цене подписки, хотя и упоминают лимиты тарифа.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько стоит подписка AtlasControl на тарифе Enterprise в месяц?",
+    "answer": "В предоставленной информации нет стоимости подписки AtlasControl на тарифе Enterprise. Упоминаются только возможности тарифа (неограниченное число манипуляторов и лимит API 6 000 запросов в минуту), но не цена.",
+    "answerable": false,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "вопрос без ответа в базе",
+    "retrieval": null
+  }
+}

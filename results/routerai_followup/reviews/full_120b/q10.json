@@ -1,0 +1,28 @@
+{
+  "id": "q10",
+  "answerable": true,
+  "payload_sha256": "e86d13461ffc22f1d63019f9e6ed1fec358ec7de9133e2e5c9dfd9d873b3af85",
+  "review": {
+    "citation_quality": 0.66,
+    "correctness": 0.5,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ не упоминает обязательные якорные дни (вторник/четверг), снижая корректность. Цитата содержит маркдаун (жирный шрифт), не соответствующий дословному тексту источника.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+    "answer": "В гибридном формате требуется работать в офисе не менее 2 дней в неделю.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 0.5,
+    "citation_quality": 0.8,
+    "faithfulness": 1.0,
+    "verdict": "Правильность: 0.5; Цитирование: 0.8",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

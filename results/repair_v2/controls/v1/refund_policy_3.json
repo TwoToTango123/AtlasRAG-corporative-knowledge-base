@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "id": "refund_policy_3",
+  "split": "calibration",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l7"
+    ],
+    "rationale": "Источники прямо указывают, что продления не возвращаются автоматически.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l7",
+        "chunk_id": "refund_policy.md",
+        "start": 416,
+        "end": 490,
+        "text": "- Продления **не** возвращаются автоматически. Списание за продление можно"
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

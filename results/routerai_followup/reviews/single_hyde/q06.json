@@ -1,0 +1,28 @@
+{
+  "id": "q06",
+  "answerable": true,
+  "payload_sha256": "dd2ca4a9b21bbc13e73f6421f53f69dc9815519d4130ef36961817bb4ea7845c",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.95,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ корректен и подтверждается источниками. Цитаты точны. Небольшое снижение балла корректности из-за отсутствия указания конкретного стандарта фланца, хотя это не влияет на правильность вывода о взаимозаменяемости.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Можно ли использовать захват от NW-100 на NW-200?",
+    "answer": "Да. У NW-100 и NW-200 одинаковый монтажный фланец, поэтому захваты взаимозаменяемы между обеими моделями. Исключение по совместимости есть для вакуумного захвата NW-VAC-05 — он поддерживается только NW-200, но это ограничение самого захвата, а не монтажного фланца.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

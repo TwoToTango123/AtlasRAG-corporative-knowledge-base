@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "onboarding_0",
+  "split": "heldout",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l1"
+    ],
+    "rationale": "Текст прямо подтверждает длительность испытательного срока в 3 месяца.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "onboarding.md",
+        "start": 23,
+        "end": 89,
+        "text": "Испытательный срок для большинства сотрудников — **3 месяца**. Для"
+      }
+    ]
+  }
+}

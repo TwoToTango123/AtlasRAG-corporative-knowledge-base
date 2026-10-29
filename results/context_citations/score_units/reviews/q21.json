@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q21",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.75,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ошибка в цитате: отсутствует фрагмент начала предложения (пропущено «Подключение к внутренним»), текст не дословный. Остальные части верны.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "c8f1b43e2b9a2a6d3690b9673f8826d1d029b0dc00ca80335539d6ad59597ade"
+}

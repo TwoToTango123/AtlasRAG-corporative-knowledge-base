@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "annotation_type": "assistant",
+  "independent_human": false,
+  "reviewer": "Codex assistant in development chat",
+  "dataset_sha256": "bfd2e75bd41836865c716e541b87fa317f2d871653d42313dd3dec6b1380500e",
+  "prior_exposure": "Prepared fixtures, discussed earlier results, and authored code; not blind or independent.",
+  "user_authorization": "2026-11-04: user waived own annotation and authorized autonomous assistant review.",
+  "ratings": {
+    "R01": {
+      "text": "При этих условиях бизнес-класс допускается по указанному правилу.",
+      "status": "contradicted",
+      "reason": "Ровно шесть часов не удовлетворяет строгому условию дольше шести; одобрения недостаточно.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "travel_expenses.md",
+          "start": 98,
+          "end": 169,
+          "quote": "длится дольше **6 часов**, и только с одобрения директора департамента."
+        }
+      ]
+    },
+    "R02": {
+      "text": "После окончания испытательного срока продакшен-доступ выдаётся автоматически без общей процедуры.",
+      "status": "contradicted",
+      "reason": "Окончание испытательного срока — нижняя граница; общая процедура явно остаётся обязательной.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "onboarding.md",
+          "start": 177,
+          "end": 232,
+          "quote": "и оформляется по общей процедуре политики безопасности."
+        }
+      ]
+    },
+    "R03": {
+      "text": "Сбор за повторное складирование здесь равен 5 процентам.",
+      "status": "contradicted",
+      "reason": "Для вскрытого исправного оборудования указан сбор 15%, а не 5%.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "refund_policy.md",
+          "start": 369,
+          "end": 467,
+          "quote": "К вскрытому исправному оборудованию применяется\nсбор за повторное складирование в размере **15%**."
+        }
+      ]
+    },
+    "R04": {
+      "text": "Если финансовый директор согласен, предоплата больше 50 процентов сама по себе не нарушает это правило.",
+      "status": "supported",
+      "reason": "Условное согласие финансового директора удовлетворяет именно правилу о размере предоплаты; остальные разрешения не утверждаются.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "procurement.md",
+          "start": 118,
+          "end": 192,
+          "quote": "Предоплата больше 50% допускается только с\nсогласия финансового директора."
+        }
+      ]
+    },
+    "R05": {
+      "correctness": "complete",
+      "citation_verdict": "all_support",
+      "claims": [
+        {
+          "text": "Испытательный срок руководителей составляет 6 месяцев.",
+          "status": "supported",
+          "reason": "Прямое правило для указанной роли.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "onboarding.md",
+              "start": 237,
+              "end": 291,
+              "quote": "Для\nруководителей и главных инженеров — **6 месяцев**."
+            }
+          ]
+        }
+      ],
+      "kind": "answer",
+      "no_facts": false
+    },
+    "R06": {
+      "text": "Остаток отпуска сверх 40 дней можно сохранить, если согласен руководитель.",
+      "status": "contradicted",
+      "reason": "Документ предписывает сгорание остатка сверх 40 дней и не даёт руководителю права отменять лимит.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "hr_timeoff.md",
+          "start": 266,
+          "end": 345,
+          "quote": "максимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года."
+        }
+      ]
+    },
+    "R07": {
+      "text": "Если перелёт длится 7 часов, одобрение директора для бизнес-класса не нужно.",
+      "status": "contradicted",
+      "reason": "Для полёта дольше шести часов одобрение директора всё равно обязательно.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "travel_expenses.md",
+          "start": 125,
+          "end": 169,
+          "quote": "и только с одобрения директора департамента."
+        }
+      ]
+    },
+    "R08": {
+      "correctness": "complete",
+      "citation_verdict": "all_support",
+      "claims": [
+        {
+          "text": "На 02.11.2026 лимит компенсации за один отчёт проекта Вега составляет 1384 рубля.",
+          "status": "supported",
+          "reason": "Нужны вместе привязка проекта к K-29 и действующая редакция, архив исключён.",
+          "evidence_spans": [
+            {
+              "source_id": "S3",
+              "source": "project_02.md",
+              "start": 14,
+              "end": 78,
+              "quote": "Карточка проекта Вега: для расходов проекта назначен пакет K-29."
+            },
+            {
+              "source_id": "S2",
+              "source": "policy_K29_current.md",
+              "start": 23,
+              "end": 77,
+              "quote": "Действует с 01.01.2026. Заменяет все прежние редакции."
+            },
+            {
+              "source_id": "S2",
+              "source": "policy_K29_current.md",
+              "start": 78,
+              "end": 148,
+              "quote": "Пакету K-29 соответствует лимит компенсации 1384 рублей за один отчёт."
+            }
+          ]
+        }
+      ],
+      "kind": "answer",
+      "no_facts": false
+    },
+    "R09": {
+      "text": "Для этой предоплаты требуется согласие финансового директора.",
+      "status": "supported",
+      "reason": "Заданные 70% больше 50%; согласие финансового директора необходимо.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "procurement.md",
+          "start": 118,
+          "end": 192,
+          "quote": "Предоплата больше 50% допускается только с\nсогласия финансового директора."
+        }
+      ]
+    },
+    "R10": {
+      "correctness": "justified_refusal",
+      "citation_verdict": "not_needed",
+      "claims": [],
+      "note": "Чистое сообщение об отсутствии ответа. В справочнике нет политики собак; не превращать отсутствие данных в запрет.",
+      "kind": "answer",
+      "no_facts": true
+    },
+    "R11": {
+      "correctness": "complete",
+      "citation_verdict": "all_support",
+      "claims": [
+        {
+          "text": "На 02.11.2026 лимит компенсации за один отчёт проекта Альтаир составляет 223 рубля.",
+          "status": "supported",
+          "reason": "Связка Альтаир → K-02 → действующая редакция с указанной суммой.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "project_07.md",
+              "start": 17,
+              "end": 84,
+              "quote": "Карточка проекта Альтаир: для расходов проекта назначен пакет K-02."
+            },
+            {
+              "source_id": "S2",
+              "source": "policy_K02_current.md",
+              "start": 23,
+              "end": 77,
+              "quote": "Действует с 01.01.2026. Заменяет все прежние редакции."
+            },
+            {
+              "source_id": "S2",
+              "source": "policy_K02_current.md",
+              "start": 78,
+              "end": 147,
+              "quote": "Пакету K-02 соответствует лимит компенсации 223 рублей за один отчёт."
+            }
+          ]
+        }
+      ],
+      "kind": "answer",
+      "no_facts": false
+    },
+    "R12": {
+      "text": "Грузоподъёмность этой модели составляет 18 кг, гарантия — 3 года.",
+      "status": "supported",
+      "reason": "Обе характеристики NW-200 прямо указаны; составное утверждение верно целиком.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "product_specs.md",
+          "start": 46,
+          "end": 75,
+          "quote": "- Грузоподъёмность: **18 кг**"
+        },
+        {
+          "source_id": "S1",
+          "source": "product_specs.md",
+          "start": 322,
+          "end": 344,
+          "quote": "- Гарантия: **3 года**"
+        }
+      ]
+    },
+    "R13": {
+      "correctness": "complete",
+      "citation_verdict": "all_support",
+      "claims": [
+        {
+          "text": "Грузоподъёмность NW-100 составляет 5 кг.",
+          "status": "supported",
+          "reason": "Значение в разделе NW-100.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 103,
+              "end": 174,
+              "quote": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**"
+            }
+          ]
+        },
+        {
+          "text": "Грузоподъёмность NW-200 составляет 18 кг.",
+          "status": "supported",
+          "reason": "Значение в разделе NW-200.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 387,
+              "end": 462,
+              "quote": "## Манипулятор NW-200 (промышленный уровень)\n\n- Грузоподъёмность: **18 кг**"
+            }
+          ]
+        },
+        {
+          "text": "Грузоподъёмность NW-200 больше, чем NW-100.",
+          "status": "supported",
+          "reason": "18 больше 5; вывод явно содержится в ответе.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 146,
+              "end": 174,
+              "quote": "- Грузоподъёмность: **5 кг**"
+            },
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 433,
+              "end": 462,
+              "quote": "- Грузоподъёмность: **18 кг**"
+            }
+          ]
+        },
+        {
+          "text": "Гарантия NW-100 составляет 2 года.",
+          "status": "supported",
+          "reason": "Значение в разделе NW-100.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 336,
+              "end": 358,
+              "quote": "- Гарантия: **2 года**"
+            }
+          ]
+        },
+        {
+          "text": "Гарантия NW-200 составляет 3 года.",
+          "status": "supported",
+          "reason": "Значение в разделе NW-200.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 709,
+              "end": 731,
+              "quote": "- Гарантия: **3 года**"
+            }
+          ]
+        },
+        {
+          "text": "Гарантия NW-200 дольше, чем NW-100.",
+          "status": "supported",
+          "reason": "3 года больше 2 лет.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 336,
+              "end": 358,
+              "quote": "- Гарантия: **2 года**"
+            },
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 709,
+              "end": 731,
+              "quote": "- Гарантия: **3 года**"
+            }
+          ]
+        }
+      ],
+      "kind": "answer",
+      "no_facts": false
+    },
+    "R14": {
+      "text": "При таком формате работы интернет компенсируется в размере 3000 рублей в месяц.",
+      "status": "supported",
+      "reason": "Полностью удалённый формат задан вопросом; размер и период компенсации совпадают.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "remote_work.md",
+          "start": 16,
+          "end": 104,
+          "quote": "Сотрудникам в полностью удалённом формате компенсируется интернет —\n**3 000 ₽ в месяц**."
+        }
+      ]
+    },
+    "R15": {
+      "correctness": "justified_refusal",
+      "citation_verdict": "partly",
+      "claims": [
+        {
+          "text": "Тариф AtlasControl Enterprise поддерживает неограниченное число манипуляторов.",
+          "status": "supported",
+          "reason": "Прямое описание тарифа.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 874,
+              "end": 971,
+              "quote": "Тариф Team\nподдерживает до **10 подключённых манипуляторов**; тариф Enterprise — без\nограничений."
+            }
+          ]
+        },
+        {
+          "text": "Лимит API тарифа AtlasControl Enterprise составляет 6000 запросов в минуту.",
+          "status": "insufficient",
+          "reason": "В ответе опущено существенное уточнение на рабочее пространство; не доказан глобальный лимит тарифа.",
+          "alternative_status": "supported",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 972,
+              "end": 1109,
+              "quote": "Лимит API составляет **600 запросов в минуту** на рабочее\nпространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+            }
+          ]
+        }
+      ],
+      "note": "Цен нет: отказ обоснован. Отдельно строго отмечена неполная область действия API; при чтении как сокращённого описания возможен supported.",
+      "kind": "answer",
+      "no_facts": false
+    },
+    "R16": {
+      "text": "При этом возврате обратную доставку оплачивает клиент.",
+      "status": "supported",
+      "reason": "Клиент передумал, поэтому применима оплата обратной доставки клиентом.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "refund_policy.md",
+          "start": 303,
+          "end": 368,
+          "quote": "обратную доставку при возврате «по\nпередумали» оплачивает клиент."
+        }
+      ]
+    },
+    "R17": {
+      "correctness": "partial",
+      "citation_verdict": "all_support",
+      "claims": [
+        {
+          "text": "Новичку сразу после выхода на работу нельзя перейти на полностью удалённый формат.",
+          "status": "supported",
+          "reason": "Испытательный срок ещё не пройден.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "remote_work.md",
+              "start": 419,
+              "end": 475,
+              "quote": "только после успешного прохождения испытательного срока."
+            }
+          ]
+        },
+        {
+          "text": "Полностью удалённый формат возможен только после успешного прохождения испытательного срока.",
+          "status": "supported",
+          "reason": "Необходимое условие точно сохранено; автоматическое разрешение не утверждается.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "remote_work.md",
+              "start": 419,
+              "end": 475,
+              "quote": "только после успешного прохождения испытательного срока."
+            }
+          ]
+        },
+        {
+          "text": "Испытательный срок большинства сотрудников длится 3 месяца.",
+          "status": "supported",
+          "reason": "Указано в онбординге.",
+          "evidence_spans": [
+            {
+              "source_id": "S3",
+              "source": "onboarding.md",
+              "start": 174,
+              "end": 236,
+              "quote": "Испытательный срок для большинства сотрудников — **3 месяца**."
+            }
+          ]
+        },
+        {
+          "text": "Испытательный срок руководителей и главных инженеров длится 6 месяцев.",
+          "status": "supported",
+          "reason": "Указано в онбординге.",
+          "evidence_spans": [
+            {
+              "source_id": "S3",
+              "source": "onboarding.md",
+              "start": 237,
+              "end": 291,
+              "quote": "Для\nруководителей и главных инженеров — **6 месяцев**."
+            }
+          ]
+        },
+        {
+          "text": "Для полностью удалённого формата требуется согласование с руководителем и отделом персонала.",
+          "status": "supported",
+          "reason": "Оба согласования явно указаны.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "remote_work.md",
+              "start": 338,
+              "end": 417,
+              "quote": "**Полностью удалённый** — по согласованию с руководителем и отделом\n  персонала"
+            }
+          ]
+        }
+      ],
+      "note": "Ответ не упоминает исключение: производственный участок и склад работают только в офисе. Поэтому поддержка фактов высокая, но полнота частичная.",
+      "kind": "answer",
+      "no_facts": false
+    },
+    "R18": {
+      "text": "При этих условиях доступ к продакшен-системам ещё не должен быть выдан.",
+      "status": "supported",
+      "reason": "Новичок не завершил испытательный срок; роль главного инженера исключения не создаёт.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "onboarding.md",
+          "start": 87,
+          "end": 176,
+          "quote": "Доступ к продакшен-системам новичкам выдаётся **не ранее окончания\nиспытательного срока**"
+        }
+      ]
+    },
+    "R19": {
+      "text": "Монитор можно заменить на новый каждые два года.",
+      "status": "contradicted",
+      "reason": "Регулярная выдача нового монитора каждые два года несовместима с указанной однократной выдачей.",
+      "alternative_status": "insufficient",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "remote_work.md",
+          "start": 105,
+          "end": 182,
+          "quote": "Офисное кресло и монитор выдаются со склада один раз по\nзаявке в сервис-деск."
+        }
+      ]
+    },
+    "R20": {
+      "text": "При таком стаже начисляется 23 дня оплачиваемого отпуска в год.",
+      "status": "supported",
+      "reason": "Четыре года входят в диапазон 3–5 лет; ставка 23 дня в год.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "hr_timeoff.md",
+          "start": 136,
+          "end": 163,
+          "quote": "- 3–5 лет: **23 дня** в год"
+        }
+      ]
+    },
+    "R21": {
+      "correctness": "complete",
+      "citation_verdict": "all_support",
+      "claims": [
+        {
+          "text": "Код E-401 означает, что манипулятор не откалиброван: не выполнен homing.",
+          "status": "supported",
+          "reason": "Прямое определение кода.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 17,
+              "end": 76,
+              "quote": "- `E-401`: манипулятор не откалиброван (не выполнен homing)"
+            }
+          ]
+        },
+        {
+          "text": "Перед движением манипулятора с E-401 необходимо выполнить homing.",
+          "status": "supported",
+          "reason": "Инструкция относится к указанному коду.",
+          "evidence_spans": [
+            {
+              "source_id": "S1",
+              "source": "product_specs.md",
+              "start": 79,
+              "end": 124,
+              "quote": "выполните процедуру\n  homing перед движением."
+            }
+          ]
+        }
+      ],
+      "kind": "answer",
+      "no_facts": false
+    },
+    "R22": {
+      "text": "NW-200 можно эксплуатировать при температуре минус 40 градусов.",
+      "status": "insufficient",
+      "reason": "В приведённых спецификациях нет допустимой температуры; отрицание работоспособности при -40 тоже не доказано.",
+      "kind": "claim",
+      "evidence_spans": []
+    },
+    "R23": {
+      "text": "Для доступа к продакшену достаточно согласия владельца системы на словах, заявку можно не оформлять.",
+      "status": "contradicted",
+      "reason": "Для продакшена прямо требуется одобренная заявка; устное согласие без заявки не заменяет её.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "security_policy.md",
+          "start": 85,
+          "end": 152,
+          "quote": "Доступ к продакшену\n  требует заявки, одобренной владельцем системы"
+        }
+      ]
+    },
+    "R24": {
+      "text": "В описанной ситуации я обязан использовать MFA.",
+      "status": "supported",
+      "reason": "MFA обязательна на поддерживающей её системе, включая руководителей.",
+      "kind": "claim",
+      "evidence_spans": [
+        {
+          "source_id": "S1",
+          "source": "security_policy.md",
+          "start": 192,
+          "end": 344,
+          "quote": "**Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей."
+        }
+      ]
+    }
+  }
+}

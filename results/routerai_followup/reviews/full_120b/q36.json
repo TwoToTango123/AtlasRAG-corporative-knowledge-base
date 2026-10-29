@@ -1,0 +1,24 @@
+{
+  "id": "q36",
+  "answerable": false,
+  "payload_sha256": "9b4c783f9f3047c50da04828f8defeaaf8cfa2143fd026f6268c8f5ae4baea62",
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ верен, так как данных нет. Однако цитаты искажают текст (сжатие, замена слов), что нарушает требование дословного соответствия.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какая грузоподъёмность у манипулятора NW-300?",
+    "answer": "В предоставленных данных нет информации о грузоподъёмности манипулятора NW‑300.",
+    "answerable": false,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "вопрос без ответа в базе",
+    "retrieval": null
+  }
+}

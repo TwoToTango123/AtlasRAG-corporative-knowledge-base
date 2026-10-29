@@ -1,0 +1,28 @@
+{
+  "id": "q22",
+  "answerable": true,
+  "payload_sha256": "7afb2c525b172385aad9e9e238e645c1a0ec3a8e314a628385764e7aa25a59b3",
+  "review": {
+    "citation_quality": 0,
+    "correctness": 0.75,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верный по смыслу, но не указывает конкретный стандарт фланца ISO 9409-1-50-4-M6, упомянутый в эталоне, хотя это есть в источнике.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+    "answer": "Да, захват NW-GRP-02 подойдёт для NW-200. Он указан как совместимый с NW-100 и NW-200, а у обеих моделей одинаковый монтажный фланец, поэтому захваты взаимозаменяемы.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

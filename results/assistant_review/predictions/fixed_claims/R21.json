@@ -1,0 +1,57 @@
+{
+  "status": "ok",
+  "review_id": "R21",
+  "claims": [
+    "Код E-401 означает, что манипулятор не откалиброван: не выполнен homing.",
+    "Перед движением манипулятора с E-401 необходимо выполнить homing."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Текст источника s0l1 дословно совпадает с формулировкой о значении кода E-401.",
+      "unit_ids": [
+        "s0l1"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 17,
+          "end": 98,
+          "text": "- `E-401`: манипулятор не откалиброван (не выполнен homing) — выполните процедуру"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник s0l1 и s0l2 прямо предписывают выполнить homing перед движением манипулятора.",
+      "unit_ids": [
+        "s0l1",
+        "s0l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 17,
+          "end": 98,
+          "text": "- `E-401`: манипулятор не откалиброван (не выполнен homing) — выполните процедуру"
+        },
+        {
+          "id": "s0l2",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 99,
+          "end": 124,
+          "text": "  homing перед движением."
+        }
+      ]
+    }
+  ],
+  "purpose": "Verifier agreement on fixed assistant segmentation, labels withheld."
+}

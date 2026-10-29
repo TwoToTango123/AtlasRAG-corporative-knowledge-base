@@ -1,0 +1,146 @@
+{
+  "status": "ok",
+  "id": "q10",
+  "type": "fact",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "graded": {
+    "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+    "answer": "При гибридном формате нужно работать из офиса не менее 2 дней в неделю. Вторник и четверг являются «якорными днями», когда команда собирается вместе.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  },
+  "result": {
+    "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+    "answer": "При гибридном формате нужно работать из офиса не менее 2 дней в неделю. Вторник и четверг являются «якорными днями», когда команда собирается вместе.",
+    "citations": [
+      {
+        "chunk_id": "d8c66edab230f32b",
+        "source": "remote_work.md",
+        "quote": "Гибридный — не менее 2 дней в неделю в офисе. Вторник и четверг — «якорные дни»"
+      }
+    ],
+    "confidence": 0.99,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "d8c66edab230f32b",
+                "doc_id": "1dbbd2e2ebf5220b",
+                "source": "remote_work.md",
+                "text": "# Northwind Robotics — Политика удалённой и гибридной работы\n\n_Последнее обновление: 03.11.2025. Владелец: Отдел персонала (People Operations)._\n\n## Форматы работы\n\n- **Офисный** — все рабочие дни в офисе.\n- **Гибридный** — не менее **2 дней в неделю** в офисе. Вторник и четверг —\n  «якорные дни», в которые команда собирается вместе.\n- **Полностью удалённый** — по согласованию с руководителем и отделом\n  персонала, только после успешного прохождения испытательного срока.\n\nСотрудники производственного участка и склада работают только в офисном\nформате.\n\n## Рабочее время\n\nДля всех форматов действуют общие часы доступности с **11:00 до 16:00** по\nчасовому поясу команды. В это время сотрудник должен отвечать в рабочем\nмессенджере.\n\n## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена.\n\n## Безопасность на удалёнке\n\nРаботать можно только с корпоративного устройства. Подключение к внутренним\nсистемам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)\nдопускаются исключительно при включённом VPN.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\remote_work.md"
+                }
+              },
+              "score": 10.001639344262296,
+              "relevance": 10.0,
+              "reason": "Contains the exact policy stating that hybrid workers must be in the office at least 2 days a week, with specific anchor days (Tuesday and Thursday). This directly answers the user's question. 10.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "f9e0c75fbb2025f6",
+                "doc_id": "1dbbd2e2ebf5220b",
+                "source": "remote_work.md",
+                "text": "## Безопасность на удалёнке\n\nРаботать можно только с корпоративного устройства. Подключение к внутренним\nсистемам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)\nдопускаются исключительно при включённом VPN.\n\n## Компенсации\n\nСотрудникам в полностью удалённом формате компенсируется интернет —\n**3 000 ₽ в месяц**. Офисное кресло и монитор выдаются со склада один раз по\nзаявке в сервис-деск.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\remote_work.md"
+                }
+              },
+              "score": 1.0015749007936507,
+              "relevance": 1.0,
+              "reason": "Only discusses internet compensation and office equipment; no information about hybrid office days. 1.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "d5f2e9d8442d16bf",
+                "doc_id": "1f784ec2e6030d9e",
+                "source": "travel_expenses.md",
+                "text": "## Представительские расходы\n\nДеловой ужин с клиентом компенсируется до **3 000 ₽ на человека** при наличии\nслужебной записки с перечнем участников.\n\n## Авансовый отчёт\n\nАвансовый отчёт с чеками сдаётся в течение **5 рабочих дней** после\nвозвращения. Если отчёт не сдан вовремя, неподтверждённая сумма аванса\nудерживается из зарплаты.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\travel_expenses.md"
+                }
+              },
+              "score": 1.0015384615384615,
+              "relevance": 1.0,
+              "reason": "Mentions business dinner and travel reimbursements; unrelated to office days. 1.",
+              "sources": {
+                "dense": 5.0,
+                "sparse": 5.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e706a9391ce46228",
+                "doc_id": "09b0e83bb3e99bf9",
+                "source": "it_helpdesk_faq.md",
+                "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке\n\n_Последнее обновление: 10.02.2026. Владелец: ИТ-сервис-деск._\n\n## Как обратиться в ИТ-поддержку\n\nЗаявки принимаются на портале **servicedesk.northwind** круглосуточно. Срочные\nвопросы, из-за которых нельзя работать, можно решить по внутреннему номеру\n**5555** с 8:00 до 22:00. Каждой заявке присваивается приоритет:\n\n- **P1** — не работает критичный сервис у многих сотрудников: реакция в течение 30 минут.\n- **P2** — не может работать один сотрудник: реакция в течение 4 часов.\n- **P3** — неудобство или вопрос: реакция в течение 2 рабочих дней.\n\n## Пароли\n\nПароль от корпоративной учётной записи должен содержать не менее **14 символов**.\nОбычный пароль сотрудника нужно менять каждые **180 дней**; система напомнит об\nэтом за неделю. Забытый пароль сбрасывается самостоятельно на портале\nid.northwind после подтверждения через MFA. Если MFA-устройство потеряно,\nобратитесь в сервис-деск с паспортом — восстановление занимает до 1 рабочего дня.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\it_helpdesk_faq.md"
+                }
+              },
+              "score": 1.0015310892940625,
+              "relevance": 1.0,
+              "reason": "IT support procedures, no mention of hybrid work schedule. 1.",
+              "sources": {
+                "dense": 9.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "4162924aefa84fb9",
+                "doc_id": "2de8eae6ceff3db9",
+                "source": "onboarding.md",
+                "text": "## Доступы\n\nБазовые доступы (почта, мессенджер, Workday, вики) выдаются автоматически.\nДоступ к продакшен-системам новичкам выдаётся **не ранее окончания\nиспытательного срока** и оформляется по общей процедуре политики безопасности.\n\n## Встречи с руководителем\n\nПервые 3 месяца руководитель проводит с новичком встречу один на один\n**каждую неделю**, затем — раз в две недели.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\onboarding.md"
+                }
+              },
+              "score": 1.001510676965016,
+              "relevance": 1.0,
+              "reason": "Describes onboarding meetings; no hybrid policy. 1.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 11.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": []
+  },
+  "latency_s": 0.06764700001804158,
+  "fresh_tokens": 0
+}

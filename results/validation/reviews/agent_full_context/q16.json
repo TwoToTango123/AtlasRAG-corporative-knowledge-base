@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "id": "q16",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и полностью подтверждается предоставленным источником (chunk 3c00ce114bb3ac1d). Цитата точна и релевантна.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "4bf775cb65e521bf660c6ca0ad22912c4c5778ddb6d840ca488847a4e21bba0c"
+}

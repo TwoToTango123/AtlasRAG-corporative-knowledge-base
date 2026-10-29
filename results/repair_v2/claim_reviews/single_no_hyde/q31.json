@@ -1,0 +1,88 @@
+{
+  "status": "ok",
+  "id": "q31",
+  "answerable": true,
+  "claims": [
+    "Лимит API AtlasControl на тарифе Team составляет 600 запросов в минуту на рабочее пространство.",
+    "Лимит API AtlasControl на тарифе Enterprise составляет 6 000 запросов в минуту.",
+    "Лимит API AtlasControl на тарифе Enterprise в 10 раз больше, чем на тарифе Team."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Совпадает с текстом s0l24-25.",
+      "unit_ids": [
+        "s0l24",
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l24",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 959,
+          "end": 1029,
+          "text": "ограничений. Лимит API составляет **600 запросов в минуту** на рабочее"
+        },
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Совпадает с текстом s0l25.",
+      "unit_ids": [
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Соответствует арифметическому соотношению данных из s0l24-25.",
+      "unit_ids": [
+        "s0l24",
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l24",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 959,
+          "end": 1029,
+          "text": "ограничений. Лимит API составляет **600 запросов в минуту** на рабочее"
+        },
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "640215238e58d4f79e2205b536155bda9b144841e4182af70c8a412073a1189d",
+  "source_entry_sha256": "3ce2135b4ea7441690c7d282134e2c8952a8b265bdd2b0003b41aa32e6f9fdfb",
+  "verifier": "v2-scenario-aware"
+}

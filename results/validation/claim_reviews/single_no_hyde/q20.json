@@ -1,0 +1,111 @@
+{
+  "status": "ok",
+  "id": "q20",
+  "answerable": true,
+  "claims": [
+    "Прошивка манипулятора NW-100 обновляется раз в квартал",
+    "Для манипулятора NW-100 указан канал 'stable'",
+    "Канал 'stable' получает обновления ежеквартально",
+    "Обновления канала 'stable' происходят после полного цикла регрессионного тестирования"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "NW-100 использует канал stable, который обновляется раз в квартал согласно регламенту.",
+      "unit_ids": [
+        "s1l10",
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l10",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 359,
+          "end": 385,
+          "text": "- Канал прошивки: `stable`"
+        },
+        {
+          "id": "s0l3",
+          "chunk_id": "65ea8590a180b54f",
+          "start": 141,
+          "end": 216,
+          "text": "- Канал `stable` получает обновления **раз в квартал**, после полного цикла"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Спецификация манипулятора NW-100 явно указывает канал прошивки 'stable'.",
+      "unit_ids": [
+        "s1l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l10",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 359,
+          "end": 385,
+          "text": "- Канал прошивки: `stable`"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Регламент выпуска обновлений гласит, что канал stable получает обновления раз в квартал.",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "65ea8590a180b54f",
+          "start": 141,
+          "end": 216,
+          "text": "- Канал `stable` получает обновления **раз в квартал**, после полного цикла"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Обновления stable происходят после полного цикла регрессионного тестирования на стенде.",
+      "unit_ids": [
+        "s0l3",
+        "s0l4"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "65ea8590a180b54f",
+          "start": 141,
+          "end": 216,
+          "text": "- Канал `stable` получает обновления **раз в квартал**, после полного цикла"
+        },
+        {
+          "id": "s0l4",
+          "chunk_id": "65ea8590a180b54f",
+          "start": 217,
+          "end": 257,
+          "text": "  регрессионного тестирования на стенде."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "1b8ac1c11bd4493bb2d6da6df03716fdf5375de68c07ebd68e515334ed313391",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

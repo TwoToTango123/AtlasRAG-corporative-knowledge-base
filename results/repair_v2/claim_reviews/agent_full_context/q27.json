@@ -1,0 +1,60 @@
+{
+  "status": "ok",
+  "id": "q27",
+  "answerable": true,
+  "claims": [
+    "Съёмные USB-носители заблокированы по умолчанию на рабочем компьютере.",
+    "Для использования флешки на рабочем компьютере требуется одобрение службы безопасности."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник прямо утверждает, что съёмные USB-носители заблокированы по умолчанию.",
+      "unit_ids": [
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 719,
+          "end": 799,
+          "text": "Съёмные носители (USB-накопители) заблокированы по умолчанию и требуют одобрения"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Использование требует одобрения службы безопасности согласно политике.",
+      "unit_ids": [
+        "s0l11",
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 719,
+          "end": 799,
+          "text": "Съёмные носители (USB-накопители) заблокированы по умолчанию и требуют одобрения"
+        },
+        {
+          "id": "s0l12",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 800,
+          "end": 820,
+          "text": "службы безопасности."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "0207f6b451c0426ee569d26d4bb4468ed7cacfbc4a1aae70ef70fec5ac931af8",
+  "source_entry_sha256": "8f2b133736314a509a88e4b2e7a8b909f423bf2a0d12adbc20d5c5718f6dbcf1",
+  "verifier": "v2-scenario-aware"
+}

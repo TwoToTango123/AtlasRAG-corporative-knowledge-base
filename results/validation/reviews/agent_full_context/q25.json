@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "id": "q25",
+  "answerable": true,
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует вопросу и источнику. Цитаты верны и подтверждают ключевые тезисы про стаж и статус сотрудников.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "0c3cb7202d4da14e65baa7025341f4a2ae8c200c523ab63c10d629ca9a62350f"
+}

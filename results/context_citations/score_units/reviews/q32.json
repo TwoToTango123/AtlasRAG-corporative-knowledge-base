@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q32",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ полностью корректен и подтверждён источником. Балл за цитаты — 0, так как ответ не содержит ссылок на источники.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "00b6e33aa50e24dc0e61fb765bc3c94d095f512d0cfd014f199ca4428da0f43f"
+}

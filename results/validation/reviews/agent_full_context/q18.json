@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "id": "q18",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.9,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верно отражает ключевые моменты из источников: запрет доступа на испытательном сроке и требование одобрения владельцем. Не упомянут ежеквартальный пересмотр, но это не влияет на суть ответа на вопрос.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "ce5a27a4967b906b2ab13566f72e9b790d88308a935a09215d6c76132daf63b1"
+}

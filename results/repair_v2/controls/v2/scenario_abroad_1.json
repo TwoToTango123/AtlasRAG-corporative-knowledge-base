@@ -1,0 +1,50 @@
+{
+  "status": "ok",
+  "id": "scenario_abroad_1",
+  "split": "scenario_regression",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источники не содержат информации об оплате визовых расходов.",
+    "unit_ids": [
+      "s0l0",
+      "s0l1",
+      "s0l2",
+      "s0l3"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": [
+      {
+        "id": "s0l0",
+        "chunk_id": "remote_work.md:Работа из другой страны",
+        "start": 0,
+        "end": 26,
+        "text": "## Работа из другой страны"
+      },
+      {
+        "id": "s0l1",
+        "chunk_id": "remote_work.md:Работа из другой страны",
+        "start": 28,
+        "end": 102,
+        "text": "Работать из-за рубежа можно не более **20 рабочих дней в году** и только с"
+      },
+      {
+        "id": "s0l2",
+        "chunk_id": "remote_work.md:Работа из другой страны",
+        "start": 103,
+        "end": 175,
+        "text": "одобрения юридического отдела и службы безопасности. Работа из стран под"
+      },
+      {
+        "id": "s0l3",
+        "chunk_id": "remote_work.md:Работа из другой страны",
+        "start": 176,
+        "end": 213,
+        "text": "санкционными ограничениями запрещена."
+      }
+    ]
+  }
+}

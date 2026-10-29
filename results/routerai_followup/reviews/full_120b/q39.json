@@ -1,0 +1,24 @@
+{
+  "id": "q39",
+  "answerable": false,
+  "payload_sha256": "c5da70036d9374811c31f0d65d9a8bb8387c8017b5290e8f032217141263a339",
+  "review": {
+    "citation_quality": 0.95,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно отказывает, так как SLA для Team не указан. Упоминание Enterprise подтверждено источником. Небольшая неточность в цитировании (использование многоточия) не снижает качество значительно.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое SLA по времени первого ответа на Sev 1 для клиентов тарифа Team?",
+    "answer": "В предоставленных материалах указано только SLA по времени первого ответа для Sev 1 на тарифе Enterprise (1 час). Для тарифа Team такой информации нет.",
+    "answerable": false,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "вопрос без ответа в базе",
+    "retrieval": null
+  }
+}

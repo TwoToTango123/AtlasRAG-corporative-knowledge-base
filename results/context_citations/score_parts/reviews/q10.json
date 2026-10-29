@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q10",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и источнику. Цитата приведена дословно и подтверждает утверждение.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "385480d271d790b29bbc1e0317edd06cf241d616dc0950cd197868c3222a7fc3",
+  "provenance": "identical judge payload; reused frozen rating"
+}

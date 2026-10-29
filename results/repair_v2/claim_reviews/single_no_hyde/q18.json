@@ -1,0 +1,124 @@
+{
+  "status": "ok",
+  "id": "q18",
+  "answerable": true,
+  "claims": [
+    "Новые сотрудники на испытательном сроке не могут сразу получить доступ к продакшену.",
+    "Доступ к продакшену для новых сотрудников выдаётся не ранее окончания испытательного срока.",
+    "Доступ к продакшену для новых сотрудников оформляется по общей процедуре политики безопасности.",
+    "Заявку на доступ к продакшену должен одобрить владелец системы."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Sources explicitly state production access is not granted before probation ends.",
+      "unit_ids": [
+        "s1l19",
+        "s1l20"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l19",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 1011,
+          "end": 1077,
+          "text": "Доступ к продакшен-системам новичкам выдаётся **не ранее окончания"
+        },
+        {
+          "id": "s1l20",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 1078,
+          "end": 1156,
+          "text": "испытательного срока** и оформляется по общей процедуре политики безопасности."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source states access is issued no earlier than the end of the probation period.",
+      "unit_ids": [
+        "s1l19",
+        "s1l20"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l19",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 1011,
+          "end": 1077,
+          "text": "Доступ к продакшен-системам новичкам выдаётся **не ранее окончания"
+        },
+        {
+          "id": "s1l20",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 1078,
+          "end": 1156,
+          "text": "испытательного срока** и оформляется по общей процедуре политики безопасности."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Source states access is processed according to the general security policy procedure.",
+      "unit_ids": [
+        "s1l19",
+        "s1l20"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l19",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 1011,
+          "end": 1077,
+          "text": "Доступ к продакшен-системам новичкам выдаётся **не ранее окончания"
+        },
+        {
+          "id": "s1l20",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 1078,
+          "end": 1156,
+          "text": "испытательного срока** и оформляется по общей процедуре политики безопасности."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source states production access requires a request approved by the system owner.",
+      "unit_ids": [
+        "s2l9",
+        "s2l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l9",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 533,
+          "end": 613,
+          "text": "- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену"
+        },
+        {
+          "id": "s2l10",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 614,
+          "end": 681,
+          "text": "  требует заявки, одобренной владельцем системы, и пересматривается"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "319bde6ba865c380cddf39a810de0910a592b60ea6a90d2d21d60b9ca7be30b2",
+  "source_entry_sha256": "7b0f38e3c62f14a9b3ab7ea9683e8acbd44d8a690b9171851509e8f3b08f2197",
+  "verifier": "v2-scenario-aware"
+}

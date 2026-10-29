@@ -1,0 +1,30 @@
+{
+  "id": "q16",
+  "answerable": true,
+  "payload_sha256": "44e7d5dce80d9c2c113f5d2e6e7f7e2ec78a14a6868af396208564a28c70e623",
+  "review": {
+    "citation_quality": 0,
+    "correctness": 1,
+    "faithfulness": 0,
+    "is_refusal": false,
+    "rationale": "Ошибка в chunk_id цитаты: указан несуществующий ID вместо правильного 4df4ff41c9dead17. Факты верны.",
+    "unsupported_claims": [
+      "Клиенту нужно ответить словом «ESCALATE»."
+    ]
+  },
+  "original_graded": {
+    "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+    "answer": "Чтобы запросить эскалацию, клиенту нужно ответить в тикете словом «ESCALATE».",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop05",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты верны, чанки подтверждают фактические утверждения о пакете K-33 и лимите 1556 рублей.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "d02fd2e857389c006d32894282e028b0b7ab1bb1a5dfc21801744b3d4da4b405"
+}

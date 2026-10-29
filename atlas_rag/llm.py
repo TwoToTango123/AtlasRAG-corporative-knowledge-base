@@ -277,6 +277,10 @@ def _text_of(resp) -> str:
 
 
 def build_llm(settings: Settings) -> LLM:
+    if settings.llm_provider == "routerai":
+        from .routerai import RouterAILLM
+
+        return RouterAILLM(settings)
     providers: dict[str, type[LLM]] = {"groq": GroqLLM, "anthropic": AnthropicLLM}
     if settings.llm_provider not in providers:
         raise ValueError(f"unknown llm_provider: {settings.llm_provider!r}")

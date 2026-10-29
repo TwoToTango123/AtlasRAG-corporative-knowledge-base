@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q34",
+  "suite": "ordinary",
+  "answerable": false,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно указывает на отсутствие информации о ДМС в источниках, что совпадает с эталоном и фактическим содержанием документов.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "ac9adc3e637bdb7c6f02186db8144a0b3fde8f9b4dbf823de18d2fbf385b5f16"
+}

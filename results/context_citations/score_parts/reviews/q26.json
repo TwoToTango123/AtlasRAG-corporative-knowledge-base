@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "id": "q26",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 0.0,
+    "is_refusal": false,
+    "rationale": "Ответ верен по смыслу и цитата верна по тексту, но в данных нет поля 'citation_quality' для оценки, а 'faithfulness' снижен из-за отсутствия явного подтверждения в предоставленных 'evidence' текстов, хотя источник указан.",
+    "unsupported_claims": [
+      "Возврат на карту 5-10 дней",
+      "Банковский перевод до 21 дня"
+    ]
+  },
+  "payload_sha256": "ce0ecd57fe00d4d1249bc38c1d542babb9f63f19cef548c9e67782b71d12e678",
+  "provenance": "identical judge payload; reused frozen rating"
+}

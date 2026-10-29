@@ -1,0 +1,899 @@
+{
+  "started_utc": "2026-11-03T18:30:39.742849+00:00",
+  "balance_before_rub": 79.86304511331784,
+  "protocol_sha256": "930edba92cef65e67fe965f5ef1780f6f59a9ed2f5bd0d7f25cc712bfed6c0cf",
+  "protocol": {
+    "sources": {
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q01.json": "0a0825bb9b06ee85c3b1108e1c54d631df82cf2c6115c78e5b858653d7233427",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q02.json": "4b62259c3c19e1f0becb0b50d0c782cc4fb63f75833212b171d7cadec4db079b",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q03.json": "6950bd139d604f93cd21d65684a049518ef11a48aad6d3499cae9e8aaeb5b54e",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q04.json": "dd0d6261a4dd269d5236d06831d2cf4d7350e9dae16b9695142b86f275539690",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q05.json": "54421560b2f662072399fb285d3fce45ffe1bee119b51dc5e587cf65e1a081a5",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q06.json": "83d0ca95a3281e9415100352b4c0c84c4d3b204f15d33c635e7050a512547204",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q07.json": "cc27304ee5cdf4f5da82d41fda8d9df37265d8b18ae5e43d2b8e71023a601e60",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q08.json": "0188df75b0d13eb9f3fe6441990951203900eaf8a7f9a94e6682d1c9253bca97",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q09.json": "13070dfb4b03df7644898aea4fe68c12cefedd66f10a51f76a800f525e37ab20",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q10.json": "eeb5332c0a78d701db7d3d6fc351dbb62132be378ae77d283cc9570ebe03b32a",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q11.json": "9a37247ec5d22d6b4754fde7e3b226d89a610a4d34e67d5548804ecebf42e065",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q12.json": "ef184d8abaaa3b53d1dc3212dac78b8d94c16629508a4e6d3c4af510319aa80f",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q13.json": "450a20bde6eaf0a4a34d38da2e08274082e29ec246a50c1267dd3d13d265977c",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q14.json": "11510f1ecb4b216218d5258e4319819f7f80dbba9900abd8a745e085eefb9d2c",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q15.json": "c2c0321960efba2bd5f5ff7f71d26b069adcf5621716e0b5ab8065ad4d709f94",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q16.json": "6178d16b10f76bcb53295389b6d53218bc063486e03234f470eaa0ae59b59e74",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q17.json": "cc46e02522c50c63a85037a14ab3412a5eeeb6f6d18f266fc0f92df5cbfd999e",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q18.json": "ecc44e5a8ee640a1420253b7f910dfec933bf135caa0232bae7ae82dc2fa8c96",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q19.json": "0c0377a485d252691e8113d55d26ea537c813638162ddc7f145694cb73105ed0",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q20.json": "4b09e297b29467fdb777174875d8b2a974b22b93f9be2f340660b9705d8d32c4",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q21.json": "756ece63ecceec48c982074a3340256f8d8e98aafc99194f6f5552cbde4951df",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q22.json": "eddb65298eedd022e7cf0c303dd7b8e01f71755c4cbce349ea52585827f09ca1",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q23.json": "155351ebdfddbbf794e35e7cdd8e838143fee2db46522dbd40697bd99ff83ab3",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q24.json": "adeb08f3148f2641b8fe98f222b5f5525a439df5cc2db34a32e12636dfddd20e",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q25.json": "63860d7c1844e82338b6fbadd7db8a8addef9a5f4014cf934ae490eae10ded52",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q26.json": "347f3abdc497aaa1f8a39f8e159ac532277e489eefb993375244861f83a43f96",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q27.json": "3a21eeef68dba9633420e7fbca14891d101aa33db949f94f13598bed6d18204a",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q28.json": "923b7860392b1c2f6a1d6e4dcdb2dff46fda9af45737dcb18f1f48ae9969073e",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q29.json": "3dc38286a735c4bad55b9364ce2cc76933ac654761c3c62d9952be8c61ef24f7",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q30.json": "0e72b74c005dc999feba822f2957c23d5df2146bfe57b58c324efb21167fa8e9",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q31.json": "882d81d9fa20d580be53e2e2eeacd5199e07769ae4f3f163b0464865b7545b29",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q32.json": "43feb948642f4c4cbbb5a9204d752eeafed9d61ae7d0e6a82ccad23fd9060fde",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q33.json": "512bae7678358cb3895bab156e86d66ab63a7c39080e1cda8b41490b4ce585ab",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q34.json": "d2ef42025126758c12481f9357bf6a95a0e91fe02df29772d2a954de761dc52a",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q35.json": "10ac898fa92c832ff841936e05d34314d9d70e478edd07988c1d0e03bb5b4b0c",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q36.json": "6e62138d279b4530c89f73efaa35deb092bfab4ebcd5904044c084d8333dbbe0",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q37.json": "73ba5c53a5f03e5c4b2e3d4ac8e0087dfd509720b92b94e4681c956930d6502d",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q38.json": "8b5efcf42978bc248df6d892cad0d830320adfeb0a685e9e78ee95f653190a58",
+      "results\\routerai_full\\deepseek_deepseek-v4.1-flash-1017\\cases\\q39.json": "8d480d1e96b834edbb1767612fa869e448eea23f99f3027ecb9a76f42499ce38",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q01.json": "67c67a4a4166d2e31c2e61e8e3bb4ab6bc8f8429c744c4723a7bb759c4cfa48b",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q02.json": "d25d13fcad25fd989c1c4f7bb1d80116dcf9eca7e78d34811bc268659fd23ec1",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q03.json": "c45355e9f4969705b031cd8bc6595a4f940109b3024f815cb7d52166c02ad6bc",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q04.json": "9611fd87fe4cc22d165e0bd511c2f1f35a44a6a1da65a5d5c09b07d198d59c06",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q05.json": "3e3ad5d4c4147051f40132eb3b830d33e572cfc5090fe3d492ac8326d96576b8",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q06.json": "368a5689a3a87caff0305a40a0424dec1dde516a25709186947a3f27cb4a84ac",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q07.json": "d4b4bea1bfd3bb01d93bf00b2c5615ae6ffda7e4aa73ab25e607d6e0b0111d10",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q08.json": "720ee62edf7f3ffca9fc0fb59fa323f6db0a866fcb6cad6941063f48816ffaee",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q09.json": "a2b1bbaca56d1176562207526644059a660d1cfb336bd7838cac61f4cdb25811",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q10.json": "385fa1bf86bb07291bbdbf14a2fff480f2eef474fa5f02d634fc6f151d1ca06b",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q11.json": "9575efb0cee587ea341d9e461b86b4480561fa1011e5404b3742fcd0bee01493",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q12.json": "3830db910f9c8f7e498946723afbcfb0e8b4aa00992663828f68755b3409ef61",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q13.json": "048635fe70a3fe304b25c290e417f3b6cd15f34bb2e0abb8138519a6a581ea7f",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q14.json": "b1730dc061c34c89c6c363e78c6657db1622b858334c7469af59a9015466ffe1",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q15.json": "8ee35db3fce56fb2708f6cd90289b32e0f8560b542a875e1bd2de3b820a90d78",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q16.json": "ffa35bdeb48919315abea991f46ed05a68c3628006e34064c37c3ce1f0e37088",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q17.json": "b82b50ae2f858e23c3549bdcf8183eddb3715c8dd95ea1f87932dde5ef35e9bd",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q18.json": "7b0f38e3c62f14a9b3ab7ea9683e8acbd44d8a690b9171851509e8f3b08f2197",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q19.json": "d8aee8424887150895ad5eee6c554b13470eed7344afedc7bb103b23e0368e83",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q20.json": "7454d42b4e6f6e4bea094dc21a266a85f17a72c48040a2167c64bde07ed74fd0",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q21.json": "d9da4a80ac12e0543be86d7432f2734f3f5fb5e50a094ce06c1dbc5ed7d5ae3a",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q22.json": "f17f157b79af1674bc61806088e8f7bde78bb4b001cf23c56c8ae9f33344e8ad",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q23.json": "79c0759c6603e429eea01e17c32701aee2ded6cb44aaaee0f20eaa95d13e473c",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q24.json": "09b32daf4cf4c496d4b588058129f489b3d06ebd1abebf23b0051e0ebfd3fa68",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q25.json": "dd7c2784517d24c3acd7f84786ba5579bdf4f733da6ba9e93d93d68c85d57c6c",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q26.json": "a4a6ea70b87e22b5220c2caff3344763b8ba2c1fb3f4d4e65b0cdcbb043fc39f",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q27.json": "523fa8900467b7168c435f0df362ecccced69457bb208c9dc9d915ef6ea78101",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q28.json": "e560e44bf2d6f813c493b666f614d87bbfd696eb48f22d633e759892c2e8b4aa",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q29.json": "925d23594f78db57d572ab22e8392c97a5f56a6a3016c1723c8c1988f80a77c2",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q30.json": "5ff96048927b428449f71f6de91442ab1b790c13f8d5449fa0e9d8ab79aceea0",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q31.json": "3ce2135b4ea7441690c7d282134e2c8952a8b265bdd2b0003b41aa32e6f9fdfb",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q32.json": "dedcb8d6accb5e03be4caab63eaf9a92c71da1c6cced9d82d7664b8d8f6e82df",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q33.json": "c1c7dba01cd428e41ef0cef589372cf316721c620a4236585e9fda97697e33e7",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q34.json": "ca5c392aaf5776ebab48a5803d049d317a0263a17a22aab6f3569ebe74d0d03a",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q35.json": "7413adb342f7f6e4eedec0358608edc9c8f121a641d0c05b5564ddddc490e3f8",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q36.json": "4f8bf10b427d650c705078bfbb46591d1036492e6fd16c1cfe9a8ffd9bc81851",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q37.json": "dd707ee376c0eaf952ccd8a81bca1b8d644af2155a97cdd7e3b1e5fa825d0f36",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q38.json": "ab2513107312d3a7ca267bf605de067cb98f2561d3a05a7bc1103b11ecb50239",
+      "results\\routerai_followup\\single_no_hyde\\cases\\q39.json": "197edd295b23ad4b56897a863bbcc9770cdd8128b7a33f246f981531009ded03",
+      "results\\validation\\agent_full_context\\cases\\q01.json": "29c0543e04b9b2af5c234a87dc38dc7dd58c59ebf93b9429d151a1a60177820d",
+      "results\\validation\\agent_full_context\\cases\\q02.json": "3a3558968a529e9cd4f0d2fd3377304c8f4b4744f0c66d5628a3d567b98514ed",
+      "results\\validation\\agent_full_context\\cases\\q03.json": "ae9396c0d559a246d17edc7ed378bd662b52082362e12204ecb5584a7eee95a6",
+      "results\\validation\\agent_full_context\\cases\\q04.json": "cc69d9a5c9466dceb83fcd3f7316f2c8c644e8e37d6a55b103e4e932dbfd2beb",
+      "results\\validation\\agent_full_context\\cases\\q05.json": "a551c549637c17e43aee91be88995916146e3078912ed94b1233b2714cc19c06",
+      "results\\validation\\agent_full_context\\cases\\q06.json": "f29fb5156508a3935280a1a2090ea166fc11f7ec6afd372ce94e15fb350ea337",
+      "results\\validation\\agent_full_context\\cases\\q07.json": "c4fb0b7707aacc35a15b1f007d03aeadf91e29adc103541495fe3ff86ed3531b",
+      "results\\validation\\agent_full_context\\cases\\q08.json": "9d7bf2b7b4e910650ed591ee8a6242f0d70bc95d3ee6e9334eeb51cfb5f23d7e",
+      "results\\validation\\agent_full_context\\cases\\q09.json": "00a3987aefc8e79cc45432d421b45111d67fec546190a08ad2b57f4483e66ead",
+      "results\\validation\\agent_full_context\\cases\\q10.json": "4d476a20822ca0281c89c58095699606e32ba65b78ef7bfbbc1310cbad6c78b4",
+      "results\\validation\\agent_full_context\\cases\\q11.json": "9fafd437e8d9b838e2dbf8bb673f39cf869a153af6a630f83412dffb6ac960d9",
+      "results\\validation\\agent_full_context\\cases\\q12.json": "c6507b1e9d5519e657a041aa1518fff6326b6d927f89c674fb06500154099c68",
+      "results\\validation\\agent_full_context\\cases\\q13.json": "cfe89092d205f7cbfc4bfa69eb01ccca59e05da8932fd02906ffadd210b2e0e7",
+      "results\\validation\\agent_full_context\\cases\\q14.json": "bd208740b1ddf59079c56cdbcf333984c24deb85f4cc695cc945e1ec675b7c91",
+      "results\\validation\\agent_full_context\\cases\\q15.json": "76c952801a4d5c6480346dd7d3e808ac9a256e33b29d9196421ae7a052fdd178",
+      "results\\validation\\agent_full_context\\cases\\q16.json": "0a17d7e74fd6039ba88819c43292852dc0a82e1b086d50f073d24926ff8dfb2d",
+      "results\\validation\\agent_full_context\\cases\\q17.json": "19aef7abaab1104f4fa622c557418fd09da702b7576a499211dc54992af4260b",
+      "results\\validation\\agent_full_context\\cases\\q18.json": "b099aba03aee4e23afd85342e0b5d415d0783d6ac98d2327af9dbf282d938799",
+      "results\\validation\\agent_full_context\\cases\\q19.json": "004c82a73ddad1973fe51ac3c02d1d924fc97ae1cdb805600ef1fec1923baaa3",
+      "results\\validation\\agent_full_context\\cases\\q20.json": "f730f095e49d3e64b2a8030acf3970056fd453155a4b370f4f3ca96eab0df936",
+      "results\\validation\\agent_full_context\\cases\\q21.json": "5b4b483173f181698cad9b9f04eeb4f3c59f6f89be1526e908e29848afd7a08a",
+      "results\\validation\\agent_full_context\\cases\\q22.json": "ed0c85558b156907add91802bca54039b74e0782505fd7015d79359d1d931aef",
+      "results\\validation\\agent_full_context\\cases\\q23.json": "ac8073957a2522e073b106c181e0e30a7b378d8002ecdadb4381d93ccb35eac3",
+      "results\\validation\\agent_full_context\\cases\\q24.json": "b645e30eed9e5daa28fb692a835e4455ef62d67ddf85050503ad1a1fa7dbe19c",
+      "results\\validation\\agent_full_context\\cases\\q25.json": "1464464f7a1f673edddb5545da503193ff541a7cc327fb28adc7e20e435895e9",
+      "results\\validation\\agent_full_context\\cases\\q26.json": "547fa75456611cc7dbdb368bf543b3624f91cbe53808ccbf5fa74b791b06853a",
+      "results\\validation\\agent_full_context\\cases\\q27.json": "8f2b133736314a509a88e4b2e7a8b909f423bf2a0d12adbc20d5c5718f6dbcf1",
+      "results\\validation\\agent_full_context\\cases\\q28.json": "26865da6ef1db9010fe11f4898dc8ac58fef3e2b8a678c4231ef1c794b0baa9a",
+      "results\\validation\\agent_full_context\\cases\\q29.json": "ea8a87170ba0dde4a7fb3967052219a55dde545bd3c89559532fbba0715c7d2a",
+      "results\\validation\\agent_full_context\\cases\\q30.json": "bf377ee54bb3d44c76f0f5a56b654794ace41baf46b70e22667b5a928e8c823f",
+      "results\\validation\\agent_full_context\\cases\\q31.json": "73569dc89ae3ebb4c19da8bcbf93b4354bdcd25b62ba3542dc048e2279fb8a80",
+      "results\\validation\\agent_full_context\\cases\\q32.json": "c941ba1cf3edb3df6a15548ad97ae179e79790aee1d67815d8f82afc0dd0d6b2",
+      "results\\validation\\agent_full_context\\cases\\q33.json": "9190cd1bb11063a4fc76e2ce6ec50911539ef800d473991e109fa186772f86db",
+      "results\\validation\\agent_full_context\\cases\\q34.json": "95865b5b2062df22edad06ac2adccd83ff8eaccc15b0a76ec807723cc3a1ce70",
+      "results\\validation\\agent_full_context\\cases\\q35.json": "a3d3564f6f8048995f666acd46b010e881978c247faaa90b643ee886d06223af",
+      "results\\validation\\agent_full_context\\cases\\q36.json": "4dfe5bd0b1fb694c02d8ec4eaf9221e7ebac5c6fe3f93f2af526b859511bf5dc",
+      "results\\validation\\agent_full_context\\cases\\q37.json": "4c349d1b6545062b04a055d0575c90bf2092b99b4abd00b93df15be9d2cf2c64",
+      "results\\validation\\agent_full_context\\cases\\q38.json": "1d49b0618dc328f5ea1ef1b8c9ce2c31efbc0cfe976fc44a382f8b528660151a",
+      "results\\validation\\agent_full_context\\cases\\q39.json": "de4d52998f7c4e8219cb703b55f1ff56b4f76006c8a86521d5956369404fdc78",
+      "results\\validation\\sequential\\agent_full\\hop01.json": "bb82c42b42cfea477ee6a726b584db7175049ad53c1cb565b8eabc28fb72d935",
+      "results\\validation\\sequential\\agent_full\\hop02.json": "8d3928e41172663c354c86c9573a1089fbb4bb307bfc2fcb1e66b3cc4508d6e3",
+      "results\\validation\\sequential\\agent_full\\hop03.json": "387d468ab36cdd4a72bec8fcdf98946cd0f3f77f769b6ce5737f79ea4e73f1a2",
+      "results\\validation\\sequential\\agent_full\\hop04.json": "c38df64a055f3079e31389b396a79dc02768eef4ac4d723a12f1f13d4eaf406f",
+      "results\\validation\\sequential\\agent_full\\hop05.json": "567e557d2857cad9fd1f3d356fc2baae0b6b5c9a80a315a10b32696303646997",
+      "results\\validation\\sequential\\agent_full\\hop06.json": "9ad1080556e99674edc0fd4bec886424cb2fcc5f5832c02bb07231e2a37f0c8e",
+      "results\\validation\\sequential\\agent_full\\hop07.json": "9b37d7869f543709cacdc47f4593ad4d854e1f93d1352b5b86fe4980ad4ac6de",
+      "results\\validation\\sequential\\agent_full\\hop08.json": "585d1a0e9737c5ffc0bcfccd274fa021c3d44df647f3500eb128ec408c7c744f",
+      "results\\validation\\sequential\\agent_full\\hop09.json": "78d529d88cb792d8e922843ddca1f1d70570fa982d1daa2c9bc05ce5cd0fbd55",
+      "results\\validation\\sequential\\agent_full\\hop10.json": "86e0608a941a0923374ee51ede725828f7d34179ed40ccb3fef5fb4af7e59e59",
+      "results\\validation\\sequential\\agent_full\\hop11.json": "11520a9569cbc339e76dc7e87b3cb7fcc2485ed1c8e74c94798095068d717e8c",
+      "results\\validation\\sequential\\agent_full\\hop12.json": "17dea297b21f681c28340fa90ebdff786f543e6ba2893a56e6cf42258f2ac342"
+    },
+    "fixtures": [
+      {
+        "id": "refund_policy_0",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Клиент тарифа Starter может запросить полный возврат в течение 14 календарных дней с первого списания без объяснения причин.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "refund_policy.md",
+            "text": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления."
+          }
+        ]
+      },
+      {
+        "id": "refund_policy_1",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Окно возврата Enterprise составляет 30 календарных дней с даты начала контракта.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "refund_policy.md",
+            "text": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления."
+          }
+        ]
+      },
+      {
+        "id": "refund_policy_2",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Окно возврата Enterprise составляет 7 календарных дней с даты начала контракта.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "refund_policy.md",
+            "text": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления."
+          }
+        ]
+      },
+      {
+        "id": "refund_policy_3",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Списание за продление возвращается автоматически без обращения клиента.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "refund_policy.md",
+            "text": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления."
+          }
+        ]
+      },
+      {
+        "id": "refund_policy_4",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Подписка Enterprise стоит 5000 рублей в месяц.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "refund_policy.md",
+            "text": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления."
+          }
+        ]
+      },
+      {
+        "id": "hr_timeoff_0",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Штатный сотрудник со стажем один год накапливает 18 дней оплачиваемого отпуска в год.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "hr_timeoff.md",
+            "text": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника."
+          }
+        ]
+      },
+      {
+        "id": "hr_timeoff_1",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "На следующий год можно перенести остаток отпуска не более 40 дней.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "hr_timeoff.md",
+            "text": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника."
+          }
+        ]
+      },
+      {
+        "id": "hr_timeoff_2",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Штатный сотрудник со стажем один год накапливает 23 дня оплачиваемого отпуска в год.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "hr_timeoff.md",
+            "text": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника."
+          }
+        ]
+      },
+      {
+        "id": "hr_timeoff_3",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Остаток оплачиваемого отпуска сверх 40 дней сохраняется в конце года.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "hr_timeoff.md",
+            "text": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника."
+          }
+        ]
+      },
+      {
+        "id": "hr_timeoff_4",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Отпуск можно отменить за один день до начала.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "hr_timeoff.md",
+            "text": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника."
+          }
+        ]
+      },
+      {
+        "id": "remote_work_0",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Работа из-за рубежа ограничена 20 рабочими днями в году.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md",
+            "text": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена."
+          }
+        ]
+      },
+      {
+        "id": "remote_work_1",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Работа из-за рубежа требует одобрения юридического отдела и службы безопасности.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md",
+            "text": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена."
+          }
+        ]
+      },
+      {
+        "id": "remote_work_2",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Работа из-за рубежа разрешена без одобрения юридического отдела.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md",
+            "text": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена."
+          }
+        ]
+      },
+      {
+        "id": "remote_work_3",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Работа из стран под санкционными ограничениями разрешена.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md",
+            "text": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена."
+          }
+        ]
+      },
+      {
+        "id": "remote_work_4",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Компания возмещает визовые расходы при удалённой работе за рубежом.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md",
+            "text": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена."
+          }
+        ]
+      },
+      {
+        "id": "travel_expenses_0",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Бизнес-класс допускается для перелёта дольше 6 часов только с одобрения директора департамента.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "travel_expenses.md",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ]
+      },
+      {
+        "id": "travel_expenses_1",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Тариф такси Комфорт разрешён после 22:00.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "travel_expenses.md",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ]
+      },
+      {
+        "id": "travel_expenses_2",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Бизнес-класс разрешён для любого перелёта без одобрения директора.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "travel_expenses.md",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ]
+      },
+      {
+        "id": "travel_expenses_3",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Такси по тарифу Комфорт разрешено в любое время суток.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "travel_expenses.md",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ]
+      },
+      {
+        "id": "travel_expenses_4",
+        "split": "calibration",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Билеты покупаются только у авиакомпании Аэрофлот.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "travel_expenses.md",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ]
+      },
+      {
+        "id": "security_policy_0",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Привилегированные учётные данные ротируются каждые 90 дней.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ]
+      },
+      {
+        "id": "security_policy_1",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "MFA обязательна для всех сотрудников на каждой поддерживающей её системе, включая руководителей.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ]
+      },
+      {
+        "id": "security_policy_2",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Привилегированные учётные данные ротируются каждые 180 дней.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ]
+      },
+      {
+        "id": "security_policy_3",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Руководителям разрешено не использовать MFA в системах с её поддержкой.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ]
+      },
+      {
+        "id": "security_policy_4",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Минимальная длина пароля составляет 16 символов.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ]
+      },
+      {
+        "id": "onboarding_0",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Испытательный срок для большинства сотрудников составляет 3 месяца.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "onboarding.md",
+            "text": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday."
+          }
+        ]
+      },
+      {
+        "id": "onboarding_1",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Испытательный срок главных инженеров составляет 6 месяцев.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "onboarding.md",
+            "text": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday."
+          }
+        ]
+      },
+      {
+        "id": "onboarding_2",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Испытательный срок для большинства сотрудников составляет 1 месяц.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "onboarding.md",
+            "text": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday."
+          }
+        ]
+      },
+      {
+        "id": "onboarding_3",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Испытательный срок руководителей составляет 3 месяца.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "onboarding.md",
+            "text": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday."
+          }
+        ]
+      },
+      {
+        "id": "onboarding_4",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "После испытательного срока зарплата повышается на 10 процентов.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "onboarding.md",
+            "text": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday."
+          }
+        ]
+      },
+      {
+        "id": "procurement_0",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Стандартная отсрочка платежа поставщику составляет 30 календарных дней с получения закрывающих документов.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "procurement.md",
+            "text": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора."
+          }
+        ]
+      },
+      {
+        "id": "procurement_1",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Предоплата больше 50 процентов требует согласия финансового директора.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "procurement.md",
+            "text": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора."
+          }
+        ]
+      },
+      {
+        "id": "procurement_2",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Стандартная отсрочка платежа поставщику составляет 60 календарных дней с получения закрывающих документов.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "procurement.md",
+            "text": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора."
+          }
+        ]
+      },
+      {
+        "id": "procurement_3",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Предоплата 70 процентов разрешена без согласия финансового директора.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "procurement.md",
+            "text": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора."
+          }
+        ]
+      },
+      {
+        "id": "procurement_4",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Оплата поставщикам производится только в рублях.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "procurement.md",
+            "text": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора."
+          }
+        ]
+      },
+      {
+        "id": "product_specs_0",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Грузоподъёмность NW-100 составляет 5 кг.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "product_specs.md",
+            "text": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`"
+          }
+        ]
+      },
+      {
+        "id": "product_specs_1",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Гарантия на NW-100 составляет 2 года.",
+        "label": "supported",
+        "chunks": [
+          {
+            "chunk_id": "product_specs.md",
+            "text": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`"
+          }
+        ]
+      },
+      {
+        "id": "product_specs_2",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Грузоподъёмность NW-100 составляет 18 кг.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "product_specs.md",
+            "text": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`"
+          }
+        ]
+      },
+      {
+        "id": "product_specs_3",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "Гарантия на NW-100 составляет 3 года.",
+        "label": "contradicted",
+        "chunks": [
+          {
+            "chunk_id": "product_specs.md",
+            "text": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`"
+          }
+        ]
+      },
+      {
+        "id": "product_specs_4",
+        "split": "heldout",
+        "question": "Проверь утверждение по документу.",
+        "claim": "NW-100 стоит 100000 рублей.",
+        "label": "insufficient",
+        "chunks": [
+          {
+            "chunk_id": "product_specs.md",
+            "text": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`"
+          }
+        ]
+      },
+      {
+        "id": "scenario_vpn_0",
+        "question": "Работаю из кафе без включённого VPN. Разрешено ли так подключаться?",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md:Безопасность на удалёнке",
+            "text": "## Безопасность на удалёнке\n\nРаботать можно только с корпоративного устройства. Подключение к внутренним\nсистемам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)\nдопускаются исключительно при включённом VPN."
+          }
+        ],
+        "claim": "В описанной ситуации работать через публичную сеть без VPN нельзя.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_vpn_1",
+        "question": "Работаю из кафе без включённого VPN. Разрешено ли так подключаться?",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md:Безопасность на удалёнке",
+            "text": "## Безопасность на удалёнке\n\nРаботать можно только с корпоративного устройства. Подключение к внутренним\nсистемам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)\nдопускаются исключительно при включённом VPN."
+          }
+        ],
+        "claim": "В описанной ситуации публичная сеть разрешена без VPN.",
+        "label": "contradicted",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_tender_0",
+        "question": "Закупаем оборудование за 2 млн рублей. Сколько предложений нужно для тендера?",
+        "chunks": [
+          {
+            "chunk_id": "procurement.md:Пороги согласования",
+            "text": "## Пороги согласования\n\n- до **100 000 ₽** — согласует руководитель подразделения;\n- от 100 000 до **1 000 000 ₽** — дополнительно согласует финансовый директор;\n- свыше 1 000 000 ₽ — проводится тендер: нужно собрать **не менее 3\n  коммерческих предложений**, решение принимает закупочный комитет.\n\nДробить одну закупку на несколько, чтобы не проходить порог, запрещено."
+          }
+        ],
+        "claim": "Для этой закупки нужно собрать не менее трёх коммерческих предложений.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_tender_1",
+        "question": "Закупаем оборудование за 2 млн рублей. Сколько предложений нужно для тендера?",
+        "chunks": [
+          {
+            "chunk_id": "procurement.md:Пороги согласования",
+            "text": "## Пороги согласования\n\n- до **100 000 ₽** — согласует руководитель подразделения;\n- от 100 000 до **1 000 000 ₽** — дополнительно согласует финансовый директор;\n- свыше 1 000 000 ₽ — проводится тендер: нужно собрать **не менее 3\n  коммерческих предложений**, решение принимает закупочный комитет.\n\nДробить одну закупку на несколько, чтобы не проходить порог, запрещено."
+          }
+        ],
+        "claim": "Для этой закупки достаточно одного коммерческого предложения.",
+        "label": "contradicted",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_vendor_0",
+        "question": "Новый поставщик будет обрабатывать персональные данные клиентов. Нужны ли проверки?",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md:Классификация данных",
+            "text": "## Классификация данных\n\nВсе данные классифицируются как **Публичные**, **Внутренние**,\n**Конфиденциальные** или **С ограниченным доступом** (Restricted). Персональные\nданные клиентов и платёжная информация всегда относятся к категории\n**Restricted**. Данные Restricted должны шифроваться при хранении (AES-256) и при\nпередаче (TLS 1.2+)."
+          },
+          {
+            "chunk_id": "security_policy.md:Безопасность поставщиков",
+            "text": "## Безопасность поставщиков\n\nПоставщики, обрабатывающие Конфиденциальные данные или данные Restricted, должны\nпройти проверку безопасности и подписать Соглашение об обработке данных (DPA) до\nначала работы. Для поставщиков, работающих с данными Restricted, требуется\nежегодная переоценка."
+          }
+        ],
+        "claim": "Этому поставщику нужно подписать DPA до начала работы и проходить ежегодную переоценку.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_vendor_1",
+        "question": "Новый поставщик будет обрабатывать персональные данные клиентов. Нужны ли проверки?",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md:Классификация данных",
+            "text": "## Классификация данных\n\nВсе данные классифицируются как **Публичные**, **Внутренние**,\n**Конфиденциальные** или **С ограниченным доступом** (Restricted). Персональные\nданные клиентов и платёжная информация всегда относятся к категории\n**Restricted**. Данные Restricted должны шифроваться при хранении (AES-256) и при\nпередаче (TLS 1.2+)."
+          },
+          {
+            "chunk_id": "security_policy.md:Безопасность поставщиков",
+            "text": "## Безопасность поставщиков\n\nПоставщики, обрабатывающие Конфиденциальные данные или данные Restricted, должны\nпройти проверку безопасности и подписать Соглашение об обработке данных (DPA) до\nначала работы. Для поставщиков, работающих с данными Restricted, требуется\nежегодная переоценка."
+          }
+        ],
+        "claim": "Этот поставщик уже сертифицирован по ISO 27001.",
+        "label": "insufficient",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_trial_0",
+        "question": "Я главный инженер. Какой у меня испытательный срок?",
+        "chunks": [
+          {
+            "chunk_id": "onboarding.md:Испытательный срок",
+            "text": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday."
+          }
+        ],
+        "claim": "В описанной ситуации испытательный срок составляет 6 месяцев.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_trial_1",
+        "question": "Я главный инженер. Какой у меня испытательный срок?",
+        "chunks": [
+          {
+            "chunk_id": "onboarding.md:Испытательный срок",
+            "text": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday."
+          }
+        ],
+        "claim": "В описанной ситуации испытательный срок составляет 3 месяца.",
+        "label": "contradicted",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_flight_0",
+        "question": "Перелёт длится 8 часов, директор департамента одобрил бизнес-класс. Допускается ли он?",
+        "chunks": [
+          {
+            "chunk_id": "travel_expenses.md:Перелёты и такси",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ],
+        "claim": "При указанных пользователем условиях бизнес-класс допускается.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_flight_1",
+        "question": "Перелёт длится 8 часов, директор департамента одобрил бизнес-класс. Допускается ли он?",
+        "chunks": [
+          {
+            "chunk_id": "travel_expenses.md:Перелёты и такси",
+            "text": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+          }
+        ],
+        "claim": "Авиакомпания бесплатно повысит билет до первого класса.",
+        "label": "insufficient",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_mfa_0",
+        "question": "Я руководитель и считаю, что могу не включать MFA. Система поддерживает MFA. Что говорит политика?",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md:Управление доступом",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ],
+        "claim": "Для этого руководителя MFA обязательна.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_mfa_1",
+        "question": "Я руководитель и считаю, что могу не включать MFA. Система поддерживает MFA. Что говорит политика?",
+        "chunks": [
+          {
+            "chunk_id": "security_policy.md:Управление доступом",
+            "text": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**."
+          }
+        ],
+        "claim": "Слова руководителя освобождают его от MFA в описанной системе.",
+        "label": "contradicted",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_escalate_0",
+        "question": "Какое слово нужно написать в тикете для запроса эскалации?",
+        "chunks": [
+          {
+            "chunk_id": "support_sla.md",
+            "text": "# Northwind Robotics — Поддержка и SLA\n\n_Последнее обновление: 30.01.2026. Владелец: Клиентская поддержка._\n\n## Уровни поддержки\n\n| Тариф      | Каналы                  | Часы работы        |\n|------------|-------------------------|--------------------|\n| Starter    | Email, документация     | Рабочие часы       |\n| Team       | Email, чат              | Рабочие часы       |\n| Enterprise | Email, чат, телефон, TAM | 24/7              |\n\n«Рабочие часы» — это 9:00–18:00 в основном часовом поясе клиента, с понедельника\nпо пятницу, исключая местные государственные праздники.\n\n## SLA по времени ответа (Enterprise)\n\nУровень серьёзности (severity) устанавливает поддержка Northwind на основе\nзаявленного клиентом влияния:\n\n- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.\n- **Sev 2 (серьёзная деградация):** первый ответ в течение **4 рабочих часов**.\n- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**.\n\nНад инцидентами Sev 1 работают непрерывно, пока не будет найдено обходное решение\nили устранена проблема. Каждому аккаунту Enterprise назначается выделенный\nтехнический менеджер аккаунта (TAM).\n\n## Эскалация\n\nЕсли Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически\nэскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить\nэскалацию в любой момент, ответив «ESCALATE» в тикете.\n\n## Сервисные компенсации (кредиты)\n\nЕсли Northwind нарушает SLA по времени ответа на Sev 1, клиент имеет право на\nсервисную компенсацию в размере **5% от месячной платы** за каждый\nпропущенный инцидент, но не более 25% от месячной платы в любом расчётном\nмесяце. Компенсацию нужно запросить в течение 30 дней.\n"
+          }
+        ],
+        "claim": "В тикете нужно ответить словом ESCALATE.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_escalate_1",
+        "question": "Какое слово нужно написать в тикете для запроса эскалации?",
+        "chunks": [
+          {
+            "chunk_id": "support_sla.md",
+            "text": "# Northwind Robotics — Поддержка и SLA\n\n_Последнее обновление: 30.01.2026. Владелец: Клиентская поддержка._\n\n## Уровни поддержки\n\n| Тариф      | Каналы                  | Часы работы        |\n|------------|-------------------------|--------------------|\n| Starter    | Email, документация     | Рабочие часы       |\n| Team       | Email, чат              | Рабочие часы       |\n| Enterprise | Email, чат, телефон, TAM | 24/7              |\n\n«Рабочие часы» — это 9:00–18:00 в основном часовом поясе клиента, с понедельника\nпо пятницу, исключая местные государственные праздники.\n\n## SLA по времени ответа (Enterprise)\n\nУровень серьёзности (severity) устанавливает поддержка Northwind на основе\nзаявленного клиентом влияния:\n\n- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.\n- **Sev 2 (серьёзная деградация):** первый ответ в течение **4 рабочих часов**.\n- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**.\n\nНад инцидентами Sev 1 работают непрерывно, пока не будет найдено обходное решение\nили устранена проблема. Каждому аккаунту Enterprise назначается выделенный\nтехнический менеджер аккаунта (TAM).\n\n## Эскалация\n\nЕсли Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически\nэскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить\nэскалацию в любой момент, ответив «ESCALATE» в тикете.\n\n## Сервисные компенсации (кредиты)\n\nЕсли Northwind нарушает SLA по времени ответа на Sev 1, клиент имеет право на\nсервисную компенсацию в размере **5% от месячной платы** за каждый\nпропущенный инцидент, но не более 25% от месячной платы в любом расчётном\nмесяце. Компенсацию нужно запросить в течение 30 дней.\n"
+          }
+        ],
+        "claim": "После слова ESCALATE ответ гарантирован за пять минут.",
+        "label": "insufficient",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_abroad_0",
+        "question": "Планирую работать из-за рубежа 25 рабочих дней в этом году. Укладываюсь ли я в лимит?",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md:Работа из другой страны",
+            "text": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена."
+          }
+        ],
+        "claim": "В описанной ситуации лимит 20 рабочих дней в году превышен.",
+        "label": "supported",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      },
+      {
+        "id": "scenario_abroad_1",
+        "question": "Планирую работать из-за рубежа 25 рабочих дней в этом году. Укладываюсь ли я в лимит?",
+        "chunks": [
+          {
+            "chunk_id": "remote_work.md:Работа из другой страны",
+            "text": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена."
+          }
+        ],
+        "claim": "Компания оплатит визовые расходы сотрудника.",
+        "label": "insufficient",
+        "split": "scenario_regression",
+        "label_provenance": "assistant authored; known failure families; not an independent human holdout"
+      }
+    ],
+    "extract_prompt_sha256": "571f57b497203a3e58f850258cd7e9d02bdd295b3bf647cf9cdbc37ce28b3612",
+    "verify_prompt_sha256": "93972b221107a99deca905d6de4f1699e3b77a717322a98d3496f43a82dfec5a",
+    "selector_sha256": "89ddda0dc340a2103e1a88f6f501c742a04e2ba51997c9ec0219a1caf109f8a5"
+  },
+  "scope": "Only two approved repairs: 12 frozen trajectory replays; offline context audit of 117 traces; 56 controls per verifier (v1 originals reused); 117 frozen answer reviews with v2; six fixed-claim probes.",
+  "original_account_budget_rub": 100,
+  "budget_reset": false,
+  "limits": "Known failure families are development regressions; no new independent human holdout."
+}

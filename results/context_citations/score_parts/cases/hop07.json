@@ -1,0 +1,248 @@
+{
+  "status": "ok",
+  "id": "hop07",
+  "suite": "sequential",
+  "arm": "score_parts",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+    "answer": "Для проекта «Тайга» назначен пакет K-24. Действующий на 02.11.2026 лимит компенсации за один отчёт — 1169 рублей.",
+    "citations": [
+      {
+        "chunk_id": "0d2e944093d0e093",
+        "source": "project_06.md",
+        "quote": "Карточка проекта Тайга: для расходов проекта назначен пакет K-24.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+        "start_char": 15,
+        "end_char": 156
+      },
+      {
+        "chunk_id": "c729d422fbd6d449",
+        "source": "policy_K24_current.md",
+        "quote": "Действует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-24 соответствует лимит компенсации 1169 рублей за один отчёт.",
+        "start_char": 23,
+        "end_char": 148
+      }
+    ],
+    "confidence": 0.0,
+    "faithfulness": 0.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Тайга?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Тайга лимит компенсации за один отчёт действующий 02.11.2026",
+          "rationale": "Ищу актуальный лимит компенсации по проекту Тайга на указанную дату.",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "0d2e944093d0e093",
+                "doc_id": "0a970ad401079a32",
+                "source": "project_06.md",
+                "text": "# Проект Тайга\nКарточка проекта Тайга: для расходов проекта назначен пакет K-24.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 4.000819672131148,
+              "relevance": 4.0,
+              "reason": "Mentions Тайга project and assigned package K-24, but no limit given; indirect relevance.",
+              "sources": {
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8f5c6a36f3e0974c",
+                "doc_id": "0446bca69cc5d4cc",
+                "source": "policy_K11_current.md",
+                "text": "# Норматив пакета K-11\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-11 соответствует лимит компенсации 610 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 3.0014756944444443,
+              "relevance": 3.0,
+              "reason": "Limit for package K-11 current, but no link to Тайга project specified.",
+              "sources": {
+                "dense": 12.0,
+                "sparse": 4.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "496b817de579f499",
+                "doc_id": "97e8cc64a29b9772",
+                "source": "policy_K11_archive.md",
+                "text": "# Норматив пакета K-11\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-11 соответствует лимит компенсации 1387 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.001515499425947,
+              "relevance": 2.0,
+              "reason": "Fragment provides limit for package K-11 but does not relate to project Тайга; query seeks limit for Тайга.",
+              "sources": {
+                "dense": 7.0,
+                "sparse": 5.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "d90179ad39d006ad",
+                "doc_id": "dc7404cd341bada0",
+                "source": "policy_K01_archive.md",
+                "text": "# Норматив пакета K-01\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-01 соответствует лимит компенсации 957 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0014822134387351,
+              "relevance": 1.0,
+              "reason": "Limit for package K-01, unrelated to Тайга.",
+              "sources": {
+                "dense": 6.0,
+                "sparse": 9.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "1aad246d2726e134",
+                "doc_id": "494db5ce23bc8fcc",
+                "source": "policy_K06_current.md",
+                "text": "# Норматив пакета K-06\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-06 соответствует лимит компенсации 395 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0008196721311475,
+              "relevance": 1.0,
+              "reason": "Limit for package K-06 current, unrelated to Тайга.",
+              "sources": {
+                "dense": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "query": "норматив пакета K-24 действующий лимит компенсации за один отчёт",
+          "rationale": "Проект Тайга использует пакет K-24; нужен действующий норматив именно этого пакета.",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "c729d422fbd6d449",
+                "doc_id": "28cab72ca52b2f39",
+                "source": "policy_K24_current.md",
+                "text": "# Норматив пакета K-24\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-24 соответствует лимит компенсации 1169 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001626123744051,
+              "relevance": 10.0,
+              "reason": "Fragment 1 provides the current limit for K‑24. It directly answers the query.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "f4c4ee1d1b2d5563",
+                "doc_id": "68c796be7e431efe",
+                "source": "policy_K24_archive.md",
+                "text": "# Норматив пакета K-24\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-24 соответствует лимит компенсации 1946 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 5.0016261237440505,
+              "relevance": 5.0,
+              "reason": "Fragment 0 gives the limit for K‑24 in the archived edition, but the user asks for the current applicable limit. It is partially relevant but not the current value.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "0d2e944093d0e093",
+                "doc_id": "0a970ad401079a32",
+                "source": "project_06.md",
+                "text": "# Проект Тайга\nКарточка проекта Тайга: для расходов проекта назначен пакет K-24.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 4.000793650793651,
+              "relevance": 4.0,
+              "reason": "Fragment 4 mentions that project expenses use K‑24 and that the compensation is determined by the current norm, but does not give the numeric value. Indirectly related.",
+              "sources": {
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "0726ca893cf108a7",
+                "doc_id": "d2e44da960ddb2e8",
+                "source": "policy_K04_archive.md",
+                "text": "# Норматив пакета K-04\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-04 соответствует лимит компенсации 1086 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0014854753521127,
+              "relevance": 1.0,
+              "reason": "Fragment 2 is about a different package (K‑04). Not relevant.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 11.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "dfedd17ccadcc329",
+                "doc_id": "d76bf0470aa138c4",
+                "source": "policy_K14_archive.md",
+                "text": "# Норматив пакета K-14\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-14 соответствует лимит компенсации 1516 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0007936507936508,
+              "relevance": 1.0,
+              "reason": "Fragment 3 is about K‑14. Not relevant.",
+              "sources": {
+                "dense": 3.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": true,
+      "notes": "Нашёл: проекту «Тайга» назначен пакет K-24, действующий с 01.01.2026 норматив устанавливает лимит 1169 рублей за отчёт; архивное значение 1946 рублей утратило силу. Данные полностью покрывают вопрос.",
+      "selected_context_ids": [
+        "c729d422fbd6d449",
+        "f4c4ee1d1b2d5563",
+        "0d2e944093d0e093",
+        "8f5c6a36f3e0974c",
+        "496b817de579f499"
+      ]
+    },
+    "warnings": []
+  },
+  "source_sha256": "9b37d7869f543709cacdc47f4593ad4d854e1f93d1352b5b86fe4980ad4ac6de",
+  "provenance": "cache-only citation materialization; answer unchanged",
+  "fresh_searches": 0,
+  "latency_s": 6.972859200031962,
+  "answerable": true,
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "raw_exact_matches": [
+    true,
+    true
+  ],
+  "refused": false,
+  "dropped_citations": 0,
+  "retrieval": {
+    "recall": 1.0,
+    "mrr": 1.0,
+    "ndcg": 0.9197207891481876
+  },
+  "amount_present": true,
+  "postprocess_source_sha256": "4ecece81904a3a51f32cec0ef75621581b393953448e1d30e4fe059a216ce6df",
+  "generation_cache_key": "461848ce818ab4e020619131f82c31a223f7bb3024604bff6e841f26460f433c",
+  "split_proposals": 0,
+  "confidence_metadata_before_parity_fix": 0.99
+}

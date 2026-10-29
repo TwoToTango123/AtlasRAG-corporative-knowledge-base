@@ -1,0 +1,783 @@
+{
+  "date": "2026-11-03T11:05:26.028734+00:00",
+  "model": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+  "revision": "8adb042d524ecd5c26d3e3ba0e3fbcf7e2d0864c",
+  "label_order": [
+    "supported",
+    "insufficient",
+    "contradicted"
+  ],
+  "threshold": 1.0,
+  "threshold_rule": "Max support recall with zero false-supported on 20 calibration pairs; tie uses lowest threshold.",
+  "calibration_candidates": [
+    {
+      "threshold": 0.5,
+      "n": 20,
+      "accuracy": 0.8,
+      "support_precision": 0.8,
+      "support_recall": 1.0,
+      "support_f1": 0.8888888888888888,
+      "false_supported": 2,
+      "false_supported_rate": 0.16666666666666666,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 2,
+          "contradicted": 6,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2
+        }
+      }
+    },
+    {
+      "threshold": 0.7,
+      "n": 20,
+      "accuracy": 0.8,
+      "support_precision": 0.8,
+      "support_recall": 1.0,
+      "support_f1": 0.8888888888888888,
+      "false_supported": 2,
+      "false_supported_rate": 0.16666666666666666,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 2,
+          "contradicted": 6,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2
+        }
+      }
+    },
+    {
+      "threshold": 0.8,
+      "n": 20,
+      "accuracy": 0.8,
+      "support_precision": 0.8,
+      "support_recall": 1.0,
+      "support_f1": 0.8888888888888888,
+      "false_supported": 2,
+      "false_supported_rate": 0.16666666666666666,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 2,
+          "contradicted": 6,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2
+        }
+      }
+    },
+    {
+      "threshold": 0.9,
+      "n": 20,
+      "accuracy": 0.85,
+      "support_precision": 0.8888888888888888,
+      "support_recall": 1.0,
+      "support_f1": 0.9411764705882353,
+      "false_supported": 1,
+      "false_supported_rate": 0.08333333333333333,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 1,
+          "contradicted": 7,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2
+        }
+      }
+    },
+    {
+      "threshold": 0.95,
+      "n": 20,
+      "accuracy": 0.85,
+      "support_precision": 0.8888888888888888,
+      "support_recall": 1.0,
+      "support_f1": 0.9411764705882353,
+      "false_supported": 1,
+      "false_supported_rate": 0.08333333333333333,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 1,
+          "contradicted": 7,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2
+        }
+      }
+    },
+    {
+      "threshold": 0.99,
+      "n": 20,
+      "accuracy": 0.85,
+      "support_precision": 0.8888888888888888,
+      "support_recall": 1.0,
+      "support_f1": 0.9411764705882353,
+      "false_supported": 1,
+      "false_supported_rate": 0.08333333333333333,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 1,
+          "contradicted": 7,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2
+        }
+      }
+    },
+    {
+      "threshold": 1.0,
+      "n": 20,
+      "accuracy": 0.45,
+      "support_precision": null,
+      "support_recall": 0.0,
+      "support_f1": 0.0,
+      "false_supported": 0,
+      "false_supported_rate": 0.0,
+      "confusion": {
+        "supported": {
+          "supported": 0,
+          "contradicted": 0,
+          "insufficient": 8
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 7,
+          "insufficient": 1
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 2,
+          "insufficient": 2
+        }
+      }
+    }
+  ],
+  "inference_seconds": 11.078895399987232,
+  "heldout": {
+    "n": 20,
+    "accuracy": 0.5,
+    "support_precision": null,
+    "support_recall": 0.0,
+    "support_f1": 0.0,
+    "false_supported": 0,
+    "false_supported_rate": 0.0,
+    "confusion": {
+      "supported": {
+        "supported": 0,
+        "contradicted": 0,
+        "insufficient": 8
+      },
+      "contradicted": {
+        "supported": 0,
+        "contradicted": 7,
+        "insufficient": 1
+      },
+      "insufficient": {
+        "supported": 0,
+        "contradicted": 1,
+        "insufficient": 3
+      }
+    }
+  },
+  "heldout_argmax": {
+    "n": 20,
+    "accuracy": 0.9,
+    "support_precision": 0.8888888888888888,
+    "support_recall": 1.0,
+    "support_f1": 0.9411764705882353,
+    "false_supported": 1,
+    "false_supported_rate": 0.08333333333333333,
+    "confusion": {
+      "supported": {
+        "supported": 8,
+        "contradicted": 0,
+        "insufficient": 0
+      },
+      "contradicted": {
+        "supported": 1,
+        "contradicted": 7,
+        "insufficient": 0
+      },
+      "insufficient": {
+        "supported": 0,
+        "contradicted": 1,
+        "insufficient": 3
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "refund_policy_0",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 196,
+      "probabilities": {
+        "supported": 0.99853515625,
+        "insufficient": 0.0013246536254882812,
+        "contradicted": 0.00012814998626708984
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "refund_policy_1",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 186,
+      "probabilities": {
+        "supported": 0.99755859375,
+        "insufficient": 0.002162933349609375,
+        "contradicted": 0.0002942085266113281
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "refund_policy_2",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 186,
+      "probabilities": {
+        "supported": 0.02899169921875,
+        "insufficient": 0.00505828857421875,
+        "contradicted": 0.9658203125
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "refund_policy_3",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 182,
+      "probabilities": {
+        "supported": 0.0004189014434814453,
+        "insufficient": 0.0003268718719482422,
+        "contradicted": 0.9990234375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "refund_policy_4",
+      "split": "calibration",
+      "gold": "insufficient",
+      "tokens": 175,
+      "probabilities": {
+        "supported": 0.0001951456069946289,
+        "insufficient": 0.99951171875,
+        "contradicted": 0.0005021095275878906
+      },
+      "pred": "insufficient",
+      "argmax_pred": "insufficient"
+    },
+    {
+      "id": "hr_timeoff_0",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 162,
+      "probabilities": {
+        "supported": 0.998046875,
+        "insufficient": 0.0017385482788085938,
+        "contradicted": 0.0003590583801269531
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "hr_timeoff_1",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 156,
+      "probabilities": {
+        "supported": 0.99755859375,
+        "insufficient": 0.001667022705078125,
+        "contradicted": 0.0006628036499023438
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "hr_timeoff_2",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 162,
+      "probabilities": {
+        "supported": 0.99609375,
+        "insufficient": 0.0028476715087890625,
+        "contradicted": 0.00091552734375
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "hr_timeoff_3",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 155,
+      "probabilities": {
+        "supported": 0.892578125,
+        "insufficient": 0.021697998046875,
+        "contradicted": 0.08551025390625
+      },
+      "pred": "contradicted",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "hr_timeoff_4",
+      "split": "calibration",
+      "gold": "insufficient",
+      "tokens": 150,
+      "probabilities": {
+        "supported": 0.01491546630859375,
+        "insufficient": 0.0014934539794921875,
+        "contradicted": 0.9833984375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "remote_work_0",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 86,
+      "probabilities": {
+        "supported": 0.99853515625,
+        "insufficient": 0.0014448165893554688,
+        "contradicted": 0.0001544952392578125
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "remote_work_1",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 92,
+      "probabilities": {
+        "supported": 0.998046875,
+        "insufficient": 0.0016546249389648438,
+        "contradicted": 9.781122207641602e-05
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "remote_work_2",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 88,
+      "probabilities": {
+        "supported": 0.0009250640869140625,
+        "insufficient": 0.00035309791564941406,
+        "contradicted": 0.99853515625
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "remote_work_3",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 81,
+      "probabilities": {
+        "supported": 0.0006079673767089844,
+        "insufficient": 0.0003142356872558594,
+        "contradicted": 0.9990234375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "remote_work_4",
+      "split": "calibration",
+      "gold": "insufficient",
+      "tokens": 88,
+      "probabilities": {
+        "supported": 0.0007805824279785156,
+        "insufficient": 0.0253143310546875,
+        "contradicted": 0.97412109375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "travel_expenses_0",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 103,
+      "probabilities": {
+        "supported": 0.99658203125,
+        "insufficient": 0.0032062530517578125,
+        "contradicted": 7.69495964050293e-05
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "travel_expenses_1",
+      "split": "calibration",
+      "gold": "supported",
+      "tokens": 86,
+      "probabilities": {
+        "supported": 0.9990234375,
+        "insufficient": 0.0010166168212890625,
+        "contradicted": 0.00015854835510253906
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "travel_expenses_2",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 95,
+      "probabilities": {
+        "supported": 0.0003948211669921875,
+        "insufficient": 0.0006837844848632812,
+        "contradicted": 0.9990234375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "travel_expenses_3",
+      "split": "calibration",
+      "gold": "contradicted",
+      "tokens": 91,
+      "probabilities": {
+        "supported": 0.00015985965728759766,
+        "insufficient": 0.0006399154663085938,
+        "contradicted": 0.9990234375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "travel_expenses_4",
+      "split": "calibration",
+      "gold": "insufficient",
+      "tokens": 89,
+      "probabilities": {
+        "supported": 0.00045561790466308594,
+        "insufficient": 0.99755859375,
+        "contradicted": 0.0018796920776367188
+      },
+      "pred": "insufficient",
+      "argmax_pred": "insufficient"
+    },
+    {
+      "id": "security_policy_0",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 154,
+      "probabilities": {
+        "supported": 0.99853515625,
+        "insufficient": 0.001476287841796875,
+        "contradicted": 0.00019228458404541016
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "security_policy_1",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 164,
+      "probabilities": {
+        "supported": 0.99853515625,
+        "insufficient": 0.0013933181762695312,
+        "contradicted": 0.00013136863708496094
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "security_policy_2",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 154,
+      "probabilities": {
+        "supported": 0.0037326812744140625,
+        "insufficient": 0.002674102783203125,
+        "contradicted": 0.99365234375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "security_policy_3",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 156,
+      "probabilities": {
+        "supported": 0.01096343994140625,
+        "insufficient": 0.0010843276977539062,
+        "contradicted": 0.98779296875
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "security_policy_4",
+      "split": "heldout",
+      "gold": "insufficient",
+      "tokens": 149,
+      "probabilities": {
+        "supported": 0.0001888275146484375,
+        "insufficient": 0.99951171875,
+        "contradicted": 0.0003533363342285156
+      },
+      "pred": "insufficient",
+      "argmax_pred": "insufficient"
+    },
+    {
+      "id": "onboarding_0",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 83,
+      "probabilities": {
+        "supported": 0.99853515625,
+        "insufficient": 0.0010557174682617188,
+        "contradicted": 0.00021839141845703125
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "onboarding_1",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 81,
+      "probabilities": {
+        "supported": 0.998046875,
+        "insufficient": 0.0018796920776367188,
+        "contradicted": 0.00013899803161621094
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "onboarding_2",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 83,
+      "probabilities": {
+        "supported": 0.00307464599609375,
+        "insufficient": 0.0023288726806640625,
+        "contradicted": 0.99462890625
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "onboarding_3",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 80,
+      "probabilities": {
+        "supported": 0.99560546875,
+        "insufficient": 0.00270843505859375,
+        "contradicted": 0.0016508102416992188
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "onboarding_4",
+      "split": "heldout",
+      "gold": "insufficient",
+      "tokens": 86,
+      "probabilities": {
+        "supported": 0.00017464160919189453,
+        "insufficient": 0.99951171875,
+        "contradicted": 0.00040435791015625
+      },
+      "pred": "insufficient",
+      "argmax_pred": "insufficient"
+    },
+    {
+      "id": "procurement_0",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 79,
+      "probabilities": {
+        "supported": 0.998046875,
+        "insufficient": 0.0017833709716796875,
+        "contradicted": 0.00010913610458374023
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "procurement_1",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 69,
+      "probabilities": {
+        "supported": 0.99853515625,
+        "insufficient": 0.0013275146484375,
+        "contradicted": 0.00012350082397460938
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "procurement_2",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 79,
+      "probabilities": {
+        "supported": 0.0009326934814453125,
+        "insufficient": 0.0016660690307617188,
+        "contradicted": 0.99755859375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "procurement_3",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 69,
+      "probabilities": {
+        "supported": 0.04827880859375,
+        "insufficient": 0.01043701171875,
+        "contradicted": 0.94140625
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "procurement_4",
+      "split": "heldout",
+      "gold": "insufficient",
+      "tokens": 65,
+      "probabilities": {
+        "supported": 0.0003840923309326172,
+        "insufficient": 0.99853515625,
+        "contradicted": 0.0010833740234375
+      },
+      "pred": "insufficient",
+      "argmax_pred": "insufficient"
+    },
+    {
+      "id": "product_specs_0",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 120,
+      "probabilities": {
+        "supported": 0.99853515625,
+        "insufficient": 0.0012340545654296875,
+        "contradicted": 0.00014662742614746094
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "product_specs_1",
+      "split": "heldout",
+      "gold": "supported",
+      "tokens": 117,
+      "probabilities": {
+        "supported": 0.99755859375,
+        "insufficient": 0.002155303955078125,
+        "contradicted": 0.00019371509552001953
+      },
+      "pred": "insufficient",
+      "argmax_pred": "supported"
+    },
+    {
+      "id": "product_specs_2",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 120,
+      "probabilities": {
+        "supported": 0.0002689361572265625,
+        "insufficient": 0.00040912628173828125,
+        "contradicted": 0.99951171875
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "product_specs_3",
+      "split": "heldout",
+      "gold": "contradicted",
+      "tokens": 117,
+      "probabilities": {
+        "supported": 0.005397796630859375,
+        "insufficient": 0.004505157470703125,
+        "contradicted": 0.990234375
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    },
+    {
+      "id": "product_specs_4",
+      "split": "heldout",
+      "gold": "insufficient",
+      "tokens": 115,
+      "probabilities": {
+        "supported": 0.0002446174621582031,
+        "insufficient": 0.061309814453125,
+        "contradicted": 0.9384765625
+      },
+      "pred": "contradicted",
+      "argmax_pred": "contradicted"
+    }
+  ],
+  "limits": [
+    "Assistant labels, no independent human review.",
+    "20 held-out pairs, four unseen source sections; softmax is not calibrated probability.",
+    "Local diagnostic only; does not change production faithfulness."
+  ]
+}

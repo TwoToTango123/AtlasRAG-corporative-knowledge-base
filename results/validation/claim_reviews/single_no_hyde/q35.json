@@ -1,0 +1,118 @@
+{
+  "status": "ok",
+  "id": "q35",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации отсутствует стоимость подписки AtlasControl на тарифе Enterprise.",
+    "В предоставленной информации указаны возможности тарифа Enterprise, но не указана его цена."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники содержат описания тарифов, но нигде не указана цена подписки Enterprise.",
+      "unit_ids": [
+        "s0l22",
+        "s0l23",
+        "s3l3",
+        "s3l7",
+        "s4l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l22",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 812,
+          "end": 884,
+          "text": "AtlasControl — это панель управления для обоих манипуляторов. Тариф Team"
+        },
+        {
+          "id": "s0l23",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 885,
+          "end": 958,
+          "text": "поддерживает до **10 подключённых манипуляторов**; тариф Enterprise — без"
+        },
+        {
+          "id": "s3l3",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 130,
+          "end": 191,
+          "text": "| Тариф      | Каналы                  | Часы работы        |"
+        },
+        {
+          "id": "s3l7",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 378,
+          "end": 439,
+          "text": "| Enterprise | Email, чат, телефон, TAM | 24/7              |"
+        },
+        {
+          "id": "s4l6",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 343,
+          "end": 409,
+          "text": "сервисную компенсацию в размере **5% от месячной платы** за каждый"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Возможности Enterprise описаны, но стоимость подписки в источниках отсутствует.",
+      "unit_ids": [
+        "s0l23",
+        "s0l25",
+        "s3l7",
+        "s3l13",
+        "s3l18"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l23",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 885,
+          "end": 958,
+          "text": "поддерживает до **10 подключённых манипуляторов**; тариф Enterprise — без"
+        },
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        },
+        {
+          "id": "s3l7",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 378,
+          "end": 439,
+          "text": "| Enterprise | Email, чат, телефон, TAM | 24/7              |"
+        },
+        {
+          "id": "s3l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        },
+        {
+          "id": "s3l18",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 1122,
+          "end": 1158,
+          "text": "технический менеджер аккаунта (TAM)."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "1a96c9473072a2e247c0e687370cee84436fe619c2183f0b3726667f74239e4f",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

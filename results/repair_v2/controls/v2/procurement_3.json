@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "procurement_3",
+  "split": "heldout",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l2",
+      "s0l3"
+    ],
+    "rationale": "Источники запрещают предоплату свыше 50% без согласия финдиректора.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l2",
+        "chunk_id": "procurement.md",
+        "start": 84,
+        "end": 160,
+        "text": "получения закрывающих документов. Предоплата больше 50% допускается только с"
+      },
+      {
+        "id": "s0l3",
+        "chunk_id": "procurement.md",
+        "start": 161,
+        "end": 192,
+        "text": "согласия финансового директора."
+      }
+    ]
+  }
+}

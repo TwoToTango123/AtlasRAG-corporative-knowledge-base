@@ -1,0 +1,123 @@
+{
+  "status": "ok",
+  "id": "q22",
+  "answerable": true,
+  "claims": [
+    "Захват NW-GRP-02 подходит для модели NW-200.",
+    "В каталоге захват NW-GRP-02 указан как совместимый с моделью NW-100.",
+    "В каталоге захват NW-GRP-02 указан как совместимый с моделью NW-200.",
+    "У моделей NW-100 и NW-200 одинаковый монтажный фланец.",
+    "Захваты взаимозаменяемы для моделей NW-100 и NW-200."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "rationale": "Каталог прямо указывает совместимость NW-GRP-02 с моделью NW-200.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 208,
+          "end": 272,
+          "text": "| NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200 | 84 000 ₽ |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "rationale": "Строка каталога подтверждает совместимость захвата NW-GRP-02 с моделью NW-100.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 208,
+          "end": 272,
+          "text": "| NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200 | 84 000 ₽ |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "rationale": "Каталог явно перечисляет NW-200 в качестве совместимой модели для NW-GRP-02.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 208,
+          "end": 272,
+          "text": "| NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200 | 84 000 ₽ |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "unit_ids": [
+        "s2l7"
+      ],
+      "rationale": "Источник утверждает, что у моделей одинаковый монтажный фланец ISO 9409-1-50-4-M6.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l7",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 318,
+          "end": 397,
+          "text": "NW-100 и NW-200 имеют одинаковый монтажный фланец (ISO 9409-1-50-4-M6), поэтому"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "unit_ids": [
+        "s2l7",
+        "s2l8"
+      ],
+      "rationale": "Источник напрямую заявляет о взаимозаменяемости рабочих насадок между моделями.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l7",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 318,
+          "end": 397,
+          "text": "NW-100 и NW-200 имеют одинаковый монтажный фланец (ISO 9409-1-50-4-M6), поэтому"
+        },
+        {
+          "id": "s2l8",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 398,
+          "end": 462,
+          "text": "рабочие насадки (захваты) взаимозаменяемы между обеими моделями."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "021bc2ea0636c18bd30bfb69baafd8f1636f6e709f3170342cbee0f3b7d2efd2",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

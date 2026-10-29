@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "id": "security_policy_1",
+  "split": "heldout",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "rationale": "Полное совпадение формулировки источника с утверждением о MFA.",
+    "unit_ids": [
+      "s0l4",
+      "s0l5"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l4",
+        "chunk_id": "security_policy.md",
+        "start": 190,
+        "end": 267,
+        "text": "- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на"
+      },
+      {
+        "id": "s0l5",
+        "chunk_id": "security_policy.md",
+        "start": 268,
+        "end": 344,
+        "text": "  каждой системе, которая её поддерживает, без исключений для руководителей."
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

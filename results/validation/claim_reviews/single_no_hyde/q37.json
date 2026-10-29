@@ -1,0 +1,268 @@
+{
+  "status": "ok",
+  "id": "q37",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации отсутствуют сведения о порядке расчёта годовой премии сотрудников",
+    "Документ «онбординг» не описывает порядок расчёта годовой премии",
+    "Документ «политика безопасности» не описывает порядок расчёта годовой премии",
+    "Документ «ИТ-поддержка» не описывает порядок расчёта годовой премии",
+    "Документ «закупки» не описывает порядок расчёта годовой премии",
+    "Документ «командировочные расходы» не описывает порядок расчёта годовой премии"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Ни один из источников не содержит данных о расчёте годовой премии.",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s2l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s2l0",
+          "chunk_id": "e706a9391ce46228",
+          "start": 0,
+          "end": 52,
+          "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "da2072ac007383af",
+          "start": 0,
+          "end": 40,
+          "text": "# Northwind Robotics — Регламент закупок"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "d5f2e9d8442d16bf",
+          "start": 0,
+          "end": 28,
+          "text": "## Представительские расходы"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источники s0l0-s0l20 не содержат сведений о расчёте годовой премии.",
+      "unit_ids": [
+        "s0l0",
+        "s0l2",
+        "s0l6",
+        "s0l11",
+        "s0l17"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        },
+        {
+          "id": "s0l2",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 151,
+          "end": 172,
+          "text": "## Испытательный срок"
+        },
+        {
+          "id": "s0l6",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 377,
+          "end": 391,
+          "text": "## Первый день"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 640,
+          "end": 664,
+          "text": "## Обязательное обучение"
+        },
+        {
+          "id": "s0l17",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 924,
+          "end": 934,
+          "text": "## Доступы"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Источники s1l0-s1l15 не содержат сведений о расчёте годовой премии.",
+      "unit_ids": [
+        "s1l0",
+        "s1l2",
+        "s1l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s1l2",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 169,
+          "end": 192,
+          "text": "## Классификация данных"
+        },
+        {
+          "id": "s1l8",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 509,
+          "end": 531,
+          "text": "## Управление доступом"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Источники s2l0-s2l14 не содержат сведений о расчёте годовой премии.",
+      "unit_ids": [
+        "s2l0",
+        "s2l2",
+        "s2l9"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l0",
+          "chunk_id": "e706a9391ce46228",
+          "start": 0,
+          "end": 52,
+          "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке"
+        },
+        {
+          "id": "s2l2",
+          "chunk_id": "e706a9391ce46228",
+          "start": 117,
+          "end": 149,
+          "text": "## Как обратиться в ИТ-поддержку"
+        },
+        {
+          "id": "s2l9",
+          "chunk_id": "e706a9391ce46228",
+          "start": 602,
+          "end": 611,
+          "text": "## Пароли"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Источники s3l0-s3l20 не содержат сведений о расчёте годовой премии.",
+      "unit_ids": [
+        "s3l0",
+        "s3l2",
+        "s3l6",
+        "s3l12",
+        "s3l17"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s3l0",
+          "chunk_id": "da2072ac007383af",
+          "start": 0,
+          "end": 40,
+          "text": "# Northwind Robotics — Регламент закупок"
+        },
+        {
+          "id": "s3l2",
+          "chunk_id": "da2072ac007383af",
+          "start": 104,
+          "end": 127,
+          "text": "## Как оформить закупку"
+        },
+        {
+          "id": "s3l6",
+          "chunk_id": "da2072ac007383af",
+          "start": 305,
+          "end": 327,
+          "text": "## Пороги согласования"
+        },
+        {
+          "id": "s3l12",
+          "chunk_id": "da2072ac007383af",
+          "start": 677,
+          "end": 696,
+          "text": "## Новые поставщики"
+        },
+        {
+          "id": "s3l17",
+          "chunk_id": "da2072ac007383af",
+          "start": 969,
+          "end": 978,
+          "text": "## Оплата"
+        }
+      ]
+    },
+    {
+      "claim_id": "c5",
+      "label": "supported",
+      "rationale": "Источники s4l0-s4l6 не содержат сведений о расчёте годовой премии.",
+      "unit_ids": [
+        "s4l0",
+        "s4l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s4l0",
+          "chunk_id": "d5f2e9d8442d16bf",
+          "start": 0,
+          "end": 28,
+          "text": "## Представительские расходы"
+        },
+        {
+          "id": "s4l3",
+          "chunk_id": "d5f2e9d8442d16bf",
+          "start": 150,
+          "end": 168,
+          "text": "## Авансовый отчёт"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [],
+  "answer_sha256": "474523480e4159e54f274a5290087dd75bd2ba787ab3a6e9b62a48d3df3996da",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

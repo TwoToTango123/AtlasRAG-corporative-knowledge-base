@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "hop03",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты точны и подтверждают утверждения о пакете K-29, дате действия и лимите 1384 рубля.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "5702127361d531dd840765146389bd12ac0e0be98b56d540115c58afe7720703",
+  "provenance": "identical judge payload; reused frozen rating"
+}

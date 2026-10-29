@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "review_id": "R10",
+  "claims": [],
+  "verdicts": [],
+  "purpose": "Original answer extraction; no assistant facts or reference labels in extraction prompt."
+}

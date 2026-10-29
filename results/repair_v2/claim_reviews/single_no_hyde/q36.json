@@ -1,0 +1,76 @@
+{
+  "status": "ok",
+  "id": "q36",
+  "answerable": false,
+  "claims": [
+    "В предоставленной документации нет сведений о манипуляторе NW-300.",
+    "В спецификациях описаны только модели NW-100 и NW-200."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Документация содержит только NW-100 и NW-200, NW-300 отсутствует.",
+      "unit_ids": [
+        "s0l2",
+        "s0l11",
+        "s3l1"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l2",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 103,
+          "end": 144,
+          "text": "## Манипулятор NW-100 (начальный уровень)"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 387,
+          "end": 431,
+          "text": "## Манипулятор NW-200 (промышленный уровень)"
+        },
+        {
+          "id": "s3l1",
+          "chunk_id": "9ba36918055c244b",
+          "start": 25,
+          "end": 100,
+          "text": "Физические устройства (роботизированные манипуляторы NW-100 и NW-200) можно"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Спецификации подробно описаны только для моделей NW-100 и NW-200.",
+      "unit_ids": [
+        "s0l2",
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l2",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 103,
+          "end": 144,
+          "text": "## Манипулятор NW-100 (начальный уровень)"
+        },
+        {
+          "id": "s0l11",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 387,
+          "end": 431,
+          "text": "## Манипулятор NW-200 (промышленный уровень)"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "3acb2e6da85c01ca3d816b198179ca64248c04e106304dc3eea3b5054d483254",
+  "source_entry_sha256": "4f8bf10b427d650c705078bfbb46591d1036492e6fd16c1cfe9a8ffd9bc81851",
+  "verifier": "v2-scenario-aware"
+}

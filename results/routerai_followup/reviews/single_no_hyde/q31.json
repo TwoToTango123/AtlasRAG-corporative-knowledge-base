@@ -1,0 +1,28 @@
+{
+  "id": "q31",
+  "answerable": true,
+  "payload_sha256": "38ec31f83a205374ce80290348e21ffccbf2551de410bfb0db0a65592166f172",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону, все факты подтверждены цитатой из предоставленного источника, расчёт соотношения верен.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+    "answer": "На тарифе Team лимит API — 600 запросов в минуту на рабочее пространство, а на Enterprise — 6 000 запросов в минуту, то есть в 10 раз больше.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

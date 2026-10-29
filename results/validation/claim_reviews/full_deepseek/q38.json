@@ -1,0 +1,74 @@
+{
+  "status": "ok",
+  "id": "q38",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации нет ответа на вопрос о присутствии домашних животных в офисе.",
+    "Ни один из доступных документов не регулирует присутствие домашних животных (в том числе собак) в офисе."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s2l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "rationale": "Нигде в предоставленных текстах не упоминается политика относительно домашних животных.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 0,
+          "end": 16,
+          "text": "## VPN NWConnect"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 0,
+          "end": 60,
+          "text": "# Northwind Robotics — Политика удалённой и гибридной работы"
+        },
+        {
+          "id": "s2l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 0,
+          "end": 28,
+          "text": "## Реагирование на инциденты"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "insufficient",
+      "unit_ids": [],
+      "rationale": "Отсутствие упоминания домашних животных не доказывает, что документы их не регулируют.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    }
+  ],
+  "verbatim_matches": [],
+  "answer_sha256": "d5c4064a948c9c232d0cc1fa3b174f9cdcd191bac14782e63332679e6a62f1ac",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

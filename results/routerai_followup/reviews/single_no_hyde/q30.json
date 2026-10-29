@@ -1,0 +1,28 @@
+{
+  "id": "q30",
+  "answerable": true,
+  "payload_sha256": "cada4c537052f243fb6a6f10fd8a35217e944cbb8be7ce2b2f0aaccfa8e571d9",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты точны и подтверждают ключевые факты о сроках смены пароля и ротации учётных данных.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+    "answer": "Обычный пароль сотрудника нужно менять каждые 180 дней, а привилегированные (административные) учётные данные ротируются каждые 90 дней.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

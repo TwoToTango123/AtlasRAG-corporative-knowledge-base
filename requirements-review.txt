@@ -1,0 +1,4 @@
+# Optional local browser QA for the review document, no runtime API dependency
+-r requirements.txt
+playwright>=1.64,<2
+markdown-it-py>=3,<5

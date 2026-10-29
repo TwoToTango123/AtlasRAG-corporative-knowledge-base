@@ -1,0 +1,28 @@
+{
+  "id": "q09",
+  "answerable": true,
+  "payload_sha256": "0cfb49fb1af58e4cc593cb1fca0a7fd85ca0e763204b0978d5b64fc4fd88776a",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует вопросу и эталону. Цитата дословно присутствует в указанном чанке и подтверждает утверждение. Ошибок не обнаружено.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+    "answer": "Лимит стоимости гостиницы за одну ночь в Москве — 9 000 ₽.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "fail",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "q07",
+  "answerable": true,
+  "payload_sha256": "5c09cabace75a8f44caff17c0a9ede508b6da16b98587791bdf036b162873a61",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.7,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верно указывает количество дней, но не упоминает важные условия (не переносятся, не выплачиваются при увольнении), присутствующие в эталоне и источнике.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+    "answer": "Сотрудникам положено 10 оплачиваемых больничных дней в год.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "pass",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

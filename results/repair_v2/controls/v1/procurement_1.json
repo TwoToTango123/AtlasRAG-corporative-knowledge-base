@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "id": "procurement_1",
+  "split": "heldout",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l2",
+      "s0l3"
+    ],
+    "rationale": "Совпадение формулировок про предоплату, порог 50% и необходимость согласия финдиректора.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l2",
+        "chunk_id": "procurement.md",
+        "start": 84,
+        "end": 160,
+        "text": "получения закрывающих документов. Предоплата больше 50% допускается только с"
+      },
+      {
+        "id": "s0l3",
+        "chunk_id": "procurement.md",
+        "start": 161,
+        "end": 192,
+        "text": "согласия финансового директора."
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "scenario_trial_1",
+  "split": "scenario_regression",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "rationale": "Источник указывает 6 месяцев для главных инженеров, а не 3.",
+    "unit_ids": [
+      "s0l2"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l2",
+        "chunk_id": "onboarding.md:Испытательный срок",
+        "start": 90,
+        "end": 167,
+        "text": "руководителей и главных инженеров — **6 месяцев**. В конце срока руководитель"
+      }
+    ]
+  }
+}

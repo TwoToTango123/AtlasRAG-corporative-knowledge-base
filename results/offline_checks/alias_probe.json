@@ -1,0 +1,4943 @@
+{
+  "complete": true,
+  "new_paid_api_calls": 0,
+  "enabled_in_production": false,
+  "human_packet_unchanged": true,
+  "aliases": {
+    "errvpn720": "ERR-VPN-720",
+    "errvpn431": "ERR-VPN-431",
+    "errvpn102": "ERR-VPN-102",
+    "nwgrp02": "NW-GRP-02",
+    "nw100": "NW-100",
+    "nw200": "NW-200",
+    "nwvac05": "NW-VAC-05",
+    "nwcbl10": "NW-CBL-10",
+    "nwtch01": "NW-TCH-01",
+    "pr20260147": "PR-2026-0147",
+    "e401": "E-401",
+    "e409": "E-409",
+    "e503": "E-503",
+    "aes256": "AES-256"
+  },
+  "ambiguous_aliases": {},
+  "summary": [
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "n": 33,
+      "top5": {
+        "recall": 0.9545454545454546,
+        "mrr": 0.8737373737373737,
+        "ndcg": 0.8830519697551236
+      },
+      "top10_recall": 1.0,
+      "lost_recall_vs_original": [],
+      "recovered_vs_compact": [
+        "q06",
+        "q22"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "n": 33,
+      "top5": {
+        "recall": 0.9242424242424242,
+        "mrr": 0.8383838383838385,
+        "ndcg": 0.8463486678029033
+      },
+      "top10_recall": 1.0,
+      "lost_recall_vs_original": [
+        "q06",
+        "q22"
+      ],
+      "recovered_vs_compact": []
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "n": 33,
+      "top5": {
+        "recall": 0.9545454545454546,
+        "mrr": 0.8737373737373737,
+        "ndcg": 0.8830519697551236
+      },
+      "top10_recall": 1.0,
+      "lost_recall_vs_original": [],
+      "recovered_vs_compact": [
+        "q06",
+        "q22"
+      ]
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "n": 33,
+      "top5": {
+        "recall": 0.9747474747474747,
+        "mrr": 0.8217171717171717,
+        "ndcg": 0.8503863369958468
+      },
+      "top10_recall": 1.0,
+      "lost_recall_vs_original": [],
+      "recovered_vs_compact": []
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "n": 33,
+      "top5": {
+        "recall": 0.9747474747474747,
+        "mrr": 0.8368686868686869,
+        "ndcg": 0.8640029872164636
+      },
+      "top10_recall": 1.0,
+      "lost_recall_vs_original": [],
+      "recovered_vs_compact": []
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "n": 33,
+      "top5": {
+        "recall": 0.9747474747474747,
+        "mrr": 0.8217171717171717,
+        "ndcg": 0.8503863369958468
+      },
+      "top10_recall": 1.0,
+      "lost_recall_vs_original": [],
+      "recovered_vs_compact": []
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "n": 33,
+      "top5": {
+        "recall": 0.8787878787878788,
+        "mrr": 0.8242424242424242,
+        "ndcg": 0.8250603571176134
+      },
+      "top10_recall": 0.9545454545454546,
+      "lost_recall_vs_original": [],
+      "recovered_vs_compact": [
+        "q06",
+        "q13",
+        "q15",
+        "q17",
+        "q20",
+        "q22"
+      ]
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "n": 33,
+      "top5": {
+        "recall": 0.7272727272727273,
+        "mrr": 0.7121212121212122,
+        "ndcg": 0.700448102187987
+      },
+      "top10_recall": 0.8636363636363636,
+      "lost_recall_vs_original": [
+        "q06",
+        "q13",
+        "q15",
+        "q17",
+        "q20",
+        "q22"
+      ],
+      "recovered_vs_compact": []
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "n": 33,
+      "top5": {
+        "recall": 0.8787878787878788,
+        "mrr": 0.8242424242424242,
+        "ndcg": 0.8250603571176134
+      },
+      "top10_recall": 0.9545454545454546,
+      "lost_recall_vs_original": [],
+      "recovered_vs_compact": [
+        "q06",
+        "q13",
+        "q15",
+        "q17",
+        "q20",
+        "q22"
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW100 и NW200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW-100 на NW-200?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW100 на NW200?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.125,
+        "ndcg": 0.31546487678572877
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW-100 на NW-200?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERRVPN720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q13",
+      "question": "Что означает код E-401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q13",
+      "question": "Что означает код E401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q13",
+      "question": "Что означает код E-401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NWVAC05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q15",
+      "question": "Что такое NW-TCH-01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q15",
+      "question": "Что такое NWTCH01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q15",
+      "question": "Что такое NW-TCH-01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q17",
+      "question": "Что значит ошибка ERR-VPN-431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q17",
+      "question": "Что значит ошибка ERRVPN431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q17",
+      "question": "Что значит ошибка ERR-VPN-431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 0.5,
+        "ndcg": 0.38685280723454163
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.5714285040141098
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW100?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6934264036172708
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6934264036172708
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 0.5,
+        "ndcg": 0.38685280723454163
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.5714285040141098
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERRVPN431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q22",
+      "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q22",
+      "question": "У нас есть захват NWGRP02 от NW100. Подойдёт ли он, если мы перейдём на NW200, и почему?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.6131471927654584
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8065735963827293
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q22",
+      "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8772153153380493
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8772153153380493
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8772153153380493
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8772153153380493
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8772153153380493
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8772153153380493
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.14285714285714285,
+        "ndcg": 0.3333333333333333
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.14285714285714285,
+        "ndcg": 0.3333333333333333
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.14285714285714285,
+        "ndcg": 0.3333333333333333
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "original",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "compact",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "hybrid",
+      "variant": "restored",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW100 и NW200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW-100 на NW-200?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW100 на NW200?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW-100 на NW-200?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERRVPN720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q13",
+      "question": "Что означает код E-401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q13",
+      "question": "Что означает код E401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q13",
+      "question": "Что означает код E-401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NWVAC05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q15",
+      "question": "Что такое NW-TCH-01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q15",
+      "question": "Что такое NWTCH01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q15",
+      "question": "Что такое NW-TCH-01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q17",
+      "question": "Что значит ошибка ERR-VPN-431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q17",
+      "question": "Что значит ошибка ERRVPN431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q17",
+      "question": "Что значит ошибка ERR-VPN-431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.7039180890341347
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8451850618939637
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.7039180890341347
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8451850618939637
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.7039180890341347
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8451850618939637
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg": 0.7653606369886217
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9325210919548239
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg": 0.7653606369886217
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9325210919548239
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg": 0.7653606369886217
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9325210919548239
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW100?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9197207891481876
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERRVPN431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q22",
+      "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q22",
+      "question": "У нас есть захват NWGRP02 от NW100. Подойдёт ли он, если мы перейдём на NW200, и почему?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q22",
+      "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5706417189553201
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5706417189553201
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5706417189553201
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5706417189553201
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5706417189553201
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg": 0.5706417189553201
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.25,
+        "ndcg": 0.43067655807339306
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.25,
+        "ndcg": 0.43067655807339306
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.25,
+        "ndcg": 0.43067655807339306
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.25,
+        "ndcg": 0.43067655807339306
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.25,
+        "ndcg": 0.43067655807339306
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.25,
+        "ndcg": 0.43067655807339306
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.2,
+        "ndcg": 0.38685280723454163
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.2,
+        "ndcg": 0.38685280723454163
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.2,
+        "ndcg": 0.38685280723454163
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.2,
+        "ndcg": 0.38685280723454163
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.2,
+        "ndcg": 0.38685280723454163
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.2,
+        "ndcg": 0.38685280723454163
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "original",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "compact",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "dense",
+      "variant": "restored",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q01",
+      "question": "Какое окно возврата средств для корпоративных клиентов?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q02",
+      "question": "Накапливают ли подрядчики оплачиваемый отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q03",
+      "question": "Как быстро нужно сообщить об инциденте безопасности и каков срок уведомления об утечке?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW100 и NW200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q04",
+      "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q05",
+      "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW-100 на NW-200?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW100 на NW200?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q06",
+      "question": "Можно ли использовать захват от NW-100 на NW-200?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q07",
+      "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q08",
+      "question": "Какой испытательный срок у руководителей?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q09",
+      "question": "Какой лимит стоимости гостиницы за ночь в командировке в Москву?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q10",
+      "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q11",
+      "question": "За какой срок нужно подавать заявку на отпуск?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERRVPN720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q12",
+      "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q13",
+      "question": "Что означает код E-401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q13",
+      "question": "Что означает код E401?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q13",
+      "question": "Что означает код E-401?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NWVAC05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q14",
+      "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q15",
+      "question": "Что такое NW-TCH-01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q15",
+      "question": "Что такое NWTCH01 и сколько он стоит?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.1,
+        "ndcg": 0.2890648263178879
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q15",
+      "question": "Что такое NW-TCH-01 и сколько он стоит?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q16",
+      "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q17",
+      "question": "Что значит ошибка ERR-VPN-431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q17",
+      "question": "Что значит ошибка ERRVPN431?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q17",
+      "question": "Что значит ошибка ERR-VPN-431?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q18",
+      "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8529278650606567
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q19",
+      "question": "Мы хотим заключить договор на 2 млн ₽ с новым поставщиком, который будет обрабатывать персональные данные клиентов. Что для этого нужно?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 0.2,
+        "ndcg": 0.23719771276929622
+      },
+      "top10": {
+        "recall": 0.5,
+        "mrr": 0.2,
+        "ndcg": 0.23719771276929622
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW100?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.1111111111111111,
+        "ndcg": 0.36181498356361597
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q20",
+      "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 0.2,
+        "ndcg": 0.23719771276929622
+      },
+      "top10": {
+        "recall": 0.5,
+        "mrr": 0.2,
+        "ndcg": 0.23719771276929622
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERRVPN431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q21",
+      "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q22",
+      "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q22",
+      "question": "У нас есть захват NWGRP02 от NW100. Подойдёт ли он, если мы перейдём на NW200, и почему?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 0.5,
+        "ndcg": 0.38685280723454163
+      },
+      "top10": {
+        "recall": 0.5,
+        "mrr": 0.5,
+        "ndcg": 0.38685280723454163
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q22",
+      "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.6131471927654584
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8065735963827293
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.6131471927654584
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8065735963827293
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q23",
+      "question": "Можно ли новичку сразу после выхода на работу перейти на полностью удалённый формат, и через сколько это станет возможно?",
+      "top5": {
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.6131471927654584
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8065735963827293
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q24",
+      "question": "Мы купили робота-манипулятор, но он оказался не нужен. Сколько есть времени, чтобы отдать его обратно и получить деньги?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q25",
+      "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q26",
+      "question": "Когда деньги придут обратно на карту после того, как одобрили заявку?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.1111111111111111,
+        "ndcg": 0.3010299956639812
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.1111111111111111,
+        "ndcg": 0.3010299956639812
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q27",
+      "question": "Что будет, если вставить флешку в рабочий компьютер?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.1111111111111111,
+        "ndcg": 0.3010299956639812
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q28",
+      "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.125,
+        "ndcg": 0.31546487678572877
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.125,
+        "ndcg": 0.31546487678572877
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q29",
+      "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+      "top5": {
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.125,
+        "ndcg": 0.31546487678572877
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q30",
+      "question": "Как часто нужно менять обычный пароль сотрудника и как часто ротируются административные учётные данные?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q31",
+      "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q32",
+      "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6309297535714575
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "original",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "compact",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    },
+    {
+      "mode": "sparse",
+      "variant": "restored",
+      "id": "q33",
+      "question": "Сравните сроки доставки комплектующих по Москве и в другие регионы.",
+      "top5": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      },
+      "top10": {
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0
+      }
+    }
+  ],
+  "changed_questions": [
+    "q04",
+    "q06",
+    "q12",
+    "q13",
+    "q14",
+    "q15",
+    "q17",
+    "q20",
+    "q21",
+    "q22"
+  ],
+  "limits": [
+    "Candidate dictionary built only from documents, not expected answers or question labels.",
+    "Development probe on known demo cases; independent corpus and end-to-end answer checks still needed.",
+    "Ambiguous compact identifiers are intentionally left unresolved."
+  ]
+}

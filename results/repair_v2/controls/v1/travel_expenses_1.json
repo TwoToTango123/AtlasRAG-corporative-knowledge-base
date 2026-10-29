@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "id": "travel_expenses_1",
+  "split": "calibration",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l3"
+    ],
+    "rationale": "Источник прямо указывает, что тариф Комфорт разрешён после 22:00.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l3",
+        "chunk_id": "travel_expenses.md",
+        "start": 176,
+        "end": 246,
+        "text": "оплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00."
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

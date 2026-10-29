@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "id": "q27",
+  "answerable": true,
+  "claims": [
+    "Флешка (USB-накопитель) будет заблокирована по умолчанию при вставке в рабочий компьютер.",
+    "Для использования съёмного носителя необходимо получить одобрение службы безопасности."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source s0l11 explicitly states USB devices are blocked by default.",
+      "unit_ids": [
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 719,
+          "end": 799,
+          "text": "Съёмные носители (USB-накопители) заблокированы по умолчанию и требуют одобрения"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source s0l12 states removable media requires security approval.",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 800,
+          "end": 820,
+          "text": "службы безопасности."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "02086d7eb9a726020afb05945f83a8993a690b199b35e542af5ed567f1fca5ab",
+  "source_entry_sha256": "523fa8900467b7168c435f0df362ecccced69457bb208c9dc9d915ef6ea78101",
+  "verifier": "v2-scenario-aware"
+}

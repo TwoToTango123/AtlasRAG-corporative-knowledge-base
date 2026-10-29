@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "id": "scenario_vendor_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "rationale": "Источники подтверждают требование DPA и ежегодной переоценки для поставщиков с данными Restricted.",
+    "unit_ids": [
+      "s1l2",
+      "s1l3",
+      "s1l4"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s1l2",
+        "chunk_id": "security_policy.md:Безопасность поставщиков",
+        "start": 110,
+        "end": 190,
+        "text": "пройти проверку безопасности и подписать Соглашение об обработке данных (DPA) до"
+      },
+      {
+        "id": "s1l3",
+        "chunk_id": "security_policy.md:Безопасность поставщиков",
+        "start": 191,
+        "end": 265,
+        "text": "начала работы. Для поставщиков, работающих с данными Restricted, требуется"
+      },
+      {
+        "id": "s1l4",
+        "chunk_id": "security_policy.md:Безопасность поставщиков",
+        "start": 266,
+        "end": 287,
+        "text": "ежегодная переоценка."
+      }
+    ]
+  }
+}

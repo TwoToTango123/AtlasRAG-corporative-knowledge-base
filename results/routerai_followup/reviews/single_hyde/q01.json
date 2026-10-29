@@ -1,0 +1,28 @@
+{
+  "id": "q01",
+  "answerable": true,
+  "payload_sha256": "9e2e2d8b01399bb9ae9cfa6b4599e1e73ae8d9a916e484048546b4205769da93",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно отражает данные из источника: 30 дней для Enterprise и условие об исключении после 30-го дня. Цитата валидна и подтверждает тезис.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое окно возврата средств для корпоративных клиентов?",
+    "answer": "Для корпоративных клиентов на тарифе Enterprise окно возврата средств составляет 30 календарных дней с даты начала контракта. Возврат после 30-го дня возможен только через утверждённое исключение.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 0.8,
+    "citation_quality": 0.5,
+    "faithfulness": 1.0,
+    "verdict": "Правильный ответ, но лишние детали и одна ссылка.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

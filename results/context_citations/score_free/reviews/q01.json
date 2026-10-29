@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q01",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "unsupported_claims": [],
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Утверждения подтверждены цитатами из предоставленных документов."
+  },
+  "payload_sha256": "6dd13a30e95d14115fbae941ce81252332e43423c959227f027dca4029609077"
+}

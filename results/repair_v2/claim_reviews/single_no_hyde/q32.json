@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "id": "q32",
+  "answerable": true,
+  "claims": [
+    "Для инцидентов Sev 1 первый ответ поддержки предоставляется в течение 1 часа.",
+    "Для инцидентов Sev 1 поддержка доступна круглосуточно (24/7).",
+    "Для инцидентов Sev 3 первый ответ поддержки предоставляется в течение 1 рабочего дня.",
+    "Срок первого ответа для Sev 1 не зависит от рабочих часов."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source s0l13 explicitly states Sev 1 first response within 1 hour.",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source s0l13 explicitly states Sev 1 support is available 24/7.",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Source s0l15 explicitly states Sev 3 first response within 1 business day.",
+      "unit_ids": [
+        "s0l15"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l15",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 882,
+          "end": 963,
+          "text": "- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source s0l13 states Sev 1 is 24/7, meaning it does not depend on working hours.",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "d5443f7b0bb66fcce87f12bfc7dc32755da861d7d2c18c3be485ffd910c897d1",
+  "source_entry_sha256": "dedcb8d6accb5e03be4caab63eaf9a92c71da1c6cced9d82d7664b8d8f6e82df",
+  "verifier": "v2-scenario-aware"
+}

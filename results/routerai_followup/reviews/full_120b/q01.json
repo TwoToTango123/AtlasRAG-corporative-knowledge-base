@@ -1,0 +1,28 @@
+{
+  "id": "q01",
+  "answerable": true,
+  "payload_sha256": "a7114f69f4c714a3612c00016ad5c28188fc1f836ca3edeed9e375610ac0f30d",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует вопросу и эталону. Цитата дословно подтверждает утверждение в исходном тексте.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое окно возврата средств для корпоративных клиентов?",
+    "answer": "У корпоративных (Enterprise) клиентов окно возврата — 30 календарных дней с даты начала контракта.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 0.5,
+    "faithfulness": 1.0,
+    "verdict": "accept",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "id": "onboarding_2",
+  "split": "heldout",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l1"
+    ],
+    "rationale": "Источник указывает 3 месяца, а утверждение — 1 месяц.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "onboarding.md",
+        "start": 23,
+        "end": 89,
+        "text": "Испытательный срок для большинства сотрудников — **3 месяца**. Для"
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

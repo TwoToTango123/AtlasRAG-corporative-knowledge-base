@@ -1,0 +1,331 @@
+{
+  "status": "ok",
+  "id": "hop03",
+  "suite": "sequential",
+  "arm": "score_parts",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+    "answer": "На 02.11.2026 для проекта «Вега» действует лимит компенсации 1384 рубля за один отчёт. Проекту назначен пакет K-29, а действующая редакция норматива K-29 установлена с 01.01.2026 и заменяет прежние редакции.",
+    "citations": [
+      {
+        "chunk_id": "8759493a44a19ec6",
+        "source": "project_02.md",
+        "quote": "Карточка проекта Вега: для расходов проекта назначен пакет K-29.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+        "start_char": 14,
+        "end_char": 154
+      },
+      {
+        "chunk_id": "1d3fe9bfbaf8ee18",
+        "source": "policy_K29_current.md",
+        "quote": "Действует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-29 соответствует лимит компенсации 1384 рублей за один отчёт.",
+        "start_char": 23,
+        "end_char": 148
+      }
+    ],
+    "confidence": 0.99,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Вега?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "лимит компенсации за один отчёт проект Вега",
+          "rationale": "Ищу значение лимита компенсации по проекту Вега",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "8759493a44a19ec6",
+                "doc_id": "6d3880a6db899e61",
+                "source": "project_02.md",
+                "text": "# Проект Вега\nКарточка проекта Вега: для расходов проекта назначен пакет K-29.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.001639344262295,
+              "relevance": 1.0,
+              "reason": "Fragment 0 mentions project Vega and its package K‑29 but does not provide any information about the compensation limit. The query specifically asks for the limit per report, so this fragment is not directly useful.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "7b71e2e17ca73e5a",
+                "doc_id": "761cfebb949f652b",
+                "source": "policy_K09_archive.md",
+                "text": "# Норматив пакета K-09\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-09 соответствует лимит компенсации 1301 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment 1 gives a compensation limit, but for package K‑09, which is unrelated to project Vega.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "196bf7d5229d4960",
+                "doc_id": "bc0ea025e11ed367",
+                "source": "project_00.md",
+                "text": "# Проект Лира\nКарточка проекта Лира: для расходов проекта назначен пакет K-17.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment 2 is about project Lira, not Vega, and only mentions its package.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "d90179ad39d006ad",
+                "doc_id": "dc7404cd341bada0",
+                "source": "policy_K01_archive.md",
+                "text": "# Норматив пакета K-01\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-01 соответствует лимит компенсации 957 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Fragment 3 provides a limit for package K‑01, unrelated to Vega.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "cce38b9e35a455c6",
+                "doc_id": "ac71abbb931aa0e7",
+                "source": "project_01.md",
+                "text": "# Проект Кедр\nКарточка проекта Кедр: для расходов проекта назначен пакет K-04.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Fragment 4 concerns project Cedrus and its package K‑04, irrelevant to Vega.",
+              "sources": {
+                "sparse": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "query": "Вега лимит компенсации отчёт действующий на 02.11.2026",
+          "rationale": "Проверяю актуальность лимита на указанную дату",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "8759493a44a19ec6",
+                "doc_id": "6d3880a6db899e61",
+                "source": "project_02.md",
+                "text": "# Проект Вега\nКарточка проекта Вега: для расходов проекта назначен пакет K-29.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 3.0008196721311475,
+              "relevance": 3.0,
+              "reason": "Mentions Vega project and that it uses package K‑29, but does not give the actual limit or the date. Only indirect relevance.",
+              "sources": {
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "16a58c50625da0a0",
+                "doc_id": "15d1a14a55aa1b76",
+                "source": "policy_K26_archive.md",
+                "text": "# Норматив пакета K-26\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-26 соответствует лимит компенсации 2032 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008196721311475411,
+              "relevance": 0.0,
+              "reason": "Fragment provides limit for package K‑26 but indicates it expired on 01.01.2026. Nothing about Vega or the specified date.",
+              "sources": {
+                "dense": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "88ce351f69b61999",
+                "doc_id": "bf712b97465805a8",
+                "source": "policy_K06_archive.md",
+                "text": "# Норматив пакета K-06\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-06 соответствует лимит компенсации 1172 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Limit for package K‑06, not related to Vega or the date.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "a224b5f70bcb323d",
+                "doc_id": "488e06efa1db67f8",
+                "source": "policy_K02_current.md",
+                "text": "# Норматив пакета K-02\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-02 соответствует лимит компенсации 223 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Current limit for package K‑02, unrelated to Vega.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "321b0a0818f07f5a",
+                "doc_id": "c8de54bbb3b66349",
+                "source": "policy_K21_archive.md",
+                "text": "# Норматив пакета K-21\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-21 соответствует лимит компенсации 1817 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Limit for package K‑21, unrelated.",
+              "sources": {
+                "dense": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "query": "Норматив пакета K-29 действует лимит компенсации за один отчёт",
+          "rationale": "Проекту Вега назначен пакет K-29, ищу его действующий норматив",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "bfd7e521e6ca606c",
+                "doc_id": "af7c15de3e39ad14",
+                "source": "policy_K29_archive.md",
+                "text": "# Норматив пакета K-29\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-29 соответствует лимит компенсации 2161 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001626123744051,
+              "relevance": 10.0,
+              "reason": "актуальная информация о лимите компенсации для пакета K-29: 2161 руб. сильно соответствует запросу – 10",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "1d3fe9bfbaf8ee18",
+                "doc_id": "9dc81a57ff801962",
+                "source": "policy_K29_current.md",
+                "text": "# Норматив пакета K-29\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-29 соответствует лимит компенсации 1384 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001613322924799,
+              "relevance": 10.0,
+              "reason": "тоже о лимите компенсации для K-29, но в актуальной версии: 1384 руб. очень релевантен – 10",
+              "sources": {
+                "dense": 3.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8759493a44a19ec6",
+                "doc_id": "6d3880a6db899e61",
+                "source": "project_02.md",
+                "text": "# Проект Вега\nКарточка проекта Вега: для расходов проекта назначен пакет K-29.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 3.000793650793651,
+              "relevance": 3.0,
+              "reason": "описание проекта, лишь упоминает K-29, но без конкретного лимита – 3",
+              "sources": {
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "7b71e2e17ca73e5a",
+                "doc_id": "761cfebb949f652b",
+                "source": "policy_K09_archive.md",
+                "text": "# Норматив пакета K-09\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-09 соответствует лимит компенсации 1301 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0008064516129032,
+              "relevance": 1.0,
+              "reason": "информация о пакете K-09, не относится к K-29 – 1",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "941632e45a1b184b",
+                "doc_id": "62bfd662f118449b",
+                "source": "policy_K30_archive.md",
+                "text": "# Норматив пакета K-30\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-30 соответствует лимит компенсации 2204 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.00078125,
+              "relevance": 1.0,
+              "reason": "пакет K-30, не релевантен – 1",
+              "sources": {
+                "dense": 4.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": true,
+      "notes": "Нашёл: проекту Вега назначен пакет K-29, действующий с 01.01.2026 норматив — 1384 рубля за один отчёт (архивная редакция 2161 руб. утратила силу); данные полностью покрывают вопрос на 02.11.2026.",
+      "selected_context_ids": [
+        "bfd7e521e6ca606c",
+        "1d3fe9bfbaf8ee18",
+        "8759493a44a19ec6",
+        "7b71e2e17ca73e5a",
+        "941632e45a1b184b"
+      ]
+    },
+    "warnings": []
+  },
+  "source_sha256": "387d468ab36cdd4a72bec8fcdf98946cd0f3f77f769b6ce5737f79ea4e73f1a2",
+  "provenance": "cache-only citation materialization; answer unchanged",
+  "fresh_searches": 0,
+  "latency_s": 13.631819000001997,
+  "answerable": true,
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "raw_exact_matches": [
+    true,
+    true
+  ],
+  "refused": false,
+  "dropped_citations": 0,
+  "retrieval": {
+    "recall": 1.0,
+    "mrr": 0.5,
+    "ndcg": 0.6934264036172708
+  },
+  "amount_present": true,
+  "postprocess_source_sha256": "dfa9d3277e4962afa4185d157eddb6074e0209a09ad078e539a6c69ed2f66431",
+  "generation_cache_key": "1f3a5f771887d066794512b1f753995710c1ab8fc33e1d903b48c00a6215b424",
+  "split_proposals": 0
+}

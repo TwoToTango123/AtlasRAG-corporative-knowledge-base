@@ -1,0 +1,28 @@
+{
+  "id": "q17",
+  "answerable": true,
+  "payload_sha256": "1dfa1e640016edbf823beea30780a51cc49c435e05ded1226a4682fc6c6aa197",
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и подтверждается источником. Цитата точна (учтено Markdown-выделение), все фактические утверждения верны.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Что значит ошибка ERR-VPN-431?",
+    "answer": "Ошибка ERR-VPN-431 означает, что превышено число одновременных VPN-подключений: одна учётная запись может быть активна не более чем на 2 устройствах. Чтобы устранить ошибку, отключите VPN на остальных устройствах.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

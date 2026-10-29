@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop06",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Лимит 438 рублей и пакет K-07 подтверждены актуальными документами, действующими на указанную дату.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "e2a61cfc9f3adae01c73777a11eadd6031614ccf7b6d6b7b7f00838428cc80eb"
+}

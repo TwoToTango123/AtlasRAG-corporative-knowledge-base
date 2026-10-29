@@ -1,0 +1,90 @@
+{
+  "status": "ok",
+  "id": "q34",
+  "answerable": false,
+  "claims": [
+    "В предоставленных материалах нет информации о страховании (ДМС) сотрудников и его страховой сумме.",
+    "В предоставленных материалах упоминается компенсация интернета в размере 3 000 ₽ в месяц для полностью удалённых сотрудников.",
+    "В предоставленных материалах упоминается выдача кресла/монитора.",
+    "В предоставленных материалах не упоминается медицинская страховка."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "No mention of DMS or insurance sum in provided sources.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Sources explicitly state 3,000 ₽ monthly internet compensation for fully remote employees.",
+      "unit_ids": [
+        "s3l5",
+        "s3l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s3l5",
+          "chunk_id": "f9e0c75fbb2025f6",
+          "start": 243,
+          "end": 310,
+          "text": "Сотрудникам в полностью удалённом формате компенсируется интернет —"
+        },
+        {
+          "id": "s3l6",
+          "chunk_id": "f9e0c75fbb2025f6",
+          "start": 311,
+          "end": 387,
+          "text": "**3 000 ₽ в месяц**. Офисное кресло и монитор выдаются со склада один раз по"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Sources state office chair and monitor are issued once upon request.",
+      "unit_ids": [
+        "s3l6",
+        "s3l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s3l6",
+          "chunk_id": "f9e0c75fbb2025f6",
+          "start": 311,
+          "end": 387,
+          "text": "**3 000 ₽ в месяц**. Офисное кресло и монитор выдаются со склада один раз по"
+        },
+        {
+          "id": "s3l7",
+          "chunk_id": "f9e0c75fbb2025f6",
+          "start": 388,
+          "end": 409,
+          "text": "заявке в сервис-деск."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "insufficient",
+      "rationale": "Medical insurance is not mentioned in the provided documents.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    }
+  ],
+  "answer_sha256": "03e6cef13157af3811dc7d0fc0625a3e32b0d4174505aa2cd322ac229cc84810",
+  "source_entry_sha256": "95865b5b2062df22edad06ac2adccd83ff8eaccc15b0a76ec807723cc3a1ce70",
+  "verifier": "v2-scenario-aware"
+}

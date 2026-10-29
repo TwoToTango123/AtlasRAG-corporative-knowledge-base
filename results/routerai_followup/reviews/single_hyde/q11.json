@@ -1,0 +1,28 @@
+{
+  "id": "q11",
+  "answerable": true,
+  "payload_sha256": "ec1e30c1aaf5b7f3483f341ea16793c1f7b7a3cf3c0aab785b80607a67163880",
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитата верна и подтверждает утверждение.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "За какой срок нужно подавать заявку на отпуск?",
+    "answer": "Заявку на отпуск нужно подавать не менее чем за 2 недели до планового отпуска — через Workday, с одобрением руководителя.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

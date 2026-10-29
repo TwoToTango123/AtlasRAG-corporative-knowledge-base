@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q19",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Все фактические утверждения подтверждены цитатами из procurement.md и security_policy.md. Ошибок не обнаружено.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "7982576ea1c2118575eac43278f5ab2762249f75d23768537e268984f52ed8dd"
+}

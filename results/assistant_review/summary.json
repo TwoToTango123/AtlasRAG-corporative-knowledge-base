@@ -1,0 +1,578 @@
+{
+  "complete": true,
+  "annotation_type": "assistant",
+  "human_metrics": null,
+  "independent_human_labels": 0,
+  "packet_unchanged": true,
+  "counts": {
+    "tasks": 24,
+    "claim_tasks": 16,
+    "answer_tasks": 8,
+    "fixed_facts": 18,
+    "citations": 15
+  },
+  "fixed_claim_controls": {
+    "primary": {
+      "n": 16,
+      "accuracy": 1.0,
+      "support_precision": 1.0,
+      "support_recall": 1.0,
+      "support_f1": 1.0,
+      "false_supported": 0,
+      "false_supported_rate": 0.0,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 7,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 0,
+          "insufficient": 1
+        }
+      }
+    },
+    "alternative_reading": {
+      "n": 16,
+      "accuracy": 0.9375,
+      "support_precision": 1.0,
+      "support_recall": 1.0,
+      "support_f1": 1.0,
+      "false_supported": 0,
+      "false_supported_rate": 0.0,
+      "confusion": {
+        "supported": {
+          "supported": 8,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 6,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 1,
+          "insufficient": 1
+        }
+      }
+    },
+    "rows": [
+      {
+        "review_id": "R01",
+        "gold": "contradicted",
+        "pred": "contradicted"
+      },
+      {
+        "review_id": "R02",
+        "gold": "contradicted",
+        "pred": "contradicted"
+      },
+      {
+        "review_id": "R03",
+        "gold": "contradicted",
+        "pred": "contradicted"
+      },
+      {
+        "review_id": "R04",
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R06",
+        "gold": "contradicted",
+        "pred": "contradicted"
+      },
+      {
+        "review_id": "R07",
+        "gold": "contradicted",
+        "pred": "contradicted"
+      },
+      {
+        "review_id": "R09",
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R12",
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R14",
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R16",
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R18",
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R19",
+        "gold": "contradicted",
+        "pred": "contradicted",
+        "alternative_status": "insufficient"
+      },
+      {
+        "review_id": "R20",
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R22",
+        "gold": "insufficient",
+        "pred": "insufficient"
+      },
+      {
+        "review_id": "R23",
+        "gold": "contradicted",
+        "pred": "contradicted"
+      },
+      {
+        "review_id": "R24",
+        "gold": "supported",
+        "pred": "supported"
+      }
+    ],
+    "interpretation": "Agreement against non-independent assistant reference, not unbiased accuracy."
+  },
+  "answer_fixed_fact_verifier": {
+    "primary": {
+      "n": 18,
+      "accuracy": 0.9444444444444444,
+      "support_precision": 0.9444444444444444,
+      "support_recall": 1.0,
+      "support_f1": 0.9714285714285714,
+      "false_supported": 1,
+      "false_supported_rate": 1.0,
+      "confusion": {
+        "supported": {
+          "supported": 17,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 1,
+          "contradicted": 0,
+          "insufficient": 0
+        }
+      }
+    },
+    "alternative_reading": {
+      "n": 18,
+      "accuracy": 1.0,
+      "support_precision": 1.0,
+      "support_recall": 1.0,
+      "support_f1": 1.0,
+      "false_supported": 0,
+      "false_supported_rate": null,
+      "confusion": {
+        "supported": {
+          "supported": 18,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "contradicted": {
+          "supported": 0,
+          "contradicted": 0,
+          "insufficient": 0
+        },
+        "insufficient": {
+          "supported": 0,
+          "contradicted": 0,
+          "insufficient": 0
+        }
+      }
+    },
+    "rows": [
+      {
+        "review_id": "R05",
+        "fact_index": 0,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R08",
+        "fact_index": 0,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R11",
+        "fact_index": 0,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R13",
+        "fact_index": 0,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R13",
+        "fact_index": 1,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R13",
+        "fact_index": 2,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R13",
+        "fact_index": 3,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R13",
+        "fact_index": 4,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R13",
+        "fact_index": 5,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R15",
+        "fact_index": 0,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R15",
+        "fact_index": 1,
+        "gold": "insufficient",
+        "pred": "supported",
+        "alternative_status": "supported"
+      },
+      {
+        "review_id": "R17",
+        "fact_index": 0,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R17",
+        "fact_index": 1,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R17",
+        "fact_index": 2,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R17",
+        "fact_index": 3,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R17",
+        "fact_index": 4,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R21",
+        "fact_index": 0,
+        "gold": "supported",
+        "pred": "supported"
+      },
+      {
+        "review_id": "R21",
+        "fact_index": 1,
+        "gold": "supported",
+        "pred": "supported"
+      }
+    ],
+    "interpretation": "Agreement against non-independent assistant reference, not unbiased accuracy."
+  },
+  "per_answer": [
+    {
+      "review_id": "R05",
+      "assistant_correctness": "complete",
+      "assistant_facts": 1,
+      "model_extracted_facts": 1,
+      "assistant_labels": {
+        "supported": 1
+      },
+      "extracted_model_labels": {
+        "supported": 1
+      },
+      "citation_semantic_verdict": "all_support"
+    },
+    {
+      "review_id": "R08",
+      "assistant_correctness": "complete",
+      "assistant_facts": 1,
+      "model_extracted_facts": 1,
+      "assistant_labels": {
+        "supported": 1
+      },
+      "extracted_model_labels": {
+        "supported": 1
+      },
+      "citation_semantic_verdict": "all_support"
+    },
+    {
+      "review_id": "R10",
+      "assistant_correctness": "justified_refusal",
+      "assistant_facts": 0,
+      "model_extracted_facts": 0,
+      "assistant_labels": {},
+      "extracted_model_labels": {},
+      "citation_semantic_verdict": "not_needed"
+    },
+    {
+      "review_id": "R11",
+      "assistant_correctness": "complete",
+      "assistant_facts": 1,
+      "model_extracted_facts": 1,
+      "assistant_labels": {
+        "supported": 1
+      },
+      "extracted_model_labels": {
+        "supported": 1
+      },
+      "citation_semantic_verdict": "all_support"
+    },
+    {
+      "review_id": "R13",
+      "assistant_correctness": "complete",
+      "assistant_facts": 6,
+      "model_extracted_facts": 6,
+      "assistant_labels": {
+        "supported": 6
+      },
+      "extracted_model_labels": {
+        "supported": 6
+      },
+      "citation_semantic_verdict": "all_support"
+    },
+    {
+      "review_id": "R15",
+      "assistant_correctness": "justified_refusal",
+      "assistant_facts": 2,
+      "model_extracted_facts": 5,
+      "assistant_labels": {
+        "supported": 1,
+        "insufficient": 1
+      },
+      "extracted_model_labels": {
+        "supported": 5
+      },
+      "citation_semantic_verdict": "partly"
+    },
+    {
+      "review_id": "R17",
+      "assistant_correctness": "partial",
+      "assistant_facts": 5,
+      "model_extracted_facts": 7,
+      "assistant_labels": {
+        "supported": 5
+      },
+      "extracted_model_labels": {
+        "supported": 7
+      },
+      "citation_semantic_verdict": "all_support"
+    },
+    {
+      "review_id": "R21",
+      "assistant_correctness": "complete",
+      "assistant_facts": 2,
+      "model_extracted_facts": 3,
+      "assistant_labels": {
+        "supported": 2
+      },
+      "extracted_model_labels": {
+        "supported": 3
+      },
+      "citation_semantic_verdict": "all_support"
+    }
+  ],
+  "disagreements": [
+    {
+      "kind": "fixed_fact",
+      "review_id": "R15",
+      "fact_index": 1,
+      "gold": "insufficient",
+      "pred": "supported",
+      "alternative_status": "supported"
+    }
+  ],
+  "citations": {
+    "raw_exact": 9,
+    "normalized_exact": 15,
+    "rows": [
+      {
+        "review_id": "R05",
+        "citation_id": "C1",
+        "raw_exact": false,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R08",
+        "citation_id": "C1",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R08",
+        "citation_id": "C2",
+        "raw_exact": false,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R11",
+        "citation_id": "C1",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R11",
+        "citation_id": "C2",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R11",
+        "citation_id": "C3",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R13",
+        "citation_id": "C1",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R13",
+        "citation_id": "C2",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R13",
+        "citation_id": "C3",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R13",
+        "citation_id": "C4",
+        "raw_exact": true,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R15",
+        "citation_id": "C1",
+        "raw_exact": false,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R15",
+        "citation_id": "C2",
+        "raw_exact": false,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R17",
+        "citation_id": "C1",
+        "raw_exact": false,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R17",
+        "citation_id": "C2",
+        "raw_exact": false,
+        "normalized_exact": true
+      },
+      {
+        "review_id": "R21",
+        "citation_id": "C1",
+        "raw_exact": true,
+        "normalized_exact": true
+      }
+    ]
+  },
+  "cost": {
+    "new_paid_calls": 28,
+    "recorded_tokens": 33109,
+    "balance_before_rub": 67.73655480898472,
+    "balance_after_rub": 67.1641530371111,
+    "actual_stage_rub": 0.572401771873615,
+    "actual_total_rub": 32.835846962888894,
+    "budget_used_rub": 72.07763987911574
+  },
+  "limitations": [
+    "Assistant authored fixtures and knows prior results; same developer reviews own system.",
+    "16 claims and 8 selected answers are not representative or an independent holdout.",
+    "Fixed-fact verifier and answer extraction are separate measurements; denominators differ.",
+    "Ambiguous readings reported separately. No reference labels transmitted to model."
+  ],
+  "extraction_inspection": {
+    "model_claims": 24,
+    "reference_facts": 18,
+    "covered_reference_facts": 18,
+    "extra_or_redundant_meta_claims": 3,
+    "legitimate_additional_splits": 3,
+    "model_self_support_count": 24,
+    "model_self_support_total": 24,
+    "not_comparable_denominators": true,
+    "independent_human": false
+  },
+  "answer_correctness_counts": {
+    "complete": 5,
+    "justified_refusal": 2,
+    "partial": 1
+  },
+  "previous_judge_errors": [
+    {
+      "review_id": "R05",
+      "error": "Correct 6-month leadership answer rated 0 despite source.",
+      "source_id": "S1"
+    },
+    {
+      "review_id": "R13",
+      "error": "Existing chunk ID rejected as fabricated, all 4 normalized quotes present.",
+      "source_id": "S1",
+      "chunk_id": "ee6006d80bd80674"
+    }
+  ],
+  "prediction_counts": {
+    "claims": 16,
+    "extracted": 8,
+    "extractions": 8,
+    "fixed_claims": 8
+  },
+  "annotation_disposition": "Human review waived by user; assistant-only revision in separate directory; original human packet preserved."
+}

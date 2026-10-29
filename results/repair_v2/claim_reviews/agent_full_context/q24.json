@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "id": "q24",
+  "answerable": true,
+  "claims": [
+    "На возврат робота-манипулятора предоставляется 30 дней с даты доставки.",
+    "Возврат робота-манипулятора возможен только при условии, что устройство находится в пригодном для перепродажи состоянии.",
+    "Если оборудование вскрыто, но исправно, при возврате робота-манипулятора взимается сбор 15% за повторное складирование.",
+    "При возврате робота-манипулятора по причине «по передумали» обратную доставку оплачивает клиент."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Sources explicitly state 30 days from delivery for robotic manipulators.",
+      "unit_ids": [
+        "s1l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l2",
+          "chunk_id": "9ba36918055c244b",
+          "start": 101,
+          "end": 177,
+          "text": "вернуть в течение **30 дней** с даты доставки с полным возвратом средств при"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source specifies return condition: device must be in resale-ready state.",
+      "unit_ids": [
+        "s1l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l3",
+          "chunk_id": "9ba36918055c244b",
+          "start": 178,
+          "end": 258,
+          "text": "условии, что устройство в пригодном для перепродажи состоянии. Обратную доставку"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Source confirms 15% reshipping fee for opened, working equipment returns.",
+      "unit_ids": [
+        "s1l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l6",
+          "chunk_id": "9ba36918055c244b",
+          "start": 417,
+          "end": 467,
+          "text": "сбор за повторное складирование в размере **15%**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source states client pays return shipping for 'change of mind' returns.",
+      "unit_ids": [
+        "s1l5"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l5",
+          "chunk_id": "9ba36918055c244b",
+          "start": 338,
+          "end": 416,
+          "text": "передумали» оплачивает клиент. К вскрытому исправному оборудованию применяется"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "00f8db2290f9316b49521df3f2e4b3e42f622d4e6f1e7c7a10f00b369e4be8eb",
+  "source_entry_sha256": "b645e30eed9e5daa28fb692a835e4455ef62d67ddf85050503ad1a1fa7dbe19c",
+  "verifier": "v2-scenario-aware"
+}

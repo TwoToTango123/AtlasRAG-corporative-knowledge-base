@@ -1,0 +1,28 @@
+{
+  "id": "q13",
+  "answerable": true,
+  "payload_sha256": "f3199b78623647044e41d97a547e7b4ba25615aa45e04b92fdce6c72f1c51423",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и подтвержден цитатой из источника.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Что означает код E-401?",
+    "answer": "Код E‑401 означает, что манипулятор не откалиброван (не выполнен homing) — нужно выполнить процедуру homing перед движением.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "Отлично: ответ ассистента фактически полностью совпадает с эталонным (манипулятор не откалиброван/не выполнен homing; требуется выполнить homing перед движением). Указано наличие ссылки (1), что соответствует требованиям к качеству цитирования.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

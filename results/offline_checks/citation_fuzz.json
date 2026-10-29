@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "seed": 20261104,
+  "valid_ranges_checked": 10000,
+  "invalid_ranges_checked": 60000,
+  "emitted_parts_checked": 13798,
+  "long_ranges_checked": 2562,
+  "failures": 0,
+  "properties": [
+    "exact original offsets",
+    "all non-whitespace characters preserved",
+    "at most 25 words per emitted part",
+    "forward non-overlapping ranges",
+    "invalid indexes rejected"
+  ],
+  "limits": [
+    "Materialization invariants, not semantic support or human answer correctness."
+  ]
+}

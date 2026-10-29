@@ -1,0 +1,176 @@
+{
+  "status": "ok",
+  "id": "q37",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации нет сведений о том, как рассчитывается годовая премия сотрудников",
+    "Среди доступных документов находятся: политика отпусков, положение о командировках, SLA поддержки, онбординг",
+    "Документы о политике отпусков, положении о командировках, SLA поддержки и онбординге не описывают порядок расчёта или начисления годовой премии"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники не содержат упоминаний о расчёте годовой премии.",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Положение о командировках и расходах"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 0,
+          "end": 38,
+          "text": "# Northwind Robotics — Поддержка и SLA"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Заголовки источников подтверждают наличие указанных политик и документов.",
+      "unit_ids": [
+        "s0l0",
+        "s1l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Положение о командировках и расходах"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 0,
+          "end": 38,
+          "text": "# Northwind Robotics — Поддержка и SLA"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Содержимое источников ограничено отпусками, командировками, SLA и онбордингом, без премий.",
+      "unit_ids": [
+        "s0l0",
+        "s0l19",
+        "s1l0",
+        "s1l23",
+        "s2l8",
+        "s3l18",
+        "s4l0",
+        "s4l20"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 0,
+          "end": 50,
+          "text": "# Northwind Robotics — Политика отпусков и отгулов"
+        },
+        {
+          "id": "s0l19",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 1052,
+          "end": 1058,
+          "text": "врача."
+        },
+        {
+          "id": "s1l0",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Положение о командировках и расходах"
+        },
+        {
+          "id": "s1l23",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 1220,
+          "end": 1260,
+          "text": "служебной записки с перечнем участников."
+        },
+        {
+          "id": "s2l8",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 484,
+          "end": 538,
+          "text": "месяце. Компенсацию нужно запросить в течение 30 дней."
+        },
+        {
+          "id": "s3l18",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 1122,
+          "end": 1158,
+          "text": "технический менеджер аккаунта (TAM)."
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        },
+        {
+          "id": "s4l20",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 1078,
+          "end": 1156,
+          "text": "испытательного срока** и оформляется по общей процедуре политики безопасности."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [],
+  "answer_sha256": "2cb0d5fff41b75e32677ec97416f45bff70485754106fc322a6b14ee57dd4b77",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

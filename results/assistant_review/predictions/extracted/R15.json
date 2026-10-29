@@ -1,0 +1,149 @@
+{
+  "status": "ok",
+  "review_id": "R15",
+  "claims": [
+    "В доступных материалах нет информации о стоимости подписки AtlasControl на тарифе Enterprise",
+    "В доступных материалах цены на подписку AtlasControl не указаны",
+    "В доступных материалах описаны возможности тарифа AtlasControl Enterprise",
+    "Тариф AtlasControl Enterprise включает неограниченное число манипуляторов",
+    "Лимит API для тарифа AtlasControl Enterprise составляет 6 000 запросов в минуту"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "В текстах нет упоминания цены подписки Enterprise.",
+      "unit_ids": [
+        "s0l21",
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l21",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 771,
+          "end": 810,
+          "text": "## Программное обеспечение AtlasControl"
+        },
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Документация содержит только технические характеристики и SLA, цены отсутствуют.",
+      "unit_ids": [
+        "s0l21",
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l21",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 771,
+          "end": 810,
+          "text": "## Программное обеспечение AtlasControl"
+        },
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Тариф описан: безлимит манипуляторов, API 6000, поддержка 24/7.",
+      "unit_ids": [
+        "s0l23",
+        "s0l25",
+        "s1l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l23",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 885,
+          "end": 958,
+          "text": "поддерживает до **10 подключённых манипуляторов**; тариф Enterprise — без"
+        },
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        },
+        {
+          "id": "s1l7",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 378,
+          "end": 439,
+          "text": "| Enterprise | Email, чат, телефон, TAM | 24/7              |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Источники прямо указывают на отсутствие ограничений для Enterprise.",
+      "unit_ids": [
+        "s0l23",
+        "s0l24"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l23",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 885,
+          "end": 958,
+          "text": "поддерживает до **10 подключённых манипуляторов**; тариф Enterprise — без"
+        },
+        {
+          "id": "s0l24",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 959,
+          "end": 1029,
+          "text": "ограничений. Лимит API составляет **600 запросов в минуту** на рабочее"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Источники указывают 6 000 запросов в минуту для Enterprise.",
+      "unit_ids": [
+        "s0l25"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l25",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 1030,
+          "end": 1109,
+          "text": "пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+        }
+      ]
+    }
+  ],
+  "purpose": "Original answer extraction; no assistant facts or reference labels in extraction prompt."
+}

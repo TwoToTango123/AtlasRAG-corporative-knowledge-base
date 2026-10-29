@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q15",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и подтверждается цитатой. Цитата верна, чанк существует, текст совпадает.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "4258d3b4130c53c452daaaf6897d05849ae18e936b0c0c1180a6be89ba4a153d"
+}

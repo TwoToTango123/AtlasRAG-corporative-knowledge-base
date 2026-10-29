@@ -76,6 +76,8 @@ class Citation:
     chunk_id: str
     source: str
     quote: str
+    start_char: int | None = None
+    end_char: int | None = None
 
 
 @dataclass
@@ -94,16 +96,19 @@ class RetrievalTrace:
     steps: list[RetrievalStep] = field(default_factory=list)
     sufficient: bool = False
     notes: str = ""
+    selected_context_ids: list[str] | None = None  # None means historical score ordering
 
     @property
     def evidence(self) -> list[ScoredChunk]:
-        """Deduplicated, best-scored evidence across all steps."""
+        """Explicit generation context, or historical score ordering for old traces."""
         best: dict[str, ScoredChunk] = {}
         for st in self.steps:
             for h in st.hits:
                 cur = best.get(h.chunk_id)
                 if cur is None or h.score > cur.score:
                     best[h.chunk_id] = h
+        if self.selected_context_ids is not None:
+            return [best[cid] for cid in self.selected_context_ids]
         return sorted(best.values(), key=lambda s: s.score, reverse=True)
 
 

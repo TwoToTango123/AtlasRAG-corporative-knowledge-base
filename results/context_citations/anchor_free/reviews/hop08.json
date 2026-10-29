@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop08",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью верен, точен и подтверждается цитатами.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "4a2ea660654b995fc5e775216312f5b24c6daadc8f1c607768210d133631819a"
+}

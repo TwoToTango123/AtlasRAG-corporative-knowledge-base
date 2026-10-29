@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q22",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.8,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верен и лоялен источникам, но проигнорировал ключевое техническое обоснование из эталона (стандарт ISO 9409-1-50-4-M6), упомянув лишь общий факт совместимости фланцев.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "e2af34bb343137b8dfa189ddff66a08f4c169d766cef105c22ebfa8922914c1f"
+}

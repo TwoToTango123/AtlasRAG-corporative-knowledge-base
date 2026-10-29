@@ -1,0 +1,28 @@
+{
+  "id": "q29",
+  "answerable": true,
+  "payload_sha256": "3793a2025c5d9af6b7d9751f92bfc7711c4472c4be74cbaafe77c335c73da168",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.8,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ логично выводит запрет на основе общего правила, хотя и содержит допущение о возможности одобрения, прямо не подтвержденное текстом.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Можно ли вставлять рабочие таблицы в ChatGPT?",
+    "answer": "Прямого указания про ChatGPT и рабочие таблицы нет. Однако использовать неодобренные ИИ-инструменты с корпоративными данными запрещено, поэтому вставлять рабочие таблицы в ChatGPT можно только если он официально одобрен для таких данных; иначе — нельзя.",
+    "answerable": true,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "ndcg": 0.5
+    }
+  }
+}

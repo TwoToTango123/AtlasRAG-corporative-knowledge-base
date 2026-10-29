@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "id": "product_specs_0",
+  "split": "heldout",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l0",
+      "s0l1"
+    ],
+    "rationale": "Источник прямо указывает грузоподъёмность NW-100 как 5 кг.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l0",
+        "chunk_id": "product_specs.md",
+        "start": 0,
+        "end": 41,
+        "text": "## Манипулятор NW-100 (начальный уровень)"
+      },
+      {
+        "id": "s0l1",
+        "chunk_id": "product_specs.md",
+        "start": 43,
+        "end": 71,
+        "text": "- Грузоподъёмность: **5 кг**"
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

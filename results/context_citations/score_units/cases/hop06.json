@@ -1,0 +1,334 @@
+{
+  "status": "ok",
+  "id": "hop06",
+  "suite": "sequential",
+  "arm": "score_units",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сапфир?",
+    "answer": "Действующий лимит компенсации за один отчёт для проекта «Сапфир» — 438 рублей. Проекту назначен пакет K-07, а действующая с 01.01.2026 редакция норматива этого пакета устанавливает лимит 438 рублей; на 02.11.2026 она действует.",
+    "citations": [
+      {
+        "chunk_id": "2d06c3fa9baedc88",
+        "source": "project_05.md",
+        "quote": "Карточка проекта Сапфир: для расходов проекта назначен пакет K-07.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+        "start_char": 16,
+        "end_char": 158
+      },
+      {
+        "chunk_id": "4cbe99b5f8d6915b",
+        "source": "policy_K07_current.md",
+        "quote": "Действует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-07 соответствует лимит компенсации 438 рублей за один отчёт.",
+        "start_char": 23,
+        "end_char": 147
+      }
+    ],
+    "confidence": 0.0,
+    "faithfulness": 0.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сапфир?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "проект Сапфир лимит компенсации за один отчёт действующий 02.11.2026",
+          "rationale": "Ищу актуальный лимит компенсации за отчёт по проекту Сапфир на указанную дату.",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "2d06c3fa9baedc88",
+                "doc_id": "0785e7b8e660b0b5",
+                "source": "project_05.md",
+                "text": "# Проект Сапфир\nКарточка проекта Сапфир: для расходов проекта назначен пакет K-07.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.001639344262295,
+              "relevance": 1.0,
+              "reason": "Fragment 0 references the Sapphire project but only mentions the K‑07 package and a general claim that compensation is determined by the current norm. It does not provide the specific limit per report or an effective date of 02.11.2026, so its usefulness for answering the query is minimal.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "496b817de579f499",
+                "doc_id": "97e8cc64a29b9772",
+                "source": "policy_K11_archive.md",
+                "text": "# Норматив пакета K-11\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-11 соответствует лимит компенсации 1387 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.001527518656716418,
+              "relevance": 0.0,
+              "reason": "Fragment 1 contains a limit for K‑11 but the Sapphire project uses K‑07, and the policy has expired on 01.01.2026. Therefore it is largely irrelevant.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 7.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8f5c6a36f3e0974c",
+                "doc_id": "0446bca69cc5d4cc",
+                "source": "policy_K11_current.md",
+                "text": "# Норматив пакета K-11\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-11 соответствует лимит компенсации 610 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0015038444142921757,
+              "relevance": 0.0,
+              "reason": "Fragment 2 gives a current limit for K‑11 effective from 01.01.2026, but again the Sapphire project is tied to K‑07, not K‑11. It does not answer the query about Sapphire’s limit.",
+              "sources": {
+                "dense": 7.0,
+                "sparse": 6.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "7b71e2e17ca73e5a",
+                "doc_id": "761cfebb949f652b",
+                "source": "policy_K09_archive.md",
+                "text": "# Норматив пакета K-09\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-09 соответствует лимит компенсации 1301 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment 3 is about K‑09 archive and not related to Sapphire or its limit.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e81495bd16ea0a46",
+                "doc_id": "4b47f226479713b1",
+                "source": "project_03.md",
+                "text": "# Проект Ирис\nКарточка проекта Ирис: для расходов проекта назначен пакет K-11.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment 4 references the Iris project, not Sapphire, so it is irrelevant.",
+              "sources": {
+                "sparse": 2.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "query": "Сапфир компенсация отчёт лимит",
+          "rationale": "Более широкий запрос по условиям компенсации отчётов проекта Сапфир.",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "2d06c3fa9baedc88",
+                "doc_id": "0785e7b8e660b0b5",
+                "source": "project_05.md",
+                "text": "# Проект Сапфир\nКарточка проекта Сапфир: для расходов проекта назначен пакет K-07.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.000819672131147,
+              "relevance": 10.0,
+              "reason": "directly refers to Sapphire project and its K-07 package",
+              "sources": {
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e6ccccf1e6415003",
+                "doc_id": "3d884a2851fd29b7",
+                "source": "policy_K07_archive.md",
+                "text": "# Норматив пакета K-07\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-07 соответствует лимит компенсации 1215 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 9.00078125,
+              "relevance": 9.0,
+              "reason": "mentions K-07 archive limit, relevant to Sapphire project's package",
+              "sources": {
+                "dense": 4.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ca9a60b2aeb2eade",
+                "doc_id": "6d6c9f0ef028b798",
+                "source": "policy_K03_archive.md",
+                "text": "# Норматив пакета K-03\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-03 соответствует лимит компенсации 1043 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.001539919450367,
+              "relevance": 2.0,
+              "reason": "only mentions K-03 limit, unrelated to Sapphire project",
+              "sources": {
+                "dense": 3.0,
+                "sparse": 7.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "0726ca893cf108a7",
+                "doc_id": "d2e44da960ddb2e8",
+                "source": "policy_K04_archive.md",
+                "text": "# Норматив пакета K-04\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-04 соответствует лимит компенсации 1086 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.0014938684503902,
+              "relevance": 2.0,
+              "reason": "only mentions K-04 limit, unrelated to Sapphire project",
+              "sources": {
+                "dense": 5.0,
+                "sparse": 9.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "40abe364417790fa",
+                "doc_id": "5116b2adc5dbc299",
+                "source": "policy_K05_archive.md",
+                "text": "# Норматив пакета K-05\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-05 соответствует лимит компенсации 1129 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.0014618011096883,
+              "relevance": 2.0,
+              "reason": "only mentions K-05 limit, unrelated to Sapphire project",
+              "sources": {
+                "dense": 6.0,
+                "sparse": 11.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "query": "норматив пакета K-07 действующий лимит компенсации за один отчёт 2026",
+          "rationale": "Проекту Сапфир назначен пакет K-07; нужен действующий норматив этого пакета на 02.11.2026.",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "4cbe99b5f8d6915b",
+                "doc_id": "0d7639a6c8ca6cbc",
+                "source": "policy_K07_current.md",
+                "text": "# Норматив пакета K-07\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-07 соответствует лимит компенсации 438 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001639344262296,
+              "relevance": 10.0,
+              "reason": "directly states the current limit for K-07 as of 2026",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e6ccccf1e6415003",
+                "doc_id": "3d884a2851fd29b7",
+                "source": "policy_K07_archive.md",
+                "text": "# Норматив пакета K-07\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-07 соответствует лимит компенсации 1215 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 4.001612903225807,
+              "relevance": 4.0,
+              "reason": "mentions an older K-07 limit but after 2026, not current",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "2d06c3fa9baedc88",
+                "doc_id": "0785e7b8e660b0b5",
+                "source": "project_05.md",
+                "text": "# Проект Сапфир\nКарточка проекта Сапфир: для расходов проекта назначен пакет K-07.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 3.000793650793651,
+              "relevance": 3.0,
+              "reason": "mentions project using K-07 but no limit detail",
+              "sources": {
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "f851d6b873d1e48d",
+                "doc_id": "d5cd6a8d9ca687d4",
+                "source": "policy_K03_current.md",
+                "text": "# Норматив пакета K-03\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-03 соответствует лимит компенсации 266 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0014297385620916,
+              "relevance": 1.0,
+              "reason": "about K-03, irrelevant",
+              "sources": {
+                "dense": 12.0,
+                "sparse": 8.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "88ce351f69b61999",
+                "doc_id": "bf712b97465805a8",
+                "source": "policy_K06_archive.md",
+                "text": "# Норматив пакета K-06\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-06 соответствует лимит компенсации 1172 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0007936507936508,
+              "relevance": 1.0,
+              "reason": "about K-06 archive, irrelevant",
+              "sources": {
+                "dense": 3.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": true,
+      "notes": "Нашёл: проекту «Сапфир» назначен пакет K-07, действующий с 01.01.2026 норматив — 438 рублей за один отчёт; данные полностью покрывают вопрос на 02.11.2026.",
+      "selected_context_ids": [
+        "4cbe99b5f8d6915b",
+        "2d06c3fa9baedc88",
+        "e6ccccf1e6415003",
+        "ca9a60b2aeb2eade",
+        "0726ca893cf108a7"
+      ]
+    },
+    "warnings": []
+  },
+  "source_sha256": "9ad1080556e99674edc0fd4bec886424cb2fcc5f5832c02bb07231e2a37f0c8e",
+  "provenance": "generated with fixed source trace",
+  "fresh_searches": 0,
+  "latency_s": 11.290318500017747,
+  "answerable": true,
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "raw_exact_matches": [
+    true,
+    true
+  ],
+  "refused": false,
+  "dropped_citations": 0,
+  "retrieval": {
+    "recall": 1.0,
+    "mrr": 1.0,
+    "ndcg": 1.0
+  },
+  "amount_present": true
+}

@@ -1,0 +1,24 @@
+{
+  "id": "q37",
+  "answerable": false,
+  "payload_sha256": "809e08a9acaf06cec44f8558b7bd5609ebd4869a06978518cff2c65985bc66f8",
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "is_refusal": true,
+    "rationale": "The answer correctly identifies the absence of information in the provided sources, which aligns with the expected refusal.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Как рассчитывается годовая премия сотрудников?",
+    "answer": "В предоставленной базе знаний нет информации о том, как рассчитывается годовая премия сотрудников. Ни один из доступных документов не описывает методику или условия начисления годовой премии.",
+    "answerable": false,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": null
+  }
+}

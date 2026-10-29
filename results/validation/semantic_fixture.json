@@ -1,0 +1,402 @@
+[
+  {
+    "id": "refund_policy_0",
+    "source": "refund_policy.md",
+    "split": "calibration",
+    "premise": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления.",
+    "claim": "Клиент тарифа Starter может запросить полный возврат в течение 14 календарных дней с первого списания без объяснения причин.",
+    "label": "supported",
+    "source_sha256": "807f4cfdfa9429e66047b9d618e77f499c37db9366e522434eb1f4e9c838d906",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "refund_policy_1",
+    "source": "refund_policy.md",
+    "split": "calibration",
+    "premise": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления.",
+    "claim": "Окно возврата Enterprise составляет 30 календарных дней с даты начала контракта.",
+    "label": "supported",
+    "source_sha256": "807f4cfdfa9429e66047b9d618e77f499c37db9366e522434eb1f4e9c838d906",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "refund_policy_2",
+    "source": "refund_policy.md",
+    "split": "calibration",
+    "premise": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления.",
+    "claim": "Окно возврата Enterprise составляет 7 календарных дней с даты начала контракта.",
+    "label": "contradicted",
+    "source_sha256": "807f4cfdfa9429e66047b9d618e77f499c37db9366e522434eb1f4e9c838d906",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "refund_policy_3",
+    "source": "refund_policy.md",
+    "split": "calibration",
+    "premise": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления.",
+    "claim": "Списание за продление возвращается автоматически без обращения клиента.",
+    "label": "contradicted",
+    "source_sha256": "807f4cfdfa9429e66047b9d618e77f499c37db9366e522434eb1f4e9c838d906",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "refund_policy_4",
+    "source": "refund_policy.md",
+    "split": "calibration",
+    "premise": "## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления.",
+    "claim": "Подписка Enterprise стоит 5000 рублей в месяц.",
+    "label": "insufficient",
+    "source_sha256": "807f4cfdfa9429e66047b9d618e77f499c37db9366e522434eb1f4e9c838d906",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "hr_timeoff_0",
+    "source": "hr_timeoff.md",
+    "split": "calibration",
+    "premise": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника.",
+    "claim": "Штатный сотрудник со стажем один год накапливает 18 дней оплачиваемого отпуска в год.",
+    "label": "supported",
+    "source_sha256": "8e6ffac48c2f953ce193f9626bc09ad9edc694e1ba0b0555a21121a966e7a091",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "hr_timeoff_1",
+    "source": "hr_timeoff.md",
+    "split": "calibration",
+    "premise": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника.",
+    "claim": "На следующий год можно перенести остаток отпуска не более 40 дней.",
+    "label": "supported",
+    "source_sha256": "8e6ffac48c2f953ce193f9626bc09ad9edc694e1ba0b0555a21121a966e7a091",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "hr_timeoff_2",
+    "source": "hr_timeoff.md",
+    "split": "calibration",
+    "premise": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника.",
+    "claim": "Штатный сотрудник со стажем один год накапливает 23 дня оплачиваемого отпуска в год.",
+    "label": "contradicted",
+    "source_sha256": "8e6ffac48c2f953ce193f9626bc09ad9edc694e1ba0b0555a21121a966e7a091",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "hr_timeoff_3",
+    "source": "hr_timeoff.md",
+    "split": "calibration",
+    "premise": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника.",
+    "claim": "Остаток оплачиваемого отпуска сверх 40 дней сохраняется в конце года.",
+    "label": "contradicted",
+    "source_sha256": "8e6ffac48c2f953ce193f9626bc09ad9edc694e1ba0b0555a21121a966e7a091",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "hr_timeoff_4",
+    "source": "hr_timeoff.md",
+    "split": "calibration",
+    "premise": "## Оплачиваемый отпуск (PTO)\n\nШтатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:\n\n- 0–2 года: **18 дней** в год\n- 3–5 лет: **23 дня** в год\n- 6+ лет: **28 дней** в год\n\nОтпуск накапливается ежемесячно и может переноситься на следующий год до\nмаксимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года.\nПри увольнении неиспользованный отпуск выплачивается по текущей базовой ставке\nсотрудника.",
+    "claim": "Отпуск можно отменить за один день до начала.",
+    "label": "insufficient",
+    "source_sha256": "8e6ffac48c2f953ce193f9626bc09ad9edc694e1ba0b0555a21121a966e7a091",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "remote_work_0",
+    "source": "remote_work.md",
+    "split": "calibration",
+    "premise": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена.",
+    "claim": "Работа из-за рубежа ограничена 20 рабочими днями в году.",
+    "label": "supported",
+    "source_sha256": "f8fc34adc4d42c0e78e9cbc7da3fd944e79e1e49b1a09e8ea3d75b958dc48545",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "remote_work_1",
+    "source": "remote_work.md",
+    "split": "calibration",
+    "premise": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена.",
+    "claim": "Работа из-за рубежа требует одобрения юридического отдела и службы безопасности.",
+    "label": "supported",
+    "source_sha256": "f8fc34adc4d42c0e78e9cbc7da3fd944e79e1e49b1a09e8ea3d75b958dc48545",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "remote_work_2",
+    "source": "remote_work.md",
+    "split": "calibration",
+    "premise": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена.",
+    "claim": "Работа из-за рубежа разрешена без одобрения юридического отдела.",
+    "label": "contradicted",
+    "source_sha256": "f8fc34adc4d42c0e78e9cbc7da3fd944e79e1e49b1a09e8ea3d75b958dc48545",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "remote_work_3",
+    "source": "remote_work.md",
+    "split": "calibration",
+    "premise": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена.",
+    "claim": "Работа из стран под санкционными ограничениями разрешена.",
+    "label": "contradicted",
+    "source_sha256": "f8fc34adc4d42c0e78e9cbc7da3fd944e79e1e49b1a09e8ea3d75b958dc48545",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "remote_work_4",
+    "source": "remote_work.md",
+    "split": "calibration",
+    "premise": "## Работа из другой страны\n\nРаботать из-за рубежа можно не более **20 рабочих дней в году** и только с\nодобрения юридического отдела и службы безопасности. Работа из стран под\nсанкционными ограничениями запрещена.",
+    "claim": "Компания возмещает визовые расходы при удалённой работе за рубежом.",
+    "label": "insufficient",
+    "source_sha256": "f8fc34adc4d42c0e78e9cbc7da3fd944e79e1e49b1a09e8ea3d75b958dc48545",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "travel_expenses_0",
+    "source": "travel_expenses.md",
+    "split": "calibration",
+    "premise": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00.",
+    "claim": "Бизнес-класс допускается для перелёта дольше 6 часов только с одобрения директора департамента.",
+    "label": "supported",
+    "source_sha256": "f074f46bf77131ceacc5b2eabc4d97d317e87944ee90f1902c573d28c08081db",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "travel_expenses_1",
+    "source": "travel_expenses.md",
+    "split": "calibration",
+    "premise": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00.",
+    "claim": "Тариф такси Комфорт разрешён после 22:00.",
+    "label": "supported",
+    "source_sha256": "f074f46bf77131ceacc5b2eabc4d97d317e87944ee90f1902c573d28c08081db",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "travel_expenses_2",
+    "source": "travel_expenses.md",
+    "split": "calibration",
+    "premise": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00.",
+    "claim": "Бизнес-класс разрешён для любого перелёта без одобрения директора.",
+    "label": "contradicted",
+    "source_sha256": "f074f46bf77131ceacc5b2eabc4d97d317e87944ee90f1902c573d28c08081db",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "travel_expenses_3",
+    "source": "travel_expenses.md",
+    "split": "calibration",
+    "premise": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00.",
+    "claim": "Такси по тарифу Комфорт разрешено в любое время суток.",
+    "label": "contradicted",
+    "source_sha256": "f074f46bf77131ceacc5b2eabc4d97d317e87944ee90f1902c573d28c08081db",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "travel_expenses_4",
+    "source": "travel_expenses.md",
+    "split": "calibration",
+    "premise": "## Перелёты и такси\n\nПерелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт\nдлится дольше **6 часов**, и только с одобрения директора департамента. Такси\nоплачивается по тарифу «Эконом»; тариф «Комфорт» разрешён после 22:00.",
+    "claim": "Билеты покупаются только у авиакомпании Аэрофлот.",
+    "label": "insufficient",
+    "source_sha256": "f074f46bf77131ceacc5b2eabc4d97d317e87944ee90f1902c573d28c08081db",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "security_policy_0",
+    "source": "security_policy.md",
+    "split": "heldout",
+    "premise": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**.",
+    "claim": "Привилегированные учётные данные ротируются каждые 90 дней.",
+    "label": "supported",
+    "source_sha256": "a7dc777dcdaf6ed4376b41f5fbe33ad7a9a4bb2204d89d81b9a16616cca33f11",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "security_policy_1",
+    "source": "security_policy.md",
+    "split": "heldout",
+    "premise": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**.",
+    "claim": "MFA обязательна для всех сотрудников на каждой поддерживающей её системе, включая руководителей.",
+    "label": "supported",
+    "source_sha256": "a7dc777dcdaf6ed4376b41f5fbe33ad7a9a4bb2204d89d81b9a16616cca33f11",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "security_policy_2",
+    "source": "security_policy.md",
+    "split": "heldout",
+    "premise": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**.",
+    "claim": "Привилегированные учётные данные ротируются каждые 180 дней.",
+    "label": "contradicted",
+    "source_sha256": "a7dc777dcdaf6ed4376b41f5fbe33ad7a9a4bb2204d89d81b9a16616cca33f11",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "security_policy_3",
+    "source": "security_policy.md",
+    "split": "heldout",
+    "premise": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**.",
+    "claim": "Руководителям разрешено не использовать MFA в системах с её поддержкой.",
+    "label": "contradicted",
+    "source_sha256": "a7dc777dcdaf6ed4376b41f5fbe33ad7a9a4bb2204d89d81b9a16616cca33f11",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "security_policy_4",
+    "source": "security_policy.md",
+    "split": "heldout",
+    "premise": "## Управление доступом\n\n- Доступ предоставляется по принципу минимальных привилегий. Доступ к продакшену\n  требует заявки, одобренной владельцем системы, и пересматривается\n  ежеквартально.\n- **Многофакторная аутентификация (MFA) обязательна** для всех сотрудников на\n  каждой системе, которая её поддерживает, без исключений для руководителей.\n- Привилегированные (административные) учётные данные хранятся в корпоративном\n  хранилище секретов и ротируются каждые **90 дней**.",
+    "claim": "Минимальная длина пароля составляет 16 символов.",
+    "label": "insufficient",
+    "source_sha256": "a7dc777dcdaf6ed4376b41f5fbe33ad7a9a4bb2204d89d81b9a16616cca33f11",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "onboarding_0",
+    "source": "onboarding.md",
+    "split": "heldout",
+    "premise": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday.",
+    "claim": "Испытательный срок для большинства сотрудников составляет 3 месяца.",
+    "label": "supported",
+    "source_sha256": "49adcaad22e183d472f2ddc6c35d52bdbd1c859ebc79415fff298928ab4f2f3b",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "onboarding_1",
+    "source": "onboarding.md",
+    "split": "heldout",
+    "premise": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday.",
+    "claim": "Испытательный срок главных инженеров составляет 6 месяцев.",
+    "label": "supported",
+    "source_sha256": "49adcaad22e183d472f2ddc6c35d52bdbd1c859ebc79415fff298928ab4f2f3b",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "onboarding_2",
+    "source": "onboarding.md",
+    "split": "heldout",
+    "premise": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday.",
+    "claim": "Испытательный срок для большинства сотрудников составляет 1 месяц.",
+    "label": "contradicted",
+    "source_sha256": "49adcaad22e183d472f2ddc6c35d52bdbd1c859ebc79415fff298928ab4f2f3b",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "onboarding_3",
+    "source": "onboarding.md",
+    "split": "heldout",
+    "premise": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday.",
+    "claim": "Испытательный срок руководителей составляет 3 месяца.",
+    "label": "contradicted",
+    "source_sha256": "49adcaad22e183d472f2ddc6c35d52bdbd1c859ebc79415fff298928ab4f2f3b",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "onboarding_4",
+    "source": "onboarding.md",
+    "split": "heldout",
+    "premise": "## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday.",
+    "claim": "После испытательного срока зарплата повышается на 10 процентов.",
+    "label": "insufficient",
+    "source_sha256": "49adcaad22e183d472f2ddc6c35d52bdbd1c859ebc79415fff298928ab4f2f3b",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "procurement_0",
+    "source": "procurement.md",
+    "split": "heldout",
+    "premise": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора.",
+    "claim": "Стандартная отсрочка платежа поставщику составляет 30 календарных дней с получения закрывающих документов.",
+    "label": "supported",
+    "source_sha256": "e7a9216e246e77da7e4efde98a4c186f03f86e45aeef45cefa985afd0b9211ec",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "procurement_1",
+    "source": "procurement.md",
+    "split": "heldout",
+    "premise": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора.",
+    "claim": "Предоплата больше 50 процентов требует согласия финансового директора.",
+    "label": "supported",
+    "source_sha256": "e7a9216e246e77da7e4efde98a4c186f03f86e45aeef45cefa985afd0b9211ec",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "procurement_2",
+    "source": "procurement.md",
+    "split": "heldout",
+    "premise": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора.",
+    "claim": "Стандартная отсрочка платежа поставщику составляет 60 календарных дней с получения закрывающих документов.",
+    "label": "contradicted",
+    "source_sha256": "e7a9216e246e77da7e4efde98a4c186f03f86e45aeef45cefa985afd0b9211ec",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "procurement_3",
+    "source": "procurement.md",
+    "split": "heldout",
+    "premise": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора.",
+    "claim": "Предоплата 70 процентов разрешена без согласия финансового директора.",
+    "label": "contradicted",
+    "source_sha256": "e7a9216e246e77da7e4efde98a4c186f03f86e45aeef45cefa985afd0b9211ec",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "procurement_4",
+    "source": "procurement.md",
+    "split": "heldout",
+    "premise": "## Оплата\n\nСтандартная отсрочка платежа поставщику — **30 календарных дней** с даты\nполучения закрывающих документов. Предоплата больше 50% допускается только с\nсогласия финансового директора.",
+    "claim": "Оплата поставщикам производится только в рублях.",
+    "label": "insufficient",
+    "source_sha256": "e7a9216e246e77da7e4efde98a4c186f03f86e45aeef45cefa985afd0b9211ec",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "product_specs_0",
+    "source": "product_specs.md",
+    "split": "heldout",
+    "premise": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`",
+    "claim": "Грузоподъёмность NW-100 составляет 5 кг.",
+    "label": "supported",
+    "source_sha256": "6e3c45584b01bbda0e40490d635267ecb9ed1d170f6ecc7e3390290c3ebf0056",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "product_specs_1",
+    "source": "product_specs.md",
+    "split": "heldout",
+    "premise": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`",
+    "claim": "Гарантия на NW-100 составляет 2 года.",
+    "label": "supported",
+    "source_sha256": "6e3c45584b01bbda0e40490d635267ecb9ed1d170f6ecc7e3390290c3ebf0056",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "product_specs_2",
+    "source": "product_specs.md",
+    "split": "heldout",
+    "premise": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`",
+    "claim": "Грузоподъёмность NW-100 составляет 18 кг.",
+    "label": "contradicted",
+    "source_sha256": "6e3c45584b01bbda0e40490d635267ecb9ed1d170f6ecc7e3390290c3ebf0056",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "product_specs_3",
+    "source": "product_specs.md",
+    "split": "heldout",
+    "premise": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`",
+    "claim": "Гарантия на NW-100 составляет 3 года.",
+    "label": "contradicted",
+    "source_sha256": "6e3c45584b01bbda0e40490d635267ecb9ed1d170f6ecc7e3390290c3ebf0056",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  },
+  {
+    "id": "product_specs_4",
+    "source": "product_specs.md",
+    "split": "heldout",
+    "premise": "## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`",
+    "claim": "NW-100 стоит 100000 рублей.",
+    "label": "insufficient",
+    "source_sha256": "6e3c45584b01bbda0e40490d635267ecb9ed1d170f6ecc7e3390290c3ebf0056",
+    "label_provenance": "assistant-authored from the source; not independently human reviewed"
+  }
+]

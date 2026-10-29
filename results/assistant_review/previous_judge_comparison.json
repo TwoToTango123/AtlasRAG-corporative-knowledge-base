@@ -1,0 +1,108 @@
+[
+  {
+    "review_id": "R05",
+    "saved_review_path": "results\\context_citations\\anchor_free\\reviews\\q08.json",
+    "saved_review_sha256": "ebeb8cefc981ecf4c32a36f0adec0dfda3169892bc88f802d0efb9305cf20136",
+    "review": {
+      "citation_quality": 0,
+      "correctness": 0,
+      "faithfulness": 0,
+      "is_refusal": false,
+      "rationale": "Отсутствуют обязательные поля scores. Указанная цитата не содержит требуемого утверждения (6 месяцев). Факты ответа не подтверждены текстом предоставленных чанков.",
+      "unsupported_claims": [
+        "Испытательный срок для руководителей составляет 6 месяцев."
+      ]
+    }
+  },
+  {
+    "review_id": "R08",
+    "saved_review_path": "results\\context_citations\\score_free\\reviews\\hop03.json",
+    "saved_review_sha256": "3a58117fe8537e8e88300850c993b5e64903d611d73b075f3e0a827c615b81eb",
+    "review": {
+      "citation_quality": 1.0,
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "is_refusal": false,
+      "rationale": "Ответ точно соответствует эталону и источникам. Цитаты верны и подтверждают утверждения. Ошибок нет.",
+      "unsupported_claims": []
+    }
+  },
+  {
+    "review_id": "R10",
+    "saved_review_path": "results\\context_citations\\score_units\\reviews\\q38.json",
+    "saved_review_sha256": "9520953333710a1790edc6d2dca84feefe36d71307b8dddf45539b0bbe770603",
+    "review": {
+      "citation_quality": 1,
+      "correctness": 1,
+      "faithfulness": 1,
+      "is_refusal": true,
+      "rationale": "The answer correctly identifies that the provided sources do not contain a pet policy, which aligns with the expected refusal for an unanswerable question. No hallucinations or incorrect citations were found.",
+      "unsupported_claims": []
+    }
+  },
+  {
+    "review_id": "R11",
+    "saved_review_path": "results\\context_citations\\anchor_free\\reviews\\hop08.json",
+    "saved_review_sha256": "1d9fdc2418dc7e592ee34c8816eea2579375ec07b10e325ddb28756432d8f9ae",
+    "review": {
+      "citation_quality": 1.0,
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "is_refusal": false,
+      "rationale": "Ответ полностью верен, точен и подтверждается цитатами.",
+      "unsupported_claims": []
+    }
+  },
+  {
+    "review_id": "R13",
+    "saved_review_path": "results\\context_citations\\score_free\\reviews\\q04.json",
+    "saved_review_sha256": "9382fa8d30ff73883a76703f524f6072eac769033ad021a19f7e243a61ee4986",
+    "review": {
+      "citation_quality": 0.0,
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "is_refusal": false,
+      "rationale": "Ответ корректен и полностью соответствует источникам. Однако citation_quality равен 0, так как указанные chunk_id отсутствуют в предоставленных данных (предполагается вымышленный идентификатор).",
+      "unsupported_claims": []
+    }
+  },
+  {
+    "review_id": "R15",
+    "saved_review_path": "results\\context_citations\\anchor_free\\reviews\\q35.json",
+    "saved_review_sha256": "694a9811f0cb08e2363ea7bc14d3587d3e3732effcd4affc657ce9b9bda9765a",
+    "review": {
+      "correctness": 1,
+      "faithfulness": 1,
+      "citation_quality": 1,
+      "is_refusal": true,
+      "rationale": "Ответ корректно отказывает в предоставлении цены, так как её нет в источниках. Дополнительные факты о тарифе точно подтверждены цитатами.",
+      "unsupported_claims": []
+    }
+  },
+  {
+    "review_id": "R17",
+    "saved_review_path": "results\\context_citations\\score_free\\reviews\\q23.json",
+    "saved_review_sha256": "99604c5c076cd95be4562dbe68b0f31aeed62801231adb7a20be845b0e5d0f5b",
+    "review": {
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "citation_quality": 1.0,
+      "is_refusal": false,
+      "rationale": "Ответ полностью соответствует эталону и источникам. Все фактические утверждения (срок испытательного периода, условия перехода на удаленку) подтверждены цитатами. Цитаты точные и корректно атрибутированы.",
+      "unsupported_claims": []
+    }
+  },
+  {
+    "review_id": "R21",
+    "saved_review_path": "results\\context_citations\\score_units\\reviews\\q13.json",
+    "saved_review_sha256": "13b4fb805b7d1488d6f575c3c511a4ac8b5d0cb9ad4f4d9b3dd9ce604dceda96",
+    "review": {
+      "citation_quality": 1.0,
+      "correctness": 1.0,
+      "faithfulness": 1.0,
+      "is_refusal": false,
+      "rationale": "Ответ точно соответствует вопросу и эталону. Цитата корректно извлечена из источника и полностью подтверждает утверждения. Ошибок не обнаружено.",
+      "unsupported_claims": []
+    }
+  }
+]

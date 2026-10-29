@@ -1,0 +1,24 @@
+{
+  "id": "q38",
+  "answerable": false,
+  "payload_sha256": "30ffa54a7d4167c0e07e0066c8a7df6362724d0ee7c4d14a477e6b8597626a9b",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно сообщает об отсутствии данных в источниках. Приведенная цитата существует в чанке, но не подтверждает фактов (так как их нет), что допустимо для отказа.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Можно ли приходить в офис с собакой?",
+    "answer": "В предоставленных политиках нет упоминаний о правилах посещения офиса с собакой, поэтому ответить нельзя.",
+    "answerable": false,
+    "refused": true,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "вопрос без ответа в базе",
+    "retrieval": null
+  }
+}

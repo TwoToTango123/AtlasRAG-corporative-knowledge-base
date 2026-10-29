@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "id": "q36",
+  "answerable": false,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно отказывает, так как модель NW-300 отсутствует в источниках. Указанные цитаты подтверждают наличие других моделей, что обосновывает отказ.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "235936ebdbe6b4f9d041e04786510f09b5f21a7a8895f3aa6d287cb7eb58da27"
+}

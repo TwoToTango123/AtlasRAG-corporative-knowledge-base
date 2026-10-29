@@ -1,0 +1,28 @@
+{
+  "id": "q18",
+  "answerable": true,
+  "payload_sha256": "e2c77ae5f4d8aa5e6889ed61397a96e194098b4d30247a7deb08be37fe712b78",
+  "review": {
+    "citation_quality": 0.75,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ошибка в цитате f40e9392459ebebc: в источнике «требует заявки», в цитате «требует заявки, одобренной...» (дописано внутри кавычек). Ответ верный.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Я новый сотрудник на испытательном сроке. Могу ли я сразу получить доступ к продакшену и кто должен одобрить заявку?",
+    "answer": "Нет, сразу получить доступ к продакшену нельзя: новичкам он выдаётся не ранее окончания испытательного срока и оформляется по общей процедуре политики безопасности. Заявку на такой доступ должен одобрить владелец системы.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

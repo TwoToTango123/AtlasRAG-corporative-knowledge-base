@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop09",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ полностью корректен и опирается на предоставленные источники. Цитаты точны, chunk_id совпадают, утверждения подтверждены текстом.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "34c7227b44919856b7866c99da10e99bbb80b75a72253b84328faea631467258"
+}

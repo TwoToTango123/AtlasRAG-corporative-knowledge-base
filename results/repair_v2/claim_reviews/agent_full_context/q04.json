@@ -1,0 +1,148 @@
+{
+  "status": "ok",
+  "id": "q04",
+  "answerable": true,
+  "claims": [
+    "Грузоподъёмность NW-200 составляет 18 кг.",
+    "Грузоподъёмность NW-100 составляет 5 кг.",
+    "NW-200 превосходит NW-100 по грузоподъёмности.",
+    "Гарантия NW-200 составляет 3 года.",
+    "Гарантия NW-100 составляет 2 года.",
+    "NW-200 превосходит NW-100 по сроку гарантии."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source explicitly states NW-200 payload is 18 kg.",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 433,
+          "end": 462,
+          "text": "- Грузоподъёмность: **18 кг**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source explicitly states NW-100 payload is 5 kg.",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 146,
+          "end": 174,
+          "text": "- Грузоподъёмность: **5 кг**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "18 kg is greater than 5 kg, so NW-200 is higher.",
+      "unit_ids": [
+        "s0l3",
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 146,
+          "end": 174,
+          "text": "- Грузоподъёмность: **5 кг**"
+        },
+        {
+          "id": "s0l12",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 433,
+          "end": 462,
+          "text": "- Грузоподъёмность: **18 кг**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source explicitly states NW-200 warranty is 3 years.",
+      "unit_ids": [
+        "s0l19"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l19",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 709,
+          "end": 731,
+          "text": "- Гарантия: **3 года**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Source explicitly states NW-100 warranty is 2 years.",
+      "unit_ids": [
+        "s0l9"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l9",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 336,
+          "end": 358,
+          "text": "- Гарантия: **2 года**"
+        }
+      ]
+    },
+    {
+      "claim_id": "c5",
+      "label": "supported",
+      "rationale": "3 years is greater than 2 years, so NW-200 warranty is longer.",
+      "unit_ids": [
+        "s0l9",
+        "s0l19"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l9",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 336,
+          "end": 358,
+          "text": "- Гарантия: **2 года**"
+        },
+        {
+          "id": "s0l19",
+          "chunk_id": "ee6006d80bd80674",
+          "start": 709,
+          "end": 731,
+          "text": "- Гарантия: **3 года**"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "0ac5602e26aba1b7b97b7f32e3d5e2a92bac59529ec33967df975336817b59f4",
+  "source_entry_sha256": "cc69d9a5c9466dceb83fcd3f7316f2c8c644e8e37d6a55b103e4e932dbfd2beb",
+  "verifier": "v2-scenario-aware"
+}

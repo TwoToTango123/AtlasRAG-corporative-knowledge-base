@@ -1,1 +1,7 @@
 * text=auto eol=lf
+
+# Frozen evaluation manifests verify raw SHA-256 bytes, including line endings.
+atlas_rag/*.py -text
+scripts/*.py -text
+results/** -text
+docs/interview/** -text

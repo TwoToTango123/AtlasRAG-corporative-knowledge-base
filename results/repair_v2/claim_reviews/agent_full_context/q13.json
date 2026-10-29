@@ -1,0 +1,80 @@
+{
+  "status": "ok",
+  "id": "q13",
+  "answerable": true,
+  "claims": [
+    "Код E-401 означает, что манипулятор не откалиброван.",
+    "Код E-401 означает, что для манипулятора не выполнена процедура homing.",
+    "Перед движением манипулятора необходимо выполнить процедуру homing."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Прямое соответствие тексту источника о значении кода E-401.",
+      "unit_ids": [
+        "s0l1"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 17,
+          "end": 98,
+          "text": "- `E-401`: манипулятор не откалиброван (не выполнен homing) — выполните процедуру"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источники прямо связывают код E-401 с невыполненным homing.",
+      "unit_ids": [
+        "s0l1"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 17,
+          "end": 98,
+          "text": "- `E-401`: манипулятор не откалиброван (не выполнен homing) — выполните процедуру"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "В инструкции к коду указано, что homing выполняется перед движением.",
+      "unit_ids": [
+        "s0l1",
+        "s0l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l1",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 17,
+          "end": 98,
+          "text": "- `E-401`: манипулятор не откалиброван (не выполнен homing) — выполните процедуру"
+        },
+        {
+          "id": "s0l2",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 99,
+          "end": 124,
+          "text": "  homing перед движением."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "2f50f8f9853ecbcc9f12b68fbad4412bbc6428b7ccc0de38e06b452d9cedb06d",
+  "source_entry_sha256": "cfe89092d205f7cbfc4bfa69eb01ccca59e05da8932fd02906ffadd210b2e0e7",
+  "verifier": "v2-scenario-aware"
+}

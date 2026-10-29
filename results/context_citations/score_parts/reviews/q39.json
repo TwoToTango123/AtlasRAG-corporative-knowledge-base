@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q39",
+  "suite": "ordinary",
+  "answerable": false,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ корректно сообщает об отсутствии SLA для тарифа Team, подтверждая данные из источника. Все цитаты точны.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "a0d03e36195cbc9f489ffa9c20a8ad8f01aa44ddac3c318e75aca5542eebed33",
+  "provenance": "identical judge payload; reused frozen rating"
+}

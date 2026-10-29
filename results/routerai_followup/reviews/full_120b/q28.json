@@ -1,0 +1,28 @@
+{
+  "id": "q28",
+  "answerable": true,
+  "payload_sha256": "b018e79441e66f85c96054ccb49ae557d85e05da3fb12813273d72b72f04d830",
+  "review": {
+    "citation_quality": 0.8,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует источнику. Ошибка только в цитировании: добавлено слово «размер», которого нет в оригинале, что нарушает требование дословного соответствия.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько денег в день выдают на поездку по работе внутри страны?",
+    "answer": "Для командировок по России выдаётся суточный размер — 1 500 ₽ за каждый день в пути.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "correct",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

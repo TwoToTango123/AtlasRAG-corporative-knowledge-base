@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_trial_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источник не определяет, кто конкретно в «описанной ситуации». (3 words)",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

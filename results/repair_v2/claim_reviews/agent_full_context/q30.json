@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "id": "q30",
+  "answerable": true,
+  "claims": [
+    "Обычный пароль сотрудника нужно менять каждые 180 дней.",
+    "Административные учётные данные ротируются каждые 90 дней."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник прямо указывает, что обычный пароль меняется каждые 180 дней.",
+      "unit_ids": [
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "e706a9391ce46228",
+          "start": 695,
+          "end": 774,
+          "text": "Обычный пароль сотрудника нужно менять каждые **180 дней**; система напомнит об"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Документ утверждает, что административные учётные данные ротируются каждые 90 дней.",
+      "unit_ids": [
+        "s1l15"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l15",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 933,
+          "end": 986,
+          "text": "  хранилище секретов и ротируются каждые **90 дней**."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "2a0eecbca9e389e9e0434832c2eceea11a9091b6f596f3f8ea94d8a42e4c6ec1",
+  "source_entry_sha256": "bf377ee54bb3d44c76f0f5a56b654794ace41baf46b70e22667b5a928e8c823f",
+  "verifier": "v2-scenario-aware"
+}

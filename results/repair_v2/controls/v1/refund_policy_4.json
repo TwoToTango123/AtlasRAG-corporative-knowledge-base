@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "id": "refund_policy_4",
+  "split": "calibration",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "unit_ids": [],
+    "rationale": "Источники не содержат информации о стоимости подписки Enterprise.",
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

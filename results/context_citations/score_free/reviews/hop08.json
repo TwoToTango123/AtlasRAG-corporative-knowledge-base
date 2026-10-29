@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop08",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью корректен. Цитаты дословно совпадают с текстом переданных источников и подтверждают фактические утверждения о пакете K-02 и лимите 223 рубля.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "1f10c5d8a46dde4ceb4abc117c4ca148e09c27ad390ec6d35f7c65954af74f55"
+}

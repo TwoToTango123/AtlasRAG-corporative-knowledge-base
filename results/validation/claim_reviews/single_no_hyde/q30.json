@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "id": "q30",
+  "answerable": true,
+  "claims": [
+    "Обычные пароли сотрудников нужно менять каждые 180 дней",
+    "Привилегированные (административные) учётные данные ротируются каждые 90 дней"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник s0l11 прямо утверждает необходимость смены пароля каждые 180 дней.",
+      "unit_ids": [
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "e706a9391ce46228",
+          "start": 695,
+          "end": 774,
+          "text": "Обычный пароль сотрудника нужно менять каждые **180 дней**; система напомнит об"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник s1l15 подтверждает ротацию привилегированных данных каждые 90 дней.",
+      "unit_ids": [
+        "s1l15"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l15",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 933,
+          "end": 986,
+          "text": "  хранилище секретов и ротируются каждые **90 дней**."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "7c3be57ebe71b7fb6f9569fbf1a32db3e63ffc97fe2efb10d504c4b89c4f98f9",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

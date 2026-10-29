@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_abroad_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Отсутствие данных о фактическом количестве дней в описанной ситуации.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

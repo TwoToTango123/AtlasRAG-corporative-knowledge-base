@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q31",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и подтверждается чанком ee6006d80bd80674. Отсутствие цитат в поле citations снижает балл по citation_quality.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "40b3f36f01a754c485a7eeba31bc0245246107cccfb3d0d355dea5ee65247121"
+}

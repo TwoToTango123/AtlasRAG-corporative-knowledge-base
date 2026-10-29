@@ -1,0 +1,28 @@
+{
+  "id": "q10",
+  "answerable": true,
+  "payload_sha256": "2888cc57e68e055721b06696df9638462f098bce0fbd2707d81018bbc4942295",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источнику. Цитата точная, подтверждает все фактические утверждения.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько дней в неделю нужно работать из офиса при гибридном формате?",
+    "answer": "При гибридном формате нужно работать из офиса не менее 2 дней в неделю. Вторник и четверг являются «якорными днями», когда команда собирается вместе.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "id": "scenario_vpn_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "rationale": "Sources state public Wi-Fi requires VPN; without it, connection is not allowed.",
+    "unit_ids": [
+      "s0l1",
+      "s0l2",
+      "s0l3"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "remote_work.md:Безопасность на удалёнке",
+        "start": 29,
+        "end": 104,
+        "text": "Работать можно только с корпоративного устройства. Подключение к внутренним"
+      },
+      {
+        "id": "s0l2",
+        "chunk_id": "remote_work.md:Безопасность на удалёнке",
+        "start": 105,
+        "end": 179,
+        "text": "системам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)"
+      },
+      {
+        "id": "s0l3",
+        "chunk_id": "remote_work.md:Безопасность на удалёнке",
+        "start": 180,
+        "end": 225,
+        "text": "допускаются исключительно при включённом VPN."
+      }
+    ]
+  }
+}

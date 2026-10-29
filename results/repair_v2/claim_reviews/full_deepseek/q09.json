@@ -1,0 +1,40 @@
+{
+  "status": "ok",
+  "id": "q09",
+  "answerable": true,
+  "claims": [
+    "Лимит стоимости гостиницы за одну ночь в командировке в Москве составляет 9 000 ₽."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник прямо указывает лимит 9 000 ₽ для Москвы.",
+      "unit_ids": [
+        "s0l11",
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 603,
+          "end": 642,
+          "text": "Лимит стоимости гостиницы за одну ночь:"
+        },
+        {
+          "id": "s0l12",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 644,
+          "end": 685,
+          "text": "- Москва и Санкт-Петербург — **9 000 ₽**;"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "c630ae7aa137a149fdf2a176781e271ff77afab08ebac7124db744ce6c9afb3b",
+  "source_entry_sha256": "13070dfb4b03df7644898aea4fe68c12cefedd66f10a51f76a800f525e37ab20",
+  "verifier": "v2-scenario-aware"
+}

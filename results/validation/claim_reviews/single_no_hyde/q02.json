@@ -1,0 +1,171 @@
+{
+  "status": "ok",
+  "id": "q02",
+  "answerable": true,
+  "claims": [
+    "Подрядчики не накапливают оплачиваемый отпуск",
+    "Временный персонал не накапливает оплачиваемый отпуск",
+    "Подрядчики не подпадают под правила переноса или выплаты отпусков",
+    "Временный персонал не подпадает под правила переноса или выплаты отпусков",
+    "Отгулы подрядчиков являются неоплачиваемыми",
+    "Отгулы временного персонала являются неоплачиваемыми",
+    "Отгулы подрядчиков согласуются с нанимающим руководителем",
+    "Отгулы временного персонала согласуются с нанимающим руководителем"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "rationale": "Подрядчики не накапливают оплачиваемый отпуск.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 589,
+          "end": 664,
+          "text": "Подрядчики и временный персонал **не** накапливают оплачиваемый отпуск и не"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "rationale": "Временный персонал не накапливает оплачиваемый отпуск.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 589,
+          "end": 664,
+          "text": "Подрядчики и временный персонал **не** накапливают оплачиваемый отпуск и не"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "unit_ids": [
+        "s0l12",
+        "s0l13"
+      ],
+      "rationale": "Подрядчики не подпадают под перенос или выплату отпусков.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 589,
+          "end": 664,
+          "text": "Подрядчики и временный персонал **не** накапливают оплачиваемый отпуск и не"
+        },
+        {
+          "id": "s0l13",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 665,
+          "end": 734,
+          "text": "подпадают под перенос или выплату, описанные выше. Отгулы подрядчиков"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "unit_ids": [
+        "s0l12",
+        "s0l13"
+      ],
+      "rationale": "Временный персонал не подпадает под перенос или выплату отпусков.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 589,
+          "end": 664,
+          "text": "Подрядчики и временный персонал **не** накапливают оплачиваемый отпуск и не"
+        },
+        {
+          "id": "s0l13",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 665,
+          "end": 734,
+          "text": "подпадают под перенос или выплату, описанные выше. Отгулы подрядчиков"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "unit_ids": [
+        "s0l14"
+      ],
+      "rationale": "Отгулы подрядчиков неоплачиваемые.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l14",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 735,
+          "end": 800,
+          "text": "неоплачиваемые и согласуются напрямую с нанимающим руководителем."
+        }
+      ]
+    },
+    {
+      "claim_id": "c5",
+      "label": "insufficient",
+      "unit_ids": [],
+      "rationale": "Источник не указывает, оплачиваются ли отгулы временного персонала.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    },
+    {
+      "claim_id": "c6",
+      "label": "supported",
+      "unit_ids": [
+        "s0l14"
+      ],
+      "rationale": "Отгулы подрядчиков согласуются с нанимающим руководителем.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l14",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 735,
+          "end": 800,
+          "text": "неоплачиваемые и согласуются напрямую с нанимающим руководителем."
+        }
+      ]
+    },
+    {
+      "claim_id": "c7",
+      "label": "insufficient",
+      "unit_ids": [],
+      "rationale": "Источник не указывает порядок согласования отгулов временного персонала.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "637dab527d248def6863fdd2b4477f0508e3a25274dee6950b25080af355c3f5",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

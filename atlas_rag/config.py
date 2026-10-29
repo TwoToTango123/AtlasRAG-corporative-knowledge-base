@@ -35,6 +35,7 @@ def _env(key: str, default: str) -> str:
 _PROVIDERS: dict[str, tuple[str, str, str, str]] = {
     "groq": ("openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b", "GROQ_API_KEY"),
     "anthropic": ("claude-opus-4-8", "claude-haiku-4-5", "claude-opus-4-8", "ANTHROPIC_API_KEY"),
+    "routerai": ("openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b", "ROUTERAI_API_KEY"),
 }
 
 
@@ -58,7 +59,12 @@ class Settings:
     # the generator, so it is less inclined to favour its own answers.
     judge_model: str = field(default_factory=lambda: _env("ATLAS_JUDGE_MODEL", ""))
     llm_max_retries: int = 8            # free-tier rate limits make 429 routine
+    judge_max_tokens: int = 512        # output budget for the original answer judge
     llm_cache_path: str | None = None   # JSONL response cache (used by evaluation)
+    routerai_budget_rub: float = 90.0  # shared persistent ledger, leaves a balance reserve
+    routerai_min_balance_rub: float = 10.0
+    routerai_ledger_path: str = "results/raw/routerai/usage.jsonl"
+    routerai_providers: dict[str, str] = field(default_factory=dict)
 
     # --- Embeddings -------------------------------------------------------
     # "auto" uses sentence-transformers if importable, else the local hashing
@@ -88,6 +94,9 @@ class Settings:
 
     # --- Agent ------------------------------------------------------------
     max_agent_steps: int = 4            # max search rounds; caps cost per question
+    agent_preview_chars: int | None = 500  # None exposes complete chunks to the agent
+    context_selection: str = "anchored"  # anchored | anchored_score | legacy
+    citation_mode: str = "unit_parts"    # exact short spans; units: strict v1; free: baseline
     min_relevance_to_answer: float = 5.0  # avg rerank score (0-10) gate
 
     # --- Persistence ------------------------------------------------------

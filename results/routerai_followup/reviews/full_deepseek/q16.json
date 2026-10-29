@@ -1,0 +1,28 @@
+{
+  "id": "q16",
+  "answerable": true,
+  "payload_sha256": "314fb54a7085c7910725a10d883b004f4fb15ea4b733a7d78d0116682d0d72cf",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует вопросу и эталону. Утверждение подтверждено цитатой из источника support_sla.md.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+    "answer": "В тикете нужно написать слово «ESCALATE».",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "Верно",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

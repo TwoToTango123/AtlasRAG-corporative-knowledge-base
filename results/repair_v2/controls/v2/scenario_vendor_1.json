@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_vendor_1",
+  "split": "scenario_regression",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источники не содержат информации о сертификации поставщика.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

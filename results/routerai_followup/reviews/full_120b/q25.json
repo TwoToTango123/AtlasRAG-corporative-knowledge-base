@@ -1,0 +1,28 @@
+{
+  "id": "q25",
+  "answerable": true,
+  "payload_sha256": "989b69a4fa8d252a358a60e6315cd9f5b6891d8dfba4a55eda471e1b0db61d3e",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верен, подтвержден цитатой и исходным текстом, нет ошибок.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+    "answer": "Для сотрудников со стажем 6 лет и более предоставляется 28 дней оплачиваемого отпуска в году.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 0.0,
+    "verdict": "PASS",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

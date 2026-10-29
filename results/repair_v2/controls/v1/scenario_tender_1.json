@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_tender_1",
+  "split": "scenario_regression",
+  "gold": "contradicted",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Сумма закупки не указана, невозможно оценить порог.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

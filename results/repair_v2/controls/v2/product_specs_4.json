@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "product_specs_4",
+  "split": "heldout",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "В источниках нет информации о цене NW-100.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "id": "q39",
+  "answerable": false,
+  "claims": [
+    "В доступных материалах нет SLA по времени первого ответа на инциденты Sev 1 для тарифа Team.",
+    "SLA с указанием сроков реакции на Sev 1 в течение 1 часа, 24/7, относится только к тарифу Enterprise.",
+    "Для тарифа Team указаны каналы связи Email и чат.",
+    "Для тарифа Team указаны рабочие часы.",
+    "Для тарифа Team не указаны сроки реакции по уровням серьёзности."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "SLA Sev 1 указан только для Enterprise в разделе с соответствующим заголовком.",
+      "unit_ids": [
+        "s0l10",
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l10",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 579,
+          "end": 616,
+          "text": "## SLA по времени ответа (Enterprise)"
+        },
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Раздел SLA озаглавлен Enterprise, что указывает на ограниченный круг применения.",
+      "unit_ids": [
+        "s0l10",
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l10",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 579,
+          "end": 616,
+          "text": "## SLA по времени ответа (Enterprise)"
+        },
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Таблица уровней поддержки прямо указывает Email и чат для Team.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 316,
+          "end": 377,
+          "text": "| Team       | Email, чат              | Рабочие часы       |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "В столбце часов работы для тарифа Team указано значение «Рабочие часы».",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 316,
+          "end": 377,
+          "text": "| Team       | Email, чат              | Рабочие часы       |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Сроки реакции по уровням Sev описаны исключительно в разделе Enterprise.",
+      "unit_ids": [
+        "s0l10",
+        "s0l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l10",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 579,
+          "end": 616,
+          "text": "## SLA по времени ответа (Enterprise)"
+        },
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "513b1bad0b12b66054b3094d324ff88a9b0cc8eafeef18eddf5c4a38e5b91222",
+  "source_entry_sha256": "8d480d1e96b834edbb1767612fa869e448eea23f99f3027ecb9a76f42499ce38",
+  "verifier": "v2-scenario-aware"
+}

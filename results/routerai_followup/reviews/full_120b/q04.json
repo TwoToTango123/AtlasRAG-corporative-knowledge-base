@@ -1,0 +1,28 @@
+{
+  "id": "q04",
+  "answerable": true,
+  "payload_sha256": "b4b43363a82e4ef45038f89c6f297a2bd59ab1b6ce1469408ef71e6f4ee9e059",
+  "review": {
+    "citation_quality": 0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и фактам в источнике. Цитаты получили 0, так как в указанных чанках нет текста с многоточием, объединяющим два разных раздела.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+    "answer": "Манипулятор NW-200 способен поднимать гораздо больше — до 18 кг, тогда как NW-100 ограничен 5 кг. Кроме того, у NW-200 гарантия 3 года против 2‑х лет у NW-100.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "ACC",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

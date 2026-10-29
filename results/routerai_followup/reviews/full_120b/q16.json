@@ -1,0 +1,28 @@
+{
+  "id": "q16",
+  "answerable": true,
+  "payload_sha256": "a2d79a342fc1a4a4bda067a5d5d0bfdadc2e8752705bbf42fa172f7a9bc2085d",
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верен. Цитата имеет 0, так как в предоставленном тексте нет слова «Клиенты» (начало чанка обрезано), но утверждение полностью подтверждается полным текстом чанка из evidence.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое слово клиенту написать в тикете, чтобы запросить эскалацию?",
+    "answer": "Нужно написать слово «ESCALATE».",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "The assistant correctly identified the keyword 'ESCALATE' as per the reference answer, achieving full factual correctness. However, regarding citation quality, while the prompt states there is '1 link', standard strict evaluation requires visible, verifiable references in the provided text snippet. Since no actual URLs or citations are displayed in the 'Response' section provided for review, and relying solely on metadata 'Links: 1' without content verification typically results in a low score for verifiable source backing in open-text formats, or if we assume the system provides the links elsewhere, the core constraint of 'substantiate the answer with visible links' is not met in the raw output string. Thus, citation_quality is 0.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

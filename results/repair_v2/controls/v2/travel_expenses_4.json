@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "travel_expenses_4",
+  "split": "calibration",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источники не содержат информации об ограничении выбора авиакомпании.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

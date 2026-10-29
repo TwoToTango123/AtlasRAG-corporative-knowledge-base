@@ -1,0 +1,565 @@
+{
+  "status": "ok",
+  "group": "single_no_hyde",
+  "id": "q19",
+  "claims": [
+    "Договор на сумму 2 млн ₽ заключается с новым поставщиком, который будет обрабатывать персональные данные клиентов.",
+    "Необходимо оформить заявку в системе «Закупки 360».",
+    "Тендер должен проводиться не менее чем с 3 коммерческими предложениями.",
+    "Для тендера требуется решение закупочного комитета.",
+    "Обязательность проведения тендера с участием минимум 3 предложений и решением закупочного комитета обусловлена суммой договора свыше 1 млн ₽.",
+    "Необходимо пройти проверку контрагента в отделе закупок.",
+    "Необходимо провести проверку безопасности поставщика.",
+    "Необходимо подписать DPA (Соглашение об обработке персональных данных) до начала работы с поставщиком.",
+    "Персональные данные клиентов классифицируются как Restricted.",
+    "Поставщику потребуется ежегодная переоценка из-за статуса данных Restricted.",
+    "Данные должны шифроваться при хранении и передаче.",
+    "Дробление закупки с целью обхода пороговых значений запрещено."
+  ],
+  "old_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "unit_ids": [],
+      "rationale": "Источники содержат правила, но не описание конкретной сделки с новым поставщиком на 2 млн ₽.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "unit_ids": [
+        "s1l3"
+      ],
+      "rationale": "Любая закупка начинается с заявки в системе «Закупки 360».",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l3",
+          "chunk_id": "da2072ac007383af",
+          "start": 129,
+          "end": 206,
+          "text": "Любая закупка начинается с заявки в системе «Закупки 360». Номер заявки имеет"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "insufficient",
+      "unit_ids": [
+        "s1l9"
+      ],
+      "rationale": "Источник требует 3 предложения для суммы свыше 1 млн ₽, но контекст с 2 млн ₽ отсутствует.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s1l9",
+          "chunk_id": "da2072ac007383af",
+          "start": 467,
+          "end": 534,
+          "text": "- свыше 1 000 000 ₽ — проводится тендер: нужно собрать **не менее 3"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "insufficient",
+      "unit_ids": [
+        "s1l10"
+      ],
+      "rationale": "Решение принимает комитет для сумм свыше 1 млн ₽, но привязка к конкретному тендеру в утверждении не подтверждена.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s1l10",
+          "chunk_id": "da2072ac007383af",
+          "start": 535,
+          "end": 602,
+          "text": "  коммерческих предложений**, решение принимает закупочный комитет."
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "unit_ids": [
+        "s1l9",
+        "s1l10"
+      ],
+      "rationale": "Правила для сумм свыше 1 млн ₽ включают минимум 3 предложения и решение комитета.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l9",
+          "chunk_id": "da2072ac007383af",
+          "start": 467,
+          "end": 534,
+          "text": "- свыше 1 000 000 ₽ — проводится тендер: нужно собрать **не менее 3"
+        },
+        {
+          "id": "s1l10",
+          "chunk_id": "da2072ac007383af",
+          "start": 535,
+          "end": 602,
+          "text": "  коммерческих предложений**, решение принимает закупочный комитет."
+        }
+      ]
+    },
+    {
+      "claim_id": "c5",
+      "label": "insufficient",
+      "unit_ids": [
+        "s1l13"
+      ],
+      "rationale": "Требование применимо к каждому новому поставщику, но факт наличия нового поставщика в сценарии утверждения не доказан.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s1l13",
+          "chunk_id": "da2072ac007383af",
+          "start": 698,
+          "end": 775,
+          "text": "Каждый новый поставщик проходит проверку контрагента в отделе закупок (обычно"
+        }
+      ]
+    },
+    {
+      "claim_id": "c6",
+      "label": "insufficient",
+      "unit_ids": [
+        "s0l14",
+        "s1l15"
+      ],
+      "rationale": "Проверка безопасности требуется при работе с данными Restricted/Конфиденциальными, но статус данных в данном случае не установлен.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s0l14",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 851,
+          "end": 931,
+          "text": "Поставщики, обрабатывающие Конфиденциальные данные или данные Restricted, должны"
+        },
+        {
+          "id": "s1l15",
+          "chunk_id": "da2072ac007383af",
+          "start": 848,
+          "end": 916,
+          "text": "клиентов, дополнительно применяются требования раздела «Безопасность"
+        }
+      ]
+    },
+    {
+      "claim_id": "c7",
+      "label": "insufficient",
+      "unit_ids": [
+        "s0l15"
+      ],
+      "rationale": "Подписание DPA требуется до работы для поставщиков с Конфиденциальными/Restricted данными, статус данных в утверждении не подтвержден.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s0l15",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 932,
+          "end": 1012,
+          "text": "пройти проверку безопасности и подписать Соглашение об обработке данных (DPA) до"
+        }
+      ]
+    },
+    {
+      "claim_id": "c8",
+      "label": "supported",
+      "unit_ids": [
+        "s2l4",
+        "s2l5",
+        "s2l6"
+      ],
+      "rationale": "Персональные данные клиентов всегда относятся к категории Restricted.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l4",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 257,
+          "end": 336,
+          "text": "**Конфиденциальные** или **С ограниченным доступом** (Restricted). Персональные"
+        },
+        {
+          "id": "s2l5",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 337,
+          "end": 404,
+          "text": "данные клиентов и платёжная информация всегда относятся к категории"
+        },
+        {
+          "id": "s2l6",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 405,
+          "end": 486,
+          "text": "**Restricted**. Данные Restricted должны шифроваться при хранении (AES-256) и при"
+        }
+      ]
+    },
+    {
+      "claim_id": "c9",
+      "label": "insufficient",
+      "unit_ids": [
+        "s0l16",
+        "s0l17"
+      ],
+      "rationale": "Ежегодная переоценка требуется для поставщиков с данными Restricted, но факт работы данного поставщика с такими данными не указан.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s0l16",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 1013,
+          "end": 1087,
+          "text": "начала работы. Для поставщиков, работающих с данными Restricted, требуется"
+        },
+        {
+          "id": "s0l17",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 1088,
+          "end": 1109,
+          "text": "ежегодная переоценка."
+        }
+      ]
+    },
+    {
+      "claim_id": "c10",
+      "label": "insufficient",
+      "unit_ids": [
+        "s2l6",
+        "s2l7"
+      ],
+      "rationale": "Шифрование обязательно для данных Restricted, но ссылка на классификацию клиентских данных как Restricted в этом утверждении отсутствует явно.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": [
+        {
+          "id": "s2l6",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 405,
+          "end": 486,
+          "text": "**Restricted**. Данные Restricted должны шифроваться при хранении (AES-256) и при"
+        },
+        {
+          "id": "s2l7",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 487,
+          "end": 507,
+          "text": "передаче (TLS 1.2+)."
+        }
+      ]
+    },
+    {
+      "claim_id": "c11",
+      "label": "supported",
+      "unit_ids": [
+        "s1l11"
+      ],
+      "rationale": "Дробить одну закупку на несколько, чтобы не проходить порог, запрещено.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l11",
+          "chunk_id": "da2072ac007383af",
+          "start": 604,
+          "end": 675,
+          "text": "Дробить одну закупку на несколько, чтобы не проходить порог, запрещено."
+        }
+      ]
+    }
+  ],
+  "v2_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "Question text explicitly states the deal terms, supplier status, and data processing.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source s1l3 states any procurement starts with an application in 'Zakupki 360'.",
+      "unit_ids": [
+        "s1l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l3",
+          "chunk_id": "da2072ac007383af",
+          "start": 129,
+          "end": 206,
+          "text": "Любая закупка начинается с заявки в системе «Закупки 360». Номер заявки имеет"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Source s1l9-10 mandates at least 3 offers for deals over 1M rubles.",
+      "unit_ids": [
+        "s1l9",
+        "s1l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l9",
+          "chunk_id": "da2072ac007383af",
+          "start": 467,
+          "end": 534,
+          "text": "- свыше 1 000 000 ₽ — проводится тендер: нужно собрать **не менее 3"
+        },
+        {
+          "id": "s1l10",
+          "chunk_id": "da2072ac007383af",
+          "start": 535,
+          "end": 602,
+          "text": "  коммерческих предложений**, решение принимает закупочный комитет."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source s1l10 states the procurement committee makes the decision for tenders.",
+      "unit_ids": [
+        "s1l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l10",
+          "chunk_id": "da2072ac007383af",
+          "start": 535,
+          "end": 602,
+          "text": "  коммерческих предложений**, решение принимает закупочный комитет."
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Source s1l9-10 links the tender requirement (3 offers, committee) to the >1M threshold.",
+      "unit_ids": [
+        "s1l9",
+        "s1l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l9",
+          "chunk_id": "da2072ac007383af",
+          "start": 467,
+          "end": 534,
+          "text": "- свыше 1 000 000 ₽ — проводится тендер: нужно собрать **не менее 3"
+        },
+        {
+          "id": "s1l10",
+          "chunk_id": "da2072ac007383af",
+          "start": 535,
+          "end": 602,
+          "text": "  коммерческих предложений**, решение принимает закупочный комитет."
+        }
+      ]
+    },
+    {
+      "claim_id": "c5",
+      "label": "supported",
+      "rationale": "Source s1l13 requires new suppliers to pass counterparty check in the procurement department.",
+      "unit_ids": [
+        "s1l13"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l13",
+          "chunk_id": "da2072ac007383af",
+          "start": 698,
+          "end": 775,
+          "text": "Каждый новый поставщик проходит проверку контрагента в отделе закупок (обычно"
+        }
+      ]
+    },
+    {
+      "claim_id": "c6",
+      "label": "supported",
+      "rationale": "Sources s1l15-16 and s0l15-16 require security checks for suppliers handling company/client data.",
+      "unit_ids": [
+        "s1l15",
+        "s1l16",
+        "s0l15",
+        "s0l16"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l15",
+          "chunk_id": "da2072ac007383af",
+          "start": 848,
+          "end": 916,
+          "text": "клиентов, дополнительно применяются требования раздела «Безопасность"
+        },
+        {
+          "id": "s1l16",
+          "chunk_id": "da2072ac007383af",
+          "start": 917,
+          "end": 967,
+          "text": "поставщиков» политики информационной безопасности."
+        },
+        {
+          "id": "s0l15",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 932,
+          "end": 1012,
+          "text": "пройти проверку безопасности и подписать Соглашение об обработке данных (DPA) до"
+        },
+        {
+          "id": "s0l16",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 1013,
+          "end": 1087,
+          "text": "начала работы. Для поставщиков, работающих с данными Restricted, требуется"
+        }
+      ]
+    },
+    {
+      "claim_id": "c7",
+      "label": "supported",
+      "rationale": "Source s0l15-16 requires signing a DPA before starting work for data processors.",
+      "unit_ids": [
+        "s0l15",
+        "s0l16"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l15",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 932,
+          "end": 1012,
+          "text": "пройти проверку безопасности и подписать Соглашение об обработке данных (DPA) до"
+        },
+        {
+          "id": "s0l16",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 1013,
+          "end": 1087,
+          "text": "начала работы. Для поставщиков, работающих с данными Restricted, требуется"
+        }
+      ]
+    },
+    {
+      "claim_id": "c8",
+      "label": "supported",
+      "rationale": "Source s2l5-6 explicitly states customer personal data is always classified as Restricted.",
+      "unit_ids": [
+        "s2l5",
+        "s2l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l5",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 337,
+          "end": 404,
+          "text": "данные клиентов и платёжная информация всегда относятся к категории"
+        },
+        {
+          "id": "s2l6",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 405,
+          "end": 486,
+          "text": "**Restricted**. Данные Restricted должны шифроваться при хранении (AES-256) и при"
+        }
+      ]
+    },
+    {
+      "claim_id": "c9",
+      "label": "supported",
+      "rationale": "Source s0l17 requires annual re-evaluation for suppliers working with Restricted data.",
+      "unit_ids": [
+        "s0l17"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l17",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 1088,
+          "end": 1109,
+          "text": "ежегодная переоценка."
+        }
+      ]
+    },
+    {
+      "claim_id": "c10",
+      "label": "supported",
+      "rationale": "Source s2l7 mandates encryption for Restricted data at rest and in transit.",
+      "unit_ids": [
+        "s2l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s2l7",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 487,
+          "end": 507,
+          "text": "передаче (TLS 1.2+)."
+        }
+      ]
+    },
+    {
+      "claim_id": "c11",
+      "label": "supported",
+      "rationale": "Source s1l11 explicitly forbids splitting procurement to avoid thresholds.",
+      "unit_ids": [
+        "s1l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l11",
+          "chunk_id": "da2072ac007383af",
+          "start": 604,
+          "end": 675,
+          "text": "Дробить одну закупку на несколько, чтобы не проходить порог, запрещено."
+        }
+      ]
+    }
+  ],
+  "note": "Fixed old claims: isolates verifier changes from claim extraction changes."
+}

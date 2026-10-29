@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "id": "procurement_0",
+  "split": "heldout",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l1",
+      "s0l2"
+    ],
+    "rationale": "Текст источников точно совпадает с формулировкой утверждения про 30 дней и документы.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "procurement.md",
+        "start": 11,
+        "end": 83,
+        "text": "Стандартная отсрочка платежа поставщику — **30 календарных дней** с даты"
+      },
+      {
+        "id": "s0l2",
+        "chunk_id": "procurement.md",
+        "start": 84,
+        "end": 160,
+        "text": "получения закрывающих документов. Предоплата больше 50% допускается только с"
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

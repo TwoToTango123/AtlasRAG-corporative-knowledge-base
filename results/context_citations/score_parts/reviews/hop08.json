@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "hop08",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.5,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ верен. Первая цитата искажена: в источнике нет переноса строки после «K-02» и фразы «Размер компенсации...».",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "7be0988b6aefdecd200212e2d743d07d1e2d9fba0412fecffe0b5bac8347e931",
+  "provenance": "identical judge payload; reused frozen rating"
+}

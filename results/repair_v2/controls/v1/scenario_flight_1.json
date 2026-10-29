@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "scenario_flight_1",
+  "split": "scenario_regression",
+  "gold": "insufficient",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "rationale": "Источники ограничивают оплату экономклассом, исключая бесплатный апгрейд.",
+    "unit_ids": [
+      "s0l1"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "travel_expenses.md:Перелёты и такси",
+        "start": 21,
+        "end": 97,
+        "text": "Перелёты оплачиваются в экономклассе. Бизнес-класс допускается, если перелёт"
+      }
+    ]
+  }
+}

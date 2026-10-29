@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "id": "q11",
+  "answerable": true,
+  "claims": [
+    "Заявку на отпуск нужно подавать в Workday.",
+    "Заявку на отпуск нужно подавать не менее чем за 2 недели до планового отпуска."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Подтверждено строкой s0l6",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "a7220d6fd11280e1",
+          "start": 336,
+          "end": 413,
+          "text": "Подавайте запрос в Workday не менее чем за **2 недели** до планового отпуска."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Подтверждено строкой s0l6",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "a7220d6fd11280e1",
+          "start": 336,
+          "end": 413,
+          "text": "Подавайте запрос в Workday не менее чем за **2 недели** до планового отпуска."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "8d25a46a3b572e1bde508a064cdf7870185efde541a7b970f179450d8ae38b63",
+  "source_entry_sha256": "9a37247ec5d22d6b4754fde7e3b226d89a610a4d34e67d5548804ecebf42e065",
+  "verifier": "v2-scenario-aware"
+}

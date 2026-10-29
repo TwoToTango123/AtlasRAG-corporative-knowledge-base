@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "scenario_escalate_1",
+  "split": "scenario_regression",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источник не указывает гарантию ответа за пять минут.",
+    "unit_ids": [
+      "s0l22"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": [
+      {
+        "id": "s0l22",
+        "chunk_id": "support_sla.md",
+        "start": 1333,
+        "end": 1387,
+        "text": "эскалацию в любой момент, ответив «ESCALATE» в тикете."
+      }
+    ]
+  }
+}

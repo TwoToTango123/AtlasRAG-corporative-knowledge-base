@@ -1,0 +1,255 @@
+{
+  "status": "ok",
+  "id": "hop08",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Альтаир?",
+    "answer": "Для проекта «Альтаир» на 02.11.2026 действует лимит компенсации 223 рубля за один отчёт: проекту назначен пакет K-02, а для этого пакета действует норматив 223 рубля с 01.01.2026.",
+    "citations": [
+      {
+        "chunk_id": "8daa48076b0a72b4",
+        "source": "project_07.md",
+        "quote": "для расходов проекта назначен пакет K-02"
+      },
+      {
+        "chunk_id": "a224b5f70bcb323d",
+        "source": "policy_K02_current.md",
+        "quote": "Пакету K-02 соответствует лимит компенсации 223 рублей за один отчёт."
+      }
+    ],
+    "confidence": 0.99,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Альтаир?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "проект Альтаир лимит компенсации за один отчёт",
+          "rationale": "Ищу лимит компенсации за отчёт по проекту Альтаир",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "7b71e2e17ca73e5a",
+                "doc_id": "761cfebb949f652b",
+                "source": "policy_K09_archive.md",
+                "text": "# Норматив пакета K-09\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-09 соответствует лимит компенсации 1301 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.000806451612902,
+              "relevance": 10.0,
+              "reason": "Fragment gives the limit for package K‑09, which is presumably the package used by project Альтаир. This directly answers the query about the compensation limit for one report. Score 10.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8daa48076b0a72b4",
+                "doc_id": "247127f85d1c12a7",
+                "source": "project_07.md",
+                "text": "# Проект Альтаир\nКарточка проекта Альтаир: для расходов проекта назначен пакет K-02.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.001639344262295,
+              "relevance": 2.0,
+              "reason": "Fragment contains only project card and mention of package K‑02; no limit specified. Only tangential relevance. Score 2.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "196bf7d5229d4960",
+                "doc_id": "bc0ea025e11ed367",
+                "source": "project_00.md",
+                "text": "# Проект Лира\nКарточка проекта Лира: для расходов проекта назначен пакет K-17.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.0008064516129034,
+              "relevance": 2.0,
+              "reason": "Fragment references another project and package; no limit info. Score 2.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "d90179ad39d006ad",
+                "doc_id": "dc7404cd341bada0",
+                "source": "policy_K01_archive.md",
+                "text": "# Норматив пакета K-01\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-01 соответствует лимит компенсации 957 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.000793650793651,
+              "relevance": 2.0,
+              "reason": "Mentions a limit for package K‑01, unrelated to Альтаир. Score 2.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "cce38b9e35a455c6",
+                "doc_id": "ac71abbb931aa0e7",
+                "source": "project_01.md",
+                "text": "# Проект Кедр\nКарточка проекта Кедр: для расходов проекта назначен пакет K-04.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.000793650793651,
+              "relevance": 2.0,
+              "reason": "Only project card; no limit. Score 2.",
+              "sources": {
+                "sparse": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "query": "Альтаир действующий лимит компенсации 02.11.2026",
+          "rationale": "Проверяю актуальную редакцию лимита на указанную дату",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "a224b5f70bcb323d",
+                "doc_id": "488e06efa1db67f8",
+                "source": "policy_K02_current.md",
+                "text": "# Норматив пакета K-02\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-02 соответствует лимит компенсации 223 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.000806451612902,
+              "relevance": 10.0,
+              "reason": "Exact current norm for K‑02, effective from 01.01.2026, specifies a compensation limit of 223. This is precisely the information requested for the date 02.11.2026.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8daa48076b0a72b4",
+                "doc_id": "247127f85d1c12a7",
+                "source": "project_07.md",
+                "text": "# Проект Альтаир\nКарточка проекта Альтаир: для расходов проекта назначен пакет K-02.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 4.0016261237440505,
+              "relevance": 4.0,
+              "reason": "Fragment contains the Altair project and mentions that compensation limit is defined by the current norm of the assigned package, but it does not provide the specific numeric value or date of validity. Thus it is only indirectly relevant.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8f5c6a36f3e0974c",
+                "doc_id": "0446bca69cc5d4cc",
+                "source": "policy_K11_current.md",
+                "text": "# Норматив пакета K-11\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-11 соответствует лимит компенсации 610 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 4.00078125,
+              "relevance": 4.0,
+              "reason": "Current norm for K‑11; not about Altair, so only tangentially relevant.",
+              "sources": {
+                "sparse": 4.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "88ce351f69b61999",
+                "doc_id": "bf712b97465805a8",
+                "source": "policy_K06_archive.md",
+                "text": "# Норматив пакета K-06\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-06 соответствует лимит компенсации 1172 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.0008196721311475,
+              "relevance": 2.0,
+              "reason": "Archive version of K‑06, expired on 01.01.2026; not current as of 02.11.2026. Only marginally related.",
+              "sources": {
+                "dense": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "16a58c50625da0a0",
+                "doc_id": "15d1a14a55aa1b76",
+                "source": "policy_K26_archive.md",
+                "text": "# Норматив пакета K-26\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-26 соответствует лимит компенсации 2032 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.000793650793651,
+              "relevance": 2.0,
+              "reason": "Archive version of K‑26, expired on 01.01.2026; not current. Slightly relevant.",
+              "sources": {
+                "dense": 3.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": true,
+      "notes": "Нашёл: проект Альтаир назначен пакет K-02, действующий с 01.01.2026 норматив пакета K-02 — 223 рубля за отчёт; данные полностью покрывают вопрос на 02.11.2026."
+    },
+    "warnings": []
+  },
+  "latency_s": 42.42823830002453,
+  "graded": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Альтаир?",
+    "answer": "Для проекта «Альтаир» на 02.11.2026 действует лимит компенсации 223 рубля за один отчёт: проекту назначен пакет K-02, а для этого пакета действует норматив 223 рубля с 01.01.2026.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6934264036172708
+    }
+  },
+  "first_search_metrics": {
+    "recall": 0.5,
+    "mrr": 0.5,
+    "ndcg": 0.38685280723454163
+  },
+  "first_search_has_both_hops": false,
+  "final_has_both_hops": true,
+  "amount_present": true,
+  "obsolete_amount_present": false,
+  "trajectory_audit": {
+    "rounds": [
+      {
+        "query": "проект Альтаир лимит компенсации за один отчёт",
+        "new_chunks": 5,
+        "new_gold_chunks": 1,
+        "gold_chunks": 1
+      },
+      {
+        "query": "Альтаир действующий лимит компенсации 02.11.2026",
+        "new_chunks": 4,
+        "new_gold_chunks": 1,
+        "gold_chunks": 2
+      }
+    ],
+    "gold_total": 2,
+    "gold_covered": 2,
+    "zero_new_gold_rounds_after_first": 0,
+    "zero_new_chunk_rounds_after_first": 0
+  },
+  "verbatim_matches": [
+    true,
+    true
+  ]
+}

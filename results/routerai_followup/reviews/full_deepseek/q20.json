@@ -1,0 +1,28 @@
+{
+  "id": "q20",
+  "answerable": true,
+  "payload_sha256": "b76d6e6eaf24d04e27ff9ba1650b43b9775e3a9165b62144089427e52b6d7e32",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и подтверждается цитатами. Все факты верны, источники указаны корректно.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Как часто будет обновляться прошивка на манипуляторе NW-100?",
+    "answer": "Прошивка манипулятора NW-100 обновляется раз в квартал: он использует канал `stable`, который получает обновления ежеквартально после полного регрессионного тестирования.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "Верен ответ, совпадает с эталоном",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

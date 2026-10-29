@@ -1,0 +1,28 @@
+{
+  "id": "q06",
+  "answerable": true,
+  "payload_sha256": "88dcda3d567c0f2451ad044bb172421b5aba88cfcaf830b1dbd19b6b5ff5bb26",
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 0.5,
+    "is_refusal": false,
+    "rationale": "Цитата из product_specs.md дословно отсутствует в указанном чанке (там раздел «Коды ошибок»), хотя утверждение верно и подтверждается текстом чанка.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Можно ли использовать захват от NW-100 на NW-200?",
+    "answer": "Да, захваты, предназначенные для NW‑100, можно ставить на NW‑200.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 0.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "wrong",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

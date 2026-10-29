@@ -106,8 +106,9 @@ class RetrievalAgent:
         for sc in hits:
             rel = sc.relevance if sc.relevance is not None else sc.score
             snippet = sc.chunk.text.replace("\n", " ").strip()
-            if len(snippet) > 500:
-                snippet = snippet[:500] + " …"
+            limit = self.settings.agent_preview_chars
+            if limit is not None and len(snippet) > limit:
+                snippet = snippet[:limit] + " …"
             lines.append(
                 f"[relevance {rel:.1f}] (source: {sc.chunk.source})\n{snippet}"
             )

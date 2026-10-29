@@ -24,6 +24,7 @@ from typing import Any
 from .agent import RetrievalAgent
 from .bm25 import BM25Index
 from .config import Settings
+from .context import select_context
 from .embeddings import build_embedder
 from .evaluation import EvalReport, Evaluator
 from .generator import Generator
@@ -130,7 +131,8 @@ class AtlasRAG:
             print(f"\n[AtlasRAG] Вопрос: {question}")
 
         trace = self.agent.gather(question)
-        evidence = trace.evidence[: max(self.settings.rerank_top_k, 5)]
+        evidence = select_context(trace, max(self.settings.rerank_top_k, 5), self.settings.context_selection)
+        trace.selected_context_ids = [hit.chunk_id for hit in evidence]
 
         result = self.generator.generate(question, evidence)
         result.trace = trace

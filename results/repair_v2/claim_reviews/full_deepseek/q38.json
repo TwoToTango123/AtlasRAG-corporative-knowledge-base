@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "id": "q38",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации отсутствует ответ на вопрос о возможности приходить в офис с собакой.",
+    "Ни один из доступных документов не регулирует присутствие домашних животных в офисе.",
+    "Ни один из доступных документов не регулирует присутствие собак в офисе."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "Источники не содержат правил о собаках в офисе, ответ отсутствует.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "insufficient",
+      "rationale": "Документы не упоминают домашних животных, информация отсутствует в предоставленных данных.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    },
+    {
+      "claim_id": "c2",
+      "label": "insufficient",
+      "rationale": "Документы не регулируют присутствие собак, информация отсутствует в предоставленных данных.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    }
+  ],
+  "answer_sha256": "d5c4064a948c9c232d0cc1fa3b174f9cdcd191bac14782e63332679e6a62f1ac",
+  "source_entry_sha256": "8b5efcf42978bc248df6d892cad0d830320adfeb0a685e9e78ee95f653190a58",
+  "verifier": "v2-scenario-aware"
+}

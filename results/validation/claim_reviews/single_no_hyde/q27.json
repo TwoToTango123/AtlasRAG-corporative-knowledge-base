@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "id": "q27",
+  "answerable": true,
+  "claims": [
+    "Флешка (USB-накопитель) будет заблокирована по умолчанию",
+    "Для использования съёмного носителя необходимо получить одобрение службы безопасности"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник прямо указывает, что съёмные носители (USB) заблокированы по умолчанию.",
+      "unit_ids": [
+        "s0l11"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 719,
+          "end": 799,
+          "text": "Съёмные носители (USB-накопители) заблокированы по умолчанию и требуют одобрения"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник подтверждает, что использование требует одобрения службы безопасности.",
+      "unit_ids": [
+        "s0l11",
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l11",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 719,
+          "end": 799,
+          "text": "Съёмные носители (USB-накопители) заблокированы по умолчанию и требуют одобрения"
+        },
+        {
+          "id": "s0l12",
+          "chunk_id": "64965a37dd92dc05",
+          "start": 800,
+          "end": 820,
+          "text": "службы безопасности."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "02086d7eb9a726020afb05945f83a8993a690b199b35e542af5ed567f1fca5ab",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

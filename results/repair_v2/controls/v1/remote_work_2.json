@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "id": "remote_work_2",
+  "split": "calibration",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l2"
+    ],
+    "rationale": "Источники явно требуют одобрения юридического отдела.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l2",
+        "chunk_id": "remote_work.md",
+        "start": 103,
+        "end": 175,
+        "text": "одобрения юридического отдела и службы безопасности. Работа из стран под"
+      }
+    ]
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

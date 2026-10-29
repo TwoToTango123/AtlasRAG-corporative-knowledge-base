@@ -1,0 +1,169 @@
+{
+  "status": "ok",
+  "id": "hop02",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Кедр?",
+    "answer": "Действующий на 02.11.2026 лимит компенсации за один отчёт для проекта «Кедр» по имеющимся сведениям определить нельзя: проекту назначен пакет K-04, но норматив именно для K-04 не приведён. Указаны лимиты только для пакетов K-09 и K-19, причём они относятся только к своим пакетам.",
+    "citations": [
+      {
+        "chunk_id": "cce38b9e35a455c6",
+        "source": "project_01.md",
+        "quote": "Карточка проекта Кедр: для расходов проекта назначен пакет K-04."
+      },
+      {
+        "chunk_id": "ad71ea3972d3fd8a",
+        "source": "policy_K09_current.md",
+        "quote": "Лимит относится только к указанному пакету. Сведения о других пакетах отсутствуют."
+      },
+      {
+        "chunk_id": "55d6092fc85e79d6",
+        "source": "policy_K19_current.md",
+        "quote": "Лимит относится только к указанному пакету. Сведения о других пакетах отсутствуют."
+      }
+    ],
+    "confidence": 0.2,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Кедр?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Кедр?",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "cce38b9e35a455c6",
+                "doc_id": "ac71abbb931aa0e7",
+                "source": "project_01.md",
+                "text": "# Проект Кедр\nКарточка проекта Кедр: для расходов проекта назначен пакет K-04.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.001626123744051,
+              "relevance": 2.0,
+              "reason": "Fragment refers to project Kedr but only mentions that compensation is based on the current norm of the assigned package; it does not provide the actual limit or the date of applicability, so it is not directly helpful for answering the specific question about the compensation limit on 02.11.2026.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ad71ea3972d3fd8a",
+                "doc_id": "cfbc9e182d3d11dd",
+                "source": "policy_K09_current.md",
+                "text": "# Норматив пакета K-09\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-09 соответствует лимит компенсации 524 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008196721311475411,
+              "relevance": 0.0,
+              "reason": "Fragment contains the compensation limit for package K-09, which is unrelated to package K-04 used by project Kedr. Therefore it does not address the user query.",
+              "sources": {
+                "dense": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e81495bd16ea0a46",
+                "doc_id": "4b47f226479713b1",
+                "source": "project_03.md",
+                "text": "# Проект Ирис\nКарточка проекта Ирис: для расходов проекта назначен пакет K-11.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment is about project Iris and does not mention package K-04 or Kedr, so it is not relevant.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "55d6092fc85e79d6",
+                "doc_id": "00e266867d85bc49",
+                "source": "policy_K19_current.md",
+                "text": "# Норматив пакета K-19\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-19 соответствует лимит компенсации 954 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Fragment gives limit for package K-19, unrelated to Kedr's K-04, so it is not relevant.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8daa48076b0a72b4",
+                "doc_id": "247127f85d1c12a7",
+                "source": "project_07.md",
+                "text": "# Проект Альтаир\nКарточка проекта Альтаир: для расходов проекта назначен пакет K-02.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Fragment concerns project Altair with package K-02, irrelevant to Kedr, so not relevant.",
+              "sources": {
+                "sparse": 3.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": [
+      "model_reports_answer_not_found"
+    ]
+  },
+  "latency_s": 20.257862200029194,
+  "graded": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Кедр?",
+    "answer": "Действующий на 02.11.2026 лимит компенсации за один отчёт для проекта «Кедр» по имеющимся сведениям определить нельзя: проекту назначен пакет K-04, но норматив именно для K-04 не приведён. Указаны лимиты только для пакетов K-09 и K-19, причём они относятся только к своим пакетам.",
+    "answerable": true,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.6131471927654584
+    }
+  },
+  "first_search_metrics": {
+    "recall": 0.5,
+    "mrr": 1.0,
+    "ndcg": 0.6131471927654584
+  },
+  "first_search_has_both_hops": false,
+  "final_has_both_hops": false,
+  "amount_present": false,
+  "obsolete_amount_present": false,
+  "trajectory_audit": {
+    "rounds": [
+      {
+        "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Кедр?",
+        "new_chunks": 5,
+        "new_gold_chunks": 1,
+        "gold_chunks": 1
+      }
+    ],
+    "gold_total": 2,
+    "gold_covered": 1,
+    "zero_new_gold_rounds_after_first": 0,
+    "zero_new_chunk_rounds_after_first": 0
+  },
+  "verbatim_matches": [
+    true,
+    true,
+    true
+  ]
+}

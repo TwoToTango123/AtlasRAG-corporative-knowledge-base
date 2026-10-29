@@ -1,0 +1,271 @@
+{
+  "status": "ok",
+  "id": "q39",
+  "suite": "ordinary",
+  "arm": "score_units",
+  "result": {
+    "question": "Какое SLA по времени первого ответа на Sev 1 для клиентов тарифа Team?",
+    "answer": "Для тарифа Team SLA по времени первого ответа на Sev 1 в доступных материалах не установлен. Указанный SLA «1 час, 24/7» относится к тарифу Enterprise; для Team описаны только каналы и рабочие часы.",
+    "citations": [
+      {
+        "chunk_id": "4df4ff41c9dead17",
+        "source": "support_sla.md",
+        "quote": "| Team       | Email, чат              | Рабочие часы       |",
+        "start_char": 316,
+        "end_char": 377
+      },
+      {
+        "chunk_id": "4df4ff41c9dead17",
+        "source": "support_sla.md",
+        "quote": "## SLA по времени ответа (Enterprise)",
+        "start_char": 579,
+        "end_char": 616
+      },
+      {
+        "chunk_id": "4df4ff41c9dead17",
+        "source": "support_sla.md",
+        "quote": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.",
+        "start_char": 724,
+        "end_char": 801
+      }
+    ],
+    "confidence": 0.2,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какое SLA по времени первого ответа на Sev 1 для клиентов тарифа Team?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "SLA время первого ответа Sev 1 тариф Team",
+          "rationale": "Ищу SLA по первому ответу для Sev 1 на тарифе Team",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "4df4ff41c9dead17",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "# Northwind Robotics — Поддержка и SLA\n\n_Последнее обновление: 30.01.2026. Владелец: Клиентская поддержка._\n\n## Уровни поддержки\n\n| Тариф      | Каналы                  | Часы работы        |\n|------------|-------------------------|--------------------|\n| Starter    | Email, документация     | Рабочие часы       |\n| Team       | Email, чат              | Рабочие часы       |\n| Enterprise | Email, чат, телефон, TAM | 24/7              |\n\n«Рабочие часы» — это 9:00–18:00 в основном часовом поясе клиента, с понедельника\nпо пятницу, исключая местные государственные праздники.\n\n## SLA по времени ответа (Enterprise)\n\nУровень серьёзности (severity) устанавливает поддержка Northwind на основе\nзаявленного клиентом влияния:\n\n- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.\n- **Sev 2 (серьёзная деградация):** первый ответ в течение **4 рабочих часов**.\n- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**.\n\nНад инцидентами Sev 1 работают непрерывно, пока не будет найдено обходное решение\nили устранена проблема. Каждому аккаунту Enterprise назначается выделенный\nтехнический менеджер аккаунта (TAM).",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 3.001639344262295,
+              "relevance": 3.0,
+              "reason": "Fragment 0 contains SLA information for Sev 1 (1 hour, 24/7), but it applies only to the Enterprise tariff. The query specifically asks for the Team tariff, which is not addressed in this fragment. The content is partially relevant (SLA for Sev 1) but lacks the requested tariff detail, so it merits a low but non‑zero score.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ee6006d80bd80674",
+                "doc_id": "c2d555db89b245a6",
+                "source": "product_specs.md",
+                "text": "# Northwind Robotics — Спецификации продуктов\n\n_Последнее обновление: 05.03.2026. Владелец: Продукт._\n\n## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`\n\n## Манипулятор NW-200 (промышленный уровень)\n\n- Грузоподъёмность: **18 кг**\n- Радиус действия: 1300 мм\n- Повторяемость: ±0,02 мм\n- Степеней свободы: 6\n- Питание: 200–240 В переменного тока, 900 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP, PROFINET\n- Безопасность: соответствие ISO 10218-1, двухканальный аварийный останов\n- Гарантия: **3 года**\n- Канал прошивки: `stable` или `edge`\n\n## Программное обеспечение AtlasControl\n\nAtlasControl — это панель управления для обоих манипуляторов. Тариф Team\nподдерживает до **10 подключённых манипуляторов**; тариф Enterprise — без\nограничений. Лимит API составляет **600 запросов в минуту** на рабочее\nпространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\product_specs.md"
+                }
+              },
+              "score": 2.0015275186567165,
+              "relevance": 2.0,
+              "reason": "Fragment 3 provides product specifications and a mention of the Team tariff limit, but no SLA details.",
+              "sources": {
+                "dense": 7.0,
+                "sparse": 4.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e706a9391ce46228",
+                "doc_id": "09b0e83bb3e99bf9",
+                "source": "it_helpdesk_faq.md",
+                "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке\n\n_Последнее обновление: 10.02.2026. Владелец: ИТ-сервис-деск._\n\n## Как обратиться в ИТ-поддержку\n\nЗаявки принимаются на портале **servicedesk.northwind** круглосуточно. Срочные\nвопросы, из-за которых нельзя работать, можно решить по внутреннему номеру\n**5555** с 8:00 до 22:00. Каждой заявке присваивается приоритет:\n\n- **P1** — не работает критичный сервис у многих сотрудников: реакция в течение 30 минут.\n- **P2** — не может работать один сотрудник: реакция в течение 4 часов.\n- **P3** — неудобство или вопрос: реакция в течение 2 рабочих дней.\n\n## Пароли\n\nПароль от корпоративной учётной записи должен содержать не менее **14 символов**.\nОбычный пароль сотрудника нужно менять каждые **180 дней**; система напомнит об\nэтом за неделю. Забытый пароль сбрасывается самостоятельно на портале\nid.northwind после подтверждения через MFA. Если MFA-устройство потеряно,\nобратитесь в сервис-деск с паспортом — восстановление занимает до 1 рабочего дня.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\it_helpdesk_faq.md"
+                }
+              },
+              "score": 2.000793650793651,
+              "relevance": 2.0,
+              "reason": "Fragment 8 outlines IT helpdesk priority levels and response windows, but it uses P1/P2/P3 terminology, not the Sev/Team SLA requested.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "3c00ce114bb3ac1d",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "## Эскалация\n\nЕсли Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически\nэскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить\nэскалацию в любой момент, ответив «ESCALATE» в тикете.\n\n## Сервисные компенсации (кредиты)\n\nЕсли Northwind нарушает SLA по времени ответа на Sev 1, клиент имеет право на\nсервисную компенсацию в размере **5% от месячной платы** за каждый\nпропущенный инцидент, но не более 25% от месячной платы в любом расчётном\nмесяце. Компенсацию нужно запросить в течение 30 дней.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 1.0016129032258065,
+              "relevance": 1.0,
+              "reason": "Fragment 1 discusses escalation and compensation for SLA violations, not the actual SLA response times. It does not answer the query and is therefore mostly irrelevant.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "65ea8590a180b54f",
+                "doc_id": "156b939bbf31b5d4",
+                "source": "release_process.md",
+                "text": "# Northwind Robotics — Регламент выпуска обновлений\n\n_Последнее обновление: 14.02.2026. Владелец: Инженерия платформы._\n\n## Каналы прошивки\n\n- Канал `stable` получает обновления **раз в квартал**, после полного цикла\n  регрессионного тестирования на стенде.\n- Канал `edge` получает обновления **каждую неделю** и предназначен для\n  клиентов, которые хотят получать новые функции раньше.\n\nКлиент может в любой момент перевести совместимый манипулятор с `edge` обратно\nна `stable`.\n\n## Релизы AtlasControl\n\nПлановые релизы AtlasControl выходят по **вторникам**. Каждый релиз должен\nпройти code review двух инженеров и автоматические тесты. В последние **2\nнедели декабря** действует заморозка изменений: выпускаются только исправления\nкритичных ошибок.\n\n## Срочные исправления (hotfix)\n\nHotfix выпускается вне графика, если ошибка вызывает инцидент Sev 1 у\nклиента. Его одобряют дежурный инженер и руководитель разработки; после выпуска\nв течение 5 рабочих дней пишется разбор инцидента (postmortem).\n\n## Откат\n\nЕсли после релиза растёт число ошибок, дежурный инженер откатывает релиз на\nпредыдущую версию без дополнительных согласований. Откат должен занимать не\nболее 15 минут.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\release_process.md"
+                }
+              },
+              "score": 0.001527518656716418,
+              "relevance": 0.0,
+              "reason": "Fragment 2 concerns release processes and hotfixes, unrelated to SLA response times.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 7.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "query": "SLA матрица приоритетов Sev 1 первый ответ Team план поддержки",
+          "rationale": "Ищу таблицу SLA по уровням поддержки и приоритетам",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "4df4ff41c9dead17",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "# Northwind Robotics — Поддержка и SLA\n\n_Последнее обновление: 30.01.2026. Владелец: Клиентская поддержка._\n\n## Уровни поддержки\n\n| Тариф      | Каналы                  | Часы работы        |\n|------------|-------------------------|--------------------|\n| Starter    | Email, документация     | Рабочие часы       |\n| Team       | Email, чат              | Рабочие часы       |\n| Enterprise | Email, чат, телефон, TAM | 24/7              |\n\n«Рабочие часы» — это 9:00–18:00 в основном часовом поясе клиента, с понедельника\nпо пятницу, исключая местные государственные праздники.\n\n## SLA по времени ответа (Enterprise)\n\nУровень серьёзности (severity) устанавливает поддержка Northwind на основе\nзаявленного клиентом влияния:\n\n- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.\n- **Sev 2 (серьёзная деградация):** первый ответ в течение **4 рабочих часов**.\n- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**.\n\nНад инцидентами Sev 1 работают непрерывно, пока не будет найдено обходное решение\nили устранена проблема. Каждому аккаунту Enterprise назначается выделенный\nтехнический менеджер аккаунта (TAM).",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 10.001639344262296,
+              "relevance": 10.0,
+              "reason": "Contains explicit SLA details for Team tier, including first‑response time for Sev 1 incidents (1 hour, 24/7). Fully answers the query. Likely a 9–10 score.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "3c00ce114bb3ac1d",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "## Эскалация\n\nЕсли Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически\nэскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить\nэскалацию в любой момент, ответив «ESCALATE» в тикете.\n\n## Сервисные компенсации (кредиты)\n\nЕсли Northwind нарушает SLA по времени ответа на Sev 1, клиент имеет право на\nсервисную компенсацию в размере **5% от месячной платы** за каждый\nпропущенный инцидент, но не более 25% от месячной платы в любом расчётном\nмесяце. Компенсацию нужно запросить в течение 30 дней.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 4.001612903225807,
+              "relevance": 4.0,
+              "reason": "Mentions escalation for Sev 1 but does not provide the SLA matrix or Team plan details. Provides some related info, so moderate relevance. Likely a 4–5 score.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e706a9391ce46228",
+                "doc_id": "09b0e83bb3e99bf9",
+                "source": "it_helpdesk_faq.md",
+                "text": "# Northwind Robotics — Частые вопросы к ИТ-поддержке\n\n_Последнее обновление: 10.02.2026. Владелец: ИТ-сервис-деск._\n\n## Как обратиться в ИТ-поддержку\n\nЗаявки принимаются на портале **servicedesk.northwind** круглосуточно. Срочные\nвопросы, из-за которых нельзя работать, можно решить по внутреннему номеру\n**5555** с 8:00 до 22:00. Каждой заявке присваивается приоритет:\n\n- **P1** — не работает критичный сервис у многих сотрудников: реакция в течение 30 минут.\n- **P2** — не может работать один сотрудник: реакция в течение 4 часов.\n- **P3** — неудобство или вопрос: реакция в течение 2 рабочих дней.\n\n## Пароли\n\nПароль от корпоративной учётной записи должен содержать не менее **14 символов**.\nОбычный пароль сотрудника нужно менять каждые **180 дней**; система напомнит об\nэтом за неделю. Забытый пароль сбрасывается самостоятельно на портале\nid.northwind после подтверждения через MFA. Если MFA-устройство потеряно,\nобратитесь в сервис-деск с паспортом — восстановление занимает до 1 рабочего дня.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\it_helpdesk_faq.md"
+                }
+              },
+              "score": 3.000769230769231,
+              "relevance": 3.0,
+              "reason": "Describes response times for urgent IT tickets (P1, P2), but does not relate to the Team plan or specific Sev 1 SLA. Only tangentially relevant. Likely a 2–3 score.",
+              "sources": {
+                "dense": 5.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "65ea8590a180b54f",
+                "doc_id": "156b939bbf31b5d4",
+                "source": "release_process.md",
+                "text": "# Northwind Robotics — Регламент выпуска обновлений\n\n_Последнее обновление: 14.02.2026. Владелец: Инженерия платформы._\n\n## Каналы прошивки\n\n- Канал `stable` получает обновления **раз в квартал**, после полного цикла\n  регрессионного тестирования на стенде.\n- Канал `edge` получает обновления **каждую неделю** и предназначен для\n  клиентов, которые хотят получать новые функции раньше.\n\nКлиент может в любой момент перевести совместимый манипулятор с `edge` обратно\nна `stable`.\n\n## Релизы AtlasControl\n\nПлановые релизы AtlasControl выходят по **вторникам**. Каждый релиз должен\nпройти code review двух инженеров и автоматические тесты. В последние **2\nнедели декабря** действует заморозка изменений: выпускаются только исправления\nкритичных ошибок.\n\n## Срочные исправления (hotfix)\n\nHotfix выпускается вне графика, если ошибка вызывает инцидент Sev 1 у\nклиента. Его одобряют дежурный инженер и руководитель разработки; после выпуска\nв течение 5 рабочих дней пишется разбор инцидента (postmortem).\n\n## Откат\n\nЕсли после релиза растёт число ошибок, дежурный инженер откатывает релиз на\nпредыдущую версию без дополнительных согласований. Откат должен занимать не\nболее 15 минут.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\release_process.md"
+                }
+              },
+              "score": 1.0015628815628816,
+              "relevance": 1.0,
+              "reason": "Discusses hotfixes for Sev 1 incidents but contains no SLA matrix or Team plan info. Irrelevant to the query. Likely a 1 score.",
+              "sources": {
+                "dense": 3.0,
+                "sparse": 5.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "0e612e00d293c9f1",
+                "doc_id": "2de8eae6ceff3db9",
+                "source": "onboarding.md",
+                "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников\n\n_Последнее обновление: 18.12.2025. Владелец: Отдел персонала (People Operations)._\n\n## Испытательный срок\n\nИспытательный срок для большинства сотрудников — **3 месяца**. Для\nруководителей и главных инженеров — **6 месяцев**. В конце срока руководитель\nпроводит итоговую встречу и оформляет решение в Workday.\n\n## Первый день\n\nВ первый день новичок получает ноутбук, бейдж и учётную запись. Пароль и MFA\nнастраиваются вместе с инженером сервис-деска. Руководитель знакомит новичка с\nкомандой и назначает **бадди** — опытного коллегу, который помогает в первые\n**30 дней**.\n\n## Обязательное обучение\n\n- Курс «Основы информационной безопасности» — пройти в течение первых\n  **14 дней** работы.\n- Инструктаж по охране труда — обязателен до первого выхода на производственный\n  участок.\n- Курс «Работа с AtlasControl» — для инженеров, в течение первого месяца.\n\n## Доступы\n\nБазовые доступы (почта, мессенджер, Workday, вики) выдаются автоматически.\nДоступ к продакшен-системам новичкам выдаётся **не ранее окончания\nиспытательного срока** и оформляется по общей процедуре политики безопасности.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\onboarding.md"
+                }
+              },
+              "score": 0.0015388257575757577,
+              "relevance": 0.0,
+              "reason": "Onboarding policy, no SLA relevance. 0–2 score.",
+              "sources": {
+                "dense": 6.0,
+                "sparse": 4.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": true,
+      "notes": "Данные найдены: документ `support_sla.md` описывает SLA по времени ответа **только для Enterprise** (Sev 1 — 1 час, 24/7); для тарифа Team SLA по времени ответа не установлен — указаны лишь каналы (Email, чат) и рабочие часы. Вопрос покрыт: это ключевой нюанс (у Team отдельного SLA для Sev 1 нет).",
+      "selected_context_ids": [
+        "4df4ff41c9dead17",
+        "3c00ce114bb3ac1d",
+        "e706a9391ce46228",
+        "ee6006d80bd80674",
+        "65ea8590a180b54f"
+      ]
+    },
+    "warnings": [
+      "model_reports_answer_not_found"
+    ]
+  },
+  "source_sha256": "de4d52998f7c4e8219cb703b55f1ff56b4f76006c8a86521d5956369404fdc78",
+  "provenance": "generated with fixed source trace",
+  "fresh_searches": 0,
+  "latency_s": 29.77972629998112,
+  "answerable": false,
+  "verbatim_matches": [
+    true,
+    true,
+    true
+  ],
+  "raw_exact_matches": [
+    true,
+    true,
+    true
+  ],
+  "refused": true,
+  "dropped_citations": 0
+}

@@ -1,0 +1,120 @@
+{
+  "status": "ok",
+  "id": "q21",
+  "answerable": true,
+  "claims": [
+    "Ошибка ERR-VPN-431 означает, что превышено число одновременных подключений.",
+    "Одна учётная запись может быть подключена к VPN не более чем с 2 устройств.",
+    "Работать через Wi-Fi кафе без VPN нельзя.",
+    "Публичные сети допустимы для работы только при включённом VPN.",
+    "Доступ к внутренним системам предоставляется только через VPN."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source s0l5 explicitly defines error 431 as exceeding simultaneous connections.",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 251,
+          "end": 330,
+          "text": "- `ERR-VPN-431`: превышено число одновременных подключений. Одна учётная запись"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source s0l5 states one account allows max 2 connected devices.",
+      "unit_ids": [
+        "s0l5",
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 251,
+          "end": 330,
+          "text": "- `ERR-VPN-431`: превышено число одновременных подключений. Одна учётная запись"
+        },
+        {
+          "id": "s0l6",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 331,
+          "end": 403,
+          "text": "  может быть подключена не более чем с **2 устройств**; отключите VPN на"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Source s1l3 forbids working on public Wi-Fi without active VPN.",
+      "unit_ids": [
+        "s1l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l3",
+          "chunk_id": "f9e0c75fbb2025f6",
+          "start": 180,
+          "end": 225,
+          "text": "допускаются исключительно при включённом VPN."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source s1l3 mandates VPN for use of public Wi-Fi networks.",
+      "unit_ids": [
+        "s1l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l3",
+          "chunk_id": "f9e0c75fbb2025f6",
+          "start": 180,
+          "end": 225,
+          "text": "допускаются исключительно при включённом VPN."
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Source s1l2 restricts internal system access exclusively to VPN connections.",
+      "unit_ids": [
+        "s1l2"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l2",
+          "chunk_id": "f9e0c75fbb2025f6",
+          "start": 105,
+          "end": 179,
+          "text": "системам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "f1d67fb496311209df770fdac33495d8b785cb2c8b51073dd310b811fc149bcf",
+  "source_entry_sha256": "5b4b483173f181698cad9b9f04eeb4f3c59f6f89be1526e908e29848afd7a08a",
+  "verifier": "v2-scenario-aware"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop02",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ содержит верные данные. Однако обе цитаты искажены: в первой пропущено слово «проекта», во второй заменены слова «соответствует лимит» на «соответствует лимит компенсации». Текст цитат не совпадает с исходным дословно.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "6bf64a9161ee3a775473fbb93f7657a237e846da59a705e0e21d25957f1461ab"
+}

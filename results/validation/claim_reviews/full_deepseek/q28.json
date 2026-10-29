@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "q28",
+  "answerable": true,
+  "claims": [
+    "Суточные для поездки по работе внутри страны составляют 1 500 ₽ за каждый день в пути"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l7"
+      ],
+      "rationale": "Источник явно указывает размер суточных для командировок по России.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l7",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 385,
+          "end": 445,
+          "text": "- Командировки по России: **1 500 ₽** за каждый день в пути."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "f4d85c4d81cdd17a74c7e505e0003752a5845cca859d8cb4788a9554d513b4c3",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

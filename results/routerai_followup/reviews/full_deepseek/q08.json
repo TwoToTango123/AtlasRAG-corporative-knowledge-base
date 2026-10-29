@@ -1,0 +1,30 @@
+{
+  "id": "q08",
+  "answerable": true,
+  "payload_sha256": "9102d2eee33f64111d6abe7dde2fb3dc04047fa5c55742484ca74fe37b377460",
+  "review": {
+    "citation_quality": 0,
+    "correctness": 0,
+    "faithfulness": 0,
+    "is_refusal": false,
+    "rationale": "Отсутствуют обязательные поля scores. Указанная цитата не содержит требуемого утверждения (6 месяцев). Факты ответа не подтверждены текстом предоставленных чанков.",
+    "unsupported_claims": [
+      "Испытательный срок для руководителей составляет 6 месяцев."
+    ]
+  },
+  "original_graded": {
+    "question": "Какой испытательный срок у руководителей?",
+    "answer": "Испытательный срок для руководителей составляет 6 месяцев.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 0.0,
+    "verdict": "Правильно",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

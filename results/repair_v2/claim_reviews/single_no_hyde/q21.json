@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "id": "q21",
+  "answerable": true,
+  "claims": [
+    "Ошибка ERR-VPN-431 означает превышение числа одновременных подключений.",
+    "Для учётной записи VPN допускается не более двух одновременных подключений.",
+    "Публичные сети допустимы для работы только при включённом VPN.",
+    "Работать через Wi-Fi кафе без VPN нельзя."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Direct match with source s0l5 error code definition.",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 251,
+          "end": 330,
+          "text": "- `ERR-VPN-431`: превышено число одновременных подключений. Одна учётная запись"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source s0l6 explicitly states the limit of 2 devices.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 331,
+          "end": 403,
+          "text": "  может быть подключена не более чем с **2 устройств**; отключите VPN на"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Source s1l21 states public Wi-Fi requires active VPN.",
+      "unit_ids": [
+        "s1l21"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l21",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1133,
+          "end": 1178,
+          "text": "допускаются исключительно при включённом VPN."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Logical consequence of the rule in s1l21 requiring VPN.",
+      "unit_ids": [
+        "s1l21"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l21",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1133,
+          "end": 1178,
+          "text": "допускаются исключительно при включённом VPN."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "4a225ebce1d051e9b7eb1e089167b6830dbc549dff8b2032465e7835fa6fb235",
+  "source_entry_sha256": "d9da4a80ac12e0543be86d7432f2734f3f5fb5e50a094ce06c1dbc5ed7d5ae3a",
+  "verifier": "v2-scenario-aware"
+}

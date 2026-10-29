@@ -1,0 +1,28 @@
+{
+  "id": "q32",
+  "answerable": true,
+  "payload_sha256": "caaf4a0643ff5385d300ef3345417705794b4b6a4e7e9bc052f05fe7c88ad8ba",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и источникам. Цитаты верны. Фраза о не зависимости от рабочих часов подтверждается указанием 24/7.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+    "answer": "Для Sev 1 первый ответ — в течение 1 часа и круглосуточно (24/7), а для Sev 3 — в течение 1 рабочего дня. То есть по Sev 1 срок значительно короче и не зависит от рабочих часов.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

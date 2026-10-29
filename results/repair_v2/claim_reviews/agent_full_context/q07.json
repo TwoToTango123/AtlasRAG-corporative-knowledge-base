@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "id": "q07",
+  "answerable": true,
+  "claims": [
+    "Сотрудникам положено 10 оплачиваемых больничных дней в год.",
+    "Оплачиваемые больничные дни предоставляются отдельно от отпуска.",
+    "Оплачиваемые больничные дни не переносятся на следующий год.",
+    "Оплачиваемые больничные дни не выплачиваются при увольнении.",
+    "Для отсутствия дольше 3 рабочих дней подряд требуется справка от врача."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source explicitly states 10 paid sick days per year.",
+      "unit_ids": [
+        "s0l16"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l16",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 817,
+          "end": 895,
+          "text": "Все сотрудники получают **10 оплачиваемых больничных дней** в год, отдельно от"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Source states sick days are separate from vacation.",
+      "unit_ids": [
+        "s0l16",
+        "s0l17"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l16",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 817,
+          "end": 895,
+          "text": "Все сотрудники получают **10 оплачиваемых больничных дней** в год, отдельно от"
+        },
+        {
+          "id": "s0l17",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 896,
+          "end": 970,
+          "text": "отпуска. Больничные не переносятся на следующий год и не выплачиваются при"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Source states sick days do not carry over to the next year.",
+      "unit_ids": [
+        "s0l17"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l17",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 896,
+          "end": 970,
+          "text": "отпуска. Больничные не переносятся на следующий год и не выплачиваются при"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Source states sick days are not paid out upon termination.",
+      "unit_ids": [
+        "s0l17",
+        "s0l18"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l17",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 896,
+          "end": 970,
+          "text": "отпуска. Больничные не переносятся на следующий год и не выплачиваются при"
+        },
+        {
+          "id": "s0l18",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 971,
+          "end": 1051,
+          "text": "увольнении. Для отсутствия дольше **3 рабочих дней подряд** требуется справка от"
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Source states a doctor's note is required for absences longer than 3 days.",
+      "unit_ids": [
+        "s0l18",
+        "s0l19"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l18",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 971,
+          "end": 1051,
+          "text": "увольнении. Для отсутствия дольше **3 рабочих дней подряд** требуется справка от"
+        },
+        {
+          "id": "s0l19",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 1052,
+          "end": 1058,
+          "text": "врача."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "ca8b6f775772513f1e80969d725b33866e14ee8375b9ec8a6a01d1110aaad6f2",
+  "source_entry_sha256": "c4fb0b7707aacc35a15b1f007d03aeadf91e29adc103541495fe3ff86ed3531b",
+  "verifier": "v2-scenario-aware"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "q12",
+  "answerable": true,
+  "payload_sha256": "673c1d0ac2dcfad9bd321c5853cd0bc63c93a13103e63ddebce213ef3fa228ad",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источнику. Цитата приведена верно и подтверждает сделанный вывод.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "VPN выдаёт ошибку ERR-VPN-720. Что делать?",
+    "answer": "Ошибка ERR-VPN-720 означает, что истёк сертификат устройства. Нужно переустановить профиль VPN через Портал самообслуживания и перезагрузить ноутбук.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

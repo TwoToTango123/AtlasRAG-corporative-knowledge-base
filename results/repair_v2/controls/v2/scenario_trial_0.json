@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "scenario_trial_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "rationale": "Источники прямо указывают 6 месяцев для главного инженера.",
+    "unit_ids": [
+      "s0l2"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l2",
+        "chunk_id": "onboarding.md:Испытательный срок",
+        "start": 90,
+        "end": 167,
+        "text": "руководителей и главных инженеров — **6 месяцев**. В конце срока руководитель"
+      }
+    ]
+  }
+}

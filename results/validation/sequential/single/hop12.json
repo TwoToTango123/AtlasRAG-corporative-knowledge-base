@@ -1,0 +1,163 @@
+{
+  "status": "ok",
+  "id": "hop12",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сокол?",
+    "answer": "В предоставленных сведениях нет действующего на 02.11.2026 лимита компенсации за один отчёт для проекта Сокол. Известно лишь, что проекту назначен пакет K-09, но норматив именно для этого пакета отсутствует: приведены нормативы только для пакетов K-21 и K-06.",
+    "citations": [
+      {
+        "chunk_id": "30462eea36d63cde",
+        "source": "project_11.md",
+        "quote": "для расходов проекта назначен пакет K-09"
+      },
+      {
+        "chunk_id": "729a9c21b830fcc4",
+        "source": "policy_K21_current.md",
+        "quote": "Лимит относится только к указанному пакету. Сведения о других пакетах отсутствуют."
+      }
+    ],
+    "confidence": 0.1,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сокол?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сокол?",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "30462eea36d63cde",
+                "doc_id": "6801ff645fbd8b06",
+                "source": "project_11.md",
+                "text": "# Проект Сокол\nКарточка проекта Сокол: для расходов проекта назначен пакет K-09.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.001639344262295,
+              "relevance": 1.0,
+              "reason": "Fragment 0 only states that project Sokol uses package K-09, but provides no limit information. The query requires the actual compensation limit, which is not given here. Thus the fragment is not helpful for answering the query. 0-2 range.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "729a9c21b830fcc4",
+                "doc_id": "080d233576297b62",
+                "source": "policy_K21_current.md",
+                "text": "# Норматив пакета K-21\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-21 соответствует лимит компенсации 1040 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0008064516129032,
+              "relevance": 1.0,
+              "reason": "Fragment 1 gives compensation limit for package K-21. Since the query is about package K-09, this is unrelated and does not help answer the specific question. 0-2 range.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "e81495bd16ea0a46",
+                "doc_id": "4b47f226479713b1",
+                "source": "project_03.md",
+                "text": "# Проект Ирис\nКарточка проекта Ирис: для расходов проекта назначен пакет K-11.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0008064516129032,
+              "relevance": 1.0,
+              "reason": "Fragment 2 is about project Iris and its package K-11; no information about Sokol or K-09. Not relevant. 0-2 range.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "1aad246d2726e134",
+                "doc_id": "494db5ce23bc8fcc",
+                "source": "policy_K06_current.md",
+                "text": "# Норматив пакета K-06\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-06 соответствует лимит компенсации 395 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0007936507936508,
+              "relevance": 1.0,
+              "reason": "Fragment 3 gives limit for package K-06, which is unrelated to K-09 and the project Sokol. 0-2 range.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "8daa48076b0a72b4",
+                "doc_id": "247127f85d1c12a7",
+                "source": "project_07.md",
+                "text": "# Проект Альтаир\nКарточка проекта Альтаир: для расходов проекта назначен пакет K-02.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 1.0007936507936508,
+              "relevance": 1.0,
+              "reason": "Fragment 4 concerns project Altair and package K-02. No relevance to Sokol or K-09. 0-2 range.",
+              "sources": {
+                "sparse": 3.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": [
+      "model_reports_answer_not_found"
+    ]
+  },
+  "latency_s": 17.406825300015043,
+  "graded": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сокол?",
+    "answer": "В предоставленных сведениях нет действующего на 02.11.2026 лимита компенсации за один отчёт для проекта Сокол. Известно лишь, что проекту назначен пакет K-09, но норматив именно для этого пакета отсутствует: приведены нормативы только для пакетов K-21 и K-06.",
+    "answerable": true,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 0.5,
+      "mrr": 1.0,
+      "ndcg": 0.6131471927654584
+    }
+  },
+  "first_search_metrics": {
+    "recall": 0.5,
+    "mrr": 1.0,
+    "ndcg": 0.6131471927654584
+  },
+  "first_search_has_both_hops": false,
+  "final_has_both_hops": false,
+  "amount_present": false,
+  "obsolete_amount_present": false,
+  "trajectory_audit": {
+    "rounds": [
+      {
+        "query": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Сокол?",
+        "new_chunks": 5,
+        "new_gold_chunks": 1,
+        "gold_chunks": 1
+      }
+    ],
+    "gold_total": 2,
+    "gold_covered": 1,
+    "zero_new_gold_rounds_after_first": 0,
+    "zero_new_chunk_rounds_after_first": 0
+  },
+  "verbatim_matches": [
+    true,
+    true
+  ]
+}

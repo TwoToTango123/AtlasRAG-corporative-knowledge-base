@@ -1,0 +1,28 @@
+{
+  "id": "q05",
+  "answerable": true,
+  "payload_sha256": "f7ae96202c9f0e5c067dadd65d134b39fc26be46b088617dfbf557136d51c6dd",
+  "review": {
+    "correctness": 1,
+    "faithfulness": 1,
+    "citation_quality": 0.67,
+    "is_refusal": false,
+    "rationale": "Ответ точен. Первая цитата верна, третья подтверждает контекст SLA (непрямая поддержка), вторая искажает текст (описка/упущение), что снижает качество цитирований.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Если Enterprise-тикет Sev 1 нарушит SLA, что произойдёт и какая компенсация полагается?",
+    "answer": "При нарушении SLA по времени ответа на Enterprise‑тикет Sev 1 он автоматически эскалируется директору поддержки и TAM‑менеджеру, а клиент получает право на кредит — 5 % от месячной платы за каждый пропущенный инцидент, но не более 25 % в месяц (запросить в течение 30 дней).",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "PASS",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

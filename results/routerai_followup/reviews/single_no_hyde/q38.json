@@ -1,0 +1,24 @@
+{
+  "id": "q38",
+  "answerable": false,
+  "payload_sha256": "1390e2e1b293d968f62c7b5725c8b7bfda3cb0e57c8668a1bacd51232b1d0ef5",
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Correct refusal. The provided documents contain no rules regarding pets or dogs in the office. The answer accurately reflects the absence of information and suggests a reasonable alternative contact.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Можно ли приходить в офис с собакой?",
+    "answer": "В предоставленной информации нет ответа на этот вопрос: правила о домашних животных и посещении офиса с собакой нигде не описаны. Рекомендую уточнить у отдела персонала (People Operations).",
+    "answerable": false,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": null
+  }
+}

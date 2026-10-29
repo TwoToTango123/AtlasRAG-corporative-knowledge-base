@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-03T10:16:16.716857+00:00",
+  "groups": [
+    {
+      "group": "full_120b",
+      "completed": 39,
+      "reviews": 39,
+      "original_metrics": {
+        "correctness": 0.8484848484848485,
+        "faithfulness": 0.8787878787878788,
+        "citation_quality": 0.7363636363636363,
+        "recall": 0.9696969696969697,
+        "mrr": 0.9393939393939394,
+        "ndcg": 0.9448963726148819,
+        "refusal_rate": 1.0,
+        "false_refusal_rate": 0.030303030303030304,
+        "searches": 3.2564102564102564,
+        "latency_s": 44.84924101794455,
+        "verbatim_quote_rate": 0.6060606060606061
+      },
+      "evidence_aware_metrics": {
+        "correctness": 0.906060606060606,
+        "faithfulness": 0.9666666666666667,
+        "citation_quality": 0.61
+      }
+    },
+    {
+      "group": "full_deepseek",
+      "completed": 39,
+      "reviews": 39,
+      "original_metrics": {
+        "correctness": 0.9121212121212121,
+        "faithfulness": 0.8787878787878788,
+        "citation_quality": 0.7424242424242424,
+        "recall": 1.0,
+        "mrr": 0.9848484848484849,
+        "ndcg": 0.9863833497793831,
+        "refusal_rate": 1.0,
+        "false_refusal_rate": 0.030303030303030304,
+        "searches": 3.4615384615384617,
+        "latency_s": 37.76588260769122,
+        "verbatim_quote_rate": 1.0
+      },
+      "evidence_aware_metrics": {
+        "correctness": 0.9257575757575758,
+        "faithfulness": 0.9333333333333333,
+        "citation_quality": 0.7406060606060606
+      }
+    },
+    {
+      "group": "single_no_hyde",
+      "completed": 39,
+      "reviews": 39,
+      "original_metrics": {
+        "correctness": null,
+        "faithfulness": 0.9393939393939394,
+        "citation_quality": null,
+        "recall": 1.0,
+        "mrr": 0.9646464646464646,
+        "ndcg": 0.9736645379870139,
+        "refusal_rate": 1.0,
+        "false_refusal_rate": 0.030303030303030304,
+        "searches": 1.0,
+        "latency_s": 13.487286717947333,
+        "verbatim_quote_rate": 1.0
+      },
+      "evidence_aware_metrics": {
+        "correctness": 0.9393939393939394,
+        "faithfulness": 0.9393939393939394,
+        "citation_quality": 0.8984848484848484
+      }
+    },
+    {
+      "group": "single_hyde",
+      "completed": 39,
+      "reviews": 39,
+      "original_metrics": {
+        "correctness": null,
+        "faithfulness": 0.8303030303030302,
+        "citation_quality": null,
+        "recall": 0.9848484848484849,
+        "mrr": 0.9646464646464646,
+        "ndcg": 0.9662682668858952,
+        "refusal_rate": 1.0,
+        "false_refusal_rate": 0.06060606060606061,
+        "searches": 1.0,
+        "latency_s": 10.168261553853368,
+        "verbatim_quote_rate": 1.0
+      },
+      "evidence_aware_metrics": {
+        "correctness": 0.9393939393939394,
+        "faithfulness": 1.0,
+        "citation_quality": 0.8848484848484848
+      }
+    }
+  ],
+  "controls": {
+    "completed": 6,
+    "passed": 6
+  },
+  "scope": "Two new single-search runs; frozen full-agent outputs reviewed without regeneration.",
+  "main_model": "deepseek/deepseek-v4.1-flash-1017",
+  "fast_model": "openai/gpt-oss-20b",
+  "judge_model": "qwen/qwen3.8-27b",
+  "legacy_judge_max_tokens": 1024,
+  "limits": [
+    "LLM ratings are estimates, not human truth.",
+    "Legacy judge repeatedly truncated; new single-search runs are compared using the same evidence-aware judge as frozen full-agent outputs. Early legacy scores retained but not averaged.",
+    "Legacy judge budget increased from 512 to 1024 after truncation; successful early cases retained. See run_notes.md.",
+    "Single-search latency excludes agent/decomposition by design; cache affects timings.",
+    "Evidence-aware judge is blinded to model/method and prior scores."
+  ],
+  "actual_account_spend_rub": 8.75891328308576,
+  "followup_spend_rub": 3.7275889883764535,
+  "balance_rub": 91.24108671691424,
+  "additional_recorded_tokens": 909863,
+  "judge_audit": "judge_audit.json; low citation scores conflict with mechanically valid quotations in the audited examples.",
+  "semantic_refusals": {
+    "full_120b": {
+      "unanswerable_refused": 6,
+      "answerable_refused": 1
+    },
+    "full_deepseek": {
+      "unanswerable_refused": 6,
+      "answerable_refused": 0
+    },
+    "single_no_hyde": {
+      "unanswerable_refused": 6,
+      "answerable_refused": 0
+    },
+    "single_hyde": {
+      "unanswerable_refused": 6,
+      "answerable_refused": 1
+    }
+  },
+  "paired_correctness_differences": {
+    "single_no_hyde minus full_deepseek": {
+      "mean": 0.013636363636363636,
+      "bootstrap_95_ci": [
+        -0.07727272727272727,
+        0.09999999999999999
+      ],
+      "n": 33
+    },
+    "single_hyde minus single_no_hyde": {
+      "mean": -3.3643121958338078e-18,
+      "bootstrap_95_ci": [
+        -0.09242424242424244,
+        0.09090909090909091
+      ],
+      "n": 33
+    }
+  }
+}

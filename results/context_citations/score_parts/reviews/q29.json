@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q29",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ корректно интерпретирует запрет на использование неодобренных ИИ-инструментов из чанка 64965a37dd92dc05, отвечая на вопрос. Цитаты точны и подтверждают утверждения.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "c7750a58f615b8d54df320089f5fdc113b406366ec627ade2029cb88e5a1a9a0",
+  "provenance": "changed citations, same answer; new judge"
+}

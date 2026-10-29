@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q08",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.8,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно указывает срок (6 месяцев) для руководителей. Чуть меньше эталона, так как опущено сравнение с общим сроком (3 месяца), но это не ошибка.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "cc7d960ee6181b351fd5cd38d667bcb78a5334ca1ed9134d4c99b8684c5c1db0",
+  "provenance": "identical judge payload; reused frozen rating"
+}

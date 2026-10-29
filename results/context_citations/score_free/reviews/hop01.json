@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop01",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ корректно определяет лимит 868 рублей на дату 02.11.2026, опираясь на действующий норматив пакета K-17, назначенный проекту. Все утверждения подтверждены источниками.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "dd11be6e7d2a215e8169ed33f5d2f497e69ada43cd5bfe15f06da2f19c168bba"
+}

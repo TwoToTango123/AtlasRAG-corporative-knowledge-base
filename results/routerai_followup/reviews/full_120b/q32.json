@@ -1,0 +1,28 @@
+{
+  "id": "q32",
+  "answerable": true,
+  "payload_sha256": "b0f0c7e22e28145b5d5bd6f8bdc0be4b1eedd79104f968377d8af8ab90d0a28e",
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верно отражает эталон и подтверждается источником. Ошибки в цитировании: указанный chunk_id не соответствует предоставленным данным (верный: 64965a37dd92dc05), текст цитат содержит неточности.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Чем отличается время первого ответа поддержки для Sev 1 и Sev 3?",
+    "answer": "Для Sev 1 первая реакция обязана быть в течение 1 часа (круглосуточно), а для Sev 3 – в течение одного рабочего дня.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "Верно",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

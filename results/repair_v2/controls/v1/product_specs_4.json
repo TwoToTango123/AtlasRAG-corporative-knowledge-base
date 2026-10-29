@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "id": "product_specs_4",
+  "split": "heldout",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "unit_ids": [],
+    "rationale": "В источниках указаны технические характеристики, но отсутствует информация о стоимости манипулятора.",
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  },
+  "provenance": "reused frozen v1 result; no paid call"
+}

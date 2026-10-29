@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-03T19:37:58.610502+00:00",
+  "complete": true,
+  "controls": {
+    "v1": {
+      "calibration": {
+        "n": 20,
+        "accuracy": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 8,
+            "contradicted": 0,
+            "insufficient": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 8,
+            "insufficient": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 4
+          }
+        }
+      },
+      "heldout": {
+        "n": 20,
+        "accuracy": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 8,
+            "contradicted": 0,
+            "insufficient": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 8,
+            "insufficient": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 4
+          }
+        }
+      },
+      "scenario_regression": {
+        "n": 16,
+        "accuracy": 0.5625,
+        "support_precision": 1.0,
+        "support_recall": 0.375,
+        "support_f1": 0.5454545454545454,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 3,
+            "contradicted": 0,
+            "insufficient": 5
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 3,
+            "insufficient": 1
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 3
+          }
+        }
+      },
+      "completed": 56,
+      "all": {
+        "n": 56,
+        "accuracy": 0.875,
+        "support_precision": 1.0,
+        "support_recall": 0.7916666666666666,
+        "support_f1": 0.8837209302325582,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 19,
+            "contradicted": 0,
+            "insufficient": 5
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 19,
+            "insufficient": 1
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 11
+          }
+        }
+      }
+    },
+    "v2": {
+      "calibration": {
+        "n": 20,
+        "accuracy": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 8,
+            "contradicted": 0,
+            "insufficient": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 8,
+            "insufficient": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 4
+          }
+        }
+      },
+      "heldout": {
+        "n": 20,
+        "accuracy": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 8,
+            "contradicted": 0,
+            "insufficient": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 8,
+            "insufficient": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 0,
+            "insufficient": 4
+          }
+        }
+      },
+      "scenario_regression": {
+        "n": 16,
+        "accuracy": 0.9375,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 8,
+            "contradicted": 0,
+            "insufficient": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 4,
+            "insufficient": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 3
+          }
+        }
+      },
+      "completed": 56,
+      "all": {
+        "n": 56,
+        "accuracy": 0.9821428571428571,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "false_supported": 0,
+        "false_supported_rate": 0.0,
+        "confusion": {
+          "supported": {
+            "supported": 24,
+            "contradicted": 0,
+            "insufficient": 0
+          },
+          "contradicted": {
+            "supported": 0,
+            "contradicted": 20,
+            "insufficient": 0
+          },
+          "insufficient": {
+            "supported": 0,
+            "contradicted": 1,
+            "insufficient": 11
+          }
+        }
+      }
+    }
+  },
+  "groups": [
+    {
+      "group": "full_deepseek",
+      "completed": 39,
+      "factual_answers": 33,
+      "claims": 113,
+      "supported": 107,
+      "contradicted": 0,
+      "insufficient": 6,
+      "macro_support": 0.9656565656565657,
+      "old_macro_support": 0.9600694444444444,
+      "old_claims": 110,
+      "checked_spans": 172,
+      "invalid_spans": 0,
+      "changed_source_entries": 0,
+      "empty_answerable_claim_ids": []
+    },
+    {
+      "group": "single_no_hyde",
+      "completed": 39,
+      "factual_answers": 33,
+      "claims": 118,
+      "supported": 115,
+      "contradicted": 0,
+      "insufficient": 3,
+      "macro_support": 0.9823232323232323,
+      "old_macro_support": 0.9257575757575758,
+      "old_claims": 125,
+      "checked_spans": 175,
+      "invalid_spans": 0,
+      "changed_source_entries": 0,
+      "empty_answerable_claim_ids": []
+    },
+    {
+      "group": "agent_full_context",
+      "completed": 39,
+      "factual_answers": 32,
+      "claims": 103,
+      "supported": 101,
+      "contradicted": 0,
+      "insufficient": 2,
+      "macro_support": 0.9895833333333334,
+      "old_macro_support": 0.984006734006734,
+      "old_claims": 112,
+      "checked_spans": 182,
+      "invalid_spans": 0,
+      "changed_source_entries": 0,
+      "empty_answerable_claim_ids": [
+        "q29"
+      ]
+    }
+  ],
+  "sequential": {
+    "completed": 12,
+    "old_amount_correct": 10,
+    "new_amount_correct": 12,
+    "old_recall": 0.9166666666666666,
+    "new_recall": 1.0,
+    "new_refusals": 0,
+    "new_verbatim": 1.0,
+    "fresh_searches": 0,
+    "old_refusals": 2,
+    "new_exact_quotes": 29,
+    "new_quotes_total": 29,
+    "old_mrr": 0.875,
+    "new_mrr": 1.0,
+    "old_ndcg": 0.8254314618436389,
+    "new_ndcg": 0.986620131524698,
+    "old_exact_quotes": 32,
+    "old_quotes_total": 32
+  },
+  "context_audit": [
+    {
+      "group": "full_deepseek",
+      "n": 33,
+      "old_recall": 1.0,
+      "new_recall": 1.0,
+      "old_mrr": 0.9848484848484849,
+      "new_mrr": 0.9494949494949495,
+      "old_ndcg": 0.9863833497793831,
+      "new_ndcg": 0.9576151844072511,
+      "lost_gold_cases": []
+    },
+    {
+      "group": "single_no_hyde",
+      "n": 33,
+      "old_recall": 1.0,
+      "new_recall": 1.0,
+      "old_mrr": 0.9646464646464646,
+      "new_mrr": 0.9646464646464646,
+      "old_ndcg": 0.9736645379870139,
+      "new_ndcg": 0.9736645379870139,
+      "lost_gold_cases": []
+    },
+    {
+      "group": "agent_full_context",
+      "n": 33,
+      "old_recall": 1.0,
+      "new_recall": 1.0,
+      "old_mrr": 0.9848484848484849,
+      "new_mrr": 0.9494949494949495,
+      "old_ndcg": 0.9839506464202373,
+      "new_ndcg": 0.9576151844072511,
+      "lost_gold_cases": []
+    }
+  ],
+  "probes_completed": 6,
+  "limits": [
+    "Same frozen answers; v2 claim boundaries can differ, so support averages do not prove answer-quality gains.",
+    "Scenario controls target known failure families; assistant-authored labels, no independent human holdout.",
+    "Context replays reuse frozen queries and hits; no new agent searches. Original-corpus audit measures retrieval only.",
+    "Subject/latest-step anchors are a heuristic; they cannot guarantee arbitrary multi-hop coverage."
+  ],
+  "final_audit": {
+    "verified_utc": "2026-11-03T19:37:09.964113+00:00",
+    "source_entries_manifest_verified": 129,
+    "claim_reviews": 117,
+    "controls_per_version": 56,
+    "old_control_results_reused_unchanged": 40,
+    "sequential_replays": 12,
+    "fixed_claim_probes": 6,
+    "checked_spans": 529,
+    "invalid_spans": 0,
+    "changed_sources": 0,
+    "changed_answers": 0,
+    "selected_context_ids_valid": true,
+    "algorithm_and_prompts_match_manifest": true,
+    "assistant_review_current_amounts_correct": 12,
+    "independent_human_review": false,
+    "known_extraction_omission": "agent_full_context/q29: v2 empty claims despite factual conditional rule",
+    "known_remaining_logic_error": "q29: only-if approval condition can still receive insufficient",
+    "known_control_error": "scenario_flight_1: insufficient misclassified as contradicted",
+    "tests_passed": 78,
+    "balance_endpoint_verified_rub": 71.44535530526176,
+    "balance_note": "Worker final credits and independent post-completion credits read both returned this value.",
+    "findings_file": "findings.md"
+  },
+  "balance_rub": 71.44535530526176,
+  "stage_cost_rub": 8.417689808056082,
+  "original_account_cost_rub": 28.554644694738244,
+  "budget_used_rub": 65.92235453634422,
+  "fresh_recorded_tokens": 408337
+}

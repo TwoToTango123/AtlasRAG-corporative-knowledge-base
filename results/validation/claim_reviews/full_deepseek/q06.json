@@ -1,0 +1,103 @@
+{
+  "status": "ok",
+  "id": "q06",
+  "answerable": true,
+  "claims": [
+    "Захват от модели NW-100 можно установить на модель NW-200.",
+    "У моделей NW-100 и NW-200 одинаковый монтажный фланец.",
+    "Рабочие насадки для моделей NW-100 и NW-200 являются взаимозаменяемыми.",
+    "Вакуумный захват NW-VAC-05 поддерживается только контроллером NW-200."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Одинаковый фланец делает насадки взаимозаменяемыми между моделями",
+      "unit_ids": [
+        "s0l7",
+        "s0l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l7",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 318,
+          "end": 397,
+          "text": "NW-100 и NW-200 имеют одинаковый монтажный фланец (ISO 9409-1-50-4-M6), поэтому"
+        },
+        {
+          "id": "s0l8",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 398,
+          "end": 462,
+          "text": "рабочие насадки (захваты) взаимозаменяемы между обеими моделями."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источники прямо утверждают об одинаковом монтажном фланце",
+      "unit_ids": [
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l7",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 318,
+          "end": 397,
+          "text": "NW-100 и NW-200 имеют одинаковый монтажный фланец (ISO 9409-1-50-4-M6), поэтому"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Указана взаимозаменяемость рабочих насадок между моделями",
+      "unit_ids": [
+        "s0l8"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l8",
+          "chunk_id": "395619ca8cdf56c2",
+          "start": 398,
+          "end": 462,
+          "text": "рабочие насадки (захваты) взаимозаменяемы между обеими моделями."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Указано, что вакуумный захват поддерживается только контроллером NW-200",
+      "unit_ids": [
+        "s1l10"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l10",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 578,
+          "end": 605,
+          "text": "только контроллером NW-200."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "4f3b272a2ff8193424d02bf034d5f118ed3c86896e3132c271f2ec42e92da2e5",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

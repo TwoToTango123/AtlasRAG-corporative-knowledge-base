@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_escalate_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источники не содержат конкретного тикета или инструкции по его ответу.",
+    "unit_ids": [],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "scenario_flight_0",
+  "split": "scenario_regression",
+  "gold": "supported",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "unit_ids": [],
+    "rationale": "Не указаны конкретные условия пользователя, а источник требует длительности полета более 6 часов.",
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

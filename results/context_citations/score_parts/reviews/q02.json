@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q02",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты точны и подтверждают все утверждения ответа. Ошибок не обнаружено.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "4afeb94354972b929d4a17c26628f3d3280461487bf44c94272823eb58cf73cb",
+  "provenance": "changed citations, same answer; new judge"
+}

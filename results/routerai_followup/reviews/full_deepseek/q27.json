@@ -1,0 +1,28 @@
+{
+  "id": "q27",
+  "answerable": true,
+  "payload_sha256": "89e0675206b47fbbb3fff7fceaf585526aa725814b40c231844629379464e4e3",
+  "review": {
+    "correctness": 1,
+    "faithfulness": 1,
+    "citation_quality": 0.95,
+    "unsupported_claims": [],
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и подтверждается источником. Цитата не дословна (в источнике \"требуют одобрения\", в цитате \"и требуют\"), но смысл сохранен."
+  },
+  "original_graded": {
+    "question": "Что будет, если вставить флешку в рабочий компьютер?",
+    "answer": "Флешку, скорее всего, не получится использовать: съёмные USB-носители заблокированы по умолчанию. Чтобы применять их на рабочем компьютере, нужно одобрение службы безопасности.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 0.0,
+    "faithfulness": 1.0,
+    "verdict": "PASS",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

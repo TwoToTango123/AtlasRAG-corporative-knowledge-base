@@ -1,0 +1,145 @@
+{
+  "started_utc": "2026-11-04T08:54:02.587234+00:00",
+  "balance_before_rub": 67.84024637682849,
+  "protocol_sha256": "62bb0f253d9d3588b94762f625f65f2d6057a118872135a7e66260edca9271c1",
+  "protocol": {
+    "schedule": [
+      {
+        "case": {
+          "id": "q06",
+          "type": "exact_token",
+          "question": "Можно ли использовать захват от NW-100 на NW-200?",
+          "expected": "Да; обе модели имеют одинаковый монтажный фланец ISO 9409-1-50-4-M6, поэтому захваты взаимозаменяемы.",
+          "relevant_sources": [
+            {
+              "source": "product_specs.md",
+              "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+            }
+          ]
+        },
+        "variant": "original",
+        "query": "Можно ли использовать захват от NW-100 на NW-200?"
+      },
+      {
+        "case": {
+          "id": "q22",
+          "type": "multi_hop",
+          "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+          "expected": "Да: NW-GRP-02 совместим с NW-100 и NW-200, потому что у моделей одинаковый монтажный фланец ISO 9409-1-50-4-M6.",
+          "relevant_sources": [
+            {
+              "source": "parts_and_shipping.md",
+              "quote": "NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200"
+            },
+            {
+              "source": "product_specs.md",
+              "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+            }
+          ]
+        },
+        "variant": "original",
+        "query": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?"
+      },
+      {
+        "case": {
+          "id": "q22",
+          "type": "multi_hop",
+          "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+          "expected": "Да: NW-GRP-02 совместим с NW-100 и NW-200, потому что у моделей одинаковый монтажный фланец ISO 9409-1-50-4-M6.",
+          "relevant_sources": [
+            {
+              "source": "parts_and_shipping.md",
+              "quote": "NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200"
+            },
+            {
+              "source": "product_specs.md",
+              "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+            }
+          ]
+        },
+        "variant": "compact",
+        "query": "У нас есть захват NWGRP02 от NW100. Подойдёт ли он, если мы перейдём на NW200, и почему?"
+      },
+      {
+        "case": {
+          "id": "q06",
+          "type": "exact_token",
+          "question": "Можно ли использовать захват от NW-100 на NW-200?",
+          "expected": "Да; обе модели имеют одинаковый монтажный фланец ISO 9409-1-50-4-M6, поэтому захваты взаимозаменяемы.",
+          "relevant_sources": [
+            {
+              "source": "product_specs.md",
+              "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+            }
+          ]
+        },
+        "variant": "restored",
+        "query": "Можно ли использовать захват от NW-100 на NW-200?"
+      },
+      {
+        "case": {
+          "id": "q06",
+          "type": "exact_token",
+          "question": "Можно ли использовать захват от NW-100 на NW-200?",
+          "expected": "Да; обе модели имеют одинаковый монтажный фланец ISO 9409-1-50-4-M6, поэтому захваты взаимозаменяемы.",
+          "relevant_sources": [
+            {
+              "source": "product_specs.md",
+              "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+            }
+          ]
+        },
+        "variant": "compact",
+        "query": "Можно ли использовать захват от NW100 на NW200?"
+      },
+      {
+        "case": {
+          "id": "q22",
+          "type": "multi_hop",
+          "question": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?",
+          "expected": "Да: NW-GRP-02 совместим с NW-100 и NW-200, потому что у моделей одинаковый монтажный фланец ISO 9409-1-50-4-M6.",
+          "relevant_sources": [
+            {
+              "source": "parts_and_shipping.md",
+              "quote": "NW-GRP-02 | Двухпальцевый захват | NW-100, NW-200"
+            },
+            {
+              "source": "product_specs.md",
+              "quote": "одинаковый монтажный фланец (ISO 9409-1-50-4-M6)"
+            }
+          ]
+        },
+        "variant": "restored",
+        "query": "У нас есть захват NW-GRP-02 от NW-100. Подойдёт ли он, если мы перейдём на NW-200, и почему?"
+      }
+    ],
+    "aliases": {
+      "errvpn720": "ERR-VPN-720",
+      "errvpn431": "ERR-VPN-431",
+      "errvpn102": "ERR-VPN-102",
+      "nwgrp02": "NW-GRP-02",
+      "nw100": "NW-100",
+      "nw200": "NW-200",
+      "nwvac05": "NW-VAC-05",
+      "nwcbl10": "NW-CBL-10",
+      "nwtch01": "NW-TCH-01",
+      "pr20260147": "PR-2026-0147",
+      "e401": "E-401",
+      "e409": "E-409",
+      "e503": "E-503",
+      "aes256": "AES-256"
+    },
+    "ambiguous": {},
+    "human_packet_sha256": {
+      "human_review.html": "4e77ba83ee473c176e1b01a6f31bf0b9a850b745f6a1dc6eba8e07211d96e942",
+      "human_review_dataset.json": "70355fd0d8f08e7c4c4e95002cf359d6b4b0c23f0ccdb274cd2de8ed8367e111",
+      "human_evaluation_protocol.json": "b7e6f46a25bde9acd361a738d63c8d2b3f33d2288dfb1010b13dd92e67651035"
+    },
+    "single_pass": true,
+    "hyde": true,
+    "reranker": true,
+    "citation_mode": "unit_parts",
+    "candidate_code_sha256": "cc2c2cb47e9f772c05e03bb68fb018f94b4d4c2124b858d38567fe53df2c26e3"
+  },
+  "limits": "Known failure cases selected after local component test, not an independent holdout."
+}

@@ -1,0 +1,142 @@
+{
+  "annotation_type": "assistant",
+  "independent_human": false,
+  "rows": [
+    {
+      "review_id": "R05",
+      "assistant_to_model_indices": [
+        [
+          0
+        ]
+      ],
+      "unmapped_model_indices": [],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    },
+    {
+      "review_id": "R08",
+      "assistant_to_model_indices": [
+        [
+          0
+        ]
+      ],
+      "unmapped_model_indices": [],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    },
+    {
+      "review_id": "R10",
+      "assistant_to_model_indices": [],
+      "unmapped_model_indices": [],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    },
+    {
+      "review_id": "R11",
+      "assistant_to_model_indices": [
+        [
+          0
+        ]
+      ],
+      "unmapped_model_indices": [],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    },
+    {
+      "review_id": "R13",
+      "assistant_to_model_indices": [
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          2
+        ],
+        [
+          4
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ]
+      ],
+      "unmapped_model_indices": [],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    },
+    {
+      "review_id": "R15",
+      "assistant_to_model_indices": [
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "unmapped_model_indices": [
+        0,
+        1,
+        2
+      ],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    },
+    {
+      "review_id": "R17",
+      "assistant_to_model_indices": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "unmapped_model_indices": [],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    },
+    {
+      "review_id": "R21",
+      "assistant_to_model_indices": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ]
+      ],
+      "unmapped_model_indices": [],
+      "uncovered_reference_indices": [],
+      "assessment": "Assistant post-prediction semantic inspection; not independently judged."
+    }
+  ],
+  "coverage_of_reference_facts": {
+    "covered": 18,
+    "total": 18
+  },
+  "extra_model_claims": {
+    "R15": {
+      "0": "Scoped epistemic absence statement, not a corporate fact.",
+      "1": "Duplicate absence-of-price statement.",
+      "2": "Generic capability restatement; no additional concrete business fact."
+    }
+  },
+  "note": "24 model claims vs 18 reference facts: +3 restatements/meta claims, +2 role/approval splits, +1 homing split."
+}

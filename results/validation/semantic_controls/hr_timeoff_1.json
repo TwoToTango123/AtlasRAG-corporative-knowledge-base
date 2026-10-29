@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "hr_timeoff_1",
+  "split": "calibration",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l5",
+      "s0l6"
+    ],
+    "rationale": "Источники подтверждают перенос остатка отпуска на следующий год до 40 дней.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l5",
+        "chunk_id": "hr_timeoff.md",
+        "start": 193,
+        "end": 265,
+        "text": "Отпуск накапливается ежемесячно и может переноситься на следующий год до"
+      },
+      {
+        "id": "s0l6",
+        "chunk_id": "hr_timeoff.md",
+        "start": 266,
+        "end": 345,
+        "text": "максимального остатка в **40 дней**. Остаток сверх лимита сгорает в конце года."
+      }
+    ]
+  }
+}

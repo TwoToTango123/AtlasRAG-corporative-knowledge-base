@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "group": "full_deepseek",
+  "id": "q16",
+  "claims": [
+    "В тикете нужно написать слово «ESCALATE»."
+  ],
+  "old_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "unit_ids": [],
+      "rationale": "Источники не подтверждают, что нужно написать именно это слово, лишь упоминают возможность эскалации.",
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    }
+  ],
+  "v2_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Source states clients request escalation by answering «ESCALATE» in the ticket.",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "3c00ce114bb3ac1d",
+          "start": 173,
+          "end": 227,
+          "text": "эскалацию в любой момент, ответив «ESCALATE» в тикете."
+        }
+      ]
+    }
+  ],
+  "note": "Fixed old claims: isolates verifier changes from claim extraction changes."
+}

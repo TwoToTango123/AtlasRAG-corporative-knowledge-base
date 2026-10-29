@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "cards": 24,
+  "desktop_mobile_checked": true,
+  "js_errors": [],
+  "external_requests": [],
+  "old_review_payload_hashes_verified": [
+    "R05",
+    "R13"
+  ],
+  "source_texts_verified_against_reference": 56,
+  "tests_passed": 97,
+  "assistant_only": true,
+  "human_metrics": null
+}

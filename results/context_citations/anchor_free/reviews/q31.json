@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q31",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и источникам. Цитата верна, все факты подтверждены документом product_specs.md. Ошибок нет.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "43630437a4804607a9493c8576aff49844a2877cdc6c8db849802362307bbf0e"
+}

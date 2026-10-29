@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "q34",
+  "answerable": false,
+  "claims": [
+    "В предоставленной информации нет сведений о страховой сумме по ДМС для сотрудников",
+    "Тема добровольного медицинского страхования в доступных материалах не освещается"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "No source mentions ДМС insurance sum.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "insufficient",
+      "rationale": "Source topics cover security, expenses, IT, no medical insurance.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "abstained_invalid_evidence": true,
+      "spans": []
+    }
+  ],
+  "answer_sha256": "68ccf48d73cbd6d865a2f61309e9d8eab87b4021075636bd96718bb8ff75bca9",
+  "source_entry_sha256": "ca5c392aaf5776ebab48a5803d049d317a0263a17a22aab6f3569ebe74d0d03a",
+  "verifier": "v2-scenario-aware"
+}

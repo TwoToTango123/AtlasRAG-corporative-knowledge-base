@@ -1,0 +1,42 @@
+{
+  "status": "ok",
+  "id": "onboarding_4",
+  "split": "heldout",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "rationale": "Источники не содержат информации об увеличении зарплаты после испытательного срока.",
+    "unit_ids": [
+      "s0l1",
+      "s0l2",
+      "s0l3"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": [
+      {
+        "id": "s0l1",
+        "chunk_id": "onboarding.md",
+        "start": 23,
+        "end": 89,
+        "text": "Испытательный срок для большинства сотрудников — **3 месяца**. Для"
+      },
+      {
+        "id": "s0l2",
+        "chunk_id": "onboarding.md",
+        "start": 90,
+        "end": 167,
+        "text": "руководителей и главных инженеров — **6 месяцев**. В конце срока руководитель"
+      },
+      {
+        "id": "s0l3",
+        "chunk_id": "onboarding.md",
+        "start": 168,
+        "end": 224,
+        "text": "проводит итоговую встречу и оформляет решение в Workday."
+      }
+    ]
+  }
+}

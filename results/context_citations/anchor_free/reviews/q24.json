@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q24",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Все цитаты верны, факты подтверждены документом refund_policy.md.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "ebe41ac9ec11a7b19179a52f94cbb88f1631d785c0e533acf08d4b2b20e01d95"
+}

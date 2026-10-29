@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop03",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и данным источников. Лимит 1384 рубля и пакет K-29 подтверждены действующей редакцией от 01.01.2026.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "732703aaba774cac447da4698c3a5e3c1a879ca129bec1d8f798e1299e3705e7"
+}

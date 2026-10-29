@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop12",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Все цитаты верны и подтверждают факты, включая действующий лимит 524 рубля и утрату сил старого норматива.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "88fa33b4e06c43d7d5809d629b9222acc629598c2cb3e54c01275f6d6bf7e3a1"
+}

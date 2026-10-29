@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q08",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 0,
+    "faithfulness": 0,
+    "is_refusal": false,
+    "rationale": "Отсутствуют обязательные поля scores. Указанная цитата не содержит требуемого утверждения (6 месяцев). Факты ответа не подтверждены текстом предоставленных чанков.",
+    "unsupported_claims": [
+      "Испытательный срок для руководителей составляет 6 месяцев."
+    ]
+  },
+  "payload_sha256": "9102d2eee33f64111d6abe7dde2fb3dc04047fa5c55742484ca74fe37b377460"
+}

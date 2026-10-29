@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "id": "q36",
+  "answerable": false,
+  "claims": [
+    "В доступных материалах нет информации о манипуляторе NW-300",
+    "В доступных материалах упоминаются только модели NW-100 и NW-200"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "Отсутствие упоминания NW-300 в источниках не доказывает факт отсутствия информации.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    },
+    {
+      "claim_id": "c1",
+      "label": "insufficient",
+      "rationale": "Источники не содержат исчерпывающего утверждения о том, что упоминаются ТОЛЬКО эти модели.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "b7c18b938aaa48f98512e9aa7cfee5794566cfc8538692264e2a480904b51e95",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

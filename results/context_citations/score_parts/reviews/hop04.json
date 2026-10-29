@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "hop04",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Answer is correct. Citation quality is 0 because the provided quotes are not verbatim substrings of the cited chunks (e.g., source text includes headers/wording not in the quote).",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "808ea665832e4f10d35039ff7c2952087a2c04edfb64b286c86ca8b72240b4f3",
+  "provenance": "identical judge payload; reused frozen rating"
+}

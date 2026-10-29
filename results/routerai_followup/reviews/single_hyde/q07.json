@@ -1,0 +1,28 @@
+{
+  "id": "q07",
+  "answerable": true,
+  "payload_sha256": "2c07243804e2fbf7164fa27f27a64f5ff49a8f1aa00e8507353f48d3028d14fc",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Все цитаты верны и подтверждают факты.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько оплачиваемых больничных дней в год положено сотрудникам?",
+    "answer": "Сотрудникам положено 10 оплачиваемых больничных дней в год. Эти дни предоставляются отдельно от отпуска, не переносятся на следующий год и не выплачиваются при увольнении. Для отсутствия дольше 3 рабочих дней подряд требуется справка от врача.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

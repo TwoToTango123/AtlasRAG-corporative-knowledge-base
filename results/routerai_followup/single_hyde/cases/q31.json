@@ -1,0 +1,146 @@
+{
+  "status": "ok",
+  "id": "q31",
+  "type": "comparison",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "graded": {
+    "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+    "answer": "На тарифе Team лимит API — 600 запросов в минуту на рабочее пространство, а на Enterprise — 6 000 запросов в минуту. То есть на Enterprise лимит в 10 раз выше.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  },
+  "result": {
+    "question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+    "answer": "На тарифе Team лимит API — 600 запросов в минуту на рабочее пространство, а на Enterprise — 6 000 запросов в минуту. То есть на Enterprise лимит в 10 раз выше.",
+    "citations": [
+      {
+        "chunk_id": "ee6006d80bd80674",
+        "source": "product_specs.md",
+        "quote": "Лимит API составляет **600 запросов в минуту** на рабочее пространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise."
+      }
+    ],
+    "confidence": 1.0,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Сравните лимит API AtlasControl на тарифах Team и Enterprise.",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "ee6006d80bd80674",
+                "doc_id": "c2d555db89b245a6",
+                "source": "product_specs.md",
+                "text": "# Northwind Robotics — Спецификации продуктов\n\n_Последнее обновление: 05.03.2026. Владелец: Продукт._\n\n## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`\n\n## Манипулятор NW-200 (промышленный уровень)\n\n- Грузоподъёмность: **18 кг**\n- Радиус действия: 1300 мм\n- Повторяемость: ±0,02 мм\n- Степеней свободы: 6\n- Питание: 200–240 В переменного тока, 900 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP, PROFINET\n- Безопасность: соответствие ISO 10218-1, двухканальный аварийный останов\n- Гарантия: **3 года**\n- Канал прошивки: `stable` или `edge`\n\n## Программное обеспечение AtlasControl\n\nAtlasControl — это панель управления для обоих манипуляторов. Тариф Team\nподдерживает до **10 подключённых манипуляторов**; тариф Enterprise — без\nограничений. Лимит API составляет **600 запросов в минуту** на рабочее\nпространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\product_specs.md"
+                }
+              },
+              "score": 10.001639344262296,
+              "relevance": 10.0,
+              "reason": "Provides exact API limits for Team (600/min) and Enterprise (6 000/min), directly answering the comparison question.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "395619ca8cdf56c2",
+                "doc_id": "c2d555db89b245a6",
+                "source": "product_specs.md",
+                "text": "### Коды ошибок\n\n- `E-401`: манипулятор не откалиброван (не выполнен homing) — выполните процедуру\n  homing перед движением.\n- `E-409`: полезная нагрузка превышает заданный лимит для выбранного манипулятора.\n- `E-503`: AtlasControl не может связаться с контроллером манипулятора —\n  проверьте сеть.\n\n## Совместимость\n\nNW-100 и NW-200 имеют одинаковый монтажный фланец (ISO 9409-1-50-4-M6), поэтому\nрабочие насадки (захваты) взаимозаменяемы между обеими моделями.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\product_specs.md"
+                }
+              },
+              "score": 1.001564027370479,
+              "relevance": 1.0,
+              "reason": "Lists error codes, unrelated to API limits.",
+              "sources": {
+                "dense": 6.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "4df4ff41c9dead17",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "# Northwind Robotics — Поддержка и SLA\n\n_Последнее обновление: 30.01.2026. Владелец: Клиентская поддержка._\n\n## Уровни поддержки\n\n| Тариф      | Каналы                  | Часы работы        |\n|------------|-------------------------|--------------------|\n| Starter    | Email, документация     | Рабочие часы       |\n| Team       | Email, чат              | Рабочие часы       |\n| Enterprise | Email, чат, телефон, TAM | 24/7              |\n\n«Рабочие часы» — это 9:00–18:00 в основном часовом поясе клиента, с понедельника\nпо пятницу, исключая местные государственные праздники.\n\n## SLA по времени ответа (Enterprise)\n\nУровень серьёзности (severity) устанавливает поддержка Northwind на основе\nзаявленного клиентом влияния:\n\n- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.\n- **Sev 2 (серьёзная деградация):** первый ответ в течение **4 рабочих часов**.\n- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**.\n\nНад инцидентами Sev 1 работают непрерывно, пока не будет найдено обходное решение\nили устранена проблема. Каждому аккаунту Enterprise назначается выделенный\nтехнический менеджер аккаунта (TAM).",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 0.0015749007936507937,
+              "relevance": 0.0,
+              "reason": "Discusses support channels and SLA, not API limits.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "3c00ce114bb3ac1d",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "## Эскалация\n\nЕсли Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически\nэскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить\nэскалацию в любой момент, ответив «ESCALATE» в тикете.\n\n## Сервисные компенсации (кредиты)\n\nЕсли Northwind нарушает SLA по времени ответа на Sev 1, клиент имеет право на\nсервисную компенсацию в размере **5% от месячной платы** за каждый\nпропущенный инцидент, но не более 25% от месячной платы в любом расчётном\nмесяце. Компенсацию нужно запросить в течение 30 дней.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 0.0015512265512265513,
+              "relevance": 0.0,
+              "reason": "Talks about escalation and compensation, not API limits.",
+              "sources": {
+                "dense": 3.0,
+                "sparse": 6.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "65ea8590a180b54f",
+                "doc_id": "156b939bbf31b5d4",
+                "source": "release_process.md",
+                "text": "# Northwind Robotics — Регламент выпуска обновлений\n\n_Последнее обновление: 14.02.2026. Владелец: Инженерия платформы._\n\n## Каналы прошивки\n\n- Канал `stable` получает обновления **раз в квартал**, после полного цикла\n  регрессионного тестирования на стенде.\n- Канал `edge` получает обновления **каждую неделю** и предназначен для\n  клиентов, которые хотят получать новые функции раньше.\n\nКлиент может в любой момент перевести совместимый манипулятор с `edge` обратно\nна `stable`.\n\n## Релизы AtlasControl\n\nПлановые релизы AtlasControl выходят по **вторникам**. Каждый релиз должен\nпройти code review двух инженеров и автоматические тесты. В последние **2\nнедели декабря** действует заморозка изменений: выпускаются только исправления\nкритичных ошибок.\n\n## Срочные исправления (hotfix)\n\nHotfix выпускается вне графика, если ошибка вызывает инцидент Sev 1 у\nклиента. Его одобряют дежурный инженер и руководитель разработки; после выпуска\nв течение 5 рабочих дней пишется разбор инцидента (postmortem).\n\n## Откат\n\nЕсли после релиза растёт число ошибок, дежурный инженер откатывает релиз на\nпредыдущую версию без дополнительных согласований. Откат должен занимать не\nболее 15 минут.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\release_process.md"
+                }
+              },
+              "score": 0.0015384615384615387,
+              "relevance": 0.0,
+              "reason": "Details release process, no mention of API limits.",
+              "sources": {
+                "dense": 5.0,
+                "sparse": 5.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": []
+  },
+  "latency_s": 10.236326699960046,
+  "fresh_tokens": 7941
+}

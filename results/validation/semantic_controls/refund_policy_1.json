@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "refund_policy_1",
+  "split": "calibration",
+  "gold": "supported",
+  "pred": "supported",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "supported",
+    "unit_ids": [
+      "s0l4",
+      "s0l5"
+    ],
+    "rationale": "Тариф Enterprise имеет окно возврата 30 календарных дней с даты начала контракта.",
+    "span_ids_valid": true,
+    "raw_label": "supported",
+    "spans": [
+      {
+        "id": "s0l4",
+        "chunk_id": "refund_policy.md",
+        "start": 205,
+        "end": 278,
+        "text": "- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет"
+      },
+      {
+        "id": "s0l5",
+        "chunk_id": "refund_policy.md",
+        "start": 279,
+        "end": 353,
+        "text": "  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+# Optional, only for scripts.run_local_nli
+-r requirements.txt
+sentencepiece>=0.2

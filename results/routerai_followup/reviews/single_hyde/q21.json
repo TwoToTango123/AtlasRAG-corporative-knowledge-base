@@ -1,0 +1,28 @@
+{
+  "id": "q21",
+  "answerable": true,
+  "payload_sha256": "24d03e4730be971c1c23c958a1daafecae70c326f928fa6009f4ed191663ef50",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.95,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью корректен и опирается на источники. Добавление требования о корпоративном устройстве не искажает смысл, а дополняет контекст безопасности, подтверждённый в источнике.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Работаю из кафе, VPN пишет ERR-VPN-431. Что делать и можно ли пока поработать через Wi-Fi кафе без VPN?",
+    "answer": "Ошибка ERR-VPN-431 означает, что превышено число одновременных подключений: одна учётная запись допускает не более 2 устройств. Отключите VPN на остальных устройствах и повторите подключение. Работать через Wi-Fi кафе без VPN нельзя: публичные сети допустимы только при включённом VPN, и работать можно только с корпоративного устройства.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

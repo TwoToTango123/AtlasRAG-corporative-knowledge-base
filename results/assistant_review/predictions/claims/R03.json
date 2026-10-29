@@ -1,0 +1,28 @@
+{
+  "status": "ok",
+  "review_id": "R03",
+  "claims": [
+    "Сбор за повторное складирование здесь равен 5 процентам."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "contradicted",
+      "rationale": "Документ устанавливает сбор в 15%, а не в 5%.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "contradicted",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "S1",
+          "start": 417,
+          "end": 467,
+          "text": "сбор за повторное складирование в размере **15%**."
+        }
+      ]
+    }
+  ]
+}

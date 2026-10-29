@@ -1,0 +1,100 @@
+{
+  "status": "ok",
+  "id": "q37",
+  "answerable": false,
+  "claims": [
+    "В предоставленных материалах нет сведений о том, как рассчитывается годовая премия сотрудников.",
+    "Ни один из доступных документов не описывает порядок расчёта премии."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l0",
+        "s2l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "rationale": "Перечислены все предоставленные документы, ни один не содержит информации о расчёте премии.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Положение о командировках и расходах"
+        },
+        {
+          "id": "s2l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 0,
+          "end": 60,
+          "text": "# Northwind Robotics — Политика удалённой и гибридной работы"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "unit_ids": [
+        "s0l0",
+        "s2l0",
+        "s3l0",
+        "s4l0"
+      ],
+      "rationale": "Ни один из четырёх предоставленных документов не описывает порядок расчёта премии.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l0",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Положение о командировках и расходах"
+        },
+        {
+          "id": "s2l0",
+          "chunk_id": "f40e9392459ebebc",
+          "start": 0,
+          "end": 59,
+          "text": "# Northwind Robotics — Политика информационной безопасности"
+        },
+        {
+          "id": "s3l0",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 0,
+          "end": 60,
+          "text": "# Northwind Robotics — Политика удалённой и гибридной работы"
+        },
+        {
+          "id": "s4l0",
+          "chunk_id": "0e612e00d293c9f1",
+          "start": 0,
+          "end": 65,
+          "text": "# Northwind Robotics — Инструкция по онбордингу новых сотрудников"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [],
+  "answer_sha256": "f076ec3a0b4b0efd1f864a2fc012c13fc1137984ca4afe59881288dc67b84951",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

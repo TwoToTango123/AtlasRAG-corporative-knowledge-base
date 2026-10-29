@@ -1,0 +1,18 @@
+{
+  "status": "ok",
+  "review_id": "R22",
+  "claims": [
+    "NW-200 можно эксплуатировать при температуре минус 40 градусов."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "insufficient",
+      "rationale": "Источники не содержат информации о допустимой температуре эксплуатации.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    }
+  ]
+}

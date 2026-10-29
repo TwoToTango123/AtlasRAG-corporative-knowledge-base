@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04T08:42:03.319410+00:00",
+  "seed": 20261104,
+  "components": [
+    "citation materialization fuzz",
+    "retrospective fixed adaptive gate",
+    "local retrieval formatting robustness"
+  ],
+  "new_paid_calls": 0,
+  "human_packet_sha256_before": {
+    "results\\context_citations\\human_review.html": "4e77ba83ee473c176e1b01a6f31bf0b9a850b745f6a1dc6eba8e07211d96e942",
+    "results\\context_citations\\human_review_dataset.json": "70355fd0d8f08e7c4c4e95002cf359d6b4b0c23f0ccdb274cd2de8ed8367e111",
+    "results\\context_citations\\human_evaluation_protocol.json": "b7e6f46a25bde9acd361a738d63c8d2b3f33d2288dfb1010b13dd92e67651035"
+  },
+  "gate_threshold": 0.5,
+  "variant_names": [
+    "original",
+    "lowercase",
+    "whitespace",
+    "polite",
+    "typographic_hyphens",
+    "compact_codes"
+  ]
+}

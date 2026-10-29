@@ -1,0 +1,245 @@
+{
+  "status": "ok",
+  "group": "single_no_hyde",
+  "id": "q21",
+  "claims": [
+    "Ошибка ERR-VPN-431 означает превышение числа одновременных подключений.",
+    "Для устранения ошибки ERR-VPN-431 необходимо отключить VPN на других устройствах.",
+    "После устранения ошибки ERR-VPN-431 для учётной записи должно остаться не более двух подключений.",
+    "Работать через Wi-Fi кафе без VPN запрещено.",
+    "Публичные сети допустимы только при включённом VPN."
+  ],
+  "old_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники прямо определяют ошибку ERR-VPN-431 как превышение числа одновременных подключений.",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 251,
+          "end": 330,
+          "text": "- `ERR-VPN-431`: превышено число одновременных подключений. Одна учётная запись"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник рекомендует отключить VPN на остальных устройствах для устранения ошибки.",
+      "unit_ids": [
+        "s0l6",
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 331,
+          "end": 403,
+          "text": "  может быть подключена не более чем с **2 устройств**; отключите VPN на"
+        },
+        {
+          "id": "s0l7",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 404,
+          "end": 416,
+          "text": "  остальных."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Источник указывает, что учётная запись может быть подключена не более чем с 2 устройств.",
+      "unit_ids": [
+        "s0l5",
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 251,
+          "end": 330,
+          "text": "- `ERR-VPN-431`: превышено число одновременных подключений. Одна учётная запись"
+        },
+        {
+          "id": "s0l6",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 331,
+          "end": 403,
+          "text": "  может быть подключена не более чем с **2 устройств**; отключите VPN на"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "insufficient",
+      "rationale": "Источник разрешает публичные сети с VPN, но не запрещает работу без него.",
+      "unit_ids": [],
+      "span_ids_valid": true,
+      "raw_label": "insufficient",
+      "spans": []
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Источник прямо указывает, что публичные сети допустимы исключительно при включённом VPN.",
+      "unit_ids": [
+        "s1l20",
+        "s1l21"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l20",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1058,
+          "end": 1132,
+          "text": "системам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)"
+        },
+        {
+          "id": "s1l21",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1133,
+          "end": 1178,
+          "text": "допускаются исключительно при включённом VPN."
+        }
+      ]
+    }
+  ],
+  "v2_verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Текст источника явно определяет значение данной ошибки как превышение числа подключений.",
+      "unit_ids": [
+        "s0l5"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l5",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 251,
+          "end": 330,
+          "text": "- `ERR-VPN-431`: превышено число одновременных подключений. Одна учётная запись"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник рекомендует отключить VPN на других устройствах для решения проблемы.",
+      "unit_ids": [
+        "s0l6",
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 331,
+          "end": 403,
+          "text": "  может быть подключена не более чем с **2 устройств**; отключите VPN на"
+        },
+        {
+          "id": "s0l7",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 404,
+          "end": 416,
+          "text": "  остальных."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Исторчник устанавливает лимит в два устройства на одну учётную запись.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "5eca4dec72a30e26",
+          "start": 331,
+          "end": 403,
+          "text": "  может быть подключена не более чем с **2 устройств**; отключите VPN на"
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "rationale": "Правила требуют включения VPN для работы в публичных сетях, что запрещает работу без него.",
+      "unit_ids": [
+        "s1l20",
+        "s1l21"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l20",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1058,
+          "end": 1132,
+          "text": "системам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)"
+        },
+        {
+          "id": "s1l21",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1133,
+          "end": 1178,
+          "text": "допускаются исключительно при включённом VPN."
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "rationale": "Исторчник прямо указывает, что публичные сети допустимы только при включённом VPN.",
+      "unit_ids": [
+        "s1l20",
+        "s1l21"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s1l20",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1058,
+          "end": 1132,
+          "text": "системам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)"
+        },
+        {
+          "id": "s1l21",
+          "chunk_id": "d8c66edab230f32b",
+          "start": 1133,
+          "end": 1178,
+          "text": "допускаются исключительно при включённом VPN."
+        }
+      ]
+    }
+  ],
+  "note": "Fixed old claims: isolates verifier changes from claim extraction changes."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "q37",
+  "answerable": false,
+  "payload_sha256": "eb97a61f560d45a2749bcff74510eaa42b4549005594020739985b510f3ff4df",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно сообщает об отсутствии данных. Перечисленные документы действительно не содержат информации о премиях. Отказ соответствует эталону и источникам.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Как рассчитывается годовая премия сотрудников?",
+    "answer": "В предоставленной информации нет сведений о том, как рассчитывается годовая премия сотрудников. Ни один из доступных документов (онбординг, политика безопасности, ИТ-поддержка, закупки, командировочные расходы) не описывает порядок расчёта годовой премии.",
+    "answerable": false,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": null
+  }
+}

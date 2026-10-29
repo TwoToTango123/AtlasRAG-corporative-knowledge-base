@@ -1,0 +1,52 @@
+{
+  "status": "ok",
+  "id": "q25",
+  "answerable": true,
+  "claims": [
+    "При стаже семь лет (категория «6+ лет») штатным сотрудникам положено 28 дней оплачиваемого отпуска в год.",
+    "Подрядчики не накапливают оплачиваемый отпуск."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источники прямо указывают 28 дней для стажа 6+ лет.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 300,
+          "end": 327,
+          "text": "- 6+ лет: **28 дней** в год"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Пункт о подрядчиках явно указывает, что они не накапливают оплачиваемый отпуск.",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 589,
+          "end": 664,
+          "text": "Подрядчики и временный персонал **не** накапливают оплачиваемый отпуск и не"
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "fdfc0ede0165ee51f5ce62ee6e788ca98aff3294201c7e99eadaafdcf625ef38",
+  "source_entry_sha256": "1464464f7a1f673edddb5545da503193ff541a7cc327fb28adc7e20e435895e9",
+  "verifier": "v2-scenario-aware"
+}

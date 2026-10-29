@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "id": "q29",
+  "answerable": true,
+  "claims": [],
+  "verdicts": [],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "a8e4a039691c7690d41dc924555aebb5ce447153a55bd9c9a8d97f4d707cb5a0",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

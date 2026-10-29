@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q12",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и подтверждается предоставленным источником (chunk 5eca4dec72a30e26). Цитата приведена корректно, без искажений. Ошибок не обнаружено.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "80ec7b6c836d28831a2dbdadc3ebb16410e46bdac623c8788578c4f3d2f76d21"
+}

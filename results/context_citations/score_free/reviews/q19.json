@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q19",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.95,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью корректен и подтверждён источниками. Все цитаты точны, за исключением малозначимых пунктуационных различий в одной из них (кавычки vs прямые скобки в названии системы), что не влияет на смысл.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "6671143b9af457487e2142836cecc34fea9022934039541afd68dc79b8e39e0a"
+}

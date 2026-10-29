@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "procurement_4",
+  "split": "heldout",
+  "gold": "insufficient",
+  "pred": "insufficient",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "insufficient",
+    "unit_ids": [],
+    "rationale": "В источниках нет упоминания валюты расчетов.",
+    "span_ids_valid": true,
+    "raw_label": "insufficient",
+    "spans": []
+  }
+}

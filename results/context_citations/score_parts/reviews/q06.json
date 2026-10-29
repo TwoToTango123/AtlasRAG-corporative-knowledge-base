@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q06",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Цитаты точные, подтверждают утверждения о взаимозаменяемости фланцев и ограничениях совместимости конкретных моделей захватов.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "5c1886570e8d489fe3ec03dd2c07370cc7c6bd1852f86a46f0407d3bc7f998bd",
+  "provenance": "changed citations, same answer; new judge"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "q25",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует вопросу и эталону. Упоминание 28 дней напрямую подтверждается цитатой из документа hr_timeoff.md.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "057ad84ea0e9f6a41ebe32471f9ec7579483cc3dc7f0b99f8e11b41a3749a2bc",
+  "provenance": "identical judge payload; reused frozen rating"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "id": "q36",
+  "answerable": false,
+  "claims": [],
+  "verdicts": [],
+  "answer_sha256": "b7c18b938aaa48f98512e9aa7cfee5794566cfc8538692264e2a480904b51e95",
+  "source_entry_sha256": "6e62138d279b4530c89f73efaa35deb092bfab4ebcd5904044c084d8333dbbe0",
+  "verifier": "v2-scenario-aware"
+}

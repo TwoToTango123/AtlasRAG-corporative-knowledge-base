@@ -1,0 +1,54 @@
+{
+  "status": "ok",
+  "id": "q28",
+  "answerable": true,
+  "claims": [
+    "Суточные для командировок по России составляют 1 500 рублей",
+    "Суточные начисляются за каждый день в пути"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник прямо указывает ставку 1500 руб для командировок по России.",
+      "unit_ids": [
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l7",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 385,
+          "end": 445,
+          "text": "- Командировки по России: **1 500 ₽** за каждый день в пути."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Источник гласит, что суточные начисляются за каждый день в пути.",
+      "unit_ids": [
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l7",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 385,
+          "end": 445,
+          "text": "- Командировки по России: **1 500 ₽** за каждый день в пути."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true
+  ],
+  "answer_sha256": "8b82a1c193f66165f42f13dcf7905a8e5f4de9f4ee27108e212a2507d7f76370",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

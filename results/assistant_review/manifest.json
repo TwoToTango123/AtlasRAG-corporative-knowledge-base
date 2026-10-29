@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-11-04T09:46:31.978478+00:00",
+  "protocol": {
+    "dataset_sha256": "bfd2e75bd41836865c716e541b87fa317f2d871653d42313dd3dec6b1380500e",
+    "annotations_sha256": "2f11cf43faaa0b3b8bd1bd577ebe398d1484c28b109b3c50ba66e2971e9ccdb8",
+    "protected_sha256": {
+      "results\\context_citations\\human_review.html": "4e77ba83ee473c176e1b01a6f31bf0b9a850b745f6a1dc6eba8e07211d96e942",
+      "results\\context_citations\\human_review_dataset.json": "70355fd0d8f08e7c4c4e95002cf359d6b4b0c23f0ccdb274cd2de8ed8367e111",
+      "results\\context_citations\\human_evaluation_protocol.json": "b7e6f46a25bde9acd361a738d63c8d2b3f33d2288dfb1010b13dd92e67651035",
+      "results\\context_citations\\review_instructions.md": "45bb500aa19b5ec767421e4b22f46e54882fa10ec7c1b028d5db93fc98978235"
+    },
+    "frozen_evaluator_sha256": "b7e6f46a25bde9acd361a738d63c8d2b3f33d2288dfb1010b13dd92e67651035",
+    "code_sha256": {
+      "scripts\\run_assistant_review.py": "defa7b3478c4f790e4211c3ee68697cf8ec7ecb049711a484b067675c2a93a77",
+      "scripts\\assistant_review_fixture.py": "aa0bc7c9b0f9d0595077f2b26b92376bc8fc9dc1e567ca26a5300f8a19b17516",
+      "atlas_rag\\semantic_support_v2.py": "34746e88a7e25d3f49c0fffb3c5fdad596aeb959350091fa7e2ec4b59ce5c2b1",
+      "atlas_rag\\semantic_support.py": "af34dcbd542ed77ad6b3b33fa54c79db2a42c5b1a97bd7724b1e67b80490ac0f"
+    },
+    "tasks": {
+      "claims": 16,
+      "answers": 8
+    },
+    "annotation_type": "assistant",
+    "policy": "No independent human labels. Development agreement only, no heldout accuracy or human metrics.",
+    "model_inputs": "Question, fixed claim text or original answer, and frozen sources only. No reference labels/reasons.",
+    "budget": "Original ledger/cache; 90 RUB guard and 10 RUB reserve; no source answers regenerated."
+  },
+  "protocol_sha256": "340ed5c8c2485834c045d1ef41d7b8ff35bc923c0237ef24c6b641ceaedc735c"
+}

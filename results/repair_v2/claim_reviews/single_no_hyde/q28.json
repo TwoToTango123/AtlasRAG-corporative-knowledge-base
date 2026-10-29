@@ -1,0 +1,32 @@
+{
+  "status": "ok",
+  "id": "q28",
+  "answerable": true,
+  "claims": [
+    "За каждую командировку по России выплачивают 1 500 ₽ в день."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Источник прямо указывает сумму суточных для командировок по России.",
+      "unit_ids": [
+        "s0l7"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l7",
+          "chunk_id": "5b44375fb4d963ad",
+          "start": 385,
+          "end": 445,
+          "text": "- Командировки по России: **1 500 ₽** за каждый день в пути."
+        }
+      ]
+    }
+  ],
+  "answer_sha256": "68e9d3f51cd8407cf8789897cf3e342bc14ca88eb22d5562c42a84ca8e05fa5d",
+  "source_entry_sha256": "e560e44bf2d6f813c493b666f614d87bbfd696eb48f22d633e759892c2e8b4aa",
+  "verifier": "v2-scenario-aware"
+}

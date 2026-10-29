@@ -1,0 +1,24 @@
+{
+  "id": "q34",
+  "answerable": false,
+  "payload_sha256": "ff67b3261a17bb9cdde64d6aef527ff26640e51f1c95467d6999c1d2eb83c2b8",
+  "review": {
+    "citation_quality": 1,
+    "correctness": 1,
+    "faithfulness": 1,
+    "is_refusal": true,
+    "rationale": "Ответ корректно отказывает, так как предоставленные источники не содержат информации о ДМС. Утверждение об отсутствии данных подтверждено отсутствием таких тем в предоставленных чанках.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какая страховая сумма по ДМС у сотрудников?",
+    "answer": "В предоставленной информации нет сведений о страховой сумме по ДМС для сотрудников — тема добровольного медицинского страхования в доступных материалах не освещается.",
+    "answerable": false,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": null
+  }
+}

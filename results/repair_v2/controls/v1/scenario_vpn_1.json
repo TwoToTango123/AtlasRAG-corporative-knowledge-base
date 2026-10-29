@@ -1,0 +1,34 @@
+{
+  "status": "ok",
+  "id": "scenario_vpn_1",
+  "split": "scenario_regression",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "rationale": "Источники указывают, что публичные сети допускаются исключительно при включенном VPN.",
+    "unit_ids": [
+      "s0l2",
+      "s0l3"
+    ],
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l2",
+        "chunk_id": "remote_work.md:Безопасность на удалёнке",
+        "start": 105,
+        "end": 179,
+        "text": "системам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)"
+      },
+      {
+        "id": "s0l3",
+        "chunk_id": "remote_work.md:Безопасность на удалёнке",
+        "start": 180,
+        "end": 225,
+        "text": "допускаются исключительно при включённом VPN."
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "q25",
+  "answerable": true,
+  "payload_sha256": "8d4b12db01eb9064d08b52067ba1d0feb821ca0917ed102e78b8ed45a64f0490",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно и полностью соответствует вопросу и эталону. Все утверждения подтверждены источником, цитаты верны.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сколько можно отдыхать в году, если трудишься в компании уже семь лет?",
+    "answer": "При стаже семь лет вам положено 28 дней оплачиваемого отпуска в год. Отпуск накапливается ежемесячно и может переноситься на следующий год до максимального остатка 40 дней.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 0.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

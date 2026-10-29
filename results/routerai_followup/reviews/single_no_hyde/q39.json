@@ -1,0 +1,24 @@
+{
+  "id": "q39",
+  "answerable": false,
+  "payload_sha256": "34fe86718cb44abd62d3a07228a0a29cdfaf337ae9568f0b8f99cb628c72f1b5",
+  "review": {
+    "citation_quality": 0.93,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректен и обоснован. Цитата 3 искажает формат таблицы (отсутствуют разделители), поэтому оценка цитирования чуть ниже максимума, но текст фактически соответствует источнику.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какое SLA по времени первого ответа на Sev 1 для клиентов тарифа Team?",
+    "answer": "Для клиентов тарифа Team SLA по времени первого ответа на Sev 1 не установлен. В документе SLA по времени ответа описан только для тарифа Enterprise: для Sev 1 первый ответ — в течение 1 часа, 24/7. Для Team указаны лишь каналы (Email, чат) и часы работы (рабочие часы), без нормативов времени реакции.",
+    "answerable": false,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": null
+  }
+}

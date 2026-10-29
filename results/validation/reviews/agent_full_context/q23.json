@@ -1,0 +1,14 @@
+{
+  "status": "ok",
+  "id": "q23",
+  "answerable": true,
+  "review": {
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "citation_quality": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам. Все фактические утверждения (срок испытательного периода, условия перехода на удаленку) подтверждены цитатами. Цитаты точные и корректно атрибутированы.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "4dcec2918b3c69d507ba2b0c629c3b1f000f04d5a6cf51ac6890201fe22a24f8"
+}

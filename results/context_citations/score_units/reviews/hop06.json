@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop06",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону. Цитаты верны и подтверждают факты из предоставленных источников. Логика применения действующей редакции норматива корректна.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "cfb79353472ee684f7a8cecc852f475574181de389528e0311b8288c0441b696"
+}

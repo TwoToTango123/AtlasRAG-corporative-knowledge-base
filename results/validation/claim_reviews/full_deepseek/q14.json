@@ -1,0 +1,55 @@
+{
+  "status": "ok",
+  "id": "q14",
+  "answerable": true,
+  "claims": [
+    "Артикул NW-VAC-05 совместим с манипулятором NW-200",
+    "Артикул NW-VAC-05 не совместим с манипуляторами, отличными от NW-200"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Таблица указывает совместимость NW-VAC-05 именно с NW-200.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 273,
+          "end": 352,
+          "text": "| NW-VAC-05 | Вакуумный захват с пятью присосками | только NW-200 | 126 000 ₽ |"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Словом «только» в таблице подтверждена эксклюзивная совместимость с NW-200.",
+      "unit_ids": [
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l6",
+          "chunk_id": "dc62c66b4de8f67f",
+          "start": 273,
+          "end": 352,
+          "text": "| NW-VAC-05 | Вакуумный захват с пятью присосками | только NW-200 | 126 000 ₽ |"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "f8063f8d704c0b4103631a380a57e35c374ebd2151e605022c5f990c1de890fe",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

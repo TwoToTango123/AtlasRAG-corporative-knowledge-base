@@ -1,0 +1,28 @@
+{
+  "id": "q04",
+  "answerable": true,
+  "payload_sha256": "7aa71166ce903d962fb06143b905037930a4713e79e0f85c1edaec331b7f6487",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и источникам, все фактические утверждения подтверждены цитатами из предоставленных данных.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Сравните грузоподъёмность и гарантию NW-100 и NW-200.",
+    "answer": "NW-200 превосходит NW-100 по обоим параметрам: грузоподъёмность составляет 18 кг против 5 кг, а гарантия — 3 года против 2 лет.",
+    "answerable": true,
+    "refused": false,
+    "correctness": 1.0,
+    "citation_quality": 1.0,
+    "faithfulness": 1.0,
+    "verdict": "ok",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}

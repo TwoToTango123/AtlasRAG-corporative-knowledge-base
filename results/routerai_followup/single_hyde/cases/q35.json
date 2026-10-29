@@ -1,0 +1,144 @@
+{
+  "status": "ok",
+  "id": "q35",
+  "type": "unanswerable",
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "graded": {
+    "question": "Сколько стоит подписка AtlasControl на тарифе Enterprise в месяц?",
+    "answer": "В предоставленной информации нет стоимости подписки AtlasControl на тарифе Enterprise. Указаны только возможности тарифа, но не его цена.",
+    "answerable": false,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 0.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": null
+  },
+  "result": {
+    "question": "Сколько стоит подписка AtlasControl на тарифе Enterprise в месяц?",
+    "answer": "В предоставленной информации нет стоимости подписки AtlasControl на тарифе Enterprise. Указаны только возможности тарифа, но не его цена.",
+    "citations": [
+      {
+        "chunk_id": "ee6006d80bd80674",
+        "source": "product_specs.md",
+        "quote": "тариф Enterprise — без ограничений"
+      }
+    ],
+    "confidence": 0.1,
+    "faithfulness": 0.0,
+    "trace": {
+      "original_question": "Сколько стоит подписка AtlasControl на тарифе Enterprise в месяц?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "Сколько стоит подписка AtlasControl на тарифе Enterprise в месяц?",
+          "rationale": "fixed single search; no agent or decomposition",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "ee6006d80bd80674",
+                "doc_id": "c2d555db89b245a6",
+                "source": "product_specs.md",
+                "text": "# Northwind Robotics — Спецификации продуктов\n\n_Последнее обновление: 05.03.2026. Владелец: Продукт._\n\n## Манипулятор NW-100 (начальный уровень)\n\n- Грузоподъёмность: **5 кг**\n- Радиус действия: 850 мм\n- Повторяемость: ±0,05 мм\n- Степеней свободы: 6\n- Питание: 100–240 В переменного тока, 350 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP\n- Гарантия: **2 года**\n- Канал прошивки: `stable`\n\n## Манипулятор NW-200 (промышленный уровень)\n\n- Грузоподъёмность: **18 кг**\n- Радиус действия: 1300 мм\n- Повторяемость: ±0,02 мм\n- Степеней свободы: 6\n- Питание: 200–240 В переменного тока, 900 Вт пиковая\n- Связь: Ethernet/IP, Modbus TCP, PROFINET\n- Безопасность: соответствие ISO 10218-1, двухканальный аварийный останов\n- Гарантия: **3 года**\n- Канал прошивки: `stable` или `edge`\n\n## Программное обеспечение AtlasControl\n\nAtlasControl — это панель управления для обоих манипуляторов. Тариф Team\nподдерживает до **10 подключённых манипуляторов**; тариф Enterprise — без\nограничений. Лимит API составляет **600 запросов в минуту** на рабочее\nпространство на тарифе Team и **6 000 запросов в минуту** на тарифе Enterprise.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\product_specs.md"
+                }
+              },
+              "score": 2.001639344262295,
+              "relevance": 2.0,
+              "reason": "Fragment 0 describes product specifications and features of AtlasControl, including that the Enterprise plan has no limits and API limits, but it does not provide any price information for the Enterprise subscription. Therefore it provides indirect information but not the specific cost asked in the query. This fragment receives a low relevance score.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "4df4ff41c9dead17",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "# Northwind Robotics — Поддержка и SLA\n\n_Последнее обновление: 30.01.2026. Владелец: Клиентская поддержка._\n\n## Уровни поддержки\n\n| Тариф      | Каналы                  | Часы работы        |\n|------------|-------------------------|--------------------|\n| Starter    | Email, документация     | Рабочие часы       |\n| Team       | Email, чат              | Рабочие часы       |\n| Enterprise | Email, чат, телефон, TAM | 24/7              |\n\n«Рабочие часы» — это 9:00–18:00 в основном часовом поясе клиента, с понедельника\nпо пятницу, исключая местные государственные праздники.\n\n## SLA по времени ответа (Enterprise)\n\nУровень серьёзности (severity) устанавливает поддержка Northwind на основе\nзаявленного клиентом влияния:\n\n- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7.\n- **Sev 2 (серьёзная деградация):** первый ответ в течение **4 рабочих часов**.\n- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**.\n\nНад инцидентами Sev 1 работают непрерывно, пока не будет найдено обходное решение\nили устранена проблема. Каждому аккаунту Enterprise назначается выделенный\nтехнический менеджер аккаунта (TAM).",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 2.001574900793651,
+              "relevance": 2.0,
+              "reason": "Fragment 2 contains support and SLA details for the Enterprise plan, but it does not state the monthly cost of the subscription. Thus, it is only tangentially related and scores low.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "3c00ce114bb3ac1d",
+                "doc_id": "66b3d2d6396241d3",
+                "source": "support_sla.md",
+                "text": "## Эскалация\n\nЕсли Enterprise-инцидент Sev 1 нарушает SLA по времени ответа, он автоматически\nэскалируется директору поддержки и TAM аккаунта. Клиенты также могут запросить\nэскалацию в любой момент, ответив «ESCALATE» в тикете.\n\n## Сервисные компенсации (кредиты)\n\nЕсли Northwind нарушает SLA по времени ответа на Sev 1, клиент имеет право на\nсервисную компенсацию в размере **5% от месячной платы** за каждый\nпропущенный инцидент, но не более 25% от месячной платы в любом расчётном\nмесяце. Компенсацию нужно запросить в течение 30 дней.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\support_sla.md"
+                }
+              },
+              "score": 2.0015628815628816,
+              "relevance": 2.0,
+              "reason": "Fragment 3 deals with escalation procedure and service credits for SLA breaches. It does not address subscription pricing. The relevance is low.",
+              "sources": {
+                "dense": 3.0,
+                "sparse": 5.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "9856428584413ba8",
+                "doc_id": "b1e4a8a33e197cb3",
+                "source": "refund_policy.md",
+                "text": "# Northwind Robotics — Политика возврата средств и товаров\n\n_Последнее обновление: 15.01.2026. Владелец: Отдел доходов (Revenue Operations)._\n\n## Область действия\n\nЭта политика регулирует возвраты средств и товаров для всего оборудования и\nпрограммных подписок Northwind Robotics, проданных напрямую. Заказы через\nреселлеров регулируются отдельным Партнёрским соглашением (Channel Partner\nAgreement).\n\n## Стандартное окно возврата\n\n- **Самообслуживание (тарифы Starter и Team):** клиент может запросить полный\n  возврат в течение **14 календарных дней** с момента первого списания, без\n  объяснения причин.\n- **Тариф Enterprise:** у корпоративных клиентов окно возврата составляет\n  **30 календарных дней** с даты начала контракта. Возврат после 30-го дня\n  требует утверждённого исключения (см. раздел «Исключения»).\n- Продления **не** возвращаются автоматически. Списание за продление можно\n  вернуть, только если клиент уведомит нас в течение 7 дней с даты продления.",
+                "ordinal": 0,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\refund_policy.md"
+                }
+              },
+              "score": 2.001428863033272,
+              "relevance": 2.0,
+              "reason": "Fragment 8 contains refund policy information, mentioning the refund window for the Enterprise plan but not the cost. This is a peripheral detail; relevance is low, so 2.",
+              "sources": {
+                "dense": 11.0,
+                "sparse": 9.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "f9e0c75fbb2025f6",
+                "doc_id": "1dbbd2e2ebf5220b",
+                "source": "remote_work.md",
+                "text": "## Безопасность на удалёнке\n\nРаботать можно только с корпоративного устройства. Подключение к внутренним\nсистемам — только через VPN. Публичные сети Wi-Fi (кафе, аэропорты, отели)\nдопускаются исключительно при включённом VPN.\n\n## Компенсации\n\nСотрудникам в полностью удалённом формате компенсируется интернет —\n**3 000 ₽ в месяц**. Офисное кресло и монитор выдаются со склада один раз по\nзаявке в сервис-деск.",
+                "ordinal": 1,
+                "metadata": {
+                  "path": "C:\\Users\\1\\OneDrive\\Desktop\\AI_projects\\RAG_for_business\\examples\\sample_docs\\remote_work.md"
+                }
+              },
+              "score": 0.0016129032258064516,
+              "relevance": 0.0,
+              "reason": "Fragment 1 discusses security and compensation policies for remote work, with no mention of AtlasControl pricing or subscription plans. It is unrelated to the query, so it gets a score of 0.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 2.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": false,
+      "notes": ""
+    },
+    "warnings": [
+      "model_reports_answer_not_found"
+    ]
+  },
+  "latency_s": 23.37885089998599,
+  "fresh_tokens": 7364
+}

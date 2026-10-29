@@ -1,0 +1,24 @@
+{
+  "id": "q36",
+  "answerable": false,
+  "payload_sha256": "fd257c25d668da87eaa1c251fc39ffd05489dd6a3d9a03d968ba4937d87d0998",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": true,
+    "rationale": "Ответ корректно отклонён. Утверждение об отсутствии модели NW-300 подтверждается источниками, где фигурируют только NW-100 и NW-200. Цитаты точны и релевантны.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "Какая грузоподъёмность у манипулятора NW-300?",
+    "answer": "В предоставленной документации нет сведений о манипуляторе NW-300 — в спецификациях описаны только модели NW-100 и NW-200. Поэтому указать его грузоподъёмность невозможно.",
+    "answerable": false,
+    "refused": true,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": null
+  }
+}

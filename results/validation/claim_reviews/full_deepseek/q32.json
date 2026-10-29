@@ -1,0 +1,123 @@
+{
+  "status": "ok",
+  "id": "q32",
+  "answerable": true,
+  "claims": [
+    "Для Sev 1 первый ответ предоставляется в течение 1 часа",
+    "Поддержка Sev 1 осуществляется круглосуточно (24/7)",
+    "Для Sev 3 первый ответ предоставляется в течение 1 рабочего дня",
+    "Срок реакции для Sev 1 значительно короче, чем для Sev 3",
+    "Обслуживание Sev 1 не зависит от рабочих часов"
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "rationale": "Источники подтверждают первый ответ в течение 1 часа для Sev 1.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "rationale": "Источники указывают режим 24/7 для поддержки Sev 1.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "unit_ids": [
+        "s0l15"
+      ],
+      "rationale": "Источники подтверждают срок ответа 1 рабочий день для Sev 3.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l15",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 882,
+          "end": 963,
+          "text": "- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c3",
+      "label": "supported",
+      "unit_ids": [
+        "s0l13",
+        "s0l15"
+      ],
+      "rationale": "Сравнение 1 часа (Sev 1) и 1 рабочего дня (Sev 3) подтверждает утверждение.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        },
+        {
+          "id": "s0l15",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 882,
+          "end": 963,
+          "text": "- **Sev 3 (незначительное / вопрос):** первый ответ в течение **1 рабочего дня**."
+        }
+      ]
+    },
+    {
+      "claim_id": "c4",
+      "label": "supported",
+      "unit_ids": [
+        "s0l13"
+      ],
+      "rationale": "Режим 24/7 означает отсутствие зависимости от стандартных рабочих часов.",
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l13",
+          "chunk_id": "4df4ff41c9dead17",
+          "start": 724,
+          "end": 801,
+          "text": "- **Sev 1 (продакшен не работает):** первый ответ в течение **1 часа**, 24/7."
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "08944101ab5bd0d10aa6dd9a10bc8caed53972c67e222618ffbe3e8caad8baad",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

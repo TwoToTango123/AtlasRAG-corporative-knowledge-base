@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "id": "onboarding_3",
+  "split": "heldout",
+  "gold": "contradicted",
+  "pred": "contradicted",
+  "verdict": {
+    "claim_id": "c0",
+    "label": "contradicted",
+    "unit_ids": [
+      "s0l2"
+    ],
+    "rationale": "Источник указывает, что для руководителей испытательный срок составляет 6 месяцев, а не 3.",
+    "span_ids_valid": true,
+    "raw_label": "contradicted",
+    "spans": [
+      {
+        "id": "s0l2",
+        "chunk_id": "onboarding.md",
+        "start": 90,
+        "end": 167,
+        "text": "руководителей и главных инженеров — **6 месяцев**. В конце срока руководитель"
+      }
+    ]
+  }
+}

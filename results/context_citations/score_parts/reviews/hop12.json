@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "hop12",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ полностью соответствует эталону и поддерживается источниками: проект «Сокол» привязан к пакету K-09, а действующий с 01.01.2026 норматив этого пакета устанавливает лимит 524 рубля. Цитаты точны.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "8dda722920ace22cc1e045d9115dec2e08db1b6d1241f76dddad6472a58606ef",
+  "provenance": "identical judge payload; reused frozen rating"
+}

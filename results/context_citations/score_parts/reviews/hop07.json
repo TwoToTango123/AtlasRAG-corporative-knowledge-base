@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "id": "hop07",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ точно соответствует эталону и подтверждается источниками. Цитаты верны и поддерживают утверждения.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "5711148433a9cbbda89484f3ed36a3286981548bad15c57469a335539cd50647",
+  "provenance": "identical judge payload; reused frozen rating"
+}

@@ -1,0 +1,352 @@
+{
+  "status": "ok",
+  "id": "hop05",
+  "result": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Борей?",
+    "answer": "Действующий лимит компенсации за один отчёт для проекта «Борей» на 02.11.2026 составляет 1556 рублей. Проекту назначен пакет K-33, а действующая с 01.01.2026 редакция норматива K-33 устанавливает именно такой лимит.",
+    "citations": [
+      {
+        "chunk_id": "f4fd3f91218086f9",
+        "source": "project_04.md",
+        "quote": "для расходов проекта назначен пакет K-33."
+      },
+      {
+        "chunk_id": "865f428eaf35f8f7",
+        "source": "policy_K33_current.md",
+        "quote": "Пакету K-33 соответствует лимит компенсации 1556 рублей за один отчёт."
+      }
+    ],
+    "confidence": 0.99,
+    "faithfulness": 1.0,
+    "trace": {
+      "original_question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Борей?",
+      "steps": [
+        {
+          "step": 1,
+          "query": "лимит компенсации за один отчёт проект Борей",
+          "rationale": "Найти лимит компенсации за отчёт для проекта Борей",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "f4fd3f91218086f9",
+                "doc_id": "a70038ecb42ae8df",
+                "source": "project_04.md",
+                "text": "# Проект Борей\nКарточка проекта Борей: для расходов проекта назначен пакет K-33.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 2.001639344262295,
+              "relevance": 2.0,
+              "reason": "Only mentions project Borei but no limit information, so minimal relevance.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "7b71e2e17ca73e5a",
+                "doc_id": "761cfebb949f652b",
+                "source": "policy_K09_archive.md",
+                "text": "# Норматив пакета K-09\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-09 соответствует лимит компенсации 1301 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Provides limit for K-09, but project Borei uses K-33, no relevance.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "196bf7d5229d4960",
+                "doc_id": "bc0ea025e11ed367",
+                "source": "project_00.md",
+                "text": "# Проект Лира\nКарточка проекта Лира: для расходов проекта назначен пакет K-17.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Mentions another project Lira, no relevance.",
+              "sources": {
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "d90179ad39d006ad",
+                "doc_id": "dc7404cd341bada0",
+                "source": "policy_K01_archive.md",
+                "text": "# Норматив пакета K-01\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-01 соответствует лимит компенсации 957 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Mentions K-01 limit, not related to Borei.",
+              "sources": {
+                "dense": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "cce38b9e35a455c6",
+                "doc_id": "ac71abbb931aa0e7",
+                "source": "project_01.md",
+                "text": "# Проект Кедр\nКарточка проекта Кедр: для расходов проекта назначен пакет K-04.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Mentions another project, no relevance.",
+              "sources": {
+                "sparse": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "query": "Борей лимит компенсации действующий на 02.11.2026",
+          "rationale": "Уточнить актуальность лимита на указанную дату",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "f4fd3f91218086f9",
+                "doc_id": "a70038ecb42ae8df",
+                "source": "project_04.md",
+                "text": "# Проект Борей\nКарточка проекта Борей: для расходов проекта назначен пакет K-33.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 3.0008196721311475,
+              "relevance": 3.0,
+              "reason": "Fragment 2 states that project Borей is assigned package K‑33, which is directly relevant because it identifies the applicable package.  However, it does not provide the compensation limit, so it is only indirectly useful for locating the required information.",
+              "sources": {
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "a224b5f70bcb323d",
+                "doc_id": "488e06efa1db67f8",
+                "source": "policy_K02_current.md",
+                "text": "# Норматив пакета K-02\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-02 соответствует лимит компенсации 223 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.00152073732718894,
+              "relevance": 0.0,
+              "reason": "Fragment 0 discusses the current K‑02 package and its compensation limit, but the query asks for the limit for project «Борей», which uses package K‑33.  The fragment does not mention project Borей or package K‑33, so it is not relevant to the requested information.",
+              "sources": {
+                "dense": 10.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "2571682331560a3c",
+                "doc_id": "c502748ba420dafe",
+                "source": "policy_K22_current.md",
+                "text": "# Норматив пакета K-22\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-22 соответствует лимит компенсации 1083 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008196721311475411,
+              "relevance": 0.0,
+              "reason": "Fragment 1 describes the current K‑22 package and its limit.  It does not refer to project Borей or package K‑33, hence not relevant.",
+              "sources": {
+                "dense": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "88ce351f69b61999",
+                "doc_id": "bf712b97465805a8",
+                "source": "policy_K06_archive.md",
+                "text": "# Норматив пакета K-06\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-06 соответствует лимит компенсации 1172 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0008064516129032258,
+              "relevance": 0.0,
+              "reason": "Fragment 3 talks about the archived K‑06 package, which is not relevant to the current status of project Borей.",
+              "sources": {
+                "dense": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "73bae8b7877ac9e9",
+                "doc_id": "b943ac318bf78692",
+                "source": "policy_K08_current.md",
+                "text": "# Норматив пакета K-08\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-08 соответствует лимит компенсации 481 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0007936507936507937,
+              "relevance": 0.0,
+              "reason": "Fragment 4 provides information about K‑08, unrelated to project Borей.",
+              "sources": {
+                "dense": 3.0
+              }
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "query": "Норматив пакета K-33 лимит компенсации за один отчёт",
+          "rationale": "Найти норматив пакета K-33, назначенного проекту Борей",
+          "hits": [
+            {
+              "chunk": {
+                "chunk_id": "32026dee0a9f21c5",
+                "doc_id": "2f48c04755671b40",
+                "source": "policy_K33_archive.md",
+                "text": "# Норматив пакета K-33\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-33 соответствует лимит компенсации 2333 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001626123744051,
+              "relevance": 10.0,
+              "reason": "contains exact information about the limit for K‑33 (2333 р.) for the archived version, which directly answers the query.",
+              "sources": {
+                "dense": 1.0,
+                "sparse": 2.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "865f428eaf35f8f7",
+                "doc_id": "eabeb97e9a483b7e",
+                "source": "policy_K33_current.md",
+                "text": "# Норматив пакета K-33\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-33 соответствует лимит компенсации 1556 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 10.001600922131148,
+              "relevance": 10.0,
+              "reason": "contains exact information about the limit for K‑33 (1556 р.) for the current version, which directly answers the query.",
+              "sources": {
+                "dense": 4.0,
+                "sparse": 1.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "f4fd3f91218086f9",
+                "doc_id": "a70038ecb42ae8df",
+                "source": "project_04.md",
+                "text": "# Проект Борей\nКарточка проекта Борей: для расходов проекта назначен пакет K-33.\nРазмер компенсации определяется действующим нормативом назначенного пакета.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 4.000793650793651,
+              "relevance": 4.0,
+              "reason": "mentions K‑33 but only that compensation follows the current norm; no specific limit value is provided, so it is tangential.",
+              "sources": {
+                "sparse": 3.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "ca9a60b2aeb2eade",
+                "doc_id": "6d6c9f0ef028b798",
+                "source": "policy_K03_archive.md",
+                "text": "# Норматив пакета K-03\nАрхивная редакция 2024 года. Утратила силу 01.01.2026.\nПакету K-03 соответствует лимит компенсации 1043 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0015310892940626462,
+              "relevance": 0.0,
+              "reason": "pertains to a different package (K‑03); no relevant data about K‑33.",
+              "sources": {
+                "dense": 2.0,
+                "sparse": 9.0
+              }
+            },
+            {
+              "chunk": {
+                "chunk_id": "f851d6b873d1e48d",
+                "doc_id": "d5cd6a8d9ca687d4",
+                "source": "policy_K03_current.md",
+                "text": "# Норматив пакета K-03\nДействует с 01.01.2026. Заменяет все прежние редакции.\nПакету K-03 соответствует лимит компенсации 266 рублей за один отчёт.\nЛимит относится только к указанному пакету. Сведения о других пакетах отсутствуют.",
+                "ordinal": 0,
+                "metadata": {}
+              },
+              "score": 0.0014928698752228165,
+              "relevance": 0.0,
+              "reason": "pertains to K‑03; irrelevant.",
+              "sources": {
+                "dense": 6.0,
+                "sparse": 8.0
+              }
+            }
+          ]
+        }
+      ],
+      "sufficient": true,
+      "notes": "Нашёл: проекту «Борей» назначен пакет K-33, для него действует с 01.01.2026 (актуально на 02.11.2026) норматив с лимитом 1556 рублей за один отчёт; архивная редакция (2333 руб.) утратила силу. Данные полностью покрывают вопрос."
+    },
+    "warnings": []
+  },
+  "latency_s": 0.4532331000082195,
+  "graded": {
+    "question": "Какой действующий на 02.11.2026 лимит компенсации за один отчёт для проекта Борей?",
+    "answer": "Действующий лимит компенсации за один отчёт для проекта «Борей» на 02.11.2026 составляет 1556 рублей. Проекту назначен пакет K-33, а действующая с 01.01.2026 редакция норматива K-33 устанавливает именно такой лимит.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6934264036172708
+    }
+  },
+  "first_search_metrics": {
+    "recall": 0.5,
+    "mrr": 1.0,
+    "ndcg": 0.6131471927654584
+  },
+  "first_search_has_both_hops": false,
+  "final_has_both_hops": true,
+  "amount_present": true,
+  "obsolete_amount_present": false,
+  "trajectory_audit": {
+    "rounds": [
+      {
+        "query": "лимит компенсации за один отчёт проект Борей",
+        "new_chunks": 5,
+        "new_gold_chunks": 1,
+        "gold_chunks": 1
+      },
+      {
+        "query": "Борей лимит компенсации действующий на 02.11.2026",
+        "new_chunks": 4,
+        "new_gold_chunks": 0,
+        "gold_chunks": 1
+      },
+      {
+        "query": "Норматив пакета K-33 лимит компенсации за один отчёт",
+        "new_chunks": 4,
+        "new_gold_chunks": 1,
+        "gold_chunks": 2
+      }
+    ],
+    "gold_total": 2,
+    "gold_covered": 2,
+    "zero_new_gold_rounds_after_first": 1,
+    "zero_new_chunk_rounds_after_first": 0
+  },
+  "verbatim_matches": [
+    true,
+    true
+  ]
+}

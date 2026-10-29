@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "q11",
+  "suite": "ordinary",
+  "answerable": true,
+  "review": {
+    "citation_quality": 0.0,
+    "correctness": 0.85,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верно отражает ключевые факты (срок, система), проигнорировав требование об одобрении. Цитата содержит Markdown-разметку, что нарушает строгие условия проверки.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "d3035f9e32f697c34283a7bcb4ce9ced0ceef3f8f96895a71f318cbdc4120927"
+}

@@ -1,0 +1,83 @@
+{
+  "status": "ok",
+  "id": "q25",
+  "answerable": true,
+  "claims": [
+    "При стаже семь лет (категория «6+ лет») положено 28 дней оплачиваемого отпуска в год.",
+    "Правило о 28 днях оплачиваемого отпуска действует для штатных сотрудников.",
+    "Подрядчики не накапливают оплачиваемый отпуск."
+  ],
+  "verdicts": [
+    {
+      "claim_id": "c0",
+      "label": "supported",
+      "rationale": "Строки с0l3 и с0l6 подтверждают 28 дней для категории 6+ лет.",
+      "unit_ids": [
+        "s0l3",
+        "s0l6"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 166,
+          "end": 240,
+          "text": "Штатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:"
+        },
+        {
+          "id": "s0l6",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 300,
+          "end": 327,
+          "text": "- 6+ лет: **28 дней** в год"
+        }
+      ]
+    },
+    {
+      "claim_id": "c1",
+      "label": "supported",
+      "rationale": "Строка с0l3 указывает, что правило накопления PTO действует для штатных сотрудников.",
+      "unit_ids": [
+        "s0l3"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l3",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 166,
+          "end": 240,
+          "text": "Штатные сотрудники накапливают оплачиваемый отпуск в зависимости от стажа:"
+        }
+      ]
+    },
+    {
+      "claim_id": "c2",
+      "label": "supported",
+      "rationale": "Строка с0l12 прямо утверждает, что подрядчики не накапливают оплачиваемый отпуск.",
+      "unit_ids": [
+        "s0l12"
+      ],
+      "span_ids_valid": true,
+      "raw_label": "supported",
+      "spans": [
+        {
+          "id": "s0l12",
+          "chunk_id": "a01c2b41f757ed6a",
+          "start": 589,
+          "end": 664,
+          "text": "Подрядчики и временный персонал **не** накапливают оплачиваемый отпуск и не"
+        }
+      ]
+    }
+  ],
+  "verbatim_matches": [
+    true,
+    true
+  ],
+  "answer_sha256": "fdfc0ede0165ee51f5ce62ee6e788ca98aff3294201c7e99eadaafdcf625ef38",
+  "note": "Claims and semantic labels are model estimates; extraction coverage is not human certified."
+}

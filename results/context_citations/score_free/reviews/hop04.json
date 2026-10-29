@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "id": "hop04",
+  "suite": "sequential",
+  "answerable": true,
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 1.0,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верно определяет пакет и сумму на основе действующего норматива. Цитаты подтверждают факт назначения пакета и текущего лимита в источниках.",
+    "unsupported_claims": []
+  },
+  "payload_sha256": "a603673736ff8f9e5eacebad30b2c3e54732a2bc711fcbc12967952675f85074"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "q14",
+  "answerable": true,
+  "payload_sha256": "96021c36638f29deb80c50d01d93a98c17a5cca37c5f6401b2474646d84fb3a5",
+  "review": {
+    "citation_quality": 1.0,
+    "correctness": 0.85,
+    "faithfulness": 1.0,
+    "is_refusal": false,
+    "rationale": "Ответ верно указывает на совместимость с NW-200, подтверждённую источниками. Однако он не раскрывает причину (требование сжатого воздуха), указанную в эталоне, что снижает полноту ответа.",
+    "unsupported_claims": []
+  },
+  "original_graded": {
+    "question": "С какими манипуляторами совместим артикул NW-VAC-05?",
+    "answer": "Артикул NW-VAC-05 совместим только с манипулятором NW-200.",
+    "answerable": true,
+    "refused": false,
+    "correctness": null,
+    "citation_quality": null,
+    "faithfulness": 1.0,
+    "verdict": "Use evidence-aware review; legacy judge not invoked for this case.",
+    "retrieval": {
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0
+    }
+  }
+}
